@@ -13,14 +13,32 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
 
-      - name: randomize feed
-        run: |
-          awk 'BEGIN{srand()} /<item>/{print rand() "\t" $0; next} {print}' feed.xml \
-          | sort -k1,1n \
-          | cut -f2- \
-          > new_feed.xml
+      - name: shuffle items only
+  run: |
+    awk '
+      BEGIN { in_items=0 }
+      /<item>/ { in_items=1; item=$0; next }
+      /<\/item>/ { item=item "\n" $0; print rand() "\t" item; in_items=0; next }
+      in_items { item=item "\n" $0; next }
+      !in_items { print > "header.xml" }
+    ' feed.xml > items.tmp
 
-          mv new_feed.xml feed.xml
+    sort -k1,1n items.tmp | cut -f2- > items.xml
+
+    awk '
+      BEGIN { printed=0 }
+      {
+        if ($0 ~ /<item>/ && printed==0) {
+          system("cat items.xml")
+          printed=1
+        }
+        if ($0 !~ /<item>/ && $0 !~ /<\/item>/) {
+          print
+        }
+      }
+    ' feed.xml > new_feed.xml
+
+    mv new_feed.xml feed.xml
 
       - name: commit changes
         run: |
