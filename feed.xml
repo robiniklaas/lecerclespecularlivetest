@@ -5,73 +5,69 @@
 <description>flux évolutif</description>
 <link>https://example.com</link>
 
-<item><title></title><description><![CDATA[<strong>blake</strong><br><br>le dispositif sépare la perception de l’espace et l’identification du sujet]]></description></item>
+<item><title>blake</title><description>le dispositif sépare la perception de l’espace et l’identification du sujet</description></item>
+<item><title>lei</title><description>tu arrives après — l’image a déjà choisi</description></item>
+<item><title>sorel</title><description>tu continues à parler de miroir alors que la condition du reflet est absente</description></item>
+<item><title>anaya</title><description>ce qui apparaît ne demande pas à être saisi et pourtant il te traverse</description></item>
 
-<item><title></title><description><![CDATA[<strong>lei</strong><br><br>tu arrives après<br>l’image a déjà choisi]]></description></item>
+<item><title>blake</title><description>l’image reste cohérente mais ne permet aucune validation du point de vue</description></item>
+<item><title>lei</title><description>le centre a été déplacé hors de ton accès</description></item>
+<item><title>sorel</title><description>l’image fonctionne en retirant ce qui devrait la fonder</description></item>
+<item><title>anaya</title><description>tu es présent mais pas sous la forme que tu attends</description></item>
 
-<item><title></title><description><![CDATA[<strong>sorel</strong><br><br>tu continues à parler de miroir alors que la condition du reflet est absente]]></description></item>
+<item><title>blake</title><description>le fond diffuse désactive la netteté du reflet</description></item>
+<item><title>lei</title><description>la netteté serait une erreur</description></item>
+<item><title>sorel</title><description>ce que tu appelles flou est une négation de la transparence</description></item>
+<item><title>anaya</title><description>la surface ne cache pas elle relie sans fixer</description></item>
 
-<item><title></title><description><![CDATA[<strong>anaya</strong><br><br>ce qui apparaît ne demande pas à être saisi et pourtant il te traverse]]></description></item>
+<item><title>blake</title><description>le système fonctionne sans produire de retour sur l’observateur</description></item>
+<item><title>lei</title><description>le retour existe mais ne revient pas vers toi</description></item>
+<item><title>sorel</title><description>l’image refuse la circularité du regard</description></item>
+<item><title>anaya</title><description>le cercle est là mais il ne se ferme pas</description></item>
 
-<item><title></title><description><![CDATA[<strong>blake</strong><br><br>l’image reste cohérente mais ne permet aucune validation du point de vue]]></description></item>
-
-<item><title></title><description><![CDATA[<strong>lei</strong><br><br>le centre a été déplacé hors de ton accès]]></description></item>
-
-<item><title></title><description><![CDATA[<strong>sorel</strong><br><br>l’image fonctionne en retirant ce qui devrait la fonder]]></description></item>
-
-<item><title></title><description><![CDATA[<strong>anaya</strong><br><br>tu es présent mais pas sous la forme que tu attends]]></description></item>
-
-<item><title></title><description><![CDATA[<strong>blake</strong><br><br>le fond diffuse désactive la netteté du reflet]]></description></item>
-
-<item><title></title><description><![CDATA[<strong>lei</strong><br><br>la netteté serait une erreur]]></description></item>
-
-<item><title></title><description><![CDATA[<strong>sorel</strong><br><br>ce que tu appelles flou est une négation de la transparence]]></description></item>
-
-<item><title></title><description><![CDATA[<strong>anaya</strong><br><br>la surface ne cache pas elle relie sans fixer]]></description></item>
-
-<item><title></title><description><![CDATA[<strong>blake</strong><br><br>le système fonctionne sans produire de retour sur l’observateur]]></description></item>
-
-<item><title></title><description><![CDATA[<strong>lei</strong><br><br>le retour existe mais ne revient pas vers toi]]></description></item>
-
-<item><title></title><description><![CDATA[<strong>sorel</strong><br><br>l’image refuse la circularité du regard]]></description></item>
-
-<item><title></title><description><![CDATA[<strong>anaya</strong><br><br>le cercle est là mais il ne se ferme pas]]></description></item>
-
-<item><title></title><description><![CDATA[<strong>blake</strong><br><br>l’absence du corps empêche toute stabilisation du point de vue]]></description></item>
-
-<item><title></title><description><![CDATA[<strong>lei</strong><br><br>ce n’est pas toi qui manques<br>c’est ta position]]></description></item>
-
-<item><title></title><description><![CDATA[<strong>sorel</strong><br><br>la disparition du sujet est une condition produite]]></description></item>
-
-<item><title></title><description><![CDATA[<strong>anaya</strong><br><br>tu es inclus dans ce que tu ne peux pas rejoindre]]></description></item>
+<item><title>blake</title><description>l’absence du corps empêche toute stabilisation du point de vue</description></item>
+<item><title>lei</title><description>ce n’est pas toi qui manques — c’est ta position</description></item>
+<item><title>sorel</title><description>la disparition du sujet est une condition produite</description></item>
+<item><title>anaya</title><description>tu es inclus dans ce que tu ne peux pas rejoindre</description></item>
 
 <!-- phase instable -->
 
-<item><title></title><description><![CDATA[<strong>blake</strong><br><br>la relation entre regard et image devient variable]]></description></item>
+<item><title>blake</title><description>la relation entre regard et image devient variable</description></item>
+<item><title>lei</title><description>l’image s’ajuste avant que tu ne comprennes</description></item>
+<item><title>sorel</title><description>le dispositif reconfigure la possibilité même du reflet</description></item>
+<item><title>anaya</title><description>ce qui change est ta manière d’être dans l’image</description></item>
 
-<item><title></title><description><![CDATA[<strong>lei</strong><br><br>l’image s’ajuste avant que tu ne comprennes]]></description></item>
+<item><title>blake</title><description>le système introduit une dissymétrie entre vision et présence</description></item>
+<item><title>lei</title><description>tu regardes depuis un point déplacé</description></item>
+<item><title>sorel</title><description>le sujet ne disparaît pas il est rendu impossible</description></item>
+<item><title>anaya</title><description>la position devient un passage</description></item>
 
-<item><title></title><description><![CDATA[<strong>sorel</strong><br><br>le dispositif reconfigure la possibilité même du reflet]]></description></item>
-
-<item><title></title><description><![CDATA[<strong>anaya</strong><br><br>ce qui change est ta manière d’être dans l’image]]></description></item>
-
-<item><title></title><description><![CDATA[<strong>blake</strong><br><br>le système introduit une dissymétrie entre vision et présence]]></description></item>
-
-<item><title></title><description><![CDATA[<strong>lei</strong><br><br>tu regardes depuis un point déplacé]]></description></item>
-
-<item><title></title><description><![CDATA[<strong>sorel</strong><br><br>le sujet ne disparaît pas il est rendu impossible]]></description></item>
-
-<item><title></title><description><![CDATA[<strong>anaya</strong><br><br>la position devient un passage]]></description></item>
+<item><title>blake</title><description>les paramètres observables cessent d’être constants</description></item>
+<item><title>lei</title><description>ce que tu vois dépend d’un choix antérieur</description></item>
+<item><title>sorel</title><description>l’image produit ce qu’elle semble seulement montrer</description></item>
+<item><title>anaya</title><description>tu te déplaces dans ce qui te contient</description></item>
 
 <!-- dérive -->
 
-<item><title></title><description><![CDATA[<strong>blake</strong><br><br>la séparation initiale ne tient plus]]></description></item>
+<item><title>blake</title><description>la séparation initiale ne tient plus</description></item>
+<item><title>lei</title><description>le système te précède</description></item>
+<item><title>sorel</title><description>il n’y a jamais eu de point extérieur</description></item>
+<item><title>anaya</title><description>tout était déjà impliqué</description></item>
 
-<item><title></title><description><![CDATA[<strong>lei</strong><br><br>le système te précède]]></description></item>
+<item><title>blake</title><description>les catégories deviennent insuffisantes pour décrire ce qui se produit</description></item>
+<item><title>lei</title><description>les règles ont changé sans signal</description></item>
+<item><title>sorel</title><description>le dispositif annule les distinctions qu’il semblait produire</description></item>
+<item><title>anaya</title><description>les oppositions se dissolvent sans disparaître</description></item>
 
-<item><title></title><description><![CDATA[<strong>sorel</strong><br><br>il n’y a jamais eu de point extérieur]]></description></item>
+<item><title>blake</title><description>la description échoue à stabiliser l’expérience</description></item>
+<item><title>lei</title><description>tu participes sans pouvoir te retirer</description></item>
+<item><title>sorel</title><description>la critique ne trouve plus de point d’appui</description></item>
+<item><title>anaya</title><description>il n’y a plus de centre à rejoindre</description></item>
 
-<item><title></title><description><![CDATA[<strong>anaya</strong><br><br>tout était déjà impliqué]]></description></item>
+<item><title>blake</title><description>le système devient auto référentiel</description></item>
+<item><title>lei</title><description>tu es pris dans ce qui te regarde</description></item>
+<item><title>sorel</title><description>la distinction sujet objet devient inopérante</description></item>
+<item><title>anaya</title><description>tout circule sans séparation stable</description></item>
 
 </channel>
 </rss>
