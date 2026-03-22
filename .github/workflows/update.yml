@@ -14,14 +14,18 @@ jobs:
 
       - name: shuffle items safely
         run: |
-          grep "<item>" -A 1 feed.xml | grep -v "<channel>" > items.txt
+          sed -n '/<item>/,/<\/item>/p' feed.xml > items.txt
           shuf items.txt > shuffled.txt
 
-          awk '
-          BEGIN {print "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n<rss version=\"2.0\">\n<channel>\n<title>cercle specular — inter_view</title>\n<description>flux evolutif</description>\n<link>https://example.com</link>"}
-          {print}
-          END {print "</channel>\n</rss>"}
-          ' shuffled.txt > new_feed.xml
+          echo '<?xml version="1.0" encoding="UTF-8" ?>' > new_feed.xml
+          echo '<rss version="2.0"><channel>' >> new_feed.xml
+          echo '<title>cercle specular — inter_view</title>' >> new_feed.xml
+          echo '<description>flux evolutif</description>' >> new_feed.xml
+          echo '<link>https://example.com</link>' >> new_feed.xml
+
+          cat shuffled.txt >> new_feed.xml
+
+          echo '</channel></rss>' >> new_feed.xml
 
           mv new_feed.xml feed.xml
 
