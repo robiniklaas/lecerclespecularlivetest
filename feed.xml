@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+<title>Cercle Specular — inter_view</title>
+<description>Fragments autour de l’objet-peinture inter_view</description>
+<link>https://example.com</link>
+
+<item>
+<title>Blake</title>
+<description>L’objet produit une dissociation nette : perception de l’espace sans inscription du sujet.</description>
+<pubDate>Mon, 01 Apr 2024 10:00:00 GMT</pubDate>
+</item>
+
+<item>
+<title>Lei</title>
+<description>Ce qui est absent n’est pas oublié. Il est déplacé hors du champ visible.</description>
+<pubDate>Mon, 01 Apr 2024 10:05:00 GMT</pubDate>
+</item>
+
+<item>
+<title>Sorel</title>
+<description>Tu appelles cela un reflet, mais il manque la condition minimale du reflet : le sujet.</description>
+<pubDate>Mon, 01 Apr 2024 10:10:00 GMT</pubDate>
+</item>
+
+<item>
+<title>Anaya</title>
+<description>Il y a présence, mais elle ne prend pas forme.</description>
+<pubDate>Mon, 01 Apr 2024 10:15:00 GMT</pubDate>
+</item>
+
+<item>
+<title>Blake</title>
+<description>Le dispositif semble conçu pour supprimer le retour réflexif du regardeur.</description>
+<pubDate>Mon, 01 Apr 2024 10:20:00 GMT</pubDate>
+</item>
+
+<item>
+<title>Lei</title>
+<description>Ce n’est pas une suppression. C’est un redéploiement hors axe.</description>
+<pubDate>Mon, 01 Apr 2024 10:25:00 GMT</pubDate>
+</item>
+
+<item>
+<title>Sorel</title>
+<description>L’image fonctionne, mais elle trahit son propre principe.</description>
+<pubDate>Mon, 01 Apr 2024 10:30:00 GMT</pubDate>
+</item>
+
+<item>
+<title>Anaya</title>
+<description>Le regard existe, mais il ne se voit pas lui-même.</description>
+<pubDate>Mon, 01 Apr 2024 10:35:00 GMT</pubDate>
+</item>
+
+<item>
+<title>Blake</title>
+<description>On observe un espace cohérent, mais sans point d’ancrage perceptif identifiable.</description>
+<pubDate>Mon, 01 Apr 2024 10:40:00 GMT</pubDate>
+</item>
+
+<item>
+<title>Lei</title>
+<description>Le centre n’est pas vide. Il est ailleurs.</description>
+<pubDate>Mon, 01 Apr 2024 10:45:00 GMT</pubDate>
+</item>
+
+<item>
+<title>Sorel</title>
+<description>C’est une image sans sujet, donc une image instable.</description>
+<pubDate>Mon, 01 Apr 2024 10:50:00 GMT</pubDate>
+</item>
+
+<item>
+<title>Anaya</title>
+<description>Ou une image libérée du besoin de sujet.</description>
+<pubDate>Mon, 01 Apr 2024 10:55:00 GMT</pubDate>
+</item>
+
+</channel>
+</rss>
