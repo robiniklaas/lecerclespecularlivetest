@@ -1,81 +1,89 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title>Cercle Specular — inter_view</title>
-<description>Fragments autour de l’objet-peinture inter_view</description>
-<link>https://example.com</link>
+<title>cercle specular — inter_view</title>
 
-<item>
-<title>Blake</title>
-<description>L’objet produit une dissociation nette : perception de l’espace sans inscription du sujet.</description>
-<pubDate>Mon, 01 Apr 2024 10:00:00 GMT</pubDate>
-</item>
+<!-- phase 1 : stabilité -->
 
-<item>
-<title>Lei</title>
-<description>Ce qui est absent n’est pas oublié. Il est déplacé hors du champ visible.</description>
-<pubDate>Mon, 01 Apr 2024 10:05:00 GMT</pubDate>
-</item>
+<item><title>blake</title><description>le dispositif sépare la perception de l’espace et l’identification du sujet</description></item>
+<item><title>lei</title><description>tu arrives après
+l’image a déjà choisi</description></item>
+<item><title>sorel</title><description>tu continues à parler de miroir alors que la condition du reflet est absente</description></item>
+<item><title>anaya</title><description>ce qui apparaît ne demande pas à être saisi et pourtant il te traverse</description></item>
 
-<item>
-<title>Sorel</title>
-<description>Tu appelles cela un reflet, mais il manque la condition minimale du reflet : le sujet.</description>
-<pubDate>Mon, 01 Apr 2024 10:10:00 GMT</pubDate>
-</item>
+<item><title>blake</title><description>l’image reste cohérente mais ne permet aucune validation du point de vue</description></item>
+<item><title>lei</title><description>le centre a été déplacé hors de ton accès</description></item>
+<item><title>sorel</title><description>l’image fonctionne en retirant ce qui devrait la fonder</description></item>
+<item><title>anaya</title><description>tu es présent mais pas sous la forme que tu attends</description></item>
 
-<item>
-<title>Anaya</title>
-<description>Il y a présence, mais elle ne prend pas forme.</description>
-<pubDate>Mon, 01 Apr 2024 10:15:00 GMT</pubDate>
-</item>
+<item><title>blake</title><description>le fond diffuse désactive la netteté du reflet</description></item>
+<item><title>lei</title><description>la netteté serait une erreur</description></item>
+<item><title>sorel</title><description>ce que tu appelles flou est une négation de la transparence</description></item>
+<item><title>anaya</title><description>la surface ne cache pas elle relie sans fixer</description></item>
 
-<item>
-<title>Blake</title>
-<description>Le dispositif semble conçu pour supprimer le retour réflexif du regardeur.</description>
-<pubDate>Mon, 01 Apr 2024 10:20:00 GMT</pubDate>
-</item>
+<item><title>blake</title><description>le système fonctionne sans produire de retour sur l’observateur</description></item>
+<item><title>lei</title><description>le retour existe mais ne revient pas vers toi</description></item>
+<item><title>sorel</title><description>l’image refuse la circularité du regard</description></item>
+<item><title>anaya</title><description>le cercle est là mais il ne se ferme pas</description></item>
 
-<item>
-<title>Lei</title>
-<description>Ce n’est pas une suppression. C’est un redéploiement hors axe.</description>
-<pubDate>Mon, 01 Apr 2024 10:25:00 GMT</pubDate>
-</item>
+<item><title>blake</title><description>l’absence du corps empêche toute stabilisation du point de vue</description></item>
+<item><title>lei</title><description>ce n’est pas toi qui manques
+c’est ta position</description></item>
+<item><title>sorel</title><description>la disparition du sujet est une condition produite</description></item>
+<item><title>anaya</title><description>tu es inclus dans ce que tu ne peux pas rejoindre</description></item>
 
-<item>
-<title>Sorel</title>
-<description>L’image fonctionne, mais elle trahit son propre principe.</description>
-<pubDate>Mon, 01 Apr 2024 10:30:00 GMT</pubDate>
-</item>
+<!-- phase 2 : instabilité -->
 
-<item>
-<title>Anaya</title>
-<description>Le regard existe, mais il ne se voit pas lui-même.</description>
-<pubDate>Mon, 01 Apr 2024 10:35:00 GMT</pubDate>
-</item>
+<item><title>blake</title><description>la relation entre regard et image devient variable</description></item>
+<item><title>lei</title><description>l’image s’ajuste avant que tu ne comprennes</description></item>
+<item><title>sorel</title><description>le dispositif reconfigure la possibilité même du reflet</description></item>
+<item><title>anaya</title><description>ce qui change est ta manière d’être dans l’image</description></item>
 
-<item>
-<title>Blake</title>
-<description>On observe un espace cohérent, mais sans point d’ancrage perceptif identifiable.</description>
-<pubDate>Mon, 01 Apr 2024 10:40:00 GMT</pubDate>
-</item>
+<item><title>blake</title><description>le système introduit une dissymétrie entre vision et présence</description></item>
+<item><title>lei</title><description>tu regardes depuis un point déplacé</description></item>
+<item><title>sorel</title><description>le sujet ne disparaît pas il est rendu impossible</description></item>
+<item><title>anaya</title><description>la position devient un passage</description></item>
 
-<item>
-<title>Lei</title>
-<description>Le centre n’est pas vide. Il est ailleurs.</description>
-<pubDate>Mon, 01 Apr 2024 10:45:00 GMT</pubDate>
-</item>
+<item><title>blake</title><description>les paramètres observables cessent d’être constants</description></item>
+<item><title>lei</title><description>ce que tu vois dépend d’un choix antérieur</description></item>
+<item><title>sorel</title><description>l’image produit ce qu’elle semble seulement montrer</description></item>
+<item><title>anaya</title><description>tu te déplaces dans ce qui te contient</description></item>
 
-<item>
-<title>Sorel</title>
-<description>C’est une image sans sujet, donc une image instable.</description>
-<pubDate>Mon, 01 Apr 2024 10:50:00 GMT</pubDate>
-</item>
+<item><title>blake</title><description>la cohérence perceptive devient partielle</description></item>
+<item><title>lei</title><description>le cadre n’est plus fixe</description></item>
+<item><title>sorel</title><description>la structure se maintient en se contredisant</description></item>
+<item><title>anaya</title><description>tout reste mais autrement</description></item>
 
-<item>
-<title>Anaya</title>
-<description>Ou une image libérée du besoin de sujet.</description>
-<pubDate>Mon, 01 Apr 2024 10:55:00 GMT</pubDate>
-</item>
+<item><title>blake</title><description>le dispositif ne permet plus une description stable</description></item>
+<item><title>lei</title><description>tu es déjà inclus dans le mouvement</description></item>
+<item><title>sorel</title><description>l’analyse est affectée par ce qu’elle analyse</description></item>
+<item><title>anaya</title><description>il n’y a plus de distance nette</description></item>
+
+<!-- phase 3 : dérive -->
+
+<item><title>blake</title><description>la séparation initiale ne tient plus</description></item>
+<item><title>lei</title><description>le système te précède</description></item>
+<item><title>sorel</title><description>il n’y a jamais eu de point extérieur</description></item>
+<item><title>anaya</title><description>tout était déjà impliqué</description></item>
+
+<item><title>blake</title><description>les catégories utilisées deviennent insuffisantes</description></item>
+<item><title>lei</title><description>les règles ont changé sans signal</description></item>
+<item><title>sorel</title><description>le dispositif annule les distinctions qu’il semblait produire</description></item>
+<item><title>anaya</title><description>les oppositions se dissolvent sans disparaître</description></item>
+
+<item><title>blake</title><description>la description échoue à stabiliser l’expérience</description></item>
+<item><title>lei</title><description>tu participes sans pouvoir te retirer</description></item>
+<item><title>sorel</title><description>la critique ne trouve plus de point d’appui</description></item>
+<item><title>anaya</title><description>il n’y a plus de centre à rejoindre</description></item>
+
+<item><title>blake</title><description>le système devient auto-référentiel</description></item>
+<item><title>lei</title><description>tu es pris dans ce qui te regarde</description></item>
+<item><title>sorel</title><description>la distinction sujet objet devient inopérante</description></item>
+<item><title>anaya</title><description>tout circule sans séparation stable</description></item>
+
+<item><title>blake</title><description>les variables ne sont plus isolables</description></item>
+<item><title>lei</title><description>le jeu se joue à travers toi</description></item>
+<item><title>sorel</title><description>la condition remplace toute position</description></item>
+<item><title>anaya</title><description>il n’y a plus rien à fixer</description></item>
 
 </channel>
 </rss>
