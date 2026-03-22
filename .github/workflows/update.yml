@@ -2,7 +2,7 @@ name: update flux
 
 on:
   schedule:
-    - cron: "0 */6 * * *"  # toutes les 6 heures
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 jobs:
@@ -10,37 +10,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: shuffle items only
-  run: |
-    awk '
-      BEGIN { in_items=0 }
-      /<item>/ { in_items=1; item=$0; next }
-      /<\/item>/ { item=item "\n" $0; print rand() "\t" item; in_items=0; next }
-      in_items { item=item "\n" $0; next }
-      !in_items { print > "header.xml" }
-    ' feed.xml > items.tmp
+      - name: shuffle items safely
+        run: |
+          grep "<item>" -A 1 feed.xml | grep -v "<channel>" > items.txt
+          shuf items.txt > shuffled.txt
 
-    sort -k1,1n items.tmp | cut -f2- > items.xml
+          awk '
+          BEGIN {print "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n<rss version=\"2.0\">\n<channel>\n<title>cercle specular — inter_view</title>\n<description>flux evolutif</description>\n<link>https://example.com</link>"}
+          {print}
+          END {print "</channel>\n</rss>"}
+          ' shuffled.txt > new_feed.xml
 
-    awk '
-      BEGIN { printed=0 }
-      {
-        if ($0 ~ /<item>/ && printed==0) {
-          system("cat items.xml")
-          printed=1
-        }
-        if ($0 !~ /<item>/ && $0 !~ /<\/item>/) {
-          print
-        }
-      }
-    ' feed.xml > new_feed.xml
+          mv new_feed.xml feed.xml
 
-    mv new_feed.xml feed.xml
-
-      - name: commit changes
+      - name: commit
         run: |
           git config user.name "flux-bot"
           git config user.email "bot@example.com"
