@@ -1,69 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
-<channel>
+<rss version="2.0"><channel>
 <title>cercle specular — inter_view</title>
-<description>flux évolutif</description>
+<description>flux evolutif</description>
 <link>https://example.com</link>
-
-<item><title>blake :</title><description>le dispositif produit une séparation entre perception de l’espace et identification du sujet</description></item>
-<item><title>lei :</title><description>tu arrives après... le point a déjà été fixé</description></item>
-<item><title>sorel :</title><description>tu parles de miroir, alors que la condition du reflet est ici absente</description></item>
-<item><title>anaya :</title><description>ce qui apparaît ne te demande pas d’être là... et pourtant tu y es pris</description></item>
-
-<item><title>blake :</title><description>l’image se forme selon des conditions qui excluent toute coïncidence avec celui qui regarde</description></item>
+<item><title>lei :</title><description>ce que tu vois dépend d’un choix déjà effectué</description></item>
 <item><title>lei :</title><description>ta position est engagée avant que tu ne regardes</description></item>
+<item><title>anaya :</title><description>la position devient un passage que tu ne contrôles pas</description></item>
 <item><title>sorel :</title><description>la présence visible dépend d’un retrait préalable du sujet</description></item>
-<item><title>anaya :</title><description>tu es inclus dans ce qui ne te retient pas</description></item>
-
+<item><title>blake :</title><description>le dispositif introduit une dissymétrie entre vision et présence</description></item>
+<item><title>sorel :</title><description>la circularité du regard est ici rendue impossible</description></item>
+<item><title>sorel :</title><description>la critique ne trouve plus de point d’appui stable</description></item>
+<item><title>anaya :</title><description>tout reste... mais autrement</description></item>
+<item><title>blake :</title><description>le système fonctionne sans produire de retour exploitable sur l’observateur</description></item>
+<item><title>anaya :</title><description>le cercle se forme... sans jamais se fermer</description></item>
+<item><title>lei :</title><description>tu arrives après... le point a déjà été fixé</description></item>
+<item><title>lei :</title><description>tu es pris dans ce qui te regarde</description></item>
+<item><title>anaya :</title><description>tu te déplaces dans ce qui te contient</description></item>
 <item><title>blake :</title><description>le fond diffus empêche toute stabilisation réflexive de l’image</description></item>
+<item><title>sorel :</title><description>l’image produit ce qu’elle prétend seulement montrer</description></item>
+<item><title>sorel :</title><description>la présence est produite au prix de son propre effacement</description></item>
+<item><title>lei :</title><description>les règles ont changé... sans être annoncées</description></item>
+<item><title>sorel :</title><description>la stabilité apparente masque une transformation des conditions</description></item>
+<item><title>lei :</title><description>tu participes... sans pouvoir sortir</description></item>
+<item><title>blake :</title><description>le dispositif produit une séparation entre perception de l’espace et identification du sujet</description></item>
+<item><title>anaya :</title><description>tu es inclus dans ce qui ne te retient pas</description></item>
+<item><title>blake :</title><description>l’absence du corps empêche toute validation du point de vue</description></item>
+<item><title>sorel :</title><description>tu parles de miroir, alors que la condition du reflet est ici absente</description></item>
+<item><title>lei :</title><description>le cadre a déjà changé... sans signal</description></item>
+<item><title>lei :</title><description>tu regardes depuis un point qui n’est plus le tien</description></item>
+<item><title>anaya :</title><description>tu es déjà là... autrement que tu ne le cherches</description></item>
+<item><title>blake :</title><description>la relation entre regard et image devient instable sans perdre sa cohérence</description></item>
+<item><title>sorel :</title><description>le dispositif annule les distinctions qu’il semblait produire</description></item>
+<item><title>sorel :</title><description>la distinction entre sujet et condition devient inopérante</description></item>
+<item><title>lei :</title><description>ce n’est pas toi qui manques... c’est ta position qui a été déplacée</description></item>
+<item><title>blake :</title><description>le système devient auto référentiel dans son fonctionnement</description></item>
 <item><title>lei :</title><description>la netteté ne peut pas apparaître ici...</description></item>
 <item><title>sorel :</title><description>ce que tu appelles flou correspond à une négation de la transparence</description></item>
-<item><title>anaya :</title><description>la surface relie sans jamais fixer les formes</description></item>
-
-<item><title>blake :</title><description>le système fonctionne sans produire de retour exploitable sur l’observateur</description></item>
-<item><title>lei :</title><description>le retour existe... mais il ne revient pas vers toi</description></item>
-<item><title>sorel :</title><description>la circularité du regard est ici rendue impossible</description></item>
-<item><title>anaya :</title><description>le cercle se forme... sans jamais se fermer</description></item>
-
-<item><title>blake :</title><description>l’absence du corps empêche toute validation du point de vue</description></item>
-<item><title>lei :</title><description>ce n’est pas toi qui manques... c’est ta position qui a été déplacée</description></item>
 <item><title>sorel :</title><description>le sujet n’est pas absent, il est rendu inopérant</description></item>
-<item><title>anaya :</title><description>tu es déjà là... autrement que tu ne le cherches</description></item>
-
-<item><title>blake :</title><description>la relation entre regard et image devient instable sans perdre sa cohérence</description></item>
-<item><title>lei :</title><description>ce que tu vois dépend d’un choix déjà effectué</description></item>
-<item><title>sorel :</title><description>l’image produit ce qu’elle prétend seulement montrer</description></item>
-<item><title>anaya :</title><description>tu te déplaces dans ce qui te contient</description></item>
-
-<item><title>blake :</title><description>le dispositif introduit une dissymétrie entre vision et présence</description></item>
-<item><title>lei :</title><description>tu regardes depuis un point qui n’est plus le tien</description></item>
-<item><title>sorel :</title><description>la présence est produite au prix de son propre effacement</description></item>
-<item><title>anaya :</title><description>la position devient un passage que tu ne contrôles pas</description></item>
-
-<item><title>blake :</title><description>les paramètres perceptifs cessent d’être constants dans l’expérience</description></item>
-<item><title>lei :</title><description>le cadre a déjà changé... sans signal</description></item>
-<item><title>sorel :</title><description>la stabilité apparente masque une transformation des conditions</description></item>
-<item><title>anaya :</title><description>tout reste... mais autrement</description></item>
-
-<item><title>blake :</title><description>la séparation initiale ne permet plus de décrire le système</description></item>
-<item><title>lei :</title><description>le système te précède maintenant</description></item>
-<item><title>sorel :</title><description>il n’y a jamais eu de point extérieur à ce dispositif</description></item>
-<item><title>anaya :</title><description>tu fais déjà partie de ce qui te dépasse</description></item>
-
-<item><title>blake :</title><description>les catégories deviennent insuffisantes pour modéliser l’expérience</description></item>
-<item><title>lei :</title><description>les règles ont changé... sans être annoncées</description></item>
-<item><title>sorel :</title><description>le dispositif annule les distinctions qu’il semblait produire</description></item>
-<item><title>anaya :</title><description>les oppositions se relâchent sans disparaître</description></item>
-
 <item><title>blake :</title><description>la description échoue à stabiliser ce qui est perçu</description></item>
-<item><title>lei :</title><description>tu participes... sans pouvoir sortir</description></item>
-<item><title>sorel :</title><description>la critique ne trouve plus de point d’appui stable</description></item>
-<item><title>anaya :</title><description>il n’y a plus de centre à rejoindre</description></item>
-
-<item><title>blake :</title><description>le système devient auto référentiel dans son fonctionnement</description></item>
-<item><title>lei :</title><description>tu es pris dans ce qui te regarde</description></item>
-<item><title>sorel :</title><description>la distinction entre sujet et condition devient inopérante</description></item>
+<item><title>blake :</title><description>l’image se forme selon des conditions qui excluent toute coïncidence avec celui qui regarde</description></item>
 <item><title>anaya :</title><description>tout circule sans séparation stable...</description></item>
-
-</channel>
-</rss>
+<item><title>anaya :</title><description>tu fais déjà partie de ce qui te dépasse</description></item>
+<item><title>sorel :</title><description>il n’y a jamais eu de point extérieur à ce dispositif</description></item>
+<item><title>anaya :</title><description>la surface relie sans jamais fixer les formes</description></item>
+<item><title>lei :</title><description>le système te précède maintenant</description></item>
+<item><title>anaya :</title><description>ce qui apparaît ne te demande pas d’être là... et pourtant tu y es pris</description></item>
+<item><title>blake :</title><description>les paramètres perceptifs cessent d’être constants dans l’expérience</description></item>
+<item><title>blake :</title><description>la séparation initiale ne permet plus de décrire le système</description></item>
+<item><title>anaya :</title><description>il n’y a plus de centre à rejoindre</description></item>
+<item><title>blake :</title><description>les catégories deviennent insuffisantes pour modéliser l’expérience</description></item>
+<item><title>anaya :</title><description>les oppositions se relâchent sans disparaître</description></item>
+<item><title>lei :</title><description>le retour existe... mais il ne revient pas vers toi</description></item>
+</channel></rss>
