@@ -152,7 +152,13 @@ for i in range(min(len(blake), len(lei), len(sorel), len(anaya))):
 random.shuffle(groups)
 
 # flatten
-items = [item for group in groups for item in group]
+items = []
+
+for group in groups:
+    for item in group:
+        if len(items) > 0 and items[-1][0] == item[0]:
+            continue
+        items.append(item)
 
 # --- GÉNÉRATION RSS ---
 
