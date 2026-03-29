@@ -137,40 +137,29 @@ anaya = [
 
 # --- CRÉATION DES GROUPES ---
 
-groups = []
-for i in range(min(len(blake), len(lei), len(sorel), len(anaya))):
-    group = [
-        ("BLAKE :", blake[i]),
-        ("LEI :", lei[i]),
-        ("SOREL :", sorel[i]),
-        ("ANAYA :", anaya[i])
-    ]
-    random.shuffle(group)
-    groups.append(group)
-
-# mélange des groupes
-random.shuffle(groups)
-
-# flatten
 items = []
 
-for group in groups:
-    random.shuffle(group)
+# créer une liste globale
+pool = []
 
-    for item in group:
-        if len(items) >= 2 and items[-1][0] == item[0] and items[-2][0] == item[0]:
-            # essaie de trouver un autre item dans le groupe
-            swapped = False
-            for alt in group:
-                if alt[0] != item[0]:
-                    items.append(alt)
-                    group.remove(alt)
-                    swapped = True
-                    break
-            if not swapped:
-                continue
-        else:
+for i in range(min(len(blake), len(lei), len(sorel), len(anaya))):
+    pool.append(("BLAKE :", blake[i]))
+    pool.append(("LEI :", lei[i]))
+    pool.append(("SOREL :", sorel[i]))
+    pool.append(("ANAYA :", anaya[i]))
+
+# mélange initial
+random.shuffle(pool)
+
+# construction contrôlée
+while pool:
+    for i, item in enumerate(pool):
+        if not items or items[-1][0] != item[0]:
             items.append(item)
+            pool.pop(i)
+            break
+    else:
+        items.append(pool.pop(0))
 
 # --- GÉNÉRATION RSS ---
 
