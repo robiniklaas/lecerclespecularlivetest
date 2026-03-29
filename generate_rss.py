@@ -134,7 +134,7 @@ anaya = [
 "ce qui apparaît ne demande rien et pourtant te traverse"
 ]
 
-# --- ALGORITHME ÉQUILIBRÉ ---
+# --- MÉLANGE CONTRAINT SANS RÉPÉTITION ---
 
 pools = {
     "BLAKE :": blake.copy(),
@@ -152,19 +152,27 @@ last_author = None
 
 while any(pools.values()):
     available = [a for a in pools if pools[a]]
-    choices = [a for a in available if a != last_author]
 
-    if not choices:
-        choices = available
+    # tri pour équilibrer
+    available.sort(key=lambda a: len(pools[a]), reverse=True)
 
-    # équilibre : choisir celui qui a le plus de phrases restantes
-    choices.sort(key=lambda a: len(pools[a]), reverse=True)
+    # choisir un auteur différent du précédent
+    chosen = None
+    for author in available:
+        if author != last_author:
+            chosen = author
+            break
 
-    author = choices[0]
-    text = pools[author].pop()
+    # sécurité absolue (ne devrait jamais arriver)
+    if chosen is None:
+        for author in available:
+            if author != last_author:
+                chosen = author
+                break
 
-    items.append((author, text))
-    last_author = author
+    text = pools[chosen].pop()
+    items.append((chosen, text))
+    last_author = chosen
 
 # --- GÉNÉRATION RSS ---
 
