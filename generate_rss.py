@@ -155,10 +155,22 @@ random.shuffle(groups)
 items = []
 
 for group in groups:
+    random.shuffle(group)
+
     for item in group:
-        if len(items) > 0 and items[-1][0] == item[0]:
-            continue
-        items.append(item)
+        if len(items) >= 2 and items[-1][0] == item[0] and items[-2][0] == item[0]:
+            # essaie de trouver un autre item dans le groupe
+            swapped = False
+            for alt in group:
+                if alt[0] != item[0]:
+                    items.append(alt)
+                    group.remove(alt)
+                    swapped = True
+                    break
+            if not swapped:
+                continue
+        else:
+            items.append(item)
 
 # --- GÉNÉRATION RSS ---
 
