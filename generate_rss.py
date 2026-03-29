@@ -165,19 +165,41 @@ for i in range(min(len(blake), len(lei), len(sorel), len(anaya))):
 
 random.shuffle(pool)
 
-while pool:
-    found = False
+from collections import defaultdict
 
-    for i, item in enumerate(pool):
-        if not items or items[-1][0] != item[0]:
-            items.append(item)
-            pool.pop(i)
-            found = True
-            break
+# créer les pools par voix
+pools = {
+    "BLAKE :": blake.copy(),
+    "LEI :": lei.copy(),
+    "SOREL :": sorel.copy(),
+    "ANAYA :": anaya.copy()
+}
 
-    if not found:
-        # 🔥 mélange du pool au lieu de forcer
-        random.shuffle(pool)
+# mélange interne
+for key in pools:
+    random.shuffle(pools[key])
+
+items = []
+last_author = None
+
+while any(pools.values()):
+    # auteurs encore disponibles
+    available = [a for a in pools if pools[a]]
+
+    # éviter répétition
+    choices = [a for a in available if a != last_author]
+
+    if not choices:
+        choices = available  # fallback très rare
+
+    # choix équilibré (celui qui a le plus de phrases restantes)
+    choices.sort(key=lambda a: len(pools[a]), reverse=True)
+
+    author = choices[0]
+
+    text = pools[author].pop()
+    items.append((author, text))
+    last_author = author
 
 # --- GÉNÉRATION RSS ---
 
