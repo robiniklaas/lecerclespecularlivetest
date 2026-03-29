@@ -152,14 +152,32 @@ for i in range(min(len(blake), len(lei), len(sorel), len(anaya))):
 random.shuffle(pool)
 
 # construction contrôlée
+items = []
+
+# créer une liste globale
+pool = []
+
+for i in range(min(len(blake), len(lei), len(sorel), len(anaya))):
+    pool.append(("BLAKE :", blake[i]))
+    pool.append(("LEI :", lei[i]))
+    pool.append(("SOREL :", sorel[i]))
+    pool.append(("ANAYA :", anaya[i]))
+
+random.shuffle(pool)
+
 while pool:
+    found = False
+
     for i, item in enumerate(pool):
         if not items or items[-1][0] != item[0]:
             items.append(item)
             pool.pop(i)
+            found = True
             break
-    else:
-        items.append(pool.pop(0))
+
+    if not found:
+        # 🔥 mélange du pool au lieu de forcer
+        random.shuffle(pool)
 
 # --- GÉNÉRATION RSS ---
 
