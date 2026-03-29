@@ -134,7 +134,27 @@ anaya = [
 "ce qui apparaît ne demande rien et pourtant te traverse"
 ]
 
-# --- MÉLANGE CONTRAINT SANS RÉPÉTITION ---
+# --- ÉTAPE 1 : créer séquence parfaite d’auteurs ---
+
+authors = (
+    ["BLAKE :"] * len(blake) +
+    ["LEI :"] * len(lei) +
+    ["SOREL :"] * len(sorel) +
+    ["ANAYA :"] * len(anaya)
+)
+
+random.shuffle(authors)
+
+# --- ÉTAPE 2 : corriger toute répétition ---
+
+for i in range(1, len(authors)):
+    if authors[i] == authors[i - 1]:
+        for j in range(i + 1, len(authors)):
+            if authors[j] != authors[i]:
+                authors[i], authors[j] = authors[j], authors[i]
+                break
+
+# --- ÉTAPE 3 : pools de textes ---
 
 pools = {
     "BLAKE :": blake.copy(),
@@ -143,38 +163,18 @@ pools = {
     "ANAYA :": anaya.copy()
 }
 
-# mélange interne
 for key in pools:
     random.shuffle(pools[key])
 
+# --- ÉTAPE 4 : assembler ---
+
 items = []
-last_author = None
 
-while any(pools.values()):
-    available = [a for a in pools if pools[a]]
+for author in authors:
+    text = pools[author].pop()
+    items.append((author, text))
 
-    # tri pour équilibrer
-    available.sort(key=lambda a: len(pools[a]), reverse=True)
-
-    # choisir un auteur différent du précédent
-    chosen = None
-    for author in available:
-        if author != last_author:
-            chosen = author
-            break
-
-    # sécurité absolue (ne devrait jamais arriver)
-    if chosen is None:
-        for author in available:
-            if author != last_author:
-                chosen = author
-                break
-
-    text = pools[chosen].pop()
-    items.append((chosen, text))
-    last_author = chosen
-
-# --- GÉNÉRATION RSS ---
+# --- RSS ---
 
 rss_items = ""
 for author, text in items:
