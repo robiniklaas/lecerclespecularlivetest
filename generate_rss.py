@@ -1,5 +1,4 @@
 import random
-from datetime import datetime
 
 # --- TEXTES PAR VOIX ---
 
@@ -135,39 +134,8 @@ anaya = [
 "ce qui apparaît ne demande rien et pourtant te traverse"
 ]
 
-# --- CRÉATION DES GROUPES ---
+# --- ALGORITHME ÉQUILIBRÉ ---
 
-items = []
-
-# créer une liste globale
-pool = []
-
-for i in range(min(len(blake), len(lei), len(sorel), len(anaya))):
-    pool.append(("BLAKE :", blake[i]))
-    pool.append(("LEI :", lei[i]))
-    pool.append(("SOREL :", sorel[i]))
-    pool.append(("ANAYA :", anaya[i]))
-
-# mélange initial
-random.shuffle(pool)
-
-# construction contrôlée
-items = []
-
-# créer une liste globale
-pool = []
-
-for i in range(min(len(blake), len(lei), len(sorel), len(anaya))):
-    pool.append(("BLAKE :", blake[i]))
-    pool.append(("LEI :", lei[i]))
-    pool.append(("SOREL :", sorel[i]))
-    pool.append(("ANAYA :", anaya[i]))
-
-random.shuffle(pool)
-
-from collections import defaultdict
-
-# créer les pools par voix
 pools = {
     "BLAKE :": blake.copy(),
     "LEI :": lei.copy(),
@@ -183,21 +151,18 @@ items = []
 last_author = None
 
 while any(pools.values()):
-    # auteurs encore disponibles
     available = [a for a in pools if pools[a]]
-
-    # éviter répétition
     choices = [a for a in available if a != last_author]
 
     if not choices:
-        choices = available  # fallback très rare
+        choices = available
 
-    # choix équilibré (celui qui a le plus de phrases restantes)
+    # équilibre : choisir celui qui a le plus de phrases restantes
     choices.sort(key=lambda a: len(pools[a]), reverse=True)
 
     author = choices[0]
-
     text = pools[author].pop()
+
     items.append((author, text))
     last_author = author
 
