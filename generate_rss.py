@@ -134,16 +134,7 @@ anaya = [
 "ce qui apparaît ne demande rien et pourtant te traverse"
 ]
 
-import random
-
-# --- TEXTES PAR VOIX ---
-
-blake = [...]
-lei = [...]
-sorel = [...]
-anaya = [...]
-
-# --- POOLS PAR VOIX ---
+# --- MÉLANGE CONTRAINT SANS RÉPÉTITION ---
 
 pools = {
     "BLAKE :": blake.copy(),
@@ -152,7 +143,6 @@ pools = {
     "ANAYA :": anaya.copy()
 }
 
-# mélange interne
 for key in pools:
     random.shuffle(pools[key])
 
@@ -160,23 +150,17 @@ items = []
 last_author = None
 
 while any(pools.values()):
-    # auteurs disponibles
     available = [a for a in pools if pools[a]]
 
-    # retirer le dernier auteur (STRICT)
     if last_author in available:
         available.remove(last_author)
 
-    # 🔥 si blocage (très rare)
-    if not available:
-        available = [a for a in pools if pools[a] and a != last_author]
-
-    # choix aléatoire équilibré
     author = random.choice(available)
 
     text = pools[author].pop()
     items.append((author, text))
     last_author = author
+
 # --- RSS ---
 
 rss_items = ""
