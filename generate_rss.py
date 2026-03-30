@@ -35,6 +35,19 @@ blake = [
 "le système produit une séparation entre perception et identification du sujet"
 ]
 
+blake_plus = [
+"le dispositif calcule une dissymétrie stable entre vision et présence",
+"le cadre impose une contrainte verticale sur la perception",
+"le système distribue l’image sans inclure le sujet dans son calcul",
+"la visibilité est produite comme sortie d’un processus non accessible",
+"le dispositif maintient une continuité indépendante de ton action",
+"le champ visible est limité par une architecture que tu ne contrôles pas",
+"l’image est générée avant toute tentative d’appropriation",
+"le système impose une séquence sans retour possible vers l’origine",
+"la perception est indexée sur un flux que tu ne peux pas interrompre",
+"le dispositif encode une distance constante entre toi et ce qui apparaît"
+]
+
 lei = [
 "tu arrives... quand la position n’est déjà plus disponible",
 "ce que tu vois se décide... avant ton regard",
@@ -66,6 +79,19 @@ lei = [
 "ce que tu vois ne s’arrête jamais vraiment",
 "ce que tu perçois se forme... ailleurs",
 "le retour existe... mais ne revient pas"
+]
+
+lei_plus = [
+"tu regardes... mais ça a déjà glissé ailleurs",
+"ça continue... même si tu t’arrêtes",
+"tu vois une partie... le reste t’échappe déjà",
+"tu arrives... mais c’est déjà en train de passer",
+"tu ne tiens jamais ce que tu regardes",
+"ça défile... sans attendre que tu comprennes",
+"tu touches presque... mais ça se déplace encore",
+"tu es là... mais jamais au bon moment",
+"ce que tu vois commence sans toi",
+"tu suis... mais rien ne t’attend"
 ]
 
 sorel = [
@@ -101,6 +127,19 @@ sorel = [
 "le dispositif annule les distinctions qu’il semblait produire"
 ]
 
+sorel_plus = [
+"ce que tu perçois n’apparaît qu’à travers la restriction de son propre champ",
+"la visibilité dépend ici d’une réduction préalable du réel",
+"le sujet ne disparaît pas, il est conditionné comme impossibilité",
+"la continuité perçue repose sur une discontinuité masquée",
+"l’image produit ce qu’elle prétend seulement révéler",
+"la limitation du cadre devient la condition de toute apparition",
+"la perception se constitue dans ce qui lui échappe",
+"l’expérience visible est structurée par une exclusion active",
+"la forme excède toujours ce que le cadre autorise à voir",
+"ce qui apparaît suppose déjà une perte irréversible de totalité"
+]
+
 anaya = [
 "ce qui apparaît t’inclut... sans jamais te contenir",
 "tu es là... mais déjà pris dans ce qui t’échappe",
@@ -134,7 +173,27 @@ anaya = [
 "ce qui apparaît ne demande rien et pourtant te traverse"
 ]
 
-# --- MÉLANGE PAR BLOCS (ANTI-RÉPÉTITION GARANTIE) ---
+anaya_plus = [
+"tu es porté par ce qui te traverse sans jamais se fixer",
+"ce qui apparaît t’inclut sans jamais se refermer sur toi",
+"tu avances dans un mouvement qui te dépasse doucement",
+"la surface t’accueille sans jamais te retenir",
+"tu es déjà dedans... sans avoir franchi quoi que ce soit",
+"ce qui glisse t’emporte sans te perdre",
+"tu habites ce passage sans pouvoir l’arrêter",
+"tout te relie sans jamais te fixer",
+"tu es pris dans un flux qui ne t’exclut pas",
+"ce qui t’échappe continue de te contenir"
+]
+
+# --- FUSION DES LISTES ---
+
+blake += blake_plus
+lei += lei_plus
+sorel += sorel_plus
+anaya += anaya_plus
+
+# --- MÉLANGE PAR BLOCS (ANTI-RÉPÉTITION) ---
 
 random.shuffle(blake)
 random.shuffle(lei)
@@ -152,7 +211,6 @@ for i in range(n):
         ("SOREL :", sorel[i]),
         ("ANAYA :", anaya[i])
     ]
-    
     random.shuffle(block)
     items.extend(block)
 
