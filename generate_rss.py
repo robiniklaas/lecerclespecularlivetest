@@ -134,27 +134,16 @@ anaya = [
 "ce qui apparaît ne demande rien et pourtant te traverse"
 ]
 
-# --- ÉTAPE 1 : créer séquence parfaite d’auteurs ---
+import random
 
-authors = (
-    ["BLAKE :"] * len(blake) +
-    ["LEI :"] * len(lei) +
-    ["SOREL :"] * len(sorel) +
-    ["ANAYA :"] * len(anaya)
-)
+# --- TEXTES PAR VOIX ---
 
-random.shuffle(authors)
+blake = [...]
+lei = [...]
+sorel = [...]
+anaya = [...]
 
-# --- ÉTAPE 2 : corriger toute répétition ---
-
-for i in range(1, len(authors)):
-    if authors[i] == authors[i - 1]:
-        for j in range(i + 1, len(authors)):
-            if authors[j] != authors[i]:
-                authors[i], authors[j] = authors[j], authors[i]
-                break
-
-# --- ÉTAPE 3 : pools de textes ---
+# --- POOLS PAR VOIX ---
 
 pools = {
     "BLAKE :": blake.copy(),
@@ -163,17 +152,31 @@ pools = {
     "ANAYA :": anaya.copy()
 }
 
+# mélange interne
 for key in pools:
     random.shuffle(pools[key])
 
-# --- ÉTAPE 4 : assembler ---
-
 items = []
+last_author = None
 
-for author in authors:
+while any(pools.values()):
+    # auteurs disponibles
+    available = [a for a in pools if pools[a]]
+
+    # retirer le dernier auteur (STRICT)
+    if last_author in available:
+        available.remove(last_author)
+
+    # 🔥 si blocage (très rare)
+    if not available:
+        available = [a for a in pools if pools[a] and a != last_author]
+
+    # choix aléatoire équilibré
+    author = random.choice(available)
+
     text = pools[author].pop()
     items.append((author, text))
-
+    last_author = author
 # --- RSS ---
 
 rss_items = ""
