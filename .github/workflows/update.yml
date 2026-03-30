@@ -12,22 +12,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: shuffle items safely
-        run: |
-          sed -n '/<item>/,/<\/item>/p' feed.xml > items.txt
-          shuf items.txt > shuffled.txt
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
 
-          echo '<?xml version="1.0" encoding="UTF-8" ?>' > new_feed.xml
-          echo '<rss version="2.0"><channel>' >> new_feed.xml
-          echo '<title>cercle specular — inter_view</title>' >> new_feed.xml
-          echo '<description>flux evolutif</description>' >> new_feed.xml
-          echo '<link>https://example.com</link>' >> new_feed.xml
-
-          cat shuffled.txt >> new_feed.xml
-
-          echo '</channel></rss>' >> new_feed.xml
-
-          mv new_feed.xml feed.xml
+      - name: run script
+        run: python generate_rss.py
 
       - name: commit
         run: |
