@@ -134,27 +134,27 @@ anaya = [
 "ce qui apparaît ne demande rien et pourtant te traverse"
 ]
 
-# --- MÉLANGE SANS RÉPÉTITION (LOGIQUE CYCLIQUE) ---
+# --- MÉLANGE PAR BLOCS (ANTI-RÉPÉTITION GARANTIE) ---
 
-voices = ["BLAKE :", "LEI :", "SOREL :", "ANAYA :"]
-random.shuffle(voices)
+random.shuffle(blake)
+random.shuffle(lei)
+random.shuffle(sorel)
+random.shuffle(anaya)
 
-pools = {
-    "BLAKE :": random.sample(blake, len(blake)),
-    "LEI :": random.sample(lei, len(lei)),
-    "SOREL :": random.sample(sorel, len(sorel)),
-    "ANAYA :": random.sample(anaya, len(anaya))
-}
+n = min(len(blake), len(lei), len(sorel), len(anaya))
 
 items = []
 
-while any(pools.values()):
-    for voice in voices:
-        if pools[voice]:
-            text = pools[voice].pop()
-            items.append((voice, text))
-
-    random.shuffle(voices)
+for i in range(n):
+    block = [
+        ("BLAKE :", blake[i]),
+        ("LEI :", lei[i]),
+        ("SOREL :", sorel[i]),
+        ("ANAYA :", anaya[i])
+    ]
+    
+    random.shuffle(block)
+    items.extend(block)
 
 # --- RSS ---
 
