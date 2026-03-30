@@ -134,32 +134,27 @@ anaya = [
 "ce qui apparaît ne demande rien et pourtant te traverse"
 ]
 
-# --- MÉLANGE CONTRAINT SANS RÉPÉTITION ---
+# --- MÉLANGE SANS RÉPÉTITION (LOGIQUE CYCLIQUE) ---
+
+voices = ["BLAKE :", "LEI :", "SOREL :", "ANAYA :"]
+random.shuffle(voices)
 
 pools = {
-    "BLAKE :": blake.copy(),
-    "LEI :": lei.copy(),
-    "SOREL :": sorel.copy(),
-    "ANAYA :": anaya.copy()
+    "BLAKE :": random.sample(blake, len(blake)),
+    "LEI :": random.sample(lei, len(lei)),
+    "SOREL :": random.sample(sorel, len(sorel)),
+    "ANAYA :": random.sample(anaya, len(anaya))
 }
 
-for key in pools:
-    random.shuffle(pools[key])
-
 items = []
-last_author = None
 
 while any(pools.values()):
-    available = [a for a in pools if pools[a]]
+    for voice in voices:
+        if pools[voice]:
+            text = pools[voice].pop()
+            items.append((voice, text))
 
-    if last_author in available:
-        available.remove(last_author)
-
-    author = random.choice(available)
-
-    text = pools[author].pop()
-    items.append((author, text))
-    last_author = author
+    random.shuffle(voices)
 
 # --- RSS ---
 
