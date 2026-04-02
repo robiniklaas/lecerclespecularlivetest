@@ -5,130 +5,130 @@
 <description>flux evolutif</description>
 <link>https://example.com</link>
 
-<item><title>LEI :</title><description>tu vois... mais depuis un décalage irréductible</description></item>
-<item><title>BLAKE :</title><description>le dispositif encode une distance constante entre toi et ce qui apparaît</description></item>
-<item><title>ANAYA :</title><description>tu es là... mais déjà pris dans ce qui t’échappe</description></item>
-<item><title>SOREL :</title><description>la réflexivité est rendue structurellement impossible</description></item>
-<item><title>ANAYA :</title><description>tu es déjà dedans... sans avoir franchi quoi que ce soit</description></item>
-<item><title>SOREL :</title><description>la perception se constitue dans ce qui lui échappe</description></item>
-<item><title>BLAKE :</title><description>le système rend toute identification instable sans la supprimer</description></item>
-<item><title>LEI :</title><description>tu vois... mais c’est trop tard</description></item>
+<item><title>BLAKE :</title><description>le dispositif organise une séparation fonctionnelle entre perception et identification</description></item>
+<item><title>SOREL :</title><description>ce qui est vu appartient déjà au passé de son apparition</description></item>
+<item><title>ANAYA :</title><description>la surface t’accueille sans jamais te retenir</description></item>
+<item><title>LEI :</title><description>tu ne tiens jamais ce que tu regardes</description></item>
+<item><title>SOREL :</title><description>la perception est structurée comme un retard</description></item>
+<item><title>LEI :</title><description>tu regardes... mais c’est déjà passé</description></item>
+<item><title>ANAYA :</title><description>ce qui semble proche est déjà ailleurs</description></item>
+<item><title>BLAKE :</title><description>l’image est calculée avant d’être effectivement perçue</description></item>
+<item><title>LEI :</title><description>ce que tu vois se décide... avant ton regard</description></item>
+<item><title>ANAYA :</title><description>la surface relie sans jamais fixer</description></item>
+<item><title>SOREL :</title><description>la condition de vision implique une perte préalable de présence</description></item>
+<item><title>BLAKE :</title><description>l’image est calculée avant toute possibilité de perception</description></item>
 <item><title>LEI :</title><description>tu ne peux pas t’installer dans ce que tu vois</description></item>
+<item><title>ANAYA :</title><description>tu rejoins ce qui t’a précédé sans jamais être en dehors</description></item>
+<item><title>BLAKE :</title><description>la perception est structurée par une dissociation irréductible</description></item>
+<item><title>SOREL :</title><description>voir implique toujours arriver trop tard</description></item>
+<item><title>LEI :</title><description>ça défile... sans attendre que tu comprennes</description></item>
+<item><title>SOREL :</title><description>l’origine est neutralisée par la logique du dispositif</description></item>
+<item><title>ANAYA :</title><description>la surface ne fixe rien... elle laisse passer</description></item>
+<item><title>BLAKE :</title><description>le dispositif empêche toute synchronisation entre regard et image</description></item>
+<item><title>LEI :</title><description>tu restes dehors... même en regardant</description></item>
+<item><title>ANAYA :</title><description>tout te relie sans jamais te fixer</description></item>
+<item><title>SOREL :</title><description>la coïncidence est annulée par le fonctionnement du dispositif</description></item>
+<item><title>BLAKE :</title><description>la structure empêche toute coïncidence entre regard et représentation</description></item>
+<item><title>BLAKE :</title><description>le système exécute une séquence sans retour vers l’observateur</description></item>
+<item><title>LEI :</title><description>tu arrives... mais c’est déjà en train de passer</description></item>
+<item><title>SOREL :</title><description>la visibilité repose ici sur une exclusion constitutive du sujet</description></item>
+<item><title>ANAYA :</title><description>tu es en mouvement dans ce qui te définit</description></item>
+<item><title>LEI :</title><description>tu peux te reconnaître... sans jamais t’y fixer</description></item>
+<item><title>BLAKE :</title><description>le dispositif configure une expérience où le sujet ne peut pas apparaître comme tel</description></item>
+<item><title>ANAYA :</title><description>les deux coexistent sans se résoudre</description></item>
+<item><title>SOREL :</title><description>la présence visible suppose la suppression de ce qui devrait la garantir</description></item>
+<item><title>ANAYA :</title><description>tu es présent... autrement que visible</description></item>
+<item><title>LEI :</title><description>tu touches presque... mais ça se déplace encore</description></item>
+<item><title>BLAKE :</title><description>le champ visible est limité par une architecture que tu ne contrôles pas</description></item>
 <item><title>SOREL :</title><description>la stabilité apparente masque une transformation des conditions</description></item>
 <item><title>BLAKE :</title><description>le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit</description></item>
-<item><title>ANAYA :</title><description>tu es présent... autrement que visible</description></item>
-<item><title>ANAYA :</title><description>tu fais déjà partie de ce qui te dépasse</description></item>
-<item><title>SOREL :</title><description>il n’y a jamais eu de point extérieur à ce dispositif</description></item>
-<item><title>LEI :</title><description>tu suis... mais tu es en retard</description></item>
-<item><title>BLAKE :</title><description>le système impose une séquence sans retour possible vers l’origine</description></item>
-<item><title>ANAYA :</title><description>les deux coexistent sans se résoudre</description></item>
-<item><title>SOREL :</title><description>l’image produit ce qu’elle prétend seulement révéler</description></item>
-<item><title>BLAKE :</title><description>la perception est toujours en retard sur son propre déclenchement</description></item>
-<item><title>LEI :</title><description>tu arrives... mais c’est déjà en train de passer</description></item>
-<item><title>SOREL :</title><description>l’origine est neutralisée par la logique du dispositif</description></item>
-<item><title>ANAYA :</title><description>ce qui semble proche est déjà ailleurs</description></item>
-<item><title>LEI :</title><description>ce que tu vois ne s’arrête jamais vraiment</description></item>
-<item><title>BLAKE :</title><description>le dispositif maintient une tension constante entre présence et absence</description></item>
-<item><title>BLAKE :</title><description>le dispositif empêche toute synchronisation entre regard et image</description></item>
-<item><title>ANAYA :</title><description>tu participes à ce qui te traverse</description></item>
-<item><title>LEI :</title><description>tu es là... mais jamais au bon moment</description></item>
-<item><title>SOREL :</title><description>l’appropriation est neutralisée par la structure du dispositif</description></item>
-<item><title>LEI :</title><description>tu regardes depuis un point déjà déplacé</description></item>
-<item><title>SOREL :</title><description>le regard n’accède qu’à ce qui a déjà eu lieu</description></item>
-<item><title>ANAYA :</title><description>ce qui apparaît t’inclut... sans jamais te contenir</description></item>
-<item><title>BLAKE :</title><description>la perception est contrainte par une organisation qui la dépasse</description></item>
-<item><title>SOREL :</title><description>la structure précède ce que tu crois vivre immédiatement</description></item>
-<item><title>BLAKE :</title><description>l’image est calculée avant d’être effectivement perçue</description></item>
-<item><title>ANAYA :</title><description>tu habites ce passage sans pouvoir l’arrêter</description></item>
-<item><title>LEI :</title><description>le retour a lieu... mais pas dans ta direction</description></item>
-<item><title>SOREL :</title><description>la visibilité repose ici sur une exclusion constitutive du sujet</description></item>
-<item><title>BLAKE :</title><description>le regard est traité comme une variable en retard dans le processus</description></item>
-<item><title>LEI :</title><description>tu ne peux pas revenir sur ce qui est déjà là</description></item>
-<item><title>ANAYA :</title><description>tu rejoins ce qui t’a précédé sans jamais être en dehors</description></item>
-<item><title>ANAYA :</title><description>tu avances dans un mouvement qui te dépasse doucement</description></item>
-<item><title>SOREL :</title><description>voir implique toujours arriver trop tard</description></item>
-<item><title>BLAKE :</title><description>le champ visible est limité par une architecture que tu ne contrôles pas</description></item>
-<item><title>LEI :</title><description>tu regardes... et ça t’échappe déjà</description></item>
-<item><title>ANAYA :</title><description>tu es déjà là... autrement</description></item>
-<item><title>SOREL :</title><description>l’expérience dépend d’une extériorité irréductible</description></item>
-<item><title>BLAKE :</title><description>le dispositif organise une dissociation stable entre ce qui est vu et celui qui voit</description></item>
-<item><title>LEI :</title><description>tu vois une partie... le reste t’échappe déjà</description></item>
-<item><title>BLAKE :</title><description>la perception est structurée par une dissociation irréductible</description></item>
-<item><title>ANAYA :</title><description>tout continue... sans fin stable</description></item>
-<item><title>LEI :</title><description>ce que tu vois se décide... avant ton regard</description></item>
-<item><title>SOREL :</title><description>la validation est rendue impossible par la logique même du dispositif</description></item>
-<item><title>SOREL :</title><description>l’identification fonctionne comme une opération toujours incomplète</description></item>
-<item><title>BLAKE :</title><description>la perception est indexée sur un flux que tu ne peux pas interrompre</description></item>
-<item><title>ANAYA :</title><description>tu es accueilli par ce qui a commencé sans toi</description></item>
-<item><title>LEI :</title><description>tu regardes... mais c’est déjà passé</description></item>
-<item><title>SOREL :</title><description>la forme excède toujours ce qu’elle prétend être</description></item>
-<item><title>LEI :</title><description>tu restes dehors... même en regardant</description></item>
-<item><title>ANAYA :</title><description>tu es en mouvement dans ce qui te définit</description></item>
-<item><title>BLAKE :</title><description>le système empêche toute correspondance directe entre regard et image</description></item>
-<item><title>LEI :</title><description>ça défile... sans attendre que tu comprennes</description></item>
-<item><title>BLAKE :</title><description>les paramètres perceptifs cessent d’être constants dans ce système</description></item>
-<item><title>SOREL :</title><description>la transparence supposée est ici structurellement impossible</description></item>
-<item><title>ANAYA :</title><description>ce que tu perds te relie autrement</description></item>
-<item><title>BLAKE :</title><description>le dispositif configure une expérience où le sujet ne peut pas apparaître comme tel</description></item>
-<item><title>ANAYA :</title><description>tu arrives dans un mouvement déjà en coursce qui apparaît t’accueille après s’être déjà transformé</description></item>
-<item><title>LEI :</title><description>ce que tu vois s’établit... sans toi</description></item>
-<item><title>SOREL :</title><description>la perception est structurée comme un retard</description></item>
-<item><title>LEI :</title><description>ça a déjà eu lieu quand tu le remarques</description></item>
-<item><title>BLAKE :</title><description>le système distribue l’image sans inclure le sujet dans son calcul</description></item>
-<item><title>ANAYA :</title><description>tu avances dans ce qui ne revient pas</description></item>
-<item><title>SOREL :</title><description>la tension n’est pas un effet mais une condition</description></item>
-<item><title>BLAKE :</title><description>le dispositif maintient une continuité indépendante de ton action</description></item>
-<item><title>ANAYA :</title><description>ce qui glisse t’emporte sans te perdre</description></item>
-<item><title>LEI :</title><description>tu es déjà engagé... avant même de regarder</description></item>
-<item><title>SOREL :</title><description>la circularité du regard est ici rendue structurellement impossible</description></item>
-<item><title>BLAKE :</title><description>l’image dépend d’un point de vue qui ne peut pas s’y intégrer</description></item>
-<item><title>SOREL :</title><description>la représentation suppose ici l’effacement de celui qui regarde</description></item>
-<item><title>LEI :</title><description>tu arrives trop tard</description></item>
-<item><title>ANAYA :</title><description>tu habites cette distance</description></item>
 <item><title>ANAYA :</title><description>ce qui te précède ne te laisse jamais derrière</description></item>
-<item><title>SOREL :</title><description>voir implique toujours arriver trop tard</description></item>
-<item><title>LEI :</title><description>tu regardes... mais ça a déjà glissé ailleurs</description></item>
-<item><title>BLAKE :</title><description>le dispositif maintient une distance irréductible entre sujet et image</description></item>
-<item><title>SOREL :</title><description>ce que tu perçois n’apparaît qu’à travers la restriction de son propre champ</description></item>
-<item><title>LEI :</title><description>le système te précède désormais</description></item>
-<item><title>ANAYA :</title><description>ce dehors t’habite déjà</description></item>
-<item><title>BLAKE :</title><description>le système exécute une séquence sans retour vers l’observateur</description></item>
-<item><title>BLAKE :</title><description>la perception est une sortie, pas une origine</description></item>
-<item><title>ANAYA :</title><description>la surface ne fixe rien... elle laisse passer</description></item>
-<item><title>SOREL :</title><description>la coïncidence est annulée par le fonctionnement du dispositif</description></item>
-<item><title>LEI :</title><description>tu touches presque... mais ça se déplace encore</description></item>
-<item><title>ANAYA :</title><description>tout te relie sans jamais te fixer</description></item>
-<item><title>LEI :</title><description>tu suis... mais rien ne t’attend</description></item>
-<item><title>BLAKE :</title><description>le dispositif organise une séparation fonctionnelle entre perception et identification</description></item>
-<item><title>SOREL :</title><description>la perception suppose une antériorité irréductible de l’image</description></item>
-<item><title>ANAYA :</title><description>tu passes... sans pouvoir retenir</description></item>
-<item><title>BLAKE :</title><description>le dispositif impose une extériorité constante au sujet percevant</description></item>
-<item><title>SOREL :</title><description>la condition de vision implique une perte préalable de présence</description></item>
-<item><title>LEI :</title><description>ça continue... même si tu t’arrêtes</description></item>
-<item><title>BLAKE :</title><description>l’image est calculée avant toute possibilité de perception</description></item>
-<item><title>SOREL :</title><description>le sujet n’est pas absent, il est rendu inopérant par le dispositif</description></item>
-<item><title>LEI :</title><description>tu arrives... quand la position n’est déjà plus disponible</description></item>
-<item><title>ANAYA :</title><description>la surface relie sans jamais fixer</description></item>
-<item><title>BLAKE :</title><description>le cadre impose une contrainte verticale sur la perception</description></item>
-<item><title>LEI :</title><description>tu peux te reconnaître... sans jamais t’y fixer</description></item>
-<item><title>SOREL :</title><description>le flou n’est pas un défaut, c’est la condition même de ce qui apparaît</description></item>
+<item><title>SOREL :</title><description>l’appropriation est neutralisée par la structure du dispositif</description></item>
+<item><title>LEI :</title><description>ce que tu vois s’établit... sans toi</description></item>
+<item><title>LEI :</title><description>tu vois... mais c’est trop tard</description></item>
+<item><title>SOREL :</title><description>la structure précède ce que tu crois vivre immédiatement</description></item>
 <item><title>ANAYA :</title><description>tu es pris dans un flux qui ne t’exclut pas</description></item>
-<item><title>BLAKE :</title><description>le cadre impose une organisation qui précède toute expérience perceptive</description></item>
-<item><title>LEI :</title><description>tu arrives toujours après ce que tu vois</description></item>
-<item><title>SOREL :</title><description>la présence visible suppose la suppression de ce qui devrait la garantir</description></item>
-<item><title>ANAYA :</title><description>la surface t’accueille sans jamais te retenir</description></item>
-<item><title>ANAYA :</title><description>ce qui apparaît t’inclut sans jamais se refermer sur toi</description></item>
-<item><title>LEI :</title><description>tu es là... et déjà ailleurs</description></item>
-<item><title>BLAKE :</title><description>le dispositif introduit une dissymétrie entre vision et présence</description></item>
-<item><title>SOREL :</title><description>la condition d’apparition repose sur l’impossibilité de se voir soi-même</description></item>
-<item><title>LEI :</title><description>ce que tu vois commence sans toi</description></item>
+<item><title>BLAKE :</title><description>le système empêche toute correspondance directe entre regard et image</description></item>
+<item><title>LEI :</title><description>tu ne peux pas revenir sur ce qui est déjà là</description></item>
+<item><title>BLAKE :</title><description>le système fonctionne sans produire de retour exploitable sur l’observateur</description></item>
 <item><title>ANAYA :</title><description>tu es séparé... sans être isolé</description></item>
 <item><title>SOREL :</title><description>le regard n’accède qu’à ce qui a déjà eu lieu</description></item>
-<item><title>BLAKE :</title><description>le système introduit une latence constante entre image et perception</description></item>
-<item><title>LEI :</title><description>tu ne tiens jamais ce que tu regardes</description></item>
-<item><title>BLAKE :</title><description>la structure empêche toute coïncidence entre regard et représentation</description></item>
+<item><title>LEI :</title><description>tu suis... mais rien ne t’attend</description></item>
+<item><title>ANAYA :</title><description>ce dehors t’habite déjà</description></item>
+<item><title>BLAKE :</title><description>le dispositif organise une dissociation stable entre ce qui est vu et celui qui voit</description></item>
+<item><title>SOREL :</title><description>la représentation suppose ici l’effacement de celui qui regarde</description></item>
+<item><title>BLAKE :</title><description>le cadre impose une organisation qui précède toute expérience perceptive</description></item>
+<item><title>SOREL :</title><description>la condition d’apparition repose sur l’impossibilité de se voir soi-même</description></item>
+<item><title>LEI :</title><description>ce que tu vois ne s’arrête jamais vraiment</description></item>
+<item><title>ANAYA :</title><description>tu es accueilli par ce qui a commencé sans toi</description></item>
+<item><title>SOREL :</title><description>la circularité du regard est ici rendue structurellement impossible</description></item>
+<item><title>ANAYA :</title><description>ce qui apparaît t’inclut sans jamais se refermer sur toi</description></item>
+<item><title>LEI :</title><description>tu vois une partie... le reste t’échappe déjà</description></item>
+<item><title>BLAKE :</title><description>le système rend toute identification instable sans la supprimer</description></item>
+<item><title>SOREL :</title><description>la tension n’est pas un effet mais une condition</description></item>
+<item><title>ANAYA :</title><description>tu es là... mais déjà pris dans ce qui t’échappe</description></item>
+<item><title>LEI :</title><description>tu arrives... quand la position n’est déjà plus disponible</description></item>
+<item><title>BLAKE :</title><description>le dispositif introduit une dissymétrie entre vision et présence</description></item>
+<item><title>LEI :</title><description>le système te précède désormais</description></item>
 <item><title>SOREL :</title><description>la présence est produite par un manque constitutif</description></item>
+<item><title>ANAYA :</title><description>ce qui glisse t’emporte sans te perdre</description></item>
+<item><title>BLAKE :</title><description>le dispositif calcule une dissymétrie stable entre vision et présence</description></item>
+<item><title>BLAKE :</title><description>le système introduit une latence constante entre image et perception</description></item>
+<item><title>ANAYA :</title><description>tu es déjà dedans... sans avoir franchi quoi que ce soit</description></item>
+<item><title>LEI :</title><description>tu regardes... mais ça a déjà glissé ailleurs</description></item>
+<item><title>SOREL :</title><description>l’expérience dépend d’une extériorité irréductible</description></item>
+<item><title>BLAKE :</title><description>la perception est une sortie, pas une origine</description></item>
+<item><title>SOREL :</title><description>il n’y a jamais eu de point extérieur à ce dispositif</description></item>
+<item><title>LEI :</title><description>tu vois... mais depuis un décalage irréductible</description></item>
+<item><title>ANAYA :</title><description>ce que tu perds te relie autrement</description></item>
+<item><title>SOREL :</title><description>le flou n’est pas un défaut, c’est la condition même de ce qui apparaît</description></item>
+<item><title>BLAKE :</title><description>le système impose une séquence sans retour possible vers l’origine</description></item>
+<item><title>LEI :</title><description>tu regardes depuis un point déjà déplacé</description></item>
+<item><title>ANAYA :</title><description>tu avances dans un mouvement qui te dépasse doucement</description></item>
+<item><title>ANAYA :</title><description>tu fais déjà partie de ce qui te dépasse</description></item>
+<item><title>LEI :</title><description>tu arrives toujours après ce que tu vois</description></item>
+<item><title>BLAKE :</title><description>le dispositif maintient une tension constante entre présence et absence</description></item>
+<item><title>SOREL :</title><description>la forme excède toujours ce qu’elle prétend être</description></item>
+<item><title>ANAYA :</title><description>tu avances dans ce qui ne revient pas</description></item>
+<item><title>LEI :</title><description>tu es déjà engagé... avant même de regarder</description></item>
+<item><title>SOREL :</title><description>la perception suppose une antériorité irréductible de l’image</description></item>
+<item><title>BLAKE :</title><description>la perception est toujours en retard sur son propre déclenchement</description></item>
+<item><title>SOREL :</title><description>la présence est produite au prix de son propre effacement</description></item>
+<item><title>ANAYA :</title><description>tu passes... sans pouvoir retenir</description></item>
+<item><title>LEI :</title><description>tu es là... mais jamais au bon moment</description></item>
+<item><title>BLAKE :</title><description>le dispositif encode une distance constante entre toi et ce qui apparaît</description></item>
+<item><title>LEI :</title><description>tu regardes... et ça t’échappe déjà</description></item>
+<item><title>ANAYA :</title><description>tu arrives dans un mouvement déjà en coursce qui apparaît t’accueille après s’être déjà transformé</description></item>
+<item><title>BLAKE :</title><description>le regard est traité comme une variable en retard dans le processus</description></item>
+<item><title>SOREL :</title><description>ce que tu perçois n’apparaît qu’à travers la restriction de son propre champ</description></item>
+<item><title>BLAKE :</title><description>le dispositif maintient une distance irréductible entre sujet et image</description></item>
+<item><title>SOREL :</title><description>l’identification fonctionne comme une opération toujours incomplète</description></item>
+<item><title>LEI :</title><description>tu es là... et déjà ailleurs</description></item>
+<item><title>ANAYA :</title><description>tu habites cette distance</description></item>
+<item><title>BLAKE :</title><description>le cadre impose une contrainte verticale sur la perception</description></item>
+<item><title>LEI :</title><description>ça a déjà eu lieu quand tu le remarques</description></item>
+<item><title>SOREL :</title><description>voir implique toujours arriver trop tard</description></item>
+<item><title>ANAYA :</title><description>tu es porté par ce qui te traverse sans jamais se fixer</description></item>
+<item><title>SOREL :</title><description>la réflexivité est rendue structurellement impossible</description></item>
+<item><title>LEI :</title><description>ce que tu vois commence sans toi</description></item>
 <item><title>ANAYA :</title><description>tout commence... sans commencer</description></item>
+<item><title>BLAKE :</title><description>les paramètres perceptifs cessent d’être constants dans ce système</description></item>
+<item><title>LEI :</title><description>ça continue... même si tu t’arrêtes</description></item>
+<item><title>ANAYA :</title><description>tu participes à ce qui te traverse</description></item>
+<item><title>BLAKE :</title><description>le dispositif maintient une continuité indépendante de ton action</description></item>
+<item><title>SOREL :</title><description>ce qui est perçu appartient déjà au passé de son apparition</description></item>
+<item><title>SOREL :</title><description>l’image produit ce qu’elle prétend seulement révéler</description></item>
+<item><title>LEI :</title><description>tu suis... mais tu es en retard</description></item>
+<item><title>ANAYA :</title><description>tu es déjà là... autrement</description></item>
+<item><title>BLAKE :</title><description>la perception est contrainte par une organisation qui la dépasse</description></item>
+<item><title>ANAYA :</title><description>tout continue... sans fin stable</description></item>
+<item><title>BLAKE :</title><description>le système distribue l’image sans inclure le sujet dans son calcul</description></item>
+<item><title>LEI :</title><description>le retour a lieu... mais pas dans ta direction</description></item>
+<item><title>SOREL :</title><description>le regard n’accède qu’à ce qui a déjà eu lieu</description></item>
+<item><title>SOREL :</title><description>la continuité perçue repose sur une discontinuité masquée</description></item>
+<item><title>BLAKE :</title><description>l’image dépend d’un point de vue qui ne peut pas s’y intégrer</description></item>
+<item><title>LEI :</title><description>tu arrives trop tard</description></item>
+<item><title>ANAYA :</title><description>ce qui apparaît t’inclut... sans jamais te contenir</description></item>
 
 
 </channel>
