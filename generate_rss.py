@@ -1,4 +1,4 @@
-mport random
+import random
 
 # --- TEXTES PAR VOIX (ÉQUILIBRÉS) ---
 
