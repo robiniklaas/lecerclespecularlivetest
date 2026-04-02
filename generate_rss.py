@@ -70,7 +70,7 @@ lei = [
 "tu vois... mais c’est trop tard",
 "tu suis... mais tu es en retard",
 "tu regardes... et ça t’échappe déjà",
-"tu arrives toujours après ce que tu vois"
+"tu arrives...trop tard"
 ]
 
 sorel = [
