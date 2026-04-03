@@ -36,13 +36,15 @@ blake = [
 "l’image est calculée avant toute possibilité de perception",
 "la perception est une sortie, pas une origine",
 "le dispositif empêche toute synchronisation entre regard et image",
-"le système exécute une séquence sans retour vers l’observateur"
+"le système exécute une séquence sans retour vers l’observateur",
+"le regard arrive toujours après l’exécution du système",
+"le dispositif organise une expérience sans point d'ancrage"
 ]
 
 lei = [
-"tu arrives... quand la position n’est déjà plus disponible",
-"ce que tu vois se décide... avant ton regard",
-"le retour a lieu... mais pas dans ta direction",
+"tu arrives quand la position n’est déjà plus disponible",
+"ce que tu vois se décide avant ton regard",
+"le retour a lieu mais pas dans ta direction",
 "tu regardes depuis un point déjà déplacé",
 "le système te précède désormais",
 "tu vois... mais depuis un décalage irréductible",
@@ -60,7 +62,7 @@ lei = [
 "tu arrives... mais c’est déjà en train de passer",
 "tu ne tiens jamais ce que tu regardes",
 "ça défile... sans attendre que tu comprennes",
-"tu touches presque... mais ça se déplace encore",
+"tu touches presque... mais non",
 "tu es là... mais jamais au bon moment",
 "ce que tu vois commence sans toi",
 "tu suis... mais rien ne t’attend",
@@ -70,7 +72,11 @@ lei = [
 "tu vois... mais c’est trop tard",
 "tu suis... mais tu es en retard",
 "tu regardes... et ça t’échappe déjà",
-"tu arrives trop tard"
+"tu arrives trop tard",
+"tu vois quelque chose… qui n’est plus",
+"ça bouge avant toi",
+"tu arrives et c’est fini",
+"ça défile… sans t’attendre"
 ]
 
 sorel = [
@@ -95,7 +101,7 @@ sorel = [
 "la coïncidence est annulée par le fonctionnement du dispositif",
 "la tension n’est pas un effet mais une condition",
 "l’appropriation est neutralisée par la structure du dispositif",
-"la forme excède toujours ce qu’elle prétend être",
+"la forme excède toujours ce qu’elle donne à voir",
 "la condition de vision implique une perte préalable de présence",
 "ce que tu perçois n’apparaît qu’à travers la restriction de son propre champ",
 "la continuité perçue repose sur une discontinuité masquée",
@@ -104,11 +110,12 @@ sorel = [
 "le regard n’accède qu’à ce qui a déjà eu lieu",
 "voir implique toujours arriver trop tard",
 "ce qui est vu appartient déjà au passé de son apparition",
-"le regard n’accède qu’à ce qui a déjà eu lieu",
-"voir implique toujours arriver trop tard",
 "la perception suppose une antériorité irréductible de l’image",
 "la perception est structurée comme un retard",
-"ce qui est perçu appartient déjà au passé de son apparition"
+"ce qui est perçu appartient déjà au passé de son apparition",
+"la présence est produite par son propre retrait",
+"l’image ne peut inclure celui qui la perçoit",
+"la perception dépend d’une perte préalable de présence"
 ]
 
 anaya = [
@@ -144,7 +151,9 @@ anaya = [
 "tu arrives dans un mouvement déjà en cours"
 "ce qui apparaît t’accueille après s’être déjà transformé",
 "tu es accueilli par ce qui a commencé sans toi",
-"ce qui te précède ne te laisse jamais derrière"
+"ce qui te précède ne te laisse jamais derrière",
+"tu avances dans un flux sans bord",
+"tu es là dans ce qui ne t’attend pas"
 ]
 
 # --- MÉLANGE PAR BLOCS (ANTI-RÉPÉTITION GARANTIE) ---
