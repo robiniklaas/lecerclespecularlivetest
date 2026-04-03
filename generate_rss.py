@@ -112,7 +112,6 @@ sorel = [
 "ce qui est vu appartient déjà au passé de son apparition",
 "la perception suppose une antériorité irréductible de l’image",
 "la perception est structurée comme un retard",
-"ce qui est perçu appartient déjà au passé de son apparition",
 "la présence est produite par son propre retrait",
 "l’image ne peut inclure celui qui la perçoit",
 "la perception dépend d’une perte préalable de présence"
@@ -148,7 +147,7 @@ anaya = [
 "tout te relie sans jamais te fixer",
 "tu es pris dans un flux qui ne t’exclut pas",
 "tu rejoins ce qui t’a précédé sans jamais être en dehors",
-"tu arrives dans un mouvement déjà en cours"
+"tu arrives dans un mouvement déjà en cours",
 "ce qui apparaît t’accueille après s’être déjà transformé",
 "tu es accueilli par ce qui a commencé sans toi",
 "ce qui te précède ne te laisse jamais derrière",
@@ -156,7 +155,7 @@ anaya = [
 "tu es là dans ce qui ne t’attend pas"
 ]
 
-# --- MÉLANGE PAR BLOCS (ANTI-RÉPÉTITION GARANTIE) ---
+# --- MÉLANGE PAR BLOCS ---
 
 random.shuffle(blake)
 random.shuffle(lei)
@@ -169,10 +168,10 @@ items = []
 
 for i in range(n):
     block = [
-        ("BLAKE :", blake[i]),
-        ("LEI :", lei[i]),
-        ("SOREL :", sorel[i]),
-        ("ANAYA :", anaya[i])
+        ("> BLAKE :", blake[i]),
+        ("> LEI :", lei[i]),
+        ("> SOREL :", sorel[i]),
+        ("> ANAYA :", anaya[i])
     ]
     random.shuffle(block)
     items.extend(block)
