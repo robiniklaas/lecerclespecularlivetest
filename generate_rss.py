@@ -155,7 +155,7 @@ anaya = [
 "tu es là dans ce qui ne t’attend pas"
 ]
 
-# --- MÉLANGE PAR BLOCS (ANTI-RÉPÉTITION) ---
+# --- MÉLANGE PAR BLOCS ---
 
 random.shuffle(blake)
 random.shuffle(lei)
@@ -168,10 +168,10 @@ items = []
 
 for i in range(n):
     block = [
-        (">_ BLAKE :", blake[i]),
-        (">_ LEI :", lei[i]),
-        (">_ SOREL :", sorel[i]),
-        (">_ ANAYA :", anaya[i])
+        (">> BLAKE :", blake[i]),
+        (">> LEI :", lei[i]),
+        (">> SOREL :", sorel[i]),
+        (">> ANAYA :", anaya[i])
     ]
     random.shuffle(block)
     items.extend(block)
