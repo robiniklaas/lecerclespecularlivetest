@@ -41,7 +41,9 @@ blake = [
 "le dispositif organise une expérience sans point d'ancrage",
 "la perception n’intervient plus dans la production du visible",
 "le regard n’est plus requis dans l’exécution du processus",
-"le système maintient une image dont la perception n’est plus une condition"
+"le système maintient une image dont la perception n’est plus une condition",
+"l’image se produit comme un processus auto-suffisant",
+"l’image persiste sans dépendre d’une instance qui la regarde"
 ]
 
 lei = [
@@ -81,7 +83,8 @@ lei = [
 "tu arrives et c’est fini",
 "ça défile… sans t’attendre",
 "tu es dedans… sans être celui qui regarde",
-"tu regardes… mais ça ne dépend plus de toi"
+"tu regardes… mais ça ne dépend plus de toi",
+"ça apparaît… comme si ça se voyait tout seul"
 ]
 
 sorel = [
@@ -122,7 +125,9 @@ sorel = [
 "la perception dépend d’une perte préalable de présence",
 "la perception ne suppose plus aucune instance identifiable de regard",
 "le regard apparaît comme un effet secondaire sans fonction réelle",
-"le regard n’est qu’une fiction produite par le dispositif qu’il ne peut saisir"
+"le regard n’est qu’une fiction produite par le dispositif qu’il ne peut saisir",
+"la visibilité fonctionne comme un processus sans sujet",
+"l’apparition n’implique aucune adresse à un regard"
 ]
 
 anaya = [
@@ -163,7 +168,9 @@ anaya = [
 "tu es là dans ce qui ne t’attend pas",
 "tu es dans ce qui apparaît… sans distance",
 "le mouvement continue sans point de vue",
-"tu fais partie de ce qui se voit sans regarder"
+"tu fais partie de ce qui se voit sans regarder",
+"le visible circule sans passer par un regard",
+"tu es dans ce qui se montre sans destinataire"
 ]
 
 # --- MÉLANGE PAR BLOCS (ANTI-RÉPÉTITION) ---
