@@ -46,7 +46,6 @@ blake = [
 "l’image persiste sans dépendre d’une instance qui la regarde",
 "le visible ne se maintient pas comme ensemble cohérent",
 "la continuité du monde est remplacée par une succession d’états indépendants"
-    
 ]
 
 lei = [
