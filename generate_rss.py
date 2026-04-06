@@ -43,7 +43,10 @@ blake = [
 "le regard n’est plus requis dans l’exécution du processus",
 "le système maintient une image dont la perception n’est plus une condition",
 "l’image se produit comme un processus auto-suffisant",
-"l’image persiste sans dépendre d’une instance qui la regarde"
+"l’image persiste sans dépendre d’une instance qui la regarde",
+"le visible ne se maintient pas comme ensemble cohérent",
+"la continuité du monde est remplacée par une succession d’états indépendants"
+    
 ]
 
 lei = [
@@ -84,7 +87,9 @@ lei = [
 "ça défile… sans t’attendre",
 "tu es dedans… sans être celui qui regarde",
 "tu regardes… mais ça ne dépend plus de toi",
-"ça apparaît… comme si ça se voyait tout seul"
+"ça apparaît… comme si ça se voyait tout seul",
+"ça apparaît… puis autre chose… sans lien",
+"tu passes… mais rien ne reste assez longtemps pour être un lieu"
 ]
 
 sorel = [
@@ -127,7 +132,9 @@ sorel = [
 "le regard apparaît comme un effet secondaire sans fonction réelle",
 "le regard n’est qu’une fiction produite par le dispositif qu’il ne peut saisir",
 "la visibilité fonctionne comme un processus sans sujet",
-"l’apparition n’implique aucune adresse à un regard"
+"l’apparition n’implique aucune adresse à un regard",
+"il n’y a pas de monde, seulement des apparitions sans unité",
+"le réel ne se donne plus comme totalité mais comme dispersion"
 ]
 
 anaya = [
@@ -170,7 +177,8 @@ anaya = [
 "le mouvement continue sans point de vue",
 "tu fais partie de ce qui se voit sans regarder",
 "le visible circule sans passer par un regard",
-"tu es dans ce qui se montre sans destinataire"
+"tu es dans ce qui se montre sans destinataire",
+"tu es porté par ce qui ne se rassemble pas"
 ]
 
 # --- MÉLANGE PAR BLOCS (ANTI-RÉPÉTITION) ---
