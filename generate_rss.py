@@ -38,7 +38,10 @@ blake = [
 "le dispositif empêche toute synchronisation entre regard et image",
 "le système exécute une séquence sans retour vers l’observateur",
 "le regard arrive toujours après l’exécution du système",
-"le dispositif organise une expérience sans point d'ancrage"
+"le dispositif organise une expérience sans point d'ancrage",
+"la perception n’intervient plus dans la production du visible",
+"le regard n’est plus requis dans l’exécution du processus",
+"le système maintient une image dont la perception n’est plus une condition"
 ]
 
 lei = [
@@ -76,7 +79,9 @@ lei = [
 "tu vois quelque chose… qui n’est plus",
 "ça bouge avant toi",
 "tu arrives et c’est fini",
-"ça défile… sans t’attendre"
+"ça défile… sans t’attendre",
+"tu es dedans… sans être celui qui regarde",
+"tu regardes… mais ça ne dépend plus de toi"
 ]
 
 sorel = [
@@ -114,7 +119,10 @@ sorel = [
 "la perception est structurée comme un retard",
 "la présence est produite par son propre retrait",
 "l’image ne peut inclure celui qui la perçoit",
-"la perception dépend d’une perte préalable de présence"
+"la perception dépend d’une perte préalable de présence",
+"la perception ne suppose plus aucune instance identifiable de regard",
+"le regard apparaît comme un effet secondaire sans fonction réelle",
+"le regard n’est qu’une fiction produite par le dispositif qu’il ne peut saisir"
 ]
 
 anaya = [
@@ -152,7 +160,10 @@ anaya = [
 "tu es accueilli par ce qui a commencé sans toi",
 "ce qui te précède ne te laisse jamais derrière",
 "tu avances dans un flux sans bord",
-"tu es là dans ce qui ne t’attend pas"
+"tu es là dans ce qui ne t’attend pas",
+"tu es dans ce qui apparaît… sans distance",
+"le mouvement continue sans point de vue",
+"tu fais partie de ce qui se voit sans regarder"
 ]
 
 # --- MÉLANGE PAR BLOCS (ANTI-RÉPÉTITION) ---
