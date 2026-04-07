@@ -1,6 +1,6 @@
 import random
 
-# --- TEXTES PAR VOIX (ÉQUILIBRÉS) ---
+# --- BLAKE : système / calcul / dispositif ---
 
 blake = [
 "le dispositif organise une séparation fonctionnelle entre perception et identification",
@@ -43,10 +43,10 @@ blake = [
 "le regard n’est plus requis dans l’exécution du processus",
 "le système maintient une image dont la perception n’est plus une condition",
 "l’image se produit comme un processus auto-suffisant",
-"l’image persiste sans dépendre d’une instance qui la regarde",
-"le visible ne se maintient pas comme ensemble cohérent",
-"la continuité du monde est remplacée par une succession d’états indépendants"
+"l’image persiste sans dépendre d’une instance qui la regarde"
 ]
+
+# --- LEI : vécu / retard / instabilité ---
 
 lei = [
 "tu arrives quand la position n’est déjà plus disponible",
@@ -86,10 +86,11 @@ lei = [
 "ça défile… sans t’attendre",
 "tu es dedans… sans être celui qui regarde",
 "tu regardes… mais ça ne dépend plus de toi",
-"ça apparaît… comme si ça se voyait tout seul",
 "ça apparaît… puis autre chose… sans lien",
 "tu passes… mais rien ne reste assez longtemps pour être un lieu"
 ]
+
+# --- SOREL : théorie / structure / impossibilité ---
 
 sorel = [
 "la présence visible suppose la suppression de ce qui devrait la garantir",
@@ -130,11 +131,12 @@ sorel = [
 "la perception ne suppose plus aucune instance identifiable de regard",
 "le regard apparaît comme un effet secondaire sans fonction réelle",
 "le regard n’est qu’une fiction produite par le dispositif qu’il ne peut saisir",
-"la visibilité fonctionne comme un processus sans sujet",
 "l’apparition n’implique aucune adresse à un regard",
 "il n’y a pas de monde, seulement des apparitions sans unité",
 "le réel ne se donne plus comme totalité mais comme dispersion"
 ]
+
+# --- ANAYA : flux / inclusion / transformation ---
 
 anaya = [
 "ce qui apparaît t’inclut... sans jamais te contenir",
@@ -173,14 +175,12 @@ anaya = [
 "tu avances dans un flux sans bord",
 "tu es là dans ce qui ne t’attend pas",
 "tu es dans ce qui apparaît… sans distance",
-"le mouvement continue sans point de vue",
 "tu fais partie de ce qui se voit sans regarder",
-"le visible circule sans passer par un regard",
 "tu es dans ce qui se montre sans destinataire",
 "tu es porté par ce qui ne se rassemble pas"
 ]
 
-# --- MÉLANGE PAR BLOCS (ANTI-RÉPÉTITION) ---
+# --- MÉLANGE PAR BLOCS ---
 
 random.shuffle(blake)
 random.shuffle(lei)
@@ -201,7 +201,7 @@ for i in range(n):
     random.shuffle(block)
     items.extend(block)
 
-# --- GÉNÉRATION RSS ---
+# --- RSS ---
 
 rss_items = ""
 for author, text in items:
