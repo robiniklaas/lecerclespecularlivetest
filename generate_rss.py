@@ -42,7 +42,10 @@ blake = [
 "le regard n’est pas requis dans l’exécution",
 "le système maintient une image indépendante de la perception",
 "l’image se produit comme processus autonome",
-"l’image persiste sans instance de regard"
+"l’image persiste sans instance de regard",
+
+# 👉 AJOUT
+"le cadre vertical contraint la perception dans un format opératoire"
 ]
 
 # --- LEI : fragmenté / instable / vécu ---
@@ -86,7 +89,10 @@ lei = [
 "tu es dedans… sans regarder",
 "tu regardes… mais ça ne dépend pas de toi",
 "ça apparaît… puis autre chose",
-"tu passes… rien ne tient"
+"tu passes… rien ne tient",
+
+# 👉 AJOUT
+"tu regardes… mais ça n’existe nulle part où tu pourrais le toucher"
 ]
 
 # --- SOREL : dense / théorique / structuré ---
@@ -114,7 +120,7 @@ sorel = [
 "la tension constitue la condition même du visible",
 "l’appropriation est neutralisée",
 "la forme excède ce qu’elle donne à voir",
-"la perception implique une perte préalable",
+"la condition de vision implique une perte préalable",
 "le champ perceptif est conditionné par sa restriction",
 "la continuité repose sur une discontinuité masquée",
 "l’image produit ce qu’elle prétend révéler",
@@ -131,51 +137,57 @@ sorel = [
 "le regard fonctionne comme fiction",
 "l’apparition ne s’adresse à personne",
 "il n’y a pas de monde comme totalité",
-"le réel se donne comme dispersion"
+"le réel se donne comme dispersion",
+
+# 👉 AJOUT
+"la perception est orientée par un cadre qui détermine à la fois son format et sa limite"
 ]
 
 # --- ANAYA : fluide / respirant / relationnel ---
 
 anaya = [
-"ce qui apparaît t’inclut\nsans jamais te contenir",
-"tu es là\nmais déjà pris dans ce qui t’échappe",
-"la surface ne fixe rien\nelle laisse passer",
+"ce qui apparaît t’inclut... sans jamais te contenir",
+"tu es là... mais déjà pris dans ce qui t’échappe",
+"la surface ne fixe rien... elle laisse passer",
 "tu fais déjà partie de ce qui te dépasse",
-"ce que tu perds\nt’ouvre autrement",
-"tu participes\nà ce qui te traverse",
-"ce qui semble proche\nest déjà ailleurs",
-"tu passes\nsans pouvoir retenir",
+"ce que tu perds t’ouvre autrement",
+"tu participes à ce qui te traverse",
+"ce qui semble proche est déjà ailleurs",
+"tu passes... sans pouvoir retenir",
 "tu habites cette distance",
-"tu es présent\nautrement",
-"ce dehors\nt’habite déjà",
-"tout commence\nsans commencer",
-"tu es en mouvement\ndans ce qui te définit",
-"tu es séparé\nsans être isolé",
-"les deux coexistent\nsans se résoudre",
-"tu avances\ndans ce qui ne revient pas",
-"tout continue\nsans fin stable",
-"la surface relie\nsans jamais fixer",
-"tu es déjà là\nautrement",
-"tu es porté\nsans te fixer",
-"ce qui apparaît t’inclut\nsans se refermer",
-"tu avances\ndoucement dans ce qui te dépasse",
-"la surface t’accueille\nsans te retenir",
-"tu es déjà dedans\nsans entrer",
-"ce qui glisse\nt’emporte doucement",
-"tu habites le passage\nsans l’arrêter",
-"tout te relie\nsans te fixer",
-"tu es pris\ndans un flux ouvert",
-"tu rejoins\nce qui t’a précédé",
-"tu arrives\ndans un mouvement déjà là",
-"ce qui apparaît\nse transforme encore",
-"tu es accueilli\nsans avoir commencé",
-"ce qui te précède\nte porte encore",
-"tu avances\nsans bord",
-"tu es là\ndans ce qui ne t’attend pas",
-"tu es dans ce qui apparaît\nsans distance",
+"tu es présent autrement",
+"ce dehors t’habite déjà",
+"tout commence sans commencer",
+"tu es en mouvement dans ce qui te définit",
+"tu es séparé sans être isolé",
+"les deux coexistent sans se résoudre",
+"tu avances dans ce qui ne revient pas",
+"tout continue sans fin stable",
+"la surface relie sans jamais fixer",
+"tu es déjà là autrement",
+"tu es porté sans te fixer",
+"ce qui apparaît t’inclut sans se refermer",
+"tu avances doucement dans ce qui te dépasse",
+"la surface t’accueille sans te retenir",
+"tu es déjà dedans sans entrer",
+"ce qui glisse t’emporte doucement",
+"tu habites le passage sans l’arrêter",
+"tout te relie sans te fixer",
+"tu es pris dans un flux ouvert",
+"tu rejoins ce qui t’a précédé",
+"tu arrives dans un mouvement déjà là",
+"ce qui apparaît se transforme encore",
+"tu es accueilli sans avoir commencé",
+"ce qui te précède te porte encore",
+"tu avances sans bord",
+"tu es là dans ce qui ne t’attend pas",
+"tu es dans ce qui apparaît sans distance",
 "tu fais partie de ce qui se voit",
-"tu es dans ce qui se montre\nsans destinataire",
-"tu es porté\npar ce qui ne se rassemble pas"
+"tu es dans ce qui se montre sans destinataire",
+"tu es porté par ce qui ne se rassemble pas",
+
+# 👉 AJOUT
+"tu regardes en avançant… et ça se déplace avec toi"
 ]
 
 # --- MÉLANGE PAR BLOCS ---
