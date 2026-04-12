@@ -61,7 +61,6 @@ lei = [
 "tu es déjà pris… avant même de regarder",
 "ça apparaît… sans toi",
 "tu ne peux pas revenir",
-"tu regardes… mais tu restes dehors",
 "tu te reconnais… sans t’attraper",
 "tu es là… et ailleurs",
 "ça ne s’arrête pas vraiment",
