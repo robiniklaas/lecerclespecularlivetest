@@ -19,7 +19,7 @@ blake = [
 "le dispositif maintient une séparation entre perception et perceptible",
 "la perception est contrainte par une organisation préalable",
 "le cadre impose une organisation antérieure à l’expérience",
-"le système produit une visibilité sans réflexivité",
+"le système produit une visibilité qui ne coïncide pas avec sa réflexivité",
 "le dispositif organise une dissociation entre vision et identification",
 "le dispositif calcule une dissymétrie entre vision et présence",
 "le cadre impose une contrainte verticale à la perception",
