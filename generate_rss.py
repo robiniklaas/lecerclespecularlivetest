@@ -187,7 +187,7 @@ anaya = [
 "tu es porté par ce qui ne se rassemble pas",
 
 # 👉 AJOUT
-"tu regardes en avançant… et ça se déplace avec toi"
+"ce qui t’ouvre te déplace aussi"
 ]
 
 # --- MÉLANGE PAR BLOCS ---
