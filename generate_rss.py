@@ -89,6 +89,7 @@ lei = [
 "tu regardes… mais ça ne dépend pas de toi",
 "ça apparaît… puis autre chose",
 "tu passes… rien ne tient",
+"tu regardes en avançant… et ça se déplace avec toi",
 
 # 👉 AJOUT
 "tu regardes… mais ça n’existe nulle part où tu pourrais le toucher"
