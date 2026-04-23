@@ -1,5 +1,5 @@
 import random
-import time
+import datetime
 
 # --- BLAKE ---
 
@@ -183,7 +183,7 @@ anaya = [
 "ce qui t’ouvre te déplace aussi"
 ]
 
-# --- FONCTION DE GÉNÉRATION ---
+# --- GÉNÉRATION ---
 
 def generate_feed():
     random.shuffle(blake)
@@ -197,40 +197,42 @@ def generate_feed():
     for i in range(max_len):
         block = []
 
-        for author, lst in [
+        sources = [
             (">_ BLAKE :", blake),
             (">_ LEI :", lei),
             (">_ SOREL :", sorel),
             (">_ ANAYA :", anaya)
-        ]:
+        ]
+
+        for author, lst in sources:
             if i < len(lst) and random.random() < 0.5:
                 block.append((author, lst[i]))
             else:
                 block.append((author, ""))
 
-        # 🔒 garantir au moins une phrase
+        # garantir au moins une phrase
         if all(text == "" for _, text in block):
-            author, lst = random.choice([
-                (">_ BLAKE :", blake),
-                (">_ LEI :", lei),
-                (">_ SOREL :", sorel),
-                (">_ ANAYA :", anaya)
-            ])
-            if i < len(lst):
-                block[random.randint(0, 3)] = (author, lst[i])
+            valid = [(a, l) for a, l in sources if i < len(l)]
+            if valid:
+                author, lst = random.choice(valid)
+                idx = random.randint(0, len(block)-1)
+                block[idx] = (author, lst[i])
 
         random.shuffle(block)
         items.extend(block)
 
+    # timestamp pour forcer commit
+    now = datetime.datetime.utcnow().isoformat()
+
     rss_items = ""
     for author, text in items:
-        rss_items += f'<item><title>{author}</title><description>{text}</description></item>\n'
+        rss_items += f"<item><title>{author}</title><description>{text}</description></item>\n"
 
     rss = f'''<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
 <title>cercle specular — inter_view</title>
-<description>flux evolutif</description>
+<description>flux evolutif — {now}</description>
 <link>https://example.com</link>
 
 {rss_items}
@@ -242,8 +244,7 @@ def generate_feed():
     with open("feed.xml", "w", encoding="utf-8") as f:
         f.write(rss)
 
-# --- BOUCLE TEMPORELLE ---
 
-while True:
-    generate_feed()
-    time.sleep(600)  # 600 secondes = 10 minutes
+# --- EXECUTION UNIQUE (IMPORTANT) ---
+
+generate_feed()
