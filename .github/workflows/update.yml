@@ -1,29 +1,33 @@
-name: update flux
+name: Update RSS Feed
 
 on:
   schedule:
-    - cron: "0 */1 * * *"
+    - cron: '*/10 * * * *'
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   update:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      - name: setup python
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.x"
+          python-version: '3.x'
 
-      - name: run script
-        run: python generate_rss.py
+      - name: Run script
+        run: python script.py
 
-      - name: commit
+      - name: Commit and push if changed
         run: |
-          git config user.name "flux-bot"
-          git config user.email "bot@example.com"
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
           git add feed.xml
-          git commit -m "auto update flux" || echo "no changes"
+          git commit -m "update feed" || echo "no changes"
           git push
