@@ -1,6 +1,7 @@
 import random
+import time
 
-# --- BLAKE : système / compact / computationnel ---
+# --- BLAKE ---
 
 blake = [
 "le dispositif organise une séparation fonctionnelle entre perception et identification",
@@ -43,12 +44,10 @@ blake = [
 "le système maintient une image indépendante de la perception",
 "l’image se produit comme processus autonome",
 "l’image persiste sans instance de regard",
-
-# 👉 AJOUT
 "le cadre vertical contraint la perception dans un format opératoire"
 ]
 
-# --- LEI : fragmenté / instable / vécu ---
+# --- LEI ---
 
 lei = [
 "tu arrives… mais la place n’est déjà plus là",
@@ -90,12 +89,10 @@ lei = [
 "ça apparaît… puis autre chose",
 "tu passes… rien ne tient",
 "tu regardes en avançant… et ça se déplace avec toi",
-
-# 👉 AJOUT
 "tu regardes… mais ça n’existe nulle part où tu pourrais le toucher"
 ]
 
-# --- SOREL : dense / théorique / structuré ---
+# --- SOREL ---
 
 sorel = [
 "la présence visible suppose la suppression de ce qui devrait la garantir",
@@ -138,12 +135,10 @@ sorel = [
 "l’apparition ne s’adresse à personne",
 "il n’y a pas de monde comme totalité",
 "le réel se donne comme dispersion",
-
-# 👉 AJOUT
 "la perception est orientée par un cadre qui détermine à la fois son format et sa limite"
 ]
 
-# --- ANAYA : fluide / respirant / relationnel ---
+# --- ANAYA ---
 
 anaya = [
 "ce qui apparaît t’inclut... sans jamais te contenir",
@@ -185,39 +180,53 @@ anaya = [
 "tu fais partie de ce qui se voit",
 "tu es dans ce qui se montre sans destinataire",
 "tu es porté par ce qui ne se rassemble pas",
-
-# 👉 AJOUT
 "ce qui t’ouvre te déplace aussi"
 ]
 
-# --- MÉLANGE PAR BLOCS ---
+# --- FONCTION DE GÉNÉRATION ---
 
-random.shuffle(blake)
-random.shuffle(lei)
-random.shuffle(sorel)
-random.shuffle(anaya)
+def generate_feed():
+    random.shuffle(blake)
+    random.shuffle(lei)
+    random.shuffle(sorel)
+    random.shuffle(anaya)
 
-n = min(len(blake), len(lei), len(sorel), len(anaya))
+    max_len = max(len(blake), len(lei), len(sorel), len(anaya))
+    items = []
 
-items = []
+    for i in range(max_len):
+        block = []
 
-for i in range(n):
-    block = [
-        (">_ BLAKE :", blake[i]),
-        (">_ LEI :", lei[i]),
-        (">_ SOREL :", sorel[i]),
-        (">_ ANAYA :", anaya[i])
-    ]
-    random.shuffle(block)
-    items.extend(block)
+        for author, lst in [
+            (">_ BLAKE :", blake),
+            (">_ LEI :", lei),
+            (">_ SOREL :", sorel),
+            (">_ ANAYA :", anaya)
+        ]:
+            if i < len(lst) and random.random() < 0.5:
+                block.append((author, lst[i]))
+            else:
+                block.append((author, ""))
 
-# --- RSS ---
+        # 🔒 garantir au moins une phrase
+        if all(text == "" for _, text in block):
+            author, lst = random.choice([
+                (">_ BLAKE :", blake),
+                (">_ LEI :", lei),
+                (">_ SOREL :", sorel),
+                (">_ ANAYA :", anaya)
+            ])
+            if i < len(lst):
+                block[random.randint(0, 3)] = (author, lst[i])
 
-rss_items = ""
-for author, text in items:
-    rss_items += f'<item><title>{author}</title><description>{text}</description></item>\n'
+        random.shuffle(block)
+        items.extend(block)
 
-rss = f'''<?xml version="1.0" encoding="UTF-8" ?>
+    rss_items = ""
+    for author, text in items:
+        rss_items += f'<item><title>{author}</title><description>{text}</description></item>\n'
+
+    rss = f'''<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
 <title>cercle specular — inter_view</title>
@@ -230,5 +239,11 @@ rss = f'''<?xml version="1.0" encoding="UTF-8" ?>
 </rss>
 '''
 
-with open("feed.xml", "w", encoding="utf-8") as f:
-    f.write(rss)
+    with open("feed.xml", "w", encoding="utf-8") as f:
+        f.write(rss)
+
+# --- BOUCLE TEMPORELLE ---
+
+while True:
+    generate_feed()
+    time.sleep(600)  # 600 secondes = 10 minutes
