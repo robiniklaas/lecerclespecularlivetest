@@ -22,7 +22,7 @@ jobs:
           python-version: '3.x'
 
       - name: Run script
-        run: python robiniklaas.py
+        run: python scripts/robiniklaas.py
 
       - name: Commit and push if changed
         run: |
