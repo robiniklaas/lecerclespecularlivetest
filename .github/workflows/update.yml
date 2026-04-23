@@ -21,10 +21,11 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Debug files
+        run: ls -la
+
       - name: Run script
         run: python robiniklaas.py
-          - name: Debug files
-    run: ls -la
 
       - name: Commit and push if changed
         run: |
