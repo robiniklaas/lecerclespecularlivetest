@@ -194,42 +194,69 @@ def generate_feed():
         (">_ ANAYA :", anaya)
     ]
 
-    # Le bloc RSS de WordPress affiche 4 éléments.
-    # On veut donc que ces 4 premiers éléments soient toujours composés
-    # d'une phrase de chacune des quatre voix.
+    # Chaque génération correspond à une séquence de 4 voix.
+    # Une voix peut parler ou rester silencieuse. Son silence est affiché
+    # explicitement par "..." plutôt que par une ligne vide.
     #
-    # La rotation est déterminée par des créneaux de 15 minutes, ce qui
-    # correspond au rythme de l'Action GitHub. Pour chaque cycle de 40
-    # créneaux, chaque voix parcourt ses 40 phrases une seule fois.
-    # La permutation est pseudo-aléatoire mais déterministe : aucune phrase
-    # ne peut être oubliée ou revenir arbitrairement avant les autres.
+    # Sur un cycle de 80 séquences (20 heures à raison d'une génération
+    # toutes les 15 minutes), chaque voix parle exactement 40 fois et reste
+    # silencieuse exactement 40 fois. Quand elle parle, elle utilise une
+    # phrase différente : les 40 phrases de chaque voix sont donc toutes
+    # utilisées une fois par cycle.
+    #
+    # Les schémas de parole sont générés une fois par cycle de façon
+    # pseudo-aléatoire, avec la contrainte qu'au moins une voix parle dans
+    # chaque séquence. Cela permet des séquences à 1, 2, 3 ou 4 voix et donc
+    # des silences réellement intermittents, sans sacrifier la couverture.
     now = datetime.datetime.now(datetime.timezone.utc)
     slot = int(now.timestamp() // (15 * 60))
-    cycle = slot // 40
-    position = slot % 40
+    cycle = slot // 80
+    position = slot % 80
+
+    speech = None
+    for attempt in range(1000):
+        rng = random.Random(cycle * 10000 + attempt)
+        candidate = []
+        for voice_index in range(4):
+            slots = [False] * 80
+            for index in rng.sample(range(80), 40):
+                slots[index] = True
+            candidate.append(slots)
+
+        # Pas de séquence entièrement silencieuse.
+        if all(any(candidate[v][s] for v in range(4)) for s in range(80)):
+            speech = candidate
+            break
+
+    if speech is None:
+        raise RuntimeError("Impossible de construire un cycle de parole valide")
 
     selected = []
     for voice_index, (author, phrases) in enumerate(sources):
         if len(phrases) != 40:
             raise ValueError(f"Chaque voix doit contenir 40 phrases : {author} en contient {len(phrases)}")
 
-        order = list(range(len(phrases)))
+        order = list(range(40))
         rng = random.Random(cycle * 100 + voice_index)
         rng.shuffle(order)
-        selected.append((author, phrases[order[position]]))
 
-    # Les quatre voix sont ensuite mélangées entre elles pour éviter que
-    # l'ordre Blake/Lei/Sorel/Anaya soit toujours identique.
+        if speech[voice_index][position]:
+            selected.append((author, phrases[order[sum(speech[voice_index][:position])]]))
+        else:
+            selected.append((author, "..."))
+
+    # L'ordre des quatre voix est lui aussi variable.
     rng = random.Random(slot)
     rng.shuffle(selected)
 
-    # Le reste du flux contient également toutes les autres phrases, dans un
-    # ordre déterminé par le même créneau. Ainsi le RSS reste complet, tandis
-    # que les 4 premières entrées sont spécialement équilibrées pour Fontaine.
+    # Le reste du flux contient toutes les phrases qui ne sont pas dans les
+    # quatre premières entrées. On ne met pas les "..." dans cette partie.
     remaining = []
+    selected_phrases = {(author, text) for author, text in selected if text != "..."}
+
     for author, phrases in sources:
         for phrase in phrases:
-            if not any(author == a and phrase == p for a, p in selected):
+            if (author, phrase) not in selected_phrases:
                 remaining.append((author, phrase))
 
     rng.shuffle(remaining)
