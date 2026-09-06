@@ -27,23 +27,73 @@ for author, phrases in sources:
 
 
 def make_speech_schedule(rng):
-    """Create 80 sequences with exactly two speaking voices.
+    """Create 80 sequences with 2, 3, or 4 speaking voices.
 
-    This guarantees at least two speakers on every sequence while keeping
-    exactly 40 speaking turns per voice across the 80-slot cycle.
+    Every voice speaks exactly 40 times across the 80-slot cycle.
+    Half the sequences have 2 speakers, one quarter have 3, and one
+    quarter have 4, for 160 total speaking turns.
     """
-    # Four balanced pairings, 20 times each. Each voice therefore appears
-    # in exactly 40 sequences.
+    # Start with 20 sequences of each balanced pair. This gives every voice
+    # 20 speaking turns. Then add 40 extra speaking turns: 20 single
+    # additions (creating 20 three-voice sequences) and 20 double additions
+    # (creating 20 four-voice sequences). The additions are balanced so each
+    # voice receives exactly 20 more turns.
     pairings = [
         (0, 1), (2, 3),
         (0, 2), (1, 3),
     ] * 20
     rng.shuffle(pairings)
 
-    schedule = []
-    for a, b in pairings:
-        schedule.append((1 << a) | (1 << b))
+    schedule = [
+        (1 << a) | (1 << b)
+        for a, b in pairings
+    ]
 
+    # Ten singleton additions per voice -> 40 additions total, but to get a
+    # controlled mix of 3- and 4-voice sequences we use 20 single additions
+    # and 10 pair additions. Each voice gets 10 additions from each category.
+    single_additions = [v for v in range(4) for _ in range(5)]
+    rng.shuffle(single_additions)
+
+    # Pair additions: the four-cycle pairs each occur 5 times, giving every
+    # voice 10 additional turns.
+    pair_additions = [
+        (0, 1), (1, 2), (2, 3), (3, 0)
+    ] * 5
+    rng.shuffle(pair_additions)
+
+    # Apply 20 single additions to 20 pair sequences, then 20 pair additions
+    # to another 20 pair sequences. This creates 20 triples and 20 quadruples.
+    for index, voice in enumerate(single_additions):
+        base_index = index
+        mask = schedule[base_index]
+        if mask & (1 << voice):
+            # If the chosen voice is already present, rotate until absent.
+            for candidate in range(4):
+                if not (mask & (1 << candidate)):
+                    voice = candidate
+                    break
+        schedule[base_index] = mask | (1 << voice)
+
+    for index, (a, b) in enumerate(pair_additions):
+        base_index = 20 + index
+        mask = schedule[base_index]
+        # The pair must both be absent to create a four-voice sequence.
+        # If not, choose the missing voices instead; every base has exactly 2.
+        missing = [v for v in range(4) if not (mask & (1 << v))]
+        if len(missing) == 2:
+            schedule[base_index] = mask | (1 << missing[0]) | (1 << missing[1])
+        else:
+            schedule[base_index] = 15
+
+    rng.shuffle(schedule)
+
+    # Verify the invariants before returning.
+    counts = [sum((mask >> v) & 1 for mask in schedule) for v in range(4)]
+    if counts != [40, 40, 40, 40]:
+        raise RuntimeError(f"Répartition invalide : {counts}")
+    if any(mask.bit_count() < 2 or mask.bit_count() > 4 for mask in schedule):
+        raise RuntimeError("Chaque séquence doit avoir entre 2 et 4 voix")
     return schedule
 
 
