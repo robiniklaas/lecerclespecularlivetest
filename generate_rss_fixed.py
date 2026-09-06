@@ -21,9 +21,12 @@ sources = [
     (">_ ANAYA :", phrase_lists["anaya"]),
 ]
 
+# The current source contains at least 40 phrases for every voice.  The
+# speaking cycle uses 40 turns per voice; any additional source phrase is
+# still kept in the RSS feed's remaining pool.
 for author, phrases in sources:
-    if len(phrases) != 40:
-        raise ValueError(f"Chaque voix doit contenir 40 phrases : {author} en contient {len(phrases)}")
+    if len(phrases) < 40:
+        raise ValueError(f"Chaque voix doit contenir au moins 40 phrases : {author} en contient {len(phrases)}")
 
 
 def make_speech_schedule(rng):
@@ -35,9 +38,6 @@ def make_speech_schedule(rng):
         left = 79 - position
         possible = []
 
-        # A mask is valid if it speaks for at least one voice, never speaks
-        # for a voice with no turns left, and leaves every voice enough
-        # positions to use all its remaining turns.
         for mask in range(1, 16):
             if any(((mask >> v) & 1) > remaining[v] for v in range(4)):
                 continue
