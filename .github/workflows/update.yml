@@ -30,7 +30,7 @@ jobs:
         run: ls -la
 
       - name: Run script
-        run: python generate_rss.py
+        run: python generate_rss_fixed.py
 
       - name: Commit and push if changed
         run: |
