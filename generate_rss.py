@@ -187,9 +187,6 @@ anaya = [
 # --- GÉNÉRATION ---
 
 def generate_feed():
-    # On mélange les phrases elles-mêmes, puis on les conserve toutes.
-    # Il n'y a plus de sélection aléatoire à 50 % : aucune phrase ne peut
-    # disparaître d'une génération ou être systématiquement défavorisée.
     sources = [
         (">_ BLAKE :", blake),
         (">_ LEI :", lei),
@@ -197,15 +194,47 @@ def generate_feed():
         (">_ ANAYA :", anaya)
     ]
 
-    items = []
+    # Le bloc RSS de WordPress affiche 4 éléments.
+    # On veut donc que ces 4 premiers éléments soient toujours composés
+    # d'une phrase de chacune des quatre voix.
+    #
+    # La rotation est déterminée par des créneaux de 15 minutes, ce qui
+    # correspond au rythme de l'Action GitHub. Pour chaque cycle de 40
+    # créneaux, chaque voix parcourt ses 40 phrases une seule fois.
+    # La permutation est pseudo-aléatoire mais déterministe : aucune phrase
+    # ne peut être oubliée ou revenir arbitrairement avant les autres.
+    now = datetime.datetime.now(datetime.timezone.utc)
+    slot = int(now.timestamp() // (15 * 60))
+    cycle = slot // 40
+    position = slot % 40
+
+    selected = []
+    for voice_index, (author, phrases) in enumerate(sources):
+        if len(phrases) != 40:
+            raise ValueError(f"Chaque voix doit contenir 40 phrases : {author} en contient {len(phrases)}")
+
+        order = list(range(len(phrases)))
+        rng = random.Random(cycle * 100 + voice_index)
+        rng.shuffle(order)
+        selected.append((author, phrases[order[position]]))
+
+    # Les quatre voix sont ensuite mélangées entre elles pour éviter que
+    # l'ordre Blake/Lei/Sorel/Anaya soit toujours identique.
+    rng = random.Random(slot)
+    rng.shuffle(selected)
+
+    # Le reste du flux contient également toutes les autres phrases, dans un
+    # ordre déterminé par le même créneau. Ainsi le RSS reste complet, tandis
+    # que les 4 premières entrées sont spécialement équilibrées pour Fontaine.
+    remaining = []
     for author, phrases in sources:
         for phrase in phrases:
-            items.append((author, phrase))
+            if not any(author == a and phrase == p for a, p in selected):
+                remaining.append((author, phrase))
 
-    # Un nouvel ordre complet à chaque génération.
-    random.shuffle(items)
+    rng.shuffle(remaining)
+    items = selected + remaining
 
-    now = datetime.datetime.now(datetime.timezone.utc)
     now_iso = now.isoformat()
     pub_date = now.strftime("%a, %d %b %Y %H:%M:%S +0000")
 
@@ -213,7 +242,7 @@ def generate_feed():
     for index, (author, text) in enumerate(items):
         safe_author = html.escape(author)
         safe_text = html.escape(text)
-        guid = f"{now.strftime('%Y%m%d%H%M%S')}-{index:03d}"
+        guid = f"{slot}-{index:03d}"
 
         rss_items.append(
             f"""<item>
