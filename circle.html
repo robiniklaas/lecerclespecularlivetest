@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>le cercle specular</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+  }
+
+  body {
+    font-family: monospace;
+    font-size: 18px;
+    line-height: 1.45;
+    color: #000;
+  }
+
+  #circle {
+    width: 100%;
+  }
+
+  .entry {
+    margin: 0 0 0.35em 0;
+  }
+
+  .author {
+    font-weight: 700;
+  }
+
+  .text {
+    display: block;
+    margin-left: 0;
+  }
+
+  .error {
+    opacity: 0.55;
+  }
+</style>
+</head>
+<body>
+<div id="circle" aria-live="polite"></div>
+
+<script>
+const FEED = 'https://cdn.jsdelivr.net/gh/robiniklaas/lecerclespecularlivetest@main/feed.xml';
+
+async function loadCircle() {
+  const container = document.getElementById('circle');
+
+  try {
+    // The timestamp prevents the browser from reusing its previous response.
+    const response = await fetch(FEED + '?t=' + Date.now(), {
+      cache: 'no-store'
+    });
+
+    if (!response.ok) throw new Error('HTTP ' + response.status);
+
+    const xml = await response.text();
+    const doc = new DOMParser().parseFromString(xml, 'application/xml');
+    const items = Array.from(doc.querySelectorAll('item')).slice(0, 4);
+
+    if (items.length < 4) throw new Error('Flux incomplet');
+
+    container.innerHTML = items.map(item => {
+      const title = item.querySelector('title')?.textContent || '';
+      const description = item.querySelector('description')?.textContent || '';
+
+      return `<div class="entry"><span class="author">${escapeHtml(title)}</span><span class="text">${escapeHtml(description)}</span></div>`;
+    }).join('');
+  } catch (error) {
+    container.innerHTML = '<div class="error">[live]</div>';
+    console.error(error);
+  }
+}
+
+function escapeHtml(value) {
+  return value
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#039;');
+}
+
+loadCircle();
+setInterval(loadCircle, 15 * 60 * 1000);
+</script>
+</body>
+</html>
