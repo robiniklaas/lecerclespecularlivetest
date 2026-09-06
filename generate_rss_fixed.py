@@ -21,42 +21,29 @@ sources = [
     (">_ ANAYA :", phrase_lists["anaya"]),
 ]
 
-# The current source contains at least 40 phrases for every voice.  The
-# speaking cycle uses 40 turns per voice; any additional source phrase is
-# still kept in the RSS feed's remaining pool.
 for author, phrases in sources:
     if len(phrases) < 40:
         raise ValueError(f"Chaque voix doit contenir au moins 40 phrases : {author} en contient {len(phrases)}")
 
 
 def make_speech_schedule(rng):
-    """Create 80 sequences, with at least two voices speaking each time
-    and exactly 40 turns per voice across the full cycle."""
-    remaining = [40, 40, 40, 40]
+    """Create 80 sequences with exactly two speaking voices.
+
+    This guarantees at least two speakers on every sequence while keeping
+    exactly 40 speaking turns per voice across the 80-slot cycle.
+    """
+    # Four balanced pairings, 20 times each. Each voice therefore appears
+    # in exactly 40 sequences.
+    pairings = [
+        (0, 1), (2, 3),
+        (0, 2), (1, 3),
+    ] * 20
+    rng.shuffle(pairings)
+
     schedule = []
+    for a, b in pairings:
+        schedule.append((1 << a) | (1 << b))
 
-    for position in range(80):
-        left = 79 - position
-        possible = []
-
-        # Masks 3..15 mean that every sequence has at least two speaking voices.
-        for mask in range(3, 16):
-            if any(((mask >> v) & 1) > remaining[v] for v in range(4)):
-                continue
-            if any(remaining[v] - ((mask >> v) & 1) > left for v in range(4)):
-                continue
-            possible.append(mask)
-
-        if not possible:
-            raise RuntimeError("Impossible de construire le cycle de parole")
-
-        mask = rng.choice(possible)
-        schedule.append(mask)
-        for v in range(4):
-            remaining[v] -= (mask >> v) & 1
-
-    if remaining != [0, 0, 0, 0]:
-        raise RuntimeError("Le cycle n'utilise pas exactement 40 prises de parole par voix")
     return schedule
 
 
