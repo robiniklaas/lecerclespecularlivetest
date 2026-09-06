@@ -30,7 +30,8 @@ for author, phrases in sources:
 
 
 def make_speech_schedule(rng):
-    """Create 80 non-empty sequences with exactly 40 turns per voice."""
+    """Create 80 sequences, with at least two voices speaking each time
+    and exactly 40 turns per voice across the full cycle."""
     remaining = [40, 40, 40, 40]
     schedule = []
 
@@ -38,7 +39,8 @@ def make_speech_schedule(rng):
         left = 79 - position
         possible = []
 
-        for mask in range(1, 16):
+        # Masks 3..15 mean that every sequence has at least two speaking voices.
+        for mask in range(3, 16):
             if any(((mask >> v) & 1) > remaining[v] for v in range(4)):
                 continue
             if any(remaining[v] - ((mask >> v) & 1) > left for v in range(4)):
