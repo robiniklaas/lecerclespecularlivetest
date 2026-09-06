@@ -1,5 +1,6 @@
 import random
 import datetime
+import html
 
 # --- BLAKE ---
 
@@ -186,56 +187,51 @@ anaya = [
 # --- GÉNÉRATION ---
 
 def generate_feed():
-    random.shuffle(blake)
-    random.shuffle(lei)
-    random.shuffle(sorel)
-    random.shuffle(anaya)
+    # On mélange les phrases elles-mêmes, puis on les conserve toutes.
+    # Il n'y a plus de sélection aléatoire à 50 % : aucune phrase ne peut
+    # disparaître d'une génération ou être systématiquement défavorisée.
+    sources = [
+        (">_ BLAKE :", blake),
+        (">_ LEI :", lei),
+        (">_ SOREL :", sorel),
+        (">_ ANAYA :", anaya)
+    ]
 
-    max_len = max(len(blake), len(lei), len(sorel), len(anaya))
     items = []
+    for author, phrases in sources:
+        for phrase in phrases:
+            items.append((author, phrase))
 
-    for i in range(max_len):
-        block = []
+    # Un nouvel ordre complet à chaque génération.
+    random.shuffle(items)
 
-        sources = [
-            (">_ BLAKE :", blake),
-            (">_ LEI :", lei),
-            (">_ SOREL :", sorel),
-            (">_ ANAYA :", anaya)
-        ]
+    now = datetime.datetime.now(datetime.timezone.utc)
+    now_iso = now.isoformat()
+    pub_date = now.strftime("%a, %d %b %Y %H:%M:%S +0000")
 
-        for author, lst in sources:
-            if i < len(lst) and random.random() < 0.5:
-                block.append((author, lst[i]))
-            else:
-                block.append((author, ""))
+    rss_items = []
+    for index, (author, text) in enumerate(items):
+        safe_author = html.escape(author)
+        safe_text = html.escape(text)
+        guid = f"{now.strftime('%Y%m%d%H%M%S')}-{index:03d}"
 
-        # garantir au moins une phrase
-        if all(text == "" for _, text in block):
-            valid = [(a, l) for a, l in sources if i < len(l)]
-            if valid:
-                author, lst = random.choice(valid)
-                idx = random.randint(0, len(block)-1)
-                block[idx] = (author, lst[i])
-
-        random.shuffle(block)
-        items.extend(block)
-
-    # timestamp pour forcer commit
-    now = datetime.datetime.utcnow().isoformat()
-
-    rss_items = ""
-    for author, text in items:
-        rss_items += f"<item><title>{author}</title><description>{text}</description></item>\n"
+        rss_items.append(
+            f"""<item>
+<title>{safe_author}</title>
+<description>{safe_text}</description>
+<pubDate>{pub_date}</pubDate>
+<guid isPermaLink=\"false\">{guid}</guid>
+</item>"""
+        )
 
     rss = f'''<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
 <title>cercle specular — inter_view</title>
-<description>flux evolutif — {now}</description>
+<description>flux evolutif — {now_iso}</description>
 <link>https://example.com</link>
 
-{rss_items}
+{chr(10).join(rss_items)}
 
 </channel>
 </rss>
@@ -245,6 +241,5 @@ def generate_feed():
         f.write(rss)
 
 
-# --- EXECUTION UNIQUE (IMPORTANT) ---
-
+# --- EXECUTION UNIQUE ---
 generate_feed()
