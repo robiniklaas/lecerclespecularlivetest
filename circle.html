@@ -16,6 +16,7 @@
     font-size: 18px;
     line-height: 1.45;
     color: #000;
+    text-align: center;
   }
 
   #circle {
@@ -50,7 +51,6 @@ async function loadCircle() {
   const container = document.getElementById('circle');
 
   try {
-    // The timestamp prevents the browser from reusing its previous response.
     const response = await fetch(FEED + '?t=' + Date.now(), {
       cache: 'no-store'
     });
