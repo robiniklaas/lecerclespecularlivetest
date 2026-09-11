@@ -4,7 +4,7 @@ import html
 import random
 from pathlib import Path
 
-# Reuse the four existing phrase lists without duplicating or changing them.
+# Reuse the four existing phrase lists from generate_rss.py.
 source_text = Path("generate_rss.py").read_text(encoding="utf-8")
 tree = ast.parse(source_text)
 phrase_lists = {}
@@ -37,11 +37,8 @@ def make_speech_schedule(rng):
     rng.shuffle(pairings)
     schedule = [(1 << a) | (1 << b) for a, b in pairings]
 
-    # Transform 10 pair sequences into single-voice sequences.
     removal_voices = [0, 0, 0, 1, 1, 1, 2, 2, 3, 3]
-    # Transform 6 pair sequences into three-voice sequences.
     addition_voices = [0, 0, 1, 1, 2, 3]
-    # Transform 2 pair sequences into four-voice sequences.
     quad_additions = [(0, 1), (2, 3)]
     rng.shuffle(removal_voices)
     rng.shuffle(addition_voices)
@@ -98,8 +95,14 @@ def generate_feed():
 
     selected = []
     for voice_index, (author, phrases) in enumerate(sources):
-        order = list(range(40))
-        random.Random(cycle * 100 + voice_index).shuffle(order)
+        # Exactly 40 phrases are spoken by each voice in each cycle.
+        # If there are more than 40, one phrase is omitted in this cycle;
+        # the omitted index rotates from cycle to cycle, so the extra
+        # Beckett phrase is not permanently excluded.
+        omitted = cycle % len(phrases)
+        order = [i for i in range(len(phrases)) if i != omitted]
+        rng = random.Random(cycle * 100 + voice_index)
+        rng.shuffle(order)
         speaks_before = sum((schedule[s] >> voice_index) & 1 for s in range(position))
 
         if (mask >> voice_index) & 1:
