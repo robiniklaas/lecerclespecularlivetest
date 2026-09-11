@@ -45,7 +45,8 @@ blake = [
 "le système maintient une image indépendante de la perception",
 "l’image se produit comme processus autonome",
 "l’image persiste sans instance de regard",
-"le cadre vertical contraint la perception dans un format opératoire"
+"le cadre vertical contraint la perception dans un format opératoire",
+"Tu cherchais encore ta place"
 ]
 
 # --- LEI ---
@@ -90,7 +91,8 @@ lei = [
 "ça apparaît… puis autre chose",
 "tu passes… rien ne tient",
 "tu regardes en avançant… et ça se déplace avec toi",
-"tu regardes… mais ça n’existe nulle part où tu pourrais le toucher"
+"tu regardes… mais ça n’existe nulle part où tu pourrais le toucher",
+"C'était là il y a une seconde"
 ]
 
 # --- SOREL ---
@@ -136,7 +138,8 @@ sorel = [
 "l’apparition ne s’adresse à personne",
 "il n’y a pas de monde comme totalité",
 "le réel se donne comme dispersion",
-"la perception est orientée par un cadre qui détermine à la fois son format et sa limite"
+"la perception est orientée par un cadre qui détermine à la fois son format et sa limite",
+"Ce n'était pas le résultat attendu"
 ]
 
 # --- ANAYA ---
@@ -181,7 +184,8 @@ anaya = [
 "tu fais partie de ce qui se voit",
 "tu es dans ce qui se montre sans destinataire",
 "tu es porté par ce qui ne se rassemble pas",
-"ce qui t’ouvre te déplace aussi"
+"ce qui t’ouvre te déplace aussi",
+"Nous y étions presque"
 ]
 
 # --- GÉNÉRATION ---
@@ -197,17 +201,6 @@ def generate_feed():
     # Chaque génération correspond à une séquence de 4 voix.
     # Une voix peut parler ou rester silencieuse. Son silence est affiché
     # explicitement par "..." plutôt que par une ligne vide.
-    #
-    # Sur un cycle de 80 séquences (20 heures à raison d'une génération
-    # toutes les 15 minutes), chaque voix parle exactement 40 fois et reste
-    # silencieuse exactement 40 fois. Quand elle parle, elle utilise une
-    # phrase différente : les 40 phrases de chaque voix sont donc toutes
-    # utilisées une fois par cycle.
-    #
-    # Les schémas de parole sont générés une fois par cycle de façon
-    # pseudo-aléatoire, avec la contrainte qu'au moins une voix parle dans
-    # chaque séquence. Cela permet des séquences à 1, 2, 3 ou 4 voix et donc
-    # des silences réellement intermittents, sans sacrifier la couverture.
     now = datetime.datetime.now(datetime.timezone.utc)
     slot = int(now.timestamp() // (15 * 60))
     cycle = slot // 80
@@ -223,7 +216,6 @@ def generate_feed():
                 slots[index] = True
             candidate.append(slots)
 
-        # Pas de séquence entièrement silencieuse.
         if all(any(candidate[v][s] for v in range(4)) for s in range(80)):
             speech = candidate
             break
@@ -233,27 +225,29 @@ def generate_feed():
 
     selected = []
     for voice_index, (author, phrases) in enumerate(sources):
-        if len(phrases) != 40:
-            raise ValueError(f"Chaque voix doit contenir 40 phrases : {author} en contient {len(phrases)}")
+        if len(phrases) < 40:
+            raise ValueError(f"Chaque voix doit contenir au moins 40 phrases : {author} en contient {len(phrases)}")
 
-        order = list(range(40))
+        # Les 40 phrases effectivement prononcées dans un cycle sont toutes
+        # différentes. Si une voix possède plus de 40 phrases, une seule phrase
+        # est laissée de côté par cycle, puis cette omission tourne au fil des
+        # cycles afin que toutes les phrases aient la même fréquence à terme.
+        omitted = cycle % len(phrases)
+        order = [i for i in range(len(phrases)) if i != omitted]
         rng = random.Random(cycle * 100 + voice_index)
         rng.shuffle(order)
 
+        speaks_before = sum(speech[voice_index][s] for s in range(position))
         if speech[voice_index][position]:
-            selected.append((author, phrases[order[sum(speech[voice_index][:position])]]))
+            selected.append((author, phrases[order[speaks_before]]))
         else:
             selected.append((author, "..."))
 
-    # L'ordre des quatre voix est lui aussi variable.
     rng = random.Random(slot)
     rng.shuffle(selected)
 
-    # Le reste du flux contient toutes les phrases qui ne sont pas dans les
-    # quatre premières entrées. On ne met pas les "..." dans cette partie.
-    remaining = []
     selected_phrases = {(author, text) for author, text in selected if text != "..."}
-
+    remaining = []
     for author, phrases in sources:
         for phrase in phrases:
             if (author, phrase) not in selected_phrases:
@@ -270,7 +264,6 @@ def generate_feed():
         safe_author = html.escape(author)
         safe_text = html.escape(text)
         guid = f"{slot}-{index:03d}"
-
         rss_items.append(
             f"""<item>
 <title>{safe_author}</title>
