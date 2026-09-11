@@ -4,7 +4,8 @@ import html
 import random
 from pathlib import Path
 
-# Reuse the four existing phrase lists from generate_rss.py.
+# Reuse the four original phrase lists from generate_rss.py.
+# The four phrases at the same index form one invisible dialogic unit.
 source_text = Path("generate_rss.py").read_text(encoding="utf-8")
 tree = ast.parse(source_text)
 phrase_lists = {}
@@ -21,9 +22,12 @@ sources = [
     (">_ ANAYA :", phrase_lists["anaya"]),
 ]
 
-for author, phrases in sources:
-    if len(phrases) < 40:
-        raise ValueError(f"Chaque voix doit contenir au moins 40 phrases : {author} en contient {len(phrases)}")
+if not all(len(phrases) == 30 for _, phrases in sources):
+    raise ValueError("Le corpus originel doit contenir exactement 30 phrases par voix")
+
+# 30 invisible dialogic units: Blake[i], Lei[i], Sorel[i], Anaya[i]
+# belong to the same underlying thought, even when only some voices speak.
+dialogue_units = list(range(30))
 
 
 def make_speech_schedule(rng):
@@ -84,6 +88,24 @@ def make_speech_schedule(rng):
     return schedule
 
 
+def make_dialogue_units(cycle):
+    """Distribute the 30 latent units across the 80 slots.
+
+    The unit is attached to the slot, not to an individual voice. Therefore,
+    whenever two or more voices speak together, they draw their phrases from
+    the same invisible unit and can genuinely answer one another.
+
+    The 30 units are shuffled deterministically for each 20-hour cycle and
+    repeated as needed to cover all 80 slots. No phrase is removed from the
+    corpus; repetition is simply a consequence of having 40 speaking turns
+    per voice but only 30 dialogic units.
+    """
+    rng = random.Random(cycle * 1000003 + 31)
+    order = dialogue_units[:]
+    rng.shuffle(order)
+    return [order[i % 30] for i in range(80)]
+
+
 def generate_feed():
     now = datetime.datetime.now(datetime.timezone.utc)
     slot = int(now.timestamp() // (15 * 60))
@@ -92,29 +114,25 @@ def generate_feed():
 
     schedule = make_speech_schedule(random.Random(cycle * 10000 + 17))
     mask = schedule[position]
+    slot_units = make_dialogue_units(cycle)
+    unit_index = slot_units[position]
 
     selected = []
     for voice_index, (author, phrases) in enumerate(sources):
-        # A cycle has 40 speaking turns per voice. The corpus is never
-        # truncated: if a voice has more than 40 phrases, exactly two phrases
-        # are left for the next cycles. The omitted pair rotates, so every
-        # phrase is eventually spoken and no phrase is permanently excluded.
-        omitted_a = cycle % len(phrases)
-        omitted_b = (omitted_a + 1) % len(phrases)
-        omitted = {omitted_a, omitted_b}
-        order = [i for i in range(len(phrases)) if i not in omitted]
-        rng = random.Random(cycle * 100 + voice_index)
-        rng.shuffle(order)
-        speaks_before = sum((schedule[s] >> voice_index) & 1 for s in range(position))
-
         if (mask >> voice_index) & 1:
-            text = phrases[order[speaks_before]]
+            # The same latent unit is used by every voice speaking in this slot.
+            # A voice therefore answers through its corresponding phrase rather
+            # than drawing independently from an unrelated phrase pool.
+            text = phrases[unit_index]
         else:
             text = "..."
         selected.append((author, text))
 
     random.Random(slot).shuffle(selected)
 
+    # Keep the complete 120-phrase corpus in every RSS generation.
+    # The four visible positions are simply the current dialogue moment;
+    # all other original phrases remain available in the feed.
     selected_phrases = {(author, text) for author, text in selected if text != "..."}
     remaining = []
     for author, phrases in sources:
