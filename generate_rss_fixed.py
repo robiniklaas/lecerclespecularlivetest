@@ -95,12 +95,14 @@ def generate_feed():
 
     selected = []
     for voice_index, (author, phrases) in enumerate(sources):
-        # Exactly 40 phrases are spoken by each voice in each cycle.
-        # If there are more than 40, one phrase is omitted in this cycle;
-        # the omitted index rotates from cycle to cycle, so the extra
-        # Beckett phrase is not permanently excluded.
-        omitted = cycle % len(phrases)
-        order = [i for i in range(len(phrases)) if i != omitted]
+        # A cycle has 40 speaking turns per voice. The corpus is never
+        # truncated: if a voice has more than 40 phrases, exactly two phrases
+        # are left for the next cycles. The omitted pair rotates, so every
+        # phrase is eventually spoken and no phrase is permanently excluded.
+        omitted_a = cycle % len(phrases)
+        omitted_b = (omitted_a + 1) % len(phrases)
+        omitted = {omitted_a, omitted_b}
+        order = [i for i in range(len(phrases)) if i not in omitted]
         rng = random.Random(cycle * 100 + voice_index)
         rng.shuffle(order)
         speaks_before = sum((schedule[s] >> voice_index) & 1 for s in range(position))
