@@ -29,17 +29,23 @@ dialogue_units = list(range(30))
 def make_speech_schedule(rng):
     """80 slots: 10 singles, 62 duos, 6 trios, 2 quads; 40 turns/voice.
 
-    All six possible voice pairings are represented. Pairing counts are
-    11,11,10,10,10,10 before conversion to singles/trios/quads.
+    All six possible voice pairings are represented. We begin with 80 duos,
+    balanced so that every voice appears 40 times, then convert 10 to singles,
+    6 to trios and 2 to quads while preserving the final 40 turns per voice.
     """
+    # 80 duos. Pair counts are 14,14,13,13,13,13, giving every voice 40 turns.
     pairings = (
-        [(0, 1)] * 11 + [(2, 3)] * 11 +
-        [(0, 2)] * 10 + [(0, 3)] * 10 +
-        [(1, 2)] * 10 + [(1, 3)] * 10
+        [(0, 1)] * 14 + [(2, 3)] * 14 +
+        [(0, 2)] * 13 + [(0, 3)] * 13 +
+        [(1, 2)] * 13 + [(1, 3)] * 13
     )
     rng.shuffle(pairings)
     schedule = [(1 << a) | (1 << b) for a, b in pairings]
 
+    # The conversion deltas balance exactly:
+    # singles remove [3,3,2,2] turns;
+    # trios add [2,2,1,1] turns;
+    # the two quads add one turn for each voice.
     removal_voices = [0, 0, 0, 1, 1, 1, 2, 2, 3, 3]
     addition_voices = [0, 0, 1, 1, 2, 3]
     quad_additions = [(0, 1), (2, 3)]
