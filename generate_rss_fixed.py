@@ -20,10 +20,14 @@ sources = [
     (">_ ANAYA :", phrase_lists["anaya"]),
 ]
 
-if not all(len(phrases) == 30 for _, phrases in sources):
-    raise ValueError("Le corpus originel doit contenir exactement 30 phrases par voix")
+# The four voice corpora may now contain different numbers of phrases.
+# The dialogue uses the longest corpus length and wraps shorter corpora,
+# so no phrase is discarded and no voice can cause an index error.
+if not all(phrases for _, phrases in sources):
+    raise ValueError("Chaque voix doit contenir au moins une phrase")
 
-dialogue_units = list(range(30))
+DIALOGUE_UNIT_COUNT = max(len(phrases) for _, phrases in sources)
+dialogue_units = list(range(DIALOGUE_UNIT_COUNT))
 
 
 def make_speech_schedule(rng):
@@ -33,7 +37,6 @@ def make_speech_schedule(rng):
     balanced so that every voice appears 40 times, then convert 10 to singles,
     6 to trios and 2 to quads while preserving the final 40 turns per voice.
     """
-    # 80 duos. Pair counts are 14,14,13,13,13,13, giving every voice 40 turns.
     pairings = (
         [(0, 1)] * 14 + [(2, 3)] * 14 +
         [(0, 2)] * 13 + [(0, 3)] * 13 +
@@ -42,10 +45,6 @@ def make_speech_schedule(rng):
     rng.shuffle(pairings)
     schedule = [(1 << a) | (1 << b) for a, b in pairings]
 
-    # The conversion deltas balance exactly:
-    # singles remove [3,3,2,2] turns;
-    # trios add [2,2,1,1] turns;
-    # the two quads add one turn for each voice.
     removal_voices = [0, 0, 0, 1, 1, 1, 2, 2, 3, 3]
     addition_voices = [0, 0, 1, 1, 2, 3]
     quad_additions = [(0, 1), (2, 3)]
@@ -84,12 +83,14 @@ def make_speech_schedule(rng):
 
 
 def make_dialogue_units(cycle):
-    """Randomly place 80 unit occurrences: each of 30 units occurs 2 or 3 times."""
+    """Randomly place 80 unit occurrences across the current corpus size."""
     rng = random.Random(cycle * 1000003 + 31)
-    occurrences = dialogue_units * 2
-    extra = dialogue_units[:]
-    rng.shuffle(extra)
-    occurrences.extend(extra[:20])
+    occurrences = dialogue_units[:]
+    while len(occurrences) < 80:
+        extra = dialogue_units[:]
+        rng.shuffle(extra)
+        occurrences.extend(extra)
+    occurrences = occurrences[:80]
     rng.shuffle(occurrences)
     return occurrences
 
@@ -106,7 +107,7 @@ def generate_feed():
 
     selected = []
     for voice_index, (author, phrases) in enumerate(sources):
-        text = phrases[unit_index] if (mask >> voice_index) & 1 else "..."
+        text = phrases[unit_index % len(phrases)] if (mask >> voice_index) & 1 else "..."
         selected.append((author, text))
     random.Random(slot).shuffle(selected)
 
