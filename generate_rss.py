@@ -12,7 +12,7 @@ blake = [
 "l’absence du corps empêche toute validation du point de vue",
 "le dispositif introduit une dissymétrie entre vision et présence",
 "les paramètres perceptifs cessent d’être constants dans ce système",
-"la séparation initiale ne permet plus de décrire l’expérience",
+"le dispositif fonctionne. c’est déjà beaucoup",
 "le système génère une image indépendante de toute validation subjective",
 "le dispositif maintient une distance irréductible entre sujet et image",
 "l’image ne permet aucune appropriation du point de vue",
@@ -31,13 +31,10 @@ blake = [
 "la perception est contrainte par une organisation qui la dépasse",
 "le cadre impose une organisation qui précède toute expérience perceptive",
 "l’image maintient sa cohérence en excluant toute inscription du sujet",
-"le système produit une visibilité qui n’autorise aucune réflexivité",
+"le système semble avoir oublié la question",
 "l’image ne permet aucune intégration du point de vue qui la rend possible",
 "le dispositif organise une dissociation stable entre ce qui est vu et celui qui voit",
-"le système produit une séparation entre perception et identification du sujet",
-"le dispositif fonctionne. c’est déjà beaucoup",
-"le système semble avoir oublié la question",
-"tout est en place, sauf l’essentiel"
+"tout est en place, sauf l’essentiel",
 ]
 
 lei = [
@@ -72,7 +69,7 @@ lei = [
 "ce que tu perçois se forme... ailleurs",
 "le retour existe... mais ne revient pas",
 "tu étais là il y a une seconde...",
-"attends... non"
+"attends... non",
 ]
 
 sorel = [
@@ -89,7 +86,7 @@ sorel = [
 "la structure précède ce que tu crois vivre immédiatement",
 "la représentation suppose ici l’effacement de celui qui regarde",
 "la présence est produite par un manque constitutif",
-"la validation est rendue impossible par la logique même du dispositif",
+"il faudrait probablement recommencer... ou simplement recharger la page?",
 "l’expérience dépend d’une extériorité irréductible",
 "la proximité perceptive est une illusion produite",
 "l’identification fonctionne comme une opération toujours incomplète",
@@ -98,7 +95,7 @@ sorel = [
 "l’origine est neutralisée par la logique du dispositif",
 "la condition d’apparition repose sur l’impossibilité de se voir soi-même",
 "la coïncidence est annulée par le fonctionnement du dispositif",
-"la présence du sujet est exclue comme condition de cohérence",
+"nous avons perdu le fil, semble-t-il",
 "la tension n’est pas un effet mais une condition",
 "l’appropriation est neutralisée par la structure du dispositif",
 "la forme excède toujours ce qu’elle prétend être",
@@ -106,8 +103,6 @@ sorel = [
 "la critique ne trouve plus de point d’appui",
 "la distinction sujet objet devient inopérante",
 "le dispositif annule les distinctions qu’il semblait produire",
-"il faudrait probablement recommencer... ou simplement recharger la page?",
-"nous avons perdu le fil, semble-t-il"
 ]
 
 anaya = [
@@ -142,8 +137,8 @@ anaya = [
 "tu es déjà là... autrement",
 "ce qui apparaît ne demande rien et pourtant te traverse",
 "nous y étions presque",
-"peut-être que c’était déjà fini"
+"peut-être que c’était déjà fini",
 ]
 
-# Le corpus fondateur est conservé intégralement : 30 phrases par voix.
+# 30 phrases par voix : 9 anciennes formulations remplacées par 9 nouvelles.
 # La mécanique de génération est volontairement laissée à l’étape suivante.
