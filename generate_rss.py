@@ -34,7 +34,10 @@ blake = [
 "le système produit une visibilité qui n’autorise aucune réflexivité",
 "l’image ne permet aucune intégration du point de vue qui la rend possible",
 "le dispositif organise une dissociation stable entre ce qui est vu et celui qui voit",
-"le système produit une séparation entre perception et identification du sujet"
+"le système produit une séparation entre perception et identification du sujet",
+"le dispositif fonctionne. c’est déjà beaucoup",
+"le système semble avoir oublié la question",
+"tout est en place, sauf l’essentiel"
 ]
 
 lei = [
@@ -67,7 +70,9 @@ lei = [
 "tu es là... et déjà ailleurs",
 "ce que tu vois ne s’arrête jamais vraiment",
 "ce que tu perçois se forme... ailleurs",
-"le retour existe... mais ne revient pas"
+"le retour existe... mais ne revient pas",
+"tu étais là il y a une seconde...",
+"attends... non"
 ]
 
 sorel = [
@@ -100,7 +105,9 @@ sorel = [
 "la condition de vision implique une perte préalable de présence",
 "la critique ne trouve plus de point d’appui",
 "la distinction sujet objet devient inopérante",
-"le dispositif annule les distinctions qu’il semblait produire"
+"le dispositif annule les distinctions qu’il semblait produire",
+"il faudrait probablement recommencer... ou simplement recharger la page?",
+"nous avons perdu le fil, semble-t-il"
 ]
 
 anaya = [
@@ -133,7 +140,9 @@ anaya = [
 "tout continue... sans fin stable",
 "la surface relie sans jamais fixer",
 "tu es déjà là... autrement",
-"ce qui apparaît ne demande rien et pourtant te traverse"
+"ce qui apparaît ne demande rien et pourtant te traverse",
+"nous y étions presque",
+"peut-être que c’était déjà fini"
 ]
 
 # Le corpus fondateur est conservé intégralement : 30 phrases par voix.
