@@ -82,17 +82,27 @@ def make_speech_schedule(rng):
     return schedule
 
 
-def make_dialogue_units(cycle):
-    """Randomly place 80 unit occurrences across the current corpus size."""
-    rng = random.Random(cycle * 1000003 + 31)
-    occurrences = dialogue_units[:]
-    while len(occurrences) < 80:
-        extra = dialogue_units[:]
-        rng.shuffle(extra)
-        occurrences.extend(extra)
-    occurrences = occurrences[:80]
-    rng.shuffle(occurrences)
-    return occurrences
+def make_voice_phrase_schedules(cycle):
+    """Build one balanced 40-turn phrase schedule for each voice.
+
+    Each voice speaks exactly 40 times per 80-slot cycle. Its own corpus is
+    balanced independently, so corpora with 30 and 32 phrases do not create
+    modulo bias. Every phrase appears at least once per cycle; the remainder
+    is distributed randomly among phrases.
+    """
+    schedules = {}
+    for voice_index, (_, phrases) in enumerate(sources):
+        rng = random.Random(cycle * 1000003 + 31 + voice_index * 1009)
+        base = list(range(len(phrases)))
+        occurrences = []
+        while len(occurrences) < 40:
+            batch = base[:]
+            rng.shuffle(batch)
+            occurrences.extend(batch)
+        occurrences = occurrences[:40]
+        rng.shuffle(occurrences)
+        schedules[voice_index] = occurrences
+    return schedules
 
 
 def generate_feed():
@@ -103,11 +113,25 @@ def generate_feed():
 
     schedule = make_speech_schedule(random.Random(cycle * 10000 + 17))
     mask = schedule[position]
-    unit_index = make_dialogue_units(cycle)[position]
+    voice_phrase_schedules = make_voice_phrase_schedules(cycle)
 
+    # Count the turn number of each voice up to this position. The phrase
+    # schedule is independent for each voice, so only that voice's own turns
+    # advance its phrase sequence.
     selected = []
+    turns_so_far = [0, 0, 0, 0]
+    for previous_mask in schedule[:position]:
+        for voice_index in range(4):
+            if (previous_mask >> voice_index) & 1:
+                turns_so_far[voice_index] += 1
+
     for voice_index, (author, phrases) in enumerate(sources):
-        text = phrases[unit_index % len(phrases)] if (mask >> voice_index) & 1 else "..."
+        if (mask >> voice_index) & 1:
+            phrase_index = voice_phrase_schedules[voice_index][turns_so_far[voice_index]]
+            text = phrases[phrase_index]
+            turns_so_far[voice_index] += 1
+        else:
+            text = "..."
         selected.append((author, text))
     random.Random(slot).shuffle(selected)
 
