@@ -20,23 +20,13 @@ sources = [
     (">_ ANAYA :", phrase_lists["anaya"]),
 ]
 
-# The four voice corpora may now contain different numbers of phrases.
-# The dialogue uses the longest corpus length and wraps shorter corpora,
-# so no phrase is discarded and no voice can cause an index error.
 if not all(phrases for _, phrases in sources):
     raise ValueError("Chaque voix doit contenir au moins une phrase")
 
 DIALOGUE_UNIT_COUNT = max(len(phrases) for _, phrases in sources)
-dialogue_units = list(range(DIALOGUE_UNIT_COUNT))
-
 
 def make_speech_schedule(rng):
-    """80 slots: 10 singles, 62 duos, 6 trios, 2 quads; 40 turns/voice.
-
-    All six possible voice pairings are represented. We begin with 80 duos,
-    balanced so that every voice appears 40 times, then convert 10 to singles,
-    6 to trios and 2 to quads while preserving the final 40 turns per voice.
-    """
+    """80 slots: 10 singles, 62 duos, 6 trios, 2 quads; 40 turns/voice."""
     pairings = (
         [(0, 1)] * 14 + [(2, 3)] * 14 +
         [(0, 2)] * 13 + [(0, 3)] * 13 +
@@ -82,26 +72,58 @@ def make_speech_schedule(rng):
     return schedule
 
 
-def make_voice_phrase_schedules(cycle):
-    """Build one balanced 40-turn phrase schedule for each voice.
+def _make_one_voice_sequence(voice_index, cycle, previous_tail=None):
+    """Create 40 phrase indices with a 15/16-turn exact-repeat cooldown.
 
-    Each voice speaks exactly 40 times per 80-slot cycle. Its own corpus is
-    balanced independently, so corpora with 30 and 32 phrases do not create
-    modulo bias. Every phrase appears at least once per cycle; the remainder
-    is distributed randomly among phrases.
+    The sequence is balanced over the whole cycle, but a phrase cannot recur
+    while it is still inside the recent-memory window. The tail of the
+    previous cycle is carried into the next cycle, so the boundary does not
+    reset the memory and immediately repeat yesterday's phrases.
     """
+    phrases = sources[voice_index][1]
+    count = len(phrases)
+    cooldown = min(16, count // 2)
+    rng = random.Random(cycle * 1000003 + 31 + voice_index * 1009)
+
+    # Start with one randomized pass through the whole corpus. This guarantees
+    # that every phrase is represented at least once without forcing the same
+    # phrase to recur at a fixed position in every cycle.
+    first_pass = list(range(count))
+    rng.shuffle(first_pass)
+    sequence = []
+    recent = list(previous_tail or [])[-cooldown:]
+
+    def choose_candidate(candidates):
+        candidates = [x for x in candidates if x not in recent]
+        if not candidates:
+            candidates = [x for x in range(count) if x not in recent]
+        choice = rng.choice(candidates)
+        sequence.append(choice)
+        recent.append(choice)
+        del recent[:-cooldown]
+        return choice
+
+    for phrase_index in first_pass:
+        if phrase_index not in recent:
+            choose_candidate([phrase_index])
+        else:
+            choose_candidate([x for x in first_pass if x not in sequence])
+
+    while len(sequence) < 40:
+        choose_candidate(list(range(count)))
+
+    return sequence
+
+
+def make_voice_phrase_schedules(cycle):
+    """Build balanced phrase schedules with recent-use memory per voice."""
     schedules = {}
     for voice_index, (_, phrases) in enumerate(sources):
-        rng = random.Random(cycle * 1000003 + 31 + voice_index * 1009)
-        base = list(range(len(phrases)))
-        occurrences = []
-        while len(occurrences) < 40:
-            batch = base[:]
-            rng.shuffle(batch)
-            occurrences.extend(batch)
-        occurrences = occurrences[:40]
-        rng.shuffle(occurrences)
-        schedules[voice_index] = occurrences
+        previous = _make_one_voice_sequence(voice_index, cycle - 1) if cycle > 0 else []
+        cooldown = min(16, len(phrases) // 2)
+        schedules[voice_index] = _make_one_voice_sequence(
+            voice_index, cycle, previous_tail=previous[-cooldown:]
+        )
     return schedules
 
 
@@ -115,9 +137,6 @@ def generate_feed():
     mask = schedule[position]
     voice_phrase_schedules = make_voice_phrase_schedules(cycle)
 
-    # Count the turn number of each voice up to this position. The phrase
-    # schedule is independent for each voice, so only that voice's own turns
-    # advance its phrase sequence.
     selected = []
     turns_so_far = [0, 0, 0, 0]
     for previous_mask in schedule[:position]:
