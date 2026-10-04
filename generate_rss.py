@@ -103,6 +103,7 @@ sorel = [
 "la critique ne trouve plus de point d’appui",
 "la distinction ne disparaît pas ; elle cesse simplement de produire ses effets",
 "le dispositif annule les distinctions qu’il semblait produire",
+"il n'y a pas de monde comme totalité",
 ]
 
 anaya = [
@@ -140,5 +141,5 @@ anaya = [
 "peut-être que c’était déjà fini",
 ]
 
-# 30 phrases par voix : 9 anciennes formulations remplacées par 9 nouvelles.
+# 31 phrases pour Sorel : réintroduction de la phrase issue du dispositif setup.
 # La mécanique de génération est volontairement laissée à l’étape suivante.
