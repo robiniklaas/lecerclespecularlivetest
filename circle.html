@@ -33,14 +33,17 @@ async function loadCircle() {
 
     // Preserve the existing public format: display only four utterances.
     const entries = [];
+    const seenVoices = new Set();
     for (const turn of data.turns) {
       for (const entry of (turn.entries || [])) {
+        if (seenVoices.has(entry.voice)) continue;
         entries.push(entry);
+        seenVoices.add(entry.voice);
         if (entries.length === 4) break;
       }
       if (entries.length === 4) break;
     }
-    if (entries.length !== 4) throw new Error('Quatre phrases indisponibles');
+    if (entries.length !== 4) throw new Error('Quatre voix distinctes indisponibles');
     container.innerHTML = entries.map(entry =>
       '<div class="entry"><span class="author">' + escapeHtml(entry.voice || '') +
       '</span><span class="text">' + escapeHtml(entry.text || '') + '</span></div>'
