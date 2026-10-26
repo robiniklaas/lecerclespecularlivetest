@@ -5,116 +5,55 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>le cercle specular</title>
 <style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    background: transparent;
-  }
-
-  body {
-    font-family: monospace;
-    font-size: 18px;
-    line-height: 1.45;
-    color: #000;
-  }
-
-  #circle {
-    display: block;
-    width: auto;
-    max-width: 90vw;
-    margin: 0 auto;
-    text-align: left;
-  }
-
-  .turn {
-    margin: 0 0 0.7em 0;
-  }
-
-  .turn.silence {
-    height: 1.6em;
-    margin-bottom: 0.7em;
-  }
-
-  .entry {
-    margin: 0 0 0.22em 0;
-  }
-
-  .author {
-    font-weight: 700;
-  }
-
-  .text {
-    display: block;
-    margin-left: 0;
-  }
-
-  .error {
-    opacity: 0.55;
-  }
-
+  html, body { margin: 0; padding: 0; background: transparent; }
+  body { font-family: monospace; font-size: 18px; line-height: 1.45; color: #000; }
+  #circle { display: table; width: auto; max-width: 90vw; margin-left: auto; margin-right: auto; text-align: left; }
+  .entry { margin: 0 0 0.35em 0; }
+  .author { font-weight: 700; }
+  .text { display: block; margin-left: 0; }
+  .error { opacity: 0.55; color: #c00; }
   @media (max-width: 600px) {
-    body {
-      font-size: 14px;
-      line-height: 1.35;
-    }
-
-    #circle {
-      max-width: 94vw;
-    }
+    body { font-size: 14px; line-height: 1.35; }
+    #circle { max-width: 94vw; }
   }
 </style>
 </head>
 <body>
 <div id="circle" aria-live="polite"></div>
-
 <script>
 const SEQUENCE = 'https://raw.githubusercontent.com/robiniklaas/lecerclespecularlivetest/main/circle_daily.json';
 
 async function loadCircle() {
   const container = document.getElementById('circle');
-
   try {
-    const response = await fetch(SEQUENCE + '?t=' + Date.now(), {
-      cache: 'no-store'
-    });
-
+    const response = await fetch(SEQUENCE + '?t=' + Date.now(), { cache: 'no-store' });
     if (!response.ok) throw new Error('HTTP ' + response.status);
-
     const data = await response.json();
-    if (!Array.isArray(data.turns) || data.turns.length !== 80) {
-      throw new Error('Séquence incomplète');
-    }
+    if (!Array.isArray(data.turns) || data.turns.length !== 80) throw new Error('Séquence incomplète');
 
-    container.innerHTML = data.turns.map(turn => {
-      if (turn.type === 'silence') {
-        return '<div class="turn silence" aria-label="silence"></div>';
+    // Preserve the existing public format: display only four utterances.
+    const entries = [];
+    for (const turn of data.turns) {
+      for (const entry of (turn.entries || [])) {
+        entries.push(entry);
+        if (entries.length === 4) break;
       }
-
-      const entries = (turn.entries || []).map(entry =>
-        '<div class="entry"><span class="author">' +
-        escapeHtml(entry.voice || '') +
-        '</span><span class="text">' +
-        escapeHtml(entry.text || '') +
-        '</span></div>'
-      ).join('');
-
-      return '<div class="turn">' + entries + '</div>';
-    }).join('');
+      if (entries.length === 4) break;
+    }
+    if (entries.length !== 4) throw new Error('Quatre phrases indisponibles');
+    container.innerHTML = entries.map(entry =>
+      '<div class="entry"><span class="author">' + escapeHtml(entry.voice || '') +
+      '</span><span class="text">' + escapeHtml(entry.text || '') + '</span></div>'
+    ).join('');
   } catch (error) {
     container.innerHTML = '<div class="error">[live]</div>';
-    console.error(error);
+    console.error('Cercle Specular:', error);
   }
 }
-
 function escapeHtml(value) {
-  return String(value)
-    .replaceAll('&', '&amp;')
-    .replaceAll('<', '&lt;')
-    .replaceAll('>', '&gt;')
-    .replaceAll('"', '&quot;')
-    .replaceAll("'", '&#039;');
+  return String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;').replaceAll("'", '&#039;');
 }
-
 loadCircle();
 setInterval(loadCircle, 15 * 60 * 1000);
 </script>
