@@ -19,16 +19,24 @@
   }
 
   #circle {
-    display: table;
+    display: block;
     width: auto;
     max-width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     text-align: left;
   }
 
+  .turn {
+    margin: 0 0 0.7em 0;
+  }
+
+  .turn.silence {
+    height: 1.6em;
+    margin-bottom: 0.7em;
+  }
+
   .entry {
-    margin: 0 0 0.35em 0;
+    margin: 0 0 0.22em 0;
   }
 
   .author {
@@ -60,29 +68,37 @@
 <div id="circle" aria-live="polite"></div>
 
 <script>
-const FEED = 'https://raw.githubusercontent.com/robiniklaas/lecerclespecularlivetest/main/feed.xml';
+const SEQUENCE = 'https://raw.githubusercontent.com/robiniklaas/lecerclespecularlivetest/main/circle_daily.json';
 
 async function loadCircle() {
   const container = document.getElementById('circle');
 
   try {
-    const response = await fetch(FEED + '?t=' + Date.now(), {
+    const response = await fetch(SEQUENCE + '?t=' + Date.now(), {
       cache: 'no-store'
     });
 
     if (!response.ok) throw new Error('HTTP ' + response.status);
 
-    const xml = await response.text();
-    const doc = new DOMParser().parseFromString(xml, 'application/xml');
-    const items = Array.from(doc.querySelectorAll('item')).slice(0, 4);
+    const data = await response.json();
+    if (!Array.isArray(data.turns) || data.turns.length !== 80) {
+      throw new Error('Séquence incomplète');
+    }
 
-    if (items.length < 4) throw new Error('Flux incomplet');
+    container.innerHTML = data.turns.map(turn => {
+      if (turn.type === 'silence') {
+        return '<div class="turn silence" aria-label="silence"></div>';
+      }
 
-    container.innerHTML = items.map(item => {
-      const title = item.querySelector('title')?.textContent || '';
-      const description = item.querySelector('description')?.textContent || '';
+      const entries = (turn.entries || []).map(entry =>
+        '<div class="entry"><span class="author">' +
+        escapeHtml(entry.voice || '') +
+        '</span><span class="text">' +
+        escapeHtml(entry.text || '') +
+        '</span></div>'
+      ).join('');
 
-      return `<div class="entry"><span class="author">${escapeHtml(title)}</span><span class="text">${escapeHtml(description)}</span></div>`;
+      return '<div class="turn">' + entries + '</div>';
     }).join('');
   } catch (error) {
     container.innerHTML = '<div class="error">[live]</div>';
@@ -91,7 +107,7 @@ async function loadCircle() {
 }
 
 function escapeHtml(value) {
-  return value
+  return String(value)
     .replaceAll('&', '&amp;')
     .replaceAll('<', '&lt;')
     .replaceAll('>', '&gt;')
