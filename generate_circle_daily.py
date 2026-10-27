@@ -24,7 +24,9 @@ VOICES = ["BLAKE", "LEI", "SOREL", "ANAYA"]
 
 def main():
     day = datetime.now(timezone.utc).date().isoformat()
-    seed_base = int(datetime.now(timezone.utc).strftime("%Y%m%d"))
+    # Reserve a disjoint range of 100 seeds per UTC day, so retry attempts
+    # cannot reuse another day's seeds.
+    seed_base = int(day.replace("-", "")) * 100
     archive = ARCHIVE_ROOT / day
     ARCHIVE_ROOT.mkdir(parents=True, exist_ok=True)
 
