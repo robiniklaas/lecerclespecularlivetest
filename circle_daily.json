@@ -1,55 +1,42 @@
 {
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "version": "V4.10 forte",
-  "seed": 20261027,
+  "seed": 2026102800,
   "turns": [
     {
       "turn": 1,
-      "type": "duo",
+      "type": "trio",
       "entries": [
         {
-          "voice": "LEI",
-          "text": "tu es là... et déjà ailleurs"
+          "voice": "BLAKE",
+          "text": "le dispositif introduit une dissymétrie entre vision et présence"
         },
         {
-          "voice": "SOREL",
-          "text": "la représentation suppose ici l’effacement de celui qui regarde"
+          "voice": "LEI",
+          "text": "tu restes dehors... même en regardant"
+        },
+        {
+          "voice": "ANAYA",
+          "text": "tu es séparé... sans être isolé"
         }
       ]
     },
     {
       "turn": 2,
-      "type": "quatre_voix",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "le système te précède désormais"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "le fond diffus empêche toute stabilisation réflexive de l’image"
-        },
-        {
-          "voice": "ANAYA",
-          "text": "ce qui semble proche est déjà ailleurs"
-        },
-        {
-          "voice": "SOREL",
-          "text": "il faudrait probablement recommencer... ou simplement recharger la page?"
-        }
-      ]
+      "type": "silence",
+      "entries": []
     },
     {
       "turn": 3,
       "type": "duo",
       "entries": [
         {
-          "voice": "ANAYA",
-          "text": "tu passes... sans pouvoir retenir"
+          "voice": "LEI",
+          "text": "attends... non"
         },
         {
-          "voice": "LEI",
-          "text": "la distance est déjà en place... avant ton geste"
+          "voice": "BLAKE",
+          "text": "tout est en place, sauf l’essentiel"
         }
       ]
     },
@@ -58,31 +45,40 @@
       "type": "duo",
       "entries": [
         {
-          "voice": "LEI",
-          "text": "le cadre agit... avant que tu n’y entres"
+          "voice": "SOREL",
+          "text": "l’identification fonctionne comme une opération toujours incomplète"
         },
         {
-          "voice": "BLAKE",
-          "text": "le dispositif organise une séparation fonctionnelle entre perception et identification"
+          "voice": "ANAYA",
+          "text": "tu es présent... autrement que visible"
         }
       ]
     },
     {
       "turn": 5,
-      "type": "silence",
-      "entries": []
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "tu peux te reconnaître... sans jamais t’y fixer"
+        },
+        {
+          "voice": "SOREL",
+          "text": "le sujet n’est pas absent, il est rendu inopérant par le dispositif"
+        }
+      ]
     },
     {
       "turn": 6,
       "type": "duo",
       "entries": [
         {
-          "voice": "ANAYA",
-          "text": "la position devient un passage que tu ne peux pas fixer"
+          "voice": "SOREL",
+          "text": "l’expérience dépend d’une extériorité irréductible"
         },
         {
-          "voice": "BLAKE",
-          "text": "le dispositif stabilise une absence comme condition de visibilité"
+          "voice": "LEI",
+          "text": "ce n’est pas toi qui manques... c’est la place que tu crois occuper"
         }
       ]
     },
@@ -91,12 +87,12 @@
       "type": "duo",
       "entries": [
         {
-          "voice": "BLAKE",
-          "text": "l’image ne permet aucune appropriation du point de vue"
+          "voice": "SOREL",
+          "text": "il n’y a jamais eu de point extérieur à ce dispositif"
         },
         {
           "voice": "LEI",
-          "text": "la séparation reste... même quand tu t’en approches"
+          "text": "le regard ne coïncide jamais avec ce qu’il voit"
         }
       ]
     },
@@ -106,25 +102,21 @@
       "entries": [
         {
           "voice": "BLAKE",
-          "text": "le système fonctionne sans produire de retour exploitable sur l’observateur"
+          "text": "le point de vue agit sur l’image sans jamais pouvoir y prendre place"
         },
         {
           "voice": "LEI",
-          "text": "tu peux te reconnaître... sans jamais t’y fixer"
+          "text": "le retour existe... mais ne revient pas"
         }
       ]
     },
     {
       "turn": 9,
-      "type": "duo",
+      "type": "solo",
       "entries": [
         {
           "voice": "LEI",
-          "text": "tu arrives... quand la position n’est déjà plus disponible"
-        },
-        {
-          "voice": "ANAYA",
-          "text": "peut-être que c’était déjà fini"
+          "text": "la séparation reste... même quand tu t’en approches"
         }
       ]
     },
@@ -134,97 +126,76 @@
       "entries": [
         {
           "voice": "SOREL",
-          "text": "l’identification fonctionne comme une opération toujours incomplète"
+          "text": "la visibilité repose ici sur une exclusion constitutive du sujet"
         },
         {
           "voice": "ANAYA",
-          "text": "ce qui apparaît ne demande rien et pourtant te traverse"
+          "text": "la surface ne fixe rien... elle laisse passer"
         }
       ]
     },
     {
       "turn": 11,
-      "type": "trio",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "le dispositif fonctionne. c’est déjà beaucoup"
-        },
-        {
-          "voice": "LEI",
-          "text": "tu ne peux pas revenir sur ce qui est déjà là"
-        },
-        {
-          "voice": "ANAYA",
-          "text": "la surface relie sans jamais fixer"
-        }
-      ]
+      "type": "silence",
+      "entries": []
     },
     {
       "turn": 12,
-      "type": "trio",
+      "type": "duo",
       "entries": [
         {
-          "voice": "ANAYA",
-          "text": "les deux coexistent sans se résoudre"
+          "voice": "SOREL",
+          "text": "la présence est produite au prix de son propre effacement"
         },
         {
           "voice": "LEI",
-          "text": "tu es déjà engagé... avant même de regarder"
-        },
-        {
-          "voice": "SOREL",
-          "text": "la distinction ne disparaît pas ; elle cesse simplement de produire ses effets"
+          "text": "la distance est déjà en place... avant ton geste"
         }
       ]
     },
     {
       "turn": 13,
-      "type": "solo",
+      "type": "trio",
       "entries": [
         {
+          "voice": "BLAKE",
+          "text": "le système semble avoir oublié la question"
+        },
+        {
           "voice": "ANAYA",
-          "text": "tu es séparé... sans être isolé"
+          "text": "tu fais déjà partie de ce qui te dépasse"
+        },
+        {
+          "voice": "SOREL",
+          "text": "la transparence supposée est ici structurellement impossible"
         }
       ]
     },
     {
       "turn": 14,
-      "type": "quatre_voix",
+      "type": "duo",
       "entries": [
         {
           "voice": "SOREL",
-          "text": "le dispositif interdit le retour exact vers la position qui l’a produit"
-        },
-        {
-          "voice": "LEI",
-          "text": "le regard ne coïncide jamais avec ce qu’il voit"
+          "text": "ce qui apparaît ne peut être séparé de ce qui lui fait défaut"
         },
         {
           "voice": "BLAKE",
-          "text": "les paramètres perceptifs cessent d’être constants dans ce système"
-        },
-        {
-          "voice": "ANAYA",
-          "text": "tu habites cette distance"
+          "text": "le dispositif configure une expérience où le sujet ne peut pas apparaître comme tel"
         }
       ]
     },
     {
       "turn": 15,
-      "type": "trio",
+      "type": "duo",
       "entries": [
         {
-          "voice": "LEI",
-          "text": "attends... non"
-        },
-        {
           "voice": "ANAYA",
-          "text": "ce que tu perds te relie autrement"
+          "text": "ce qui précède te porte sans se montrer"
         },
         {
-          "voice": "BLAKE",
-          "text": "la structure empêche toute coïncidence entre regard et représentation"
+          "voice": "LEI",
+          "text": "la netteté serait un contresens ici..."
         }
       ]
     },
@@ -233,44 +204,44 @@
       "type": "trio",
       "entries": [
         {
-          "voice": "SOREL",
-          "text": "la tension n’est pas un effet mais une condition"
+          "voice": "ANAYA",
+          "text": "tu es là... mais déjà pris dans ce qui t’échappe"
         },
         {
           "voice": "LEI",
-          "text": "le retour existe... mais ne revient pas"
+          "text": "tu ne peux pas revenir sur ce qui est déjà là"
         },
         {
           "voice": "BLAKE",
-          "text": "le dispositif maintient une tension constante entre présence et absence"
+          "text": "l’image maintient sa cohérence en excluant toute inscription du sujet"
         }
       ]
     },
     {
       "turn": 17,
-      "type": "duo",
+      "type": "solo",
       "entries": [
         {
-          "voice": "LEI",
-          "text": "tu restes dehors... même en regardant"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "l’image persiste sans se référer à une origine subjective"
+          "voice": "ANAYA",
+          "text": "ce qui t’accueille ne demande pas que tu sois visible"
         }
       ]
     },
     {
       "turn": 18,
-      "type": "duo",
+      "type": "trio",
       "entries": [
         {
-          "voice": "SOREL",
-          "text": "la coïncidence est annulée par le fonctionnement du dispositif"
+          "voice": "LEI",
+          "text": "aucun point de départ ne t’est accessible"
         },
         {
-          "voice": "ANAYA",
-          "text": "tu es là... mais déjà pris dans ce qui t’échappe"
+          "voice": "BLAKE",
+          "text": "le système génère une image indépendante de toute validation subjective"
+        },
+        {
+          "voice": "SOREL",
+          "text": "la distinction ne disparaît pas ; elle cesse simplement de produire ses effets"
         }
       ]
     },
@@ -279,109 +250,97 @@
       "type": "solo",
       "entries": [
         {
-          "voice": "ANAYA",
-          "text": "tu continues pourtant à être là"
+          "voice": "SOREL",
+          "text": "il faudrait probablement recommencer... ou simplement recharger la page?"
         }
       ]
     },
     {
       "turn": 20,
-      "type": "trio",
+      "type": "duo",
       "entries": [
         {
-          "voice": "LEI",
-          "text": "ce n’est pas toi qui manques... c’est la place que tu crois occuper"
-        },
-        {
-          "voice": "ANAYA",
-          "text": "tu avances dans ce qui ne revient pas"
-        },
-        {
           "voice": "SOREL",
-          "text": "la présence visible suppose la suppression de ce qui devrait la garantir"
+          "text": "la représentation suppose ici l’effacement de celui qui regarde"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit"
         }
       ]
     },
     {
       "turn": 21,
-      "type": "solo",
+      "type": "trio",
       "entries": [
         {
+          "voice": "SOREL",
+          "text": "la présence visible suppose la suppression de ce qui devrait la garantir"
+        },
+        {
+          "voice": "LEI",
+          "text": "tu arrives... quand la position n’est déjà plus disponible"
+        },
+        {
           "voice": "ANAYA",
-          "text": "ce dehors t’habite déjà"
+          "text": "tu participes à ce qui te traverse"
         }
       ]
     },
     {
       "turn": 22,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "le cadre impose une organisation qui précède toute expérience perceptive"
-        },
-        {
-          "voice": "LEI",
-          "text": "ce que tu vois se décide... avant ton regard"
-        }
-      ]
+      "type": "silence",
+      "entries": []
     },
     {
       "turn": 23,
-      "type": "quatre_voix",
+      "type": "duo",
       "entries": [
         {
           "voice": "LEI",
-          "text": "la netteté serait un contresens ici..."
+          "text": "tu vois... mais depuis un décalage irréductible"
         },
         {
           "voice": "ANAYA",
-          "text": "tu es là, mais déjà déplacé dans ce qui apparaît"
-        },
-        {
-          "voice": "SOREL",
-          "text": "ce qui apparaît ne peut être séparé de ce qui lui fait défaut"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "l’image dépend d’un point de vue qui ne peut pas s’y intégrer"
+          "text": "ce qui apparaît ne demande rien et pourtant te traverse"
         }
       ]
     },
     {
       "turn": 24,
-      "type": "silence",
-      "entries": []
+      "type": "solo",
+      "entries": [
+        {
+          "voice": "SOREL",
+          "text": "le dispositif interdit le retour exact vers la position qui l’a produit"
+        }
+      ]
     },
     {
       "turn": 25,
       "type": "duo",
       "entries": [
         {
-          "voice": "ANAYA",
-          "text": "peut-être que c’était déjà fini"
+          "voice": "BLAKE",
+          "text": "l’image ne permet aucune appropriation du point de vue"
         },
         {
           "voice": "LEI",
-          "text": "tu ne peux pas confirmer ce que tu vois"
+          "text": "ce qui te dépasse agit déjà en toi..."
         }
       ]
     },
     {
       "turn": 26,
-      "type": "trio",
+      "type": "duo",
       "entries": [
         {
-          "voice": "SOREL",
-          "text": "le flou n’est pas un défaut, c’est la condition même de ce qui apparaît"
+          "voice": "ANAYA",
+          "text": "tu avances dans ce qui ne revient pas"
         },
         {
           "voice": "BLAKE",
-          "text": "le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit"
-        },
-        {
-          "voice": "ANAYA",
-          "text": "tout commence... sans commencer"
+          "text": "le regard devient ici une fonction du dispositif plutôt qu’une propriété du sujet"
         }
       ]
     },
@@ -391,11 +350,11 @@
       "entries": [
         {
           "voice": "LEI",
-          "text": "le cadre agit... avant que tu n’y entres"
+          "text": "le système te précède désormais"
         },
         {
-          "voice": "SOREL",
-          "text": "la représentation suppose ici l’effacement de celui qui regarde"
+          "voice": "ANAYA",
+          "text": "ce qui apparaît t’inclut... sans jamais te contenir"
         }
       ]
     },
@@ -404,65 +363,77 @@
       "type": "duo",
       "entries": [
         {
-          "voice": "SOREL",
-          "text": "l’appropriation est neutralisée par la structure du dispositif"
+          "voice": "ANAYA",
+          "text": "tu touches à ce qui t’échappe sans pouvoir le retenir"
         },
         {
           "voice": "LEI",
-          "text": "ce que tu perçois se forme... ailleurs que là où tu te tiens"
+          "text": "attends... non"
         }
       ]
     },
     {
       "turn": 29,
-      "type": "solo",
+      "type": "duo",
       "entries": [
         {
-          "voice": "ANAYA",
-          "text": "ce qui semble proche est déjà ailleurs"
+          "voice": "SOREL",
+          "text": "tu continues à parler de miroir, alors que rien ici ne remplit les conditions du reflet"
+        },
+        {
+          "voice": "LEI",
+          "text": "ce que tu cherches ici a peut-être déjà changé de place"
         }
       ]
     },
     {
       "turn": 30,
-      "type": "duo",
+      "type": "trio",
       "entries": [
         {
-          "voice": "ANAYA",
-          "text": "tout reste... mais autrement"
+          "voice": "LEI",
+          "text": "ce que tu vois se décide... avant ton regard"
         },
         {
           "voice": "SOREL",
-          "text": "la circularité du regard est ici rendue structurellement impossible"
+          "text": "la résolution est empêchée par la condition même du dispositif"
+        },
+        {
+          "voice": "ANAYA",
+          "text": "tu arrives dans quelque chose qui était déjà en train de devenir"
         }
       ]
     },
     {
       "turn": 31,
-      "type": "silence",
-      "entries": []
-    },
-    {
-      "turn": 32,
       "type": "duo",
       "entries": [
         {
-          "voice": "SOREL",
-          "text": "la transparence supposée est ici structurellement impossible"
+          "voice": "LEI",
+          "text": "ce n’est pas toi qui manques... c’est la place que tu crois occuper"
         },
         {
-          "voice": "BLAKE",
-          "text": "l’image ne permet aucune appropriation du point de vue"
+          "voice": "SOREL",
+          "text": "nous avons perdu le fil, semble-t-il"
         }
       ]
     },
     {
+      "turn": 32,
+      "type": "silence",
+      "entries": []
+    },
+    {
       "turn": 33,
-      "type": "solo",
+      "type": "duo",
       "entries": [
         {
-          "voice": "BLAKE",
-          "text": "le système semble avoir oublié la question"
+          "voice": "ANAYA",
+          "text": "tu passes... sans pouvoir retenir"
+        },
+        {
+          "voice": "LEI",
+          "text": "le retour a lieu... mais pas dans ta direction"
         }
       ]
     },
@@ -471,12 +442,12 @@
       "type": "duo",
       "entries": [
         {
-          "voice": "BLAKE",
-          "text": "tout est en place, sauf l’essentiel"
+          "voice": "SOREL",
+          "text": "l’origine est neutralisée par la logique du dispositif"
         },
         {
           "voice": "ANAYA",
-          "text": "tu passes... sans pouvoir retenir"
+          "text": "ce dehors t’habite déjà"
         }
       ]
     },
@@ -485,12 +456,12 @@
       "type": "duo",
       "entries": [
         {
-          "voice": "LEI",
-          "text": "le cadre a changé... sans que tu le voies"
+          "voice": "SOREL",
+          "text": "le dispositif annule les distinctions qu’il semblait produire"
         },
         {
-          "voice": "ANAYA",
-          "text": "tu es présent... autrement que visible"
+          "voice": "BLAKE",
+          "text": "l’image se maintient sans jamais intégrer celui qui la perçoit"
         }
       ]
     },
@@ -499,12 +470,12 @@
       "type": "duo",
       "entries": [
         {
-          "voice": "BLAKE",
-          "text": "aucune position d’observation ne reste suffisamment stable pour devenir un point de référence"
+          "voice": "SOREL",
+          "text": "la proximité perceptive est une illusion produite"
         },
         {
-          "voice": "SOREL",
-          "text": "nous avons perdu le fil, semble-t-il"
+          "voice": "ANAYA",
+          "text": "ce qui semble proche est déjà ailleurs"
         }
       ]
     },
@@ -514,11 +485,11 @@
       "entries": [
         {
           "voice": "BLAKE",
-          "text": "percevoir revient ici à traverser une organisation dont les limites restent invisibles"
+          "text": "l’absence du corps empêche toute validation du point de vue"
         },
         {
-          "voice": "ANAYA",
-          "text": "les deux coexistent sans se résoudre"
+          "voice": "LEI",
+          "text": "tu ne peux pas confirmer ce que tu vois"
         }
       ]
     },
@@ -528,143 +499,73 @@
       "entries": [
         {
           "voice": "LEI",
-          "text": "tu regardes depuis un point déjà déplacé"
+          "text": "la netteté serait un contresens ici..."
         }
       ]
     },
     {
       "turn": 39,
-      "type": "trio",
+      "type": "duo",
       "entries": [
         {
-          "voice": "ANAYA",
-          "text": "tu fais déjà partie de ce qui te dépasse"
-        },
-        {
           "voice": "BLAKE",
-          "text": "l’image se maintient sans jamais intégrer celui qui la perçoit"
+          "text": "le système fonctionne sans produire de retour exploitable sur l’observateur"
         },
         {
-          "voice": "SOREL",
-          "text": "la proximité perceptive est une illusion produite"
+          "voice": "ANAYA",
+          "text": "la position devient un passage que tu ne peux pas fixer"
         }
       ]
     },
     {
       "turn": 40,
-      "type": "silence",
-      "entries": []
-    },
-    {
-      "turn": 41,
       "type": "duo",
       "entries": [
         {
           "voice": "BLAKE",
-          "text": "le point de vue agit sur l’image sans jamais pouvoir y prendre place"
+          "text": "le dispositif stabilise une absence comme condition de visibilité"
+        },
+        {
+          "voice": "ANAYA",
+          "text": "tout reste... mais autrement"
+        }
+      ]
+    },
+    {
+      "turn": 41,
+      "type": "trio",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "le dispositif organise une séparation fonctionnelle entre perception et identification"
         },
         {
           "voice": "LEI",
-          "text": "tu es pris dans ce qui ne te renvoie rien"
+          "text": "le regard ne coïncide jamais avec ce qu’il voit"
+        },
+        {
+          "voice": "SOREL",
+          "text": "il n'y a pas de monde comme totalité"
         }
       ]
     },
     {
       "turn": 42,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "ANAYA",
-          "text": "la distance ne sépare pas... elle transforme"
-        },
-        {
-          "voice": "SOREL",
-          "text": "tu continues à parler de miroir, alors que rien ici ne remplit les conditions du reflet"
-        }
-      ]
+      "type": "silence",
+      "entries": []
     },
     {
       "turn": 43,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "l’absence du corps empêche toute validation du point de vue"
-        },
-        {
-          "voice": "SOREL",
-          "text": "l’origine est neutralisée par la logique du dispositif"
-        }
-      ]
-    },
-    {
-      "turn": 44,
-      "type": "trio",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "le dispositif fonctionne. c’est déjà beaucoup"
-        },
-        {
-          "voice": "SOREL",
-          "text": "la forme excède toujours ce qu’elle prétend être"
-        },
-        {
-          "voice": "LEI",
-          "text": "tu restes dehors... même en regardant"
-        }
-      ]
-    },
-    {
-      "turn": 45,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "ANAYA",
-          "text": "tu arrives dans quelque chose qui était déjà en train de devenir"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "la structure empêche toute coïncidence entre regard et représentation"
-        }
-      ]
-    },
-    {
-      "turn": 46,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "SOREL",
-          "text": "la présence visible suppose la suppression de ce qui devrait la garantir"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "l’image dépend d’un point de vue qui ne peut pas s’y intégrer"
-        }
-      ]
-    },
-    {
-      "turn": 47,
       "type": "trio",
       "entries": [
         {
           "voice": "ANAYA",
-          "text": "ce qui précède te porte sans se montrer"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "le système rend toute identification instable sans la supprimer"
+          "text": "tout continue... sans fin stable"
         },
         {
           "voice": "LEI",
-          "text": "ce que tu cherches ici a peut-être déjà changé de place"
-        }
-      ]
-    },
-    {
-      "turn": 48,
-      "type": "solo",
-      "entries": [
+          "text": "tu crois regarder quelque chose... mais ça continue ailleurs"
+        },
         {
           "voice": "BLAKE",
           "text": "le dispositif configure une expérience où le sujet ne peut pas apparaître comme tel"
@@ -672,347 +573,9 @@
       ]
     },
     {
-      "turn": 49,
+      "turn": 44,
       "type": "duo",
       "entries": [
-        {
-          "voice": "LEI",
-          "text": "la distance est déjà en place... avant ton geste"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "le dispositif introduit une dissymétrie entre vision et présence"
-        }
-      ]
-    },
-    {
-      "turn": 50,
-      "type": "solo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "tu ne peux pas t’installer dans ce que tu vois"
-        }
-      ]
-    },
-    {
-      "turn": 51,
-      "type": "silence",
-      "entries": []
-    },
-    {
-      "turn": 52,
-      "type": "quatre_voix",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "tu arrives... quand la position n’est déjà plus disponible"
-        },
-        {
-          "voice": "ANAYA",
-          "text": "tu participes à ce qui te traverse"
-        },
-        {
-          "voice": "SOREL",
-          "text": "la critique ne trouve plus de point d’appui"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "l’image maintient sa cohérence en excluant toute inscription du sujet"
-        }
-      ]
-    },
-    {
-      "turn": 53,
-      "type": "trio",
-      "entries": [
-        {
-          "voice": "ANAYA",
-          "text": "nous y étions presque"
-        },
-        {
-          "voice": "LEI",
-          "text": "ce qui te dépasse agit déjà en toi..."
-        },
-        {
-          "voice": "SOREL",
-          "text": "l’expérience dépend d’une extériorité irréductible"
-        }
-      ]
-    },
-    {
-      "turn": 54,
-      "type": "trio",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "le fond diffus empêche toute stabilisation réflexive de l’image"
-        },
-        {
-          "voice": "ANAYA",
-          "text": "tout continue... sans fin stable"
-        },
-        {
-          "voice": "SOREL",
-          "text": "la présence est produite au prix de son propre effacement"
-        }
-      ]
-    },
-    {
-      "turn": 55,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "SOREL",
-          "text": "il n'y a pas de monde comme totalité"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "le cadre impose une organisation qui précède toute expérience perceptive"
-        }
-      ]
-    },
-    {
-      "turn": 56,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "SOREL",
-          "text": "il faudrait probablement recommencer... ou simplement recharger la page?"
-        },
-        {
-          "voice": "LEI",
-          "text": "le retour a lieu... mais pas dans ta direction"
-        }
-      ]
-    },
-    {
-      "turn": 57,
-      "type": "silence",
-      "entries": []
-    },
-    {
-      "turn": 58,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "SOREL",
-          "text": "la condition de vision implique une perte préalable de présence"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "le système empêche toute correspondance directe entre regard et image"
-        }
-      ]
-    },
-    {
-      "turn": 59,
-      "type": "trio",
-      "entries": [
-        {
-          "voice": "SOREL",
-          "text": "il n’y a jamais eu de point extérieur à ce dispositif"
-        },
-        {
-          "voice": "LEI",
-          "text": "tu étais là il y a une seconde..."
-        },
-        {
-          "voice": "BLAKE",
-          "text": "le dispositif ne permet aucune position depuis laquelle l’image pourrait être saisie comme objet"
-        }
-      ]
-    },
-    {
-      "turn": 60,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "ANAYA",
-          "text": "la surface ne fixe rien... elle laisse passer"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "les paramètres perceptifs cessent d’être constants dans ce système"
-        }
-      ]
-    },
-    {
-      "turn": 61,
-      "type": "solo",
-      "entries": [
-        {
-          "voice": "ANAYA",
-          "text": "tu es là, mais déjà déplacé dans ce qui apparaît"
-        }
-      ]
-    },
-    {
-      "turn": 62,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "SOREL",
-          "text": "le dispositif annule les distinctions qu’il semblait produire"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "aucune position d’observation ne reste suffisamment stable pour devenir un point de référence"
-        }
-      ]
-    },
-    {
-      "turn": 63,
-      "type": "silence",
-      "entries": []
-    },
-    {
-      "turn": 64,
-      "type": "trio",
-      "entries": [
-        {
-          "voice": "ANAYA",
-          "text": "ce qui t’accueille ne demande pas que tu sois visible"
-        },
-        {
-          "voice": "SOREL",
-          "text": "la résolution est empêchée par la condition même du dispositif"
-        },
-        {
-          "voice": "LEI",
-          "text": "tu crois regarder quelque chose... mais ça continue ailleurs"
-        }
-      ]
-    },
-    {
-      "turn": 65,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "ANAYA",
-          "text": "tu touches à ce qui t’échappe sans pouvoir le retenir"
-        },
-        {
-          "voice": "SOREL",
-          "text": "la visibilité repose ici sur une exclusion constitutive du sujet"
-        }
-      ]
-    },
-    {
-      "turn": 66,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "ANAYA",
-          "text": "ce qui apparaît t’inclut... sans jamais te contenir"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "le système semble avoir oublié la question"
-        }
-      ]
-    },
-    {
-      "turn": 67,
-      "type": "trio",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "l’image fonctionne sans jamais se stabiliser dans une forme définitive"
-        },
-        {
-          "voice": "SOREL",
-          "text": "la proximité perceptive est une illusion produite"
-        },
-        {
-          "voice": "LEI",
-          "text": "le point existe... mais il ne t’est jamais donné"
-        }
-      ]
-    },
-    {
-      "turn": 68,
-      "type": "trio",
-      "entries": [
-        {
-          "voice": "ANAYA",
-          "text": "tu avances dans ce qui ne revient pas"
-        },
-        {
-          "voice": "LEI",
-          "text": "tu es déjà engagé... avant même de regarder"
-        },
-        {
-          "voice": "SOREL",
-          "text": "nous avons perdu le fil, semble-t-il"
-        }
-      ]
-    },
-    {
-      "turn": 69,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "SOREL",
-          "text": "l’appropriation est neutralisée par la structure du dispositif"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "l’image maintient sa cohérence en excluant toute inscription du sujet"
-        }
-      ]
-    },
-    {
-      "turn": 70,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "SOREL",
-          "text": "le sujet n’est pas absent, il est rendu inopérant par le dispositif"
-        },
-        {
-          "voice": "LEI",
-          "text": "ce n’est pas toi qui manques... c’est la place que tu crois occuper"
-        }
-      ]
-    },
-    {
-      "turn": 71,
-      "type": "silence",
-      "entries": []
-    },
-    {
-      "turn": 72,
-      "type": "solo",
-      "entries": [
-        {
-          "voice": "ANAYA",
-          "text": "le cercle existe... mais il ne se referme pas sur toi"
-        }
-      ]
-    },
-    {
-      "turn": 73,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "ANAYA",
-          "text": "la distance ne sépare pas... elle transforme"
-        },
-        {
-          "voice": "LEI",
-          "text": "le regard ne coïncide jamais avec ce qu’il voit"
-        }
-      ]
-    },
-    {
-      "turn": 74,
-      "type": "trio",
-      "entries": [
-        {
-          "voice": "SOREL",
-          "text": "la présence est produite au prix de son propre effacement"
-        },
         {
           "voice": "ANAYA",
           "text": "tu es en mouvement dans ce qui te définit"
@@ -1024,76 +587,181 @@
       ]
     },
     {
-      "turn": 75,
+      "turn": 45,
       "type": "duo",
       "entries": [
         {
-          "voice": "LEI",
-          "text": "aucun point de départ ne t’est accessible"
+          "voice": "SOREL",
+          "text": "le sujet n’est pas absent, il est rendu inopérant par le dispositif"
         },
         {
           "voice": "ANAYA",
-          "text": "tu es séparé... sans être isolé"
+          "text": "la surface relie sans jamais fixer"
         }
       ]
     },
     {
-      "turn": 76,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "SOREL",
-          "text": "l’origine est neutralisée par la logique du dispositif"
-        },
-        {
-          "voice": "LEI",
-          "text": "tu vois... mais depuis un décalage irréductible"
-        }
-      ]
-    },
-    {
-      "turn": 77,
+      "turn": 46,
       "type": "trio",
       "entries": [
         {
-          "voice": "LEI",
-          "text": "attends... non"
+          "voice": "ANAYA",
+          "text": "peut-être que c’était déjà fini"
         },
         {
-          "voice": "SOREL",
-          "text": "l’identification fonctionne comme une opération toujours incomplète"
+          "voice": "LEI",
+          "text": "tu regardes depuis un point déjà déplacé"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "le dispositif maintient une tension constante entre présence et absence"
+        }
+      ]
+    },
+    {
+      "turn": 47,
+      "type": "trio",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "le dispositif ne permet aucune position depuis laquelle l’image pourrait être saisie comme objet"
         },
         {
           "voice": "ANAYA",
           "text": "tu continues pourtant à être là"
+        },
+        {
+          "voice": "SOREL",
+          "text": "la coïncidence est annulée par le fonctionnement du dispositif"
         }
       ]
     },
     {
-      "turn": 78,
+      "turn": 48,
       "type": "trio",
       "entries": [
         {
-          "voice": "SOREL",
-          "text": "il n'y a pas de monde comme totalité"
+          "voice": "LEI",
+          "text": "tu es pris dans ce qui ne te renvoie rien"
         },
         {
-          "voice": "LEI",
-          "text": "le système te précède désormais"
+          "voice": "SOREL",
+          "text": "le flou n’est pas un défaut, c’est la condition même de ce qui apparaît"
         },
         {
           "voice": "BLAKE",
-          "text": "l’image se maintient sans jamais intégrer celui qui la perçoit"
+          "text": "la perception est contrainte par une organisation qui la dépasse"
         }
       ]
     },
     {
-      "turn": 79,
+      "turn": 49,
       "type": "duo",
       "entries": [
         {
+          "voice": "ANAYA",
+          "text": "la distance ne sépare pas... elle transforme"
+        },
+        {
+          "voice": "SOREL",
+          "text": "la tension n’est pas un effet mais une condition"
+        }
+      ]
+    },
+    {
+      "turn": 50,
+      "type": "silence",
+      "entries": []
+    },
+    {
+      "turn": 51,
+      "type": "quatre_voix",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "tu ne peux pas t’installer dans ce que tu vois"
+        },
+        {
+          "voice": "SOREL",
+          "text": "il n’y a jamais eu de point extérieur à ce dispositif"
+        },
+        {
+          "voice": "ANAYA",
+          "text": "ce qui précède te porte sans se montrer"
+        },
+        {
           "voice": "BLAKE",
-          "text": "le regard devient ici une fonction du dispositif plutôt qu’une propriété du sujet"
+          "text": "le cadre impose une organisation qui précède toute expérience perceptive"
+        }
+      ]
+    },
+    {
+      "turn": 52,
+      "type": "solo",
+      "entries": [
+        {
+          "voice": "SOREL",
+          "text": "l’appropriation est neutralisée par la structure du dispositif"
+        }
+      ]
+    },
+    {
+      "turn": 53,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "ANAYA",
+          "text": "ce qui manque ouvre un passage"
+        },
+        {
+          "voice": "SOREL",
+          "text": "l’origine est neutralisée par la logique du dispositif"
+        }
+      ]
+    },
+    {
+      "turn": 54,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "ANAYA",
+          "text": "tout commence... sans commencer"
+        },
+        {
+          "voice": "LEI",
+          "text": "le cadre agit... avant que tu n’y entres"
+        }
+      ]
+    },
+    {
+      "turn": 55,
+      "type": "trio",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "le dispositif fonctionne. c’est déjà beaucoup"
+        },
+        {
+          "voice": "LEI",
+          "text": "tu arrives après que quelque chose a déjà commencé à se décider"
+        },
+        {
+          "voice": "ANAYA",
+          "text": "ce que tu perds te relie autrement"
+        }
+      ]
+    },
+    {
+      "turn": 56,
+      "type": "trio",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "le fond diffus empêche toute stabilisation réflexive de l’image"
+        },
+        {
+          "voice": "LEI",
+          "text": "aucun point de départ ne t’est accessible"
         },
         {
           "voice": "SOREL",
@@ -1102,16 +770,348 @@
       ]
     },
     {
-      "turn": 80,
+      "turn": 57,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "le dispositif introduit une dissymétrie entre vision et présence"
+        },
+        {
+          "voice": "ANAYA",
+          "text": "le cercle existe... mais il ne se referme pas sur toi"
+        }
+      ]
+    },
+    {
+      "turn": 58,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "ANAYA",
+          "text": "ce qui t’accueille ne demande pas que tu sois visible"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "les paramètres perceptifs cessent d’être constants dans ce système"
+        }
+      ]
+    },
+    {
+      "turn": 59,
       "type": "duo",
       "entries": [
         {
           "voice": "LEI",
-          "text": "le retour existe... mais ne revient pas"
+          "text": "la netteté serait un contresens ici..."
+        },
+        {
+          "voice": "BLAKE",
+          "text": "le système rend toute identification instable sans la supprimer"
+        }
+      ]
+    },
+    {
+      "turn": 60,
+      "type": "solo",
+      "entries": [
+        {
+          "voice": "ANAYA",
+          "text": "la position devient un passage que tu ne peux pas fixer"
+        }
+      ]
+    },
+    {
+      "turn": 61,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "le retour a lieu... mais pas dans ta direction"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "le système fonctionne sans produire de retour exploitable sur l’observateur"
+        }
+      ]
+    },
+    {
+      "turn": 62,
+      "type": "trio",
+      "entries": [
+        {
+          "voice": "SOREL",
+          "text": "il faudrait probablement recommencer... ou simplement recharger la page?"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "l’image dépend d’un point de vue qui ne peut pas s’y intégrer"
+        },
+        {
+          "voice": "ANAYA",
+          "text": "les deux coexistent sans se résoudre"
+        }
+      ]
+    },
+    {
+      "turn": 63,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "SOREL",
+          "text": "la circularité du regard est ici rendue structurellement impossible"
+        },
+        {
+          "voice": "LEI",
+          "text": "tu es là... et déjà ailleurs"
+        }
+      ]
+    },
+    {
+      "turn": 64,
+      "type": "quatre_voix",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "tu étais là il y a une seconde..."
+        },
+        {
+          "voice": "ANAYA",
+          "text": "nous y étions presque"
         },
         {
           "voice": "SOREL",
-          "text": "la résolution est empêchée par la condition même du dispositif"
+          "text": "la critique ne trouve plus de point d’appui"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "l’image fonctionne sans jamais se stabiliser dans une forme définitive"
+        }
+      ]
+    },
+    {
+      "turn": 65,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "SOREL",
+          "text": "la représentation suppose ici l’effacement de celui qui regarde"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit"
+        }
+      ]
+    },
+    {
+      "turn": 66,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "SOREL",
+          "text": "la condition de vision implique une perte préalable de présence"
+        },
+        {
+          "voice": "ANAYA",
+          "text": "ce qui apparaît ne demande rien et pourtant te traverse"
+        }
+      ]
+    },
+    {
+      "turn": 67,
+      "type": "silence",
+      "entries": []
+    },
+    {
+      "turn": 68,
+      "type": "solo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "aucune position d’observation ne reste suffisamment stable pour devenir un point de référence"
+        }
+      ]
+    },
+    {
+      "turn": 69,
+      "type": "trio",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "le point de vue agit sur l’image sans jamais pouvoir y prendre place"
+        },
+        {
+          "voice": "ANAYA",
+          "text": "tu es séparé... sans être isolé"
+        },
+        {
+          "voice": "SOREL",
+          "text": "toute apparition suppose ici qu’une partie de sa propre condition reste hors champ"
+        }
+      ]
+    },
+    {
+      "turn": 70,
+      "type": "trio",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "l’image se maintient sans jamais intégrer celui qui la perçoit"
+        },
+        {
+          "voice": "ANAYA",
+          "text": "ce qui semble proche est déjà ailleurs"
+        },
+        {
+          "voice": "LEI",
+          "text": "tu ne peux pas t’installer dans ce que tu vois"
+        }
+      ]
+    },
+    {
+      "turn": 71,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "SOREL",
+          "text": "la structure précède ce que tu crois vivre immédiatement"
+        },
+        {
+          "voice": "LEI",
+          "text": "tu vois... mais depuis un décalage irréductible"
+        }
+      ]
+    },
+    {
+      "turn": 72,
+      "type": "solo",
+      "entries": [
+        {
+          "voice": "SOREL",
+          "text": "la distinction ne disparaît pas ; elle cesse simplement de produire ses effets"
+        }
+      ]
+    },
+    {
+      "turn": 73,
+      "type": "trio",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "le cadre a changé... sans que tu le voies"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "le système empêche toute correspondance directe entre regard et image"
+        },
+        {
+          "voice": "SOREL",
+          "text": "la présence est produite au prix de son propre effacement"
+        }
+      ]
+    },
+    {
+      "turn": 74,
+      "type": "trio",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "le regard ne coïncide jamais avec ce qu’il voit"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "l’image persiste sans se référer à une origine subjective"
+        },
+        {
+          "voice": "SOREL",
+          "text": "l’appropriation est neutralisée par la structure du dispositif"
+        }
+      ]
+    },
+    {
+      "turn": 75,
+      "type": "silence",
+      "entries": []
+    },
+    {
+      "turn": 76,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "le dispositif fonctionne. c’est déjà beaucoup"
+        },
+        {
+          "voice": "ANAYA",
+          "text": "ce qui t’accueille ne demande pas que tu sois visible"
+        }
+      ]
+    },
+    {
+      "turn": 77,
+      "type": "quatre_voix",
+      "entries": [
+        {
+          "voice": "ANAYA",
+          "text": "tout reste... mais autrement"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "l’image maintient sa cohérence en excluant toute inscription du sujet"
+        },
+        {
+          "voice": "SOREL",
+          "text": "la transparence supposée est ici structurellement impossible"
+        },
+        {
+          "voice": "LEI",
+          "text": "le point existe... mais il ne t’est jamais donné"
+        }
+      ]
+    },
+    {
+      "turn": 78,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "l’absence du corps empêche toute validation du point de vue"
+        },
+        {
+          "voice": "ANAYA",
+          "text": "tout commence... sans commencer"
+        }
+      ]
+    },
+    {
+      "turn": 79,
+      "type": "solo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "la structure empêche toute coïncidence entre regard et représentation"
+        }
+      ]
+    },
+    {
+      "turn": 80,
+      "type": "quatre_voix",
+      "entries": [
+        {
+          "voice": "SOREL",
+          "text": "la visibilité repose ici sur une exclusion constitutive du sujet"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "les paramètres perceptifs cessent d’être constants dans ce système"
+        },
+        {
+          "voice": "LEI",
+          "text": "l’absence est déjà là... avant ton regard"
+        },
+        {
+          "voice": "ANAYA",
+          "text": "tu arrives dans quelque chose qui était déjà en train de devenir"
         }
       ]
     }
@@ -1121,10 +1121,10 @@
     "silences": 8,
     "active_utterances": 160,
     "voices": {
-      "LEI": 40,
-      "SOREL": 40,
       "BLAKE": 40,
-      "ANAYA": 40
+      "LEI": 40,
+      "ANAYA": 40,
+      "SOREL": 40
     }
   }
 }
