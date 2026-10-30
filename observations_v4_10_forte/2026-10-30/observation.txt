@@ -1,0 +1,9 @@
+Observation quotidienne du Cercle Specular — V4.10 forte
+Date UTC : 2026-10-30
+Graine utilisée : 2026103000 (essai 1)
+Corpus source : generate_rss.py (lecture seule)
+Corpus détecté : 125 phrases attendues
+Prises de parole : 160
+Apparitions par voix : {'ANAYA': 40, 'LEI': 40, 'SOREL': 40, 'BLAKE': 40}
+Silences : [14, 28, 33, 39, 50, 66, 71, 77]
+Prototype source inchangé : oui
