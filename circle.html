@@ -22,6 +22,7 @@
 <div id="circle" aria-live="polite"></div>
 <script>
 const SEQUENCE = 'https://raw.githubusercontent.com/robiniklaas/lecerclespecularlivetest/main/circle_daily.json';
+const VOICES = ['BLAKE', 'LEI', 'SOREL', 'ANAYA'];
 
 async function loadCircle() {
   const container = document.getElementById('circle');
@@ -31,24 +32,21 @@ async function loadCircle() {
     const data = await response.json();
     if (!Array.isArray(data.turns) || data.turns.length !== 80) throw new Error('Séquence incomplète');
 
-    // V4.11 may keep one or two voices silent for the entire sequence.
-    // Display the first appearance of each available voice; 2, 3 or 4 entries are valid.
-    const entries = [];
-    const seenVoices = new Set();
+    // Keep all four voices visible. A voice absent from the whole sequence
+    // remains present in the display as a simple ellipsis.
+    const firstByVoice = new Map();
     for (const turn of data.turns) {
       for (const entry of (turn.entries || [])) {
-        if (seenVoices.has(entry.voice)) continue;
-        entries.push(entry);
-        seenVoices.add(entry.voice);
+        if (!firstByVoice.has(entry.voice)) firstByVoice.set(entry.voice, entry.text || '');
       }
-      if (entries.length === 4) break;
     }
-    if (entries.length < 2 || entries.length > 4) {
-      throw new Error('Nombre de voix distinctes invalide');
-    }
+    const entries = VOICES.map(voice => ({
+      voice,
+      text: firstByVoice.has(voice) ? firstByVoice.get(voice) : '...'
+    }));
     container.innerHTML = entries.map(entry =>
-      '<div class="entry"><span class="author">' + escapeHtml(entry.voice || '') +
-      '</span><span class="text">' + escapeHtml(entry.text || '') + '</span></div>'
+      '<div class="entry"><span class="author">' + escapeHtml(entry.voice) +
+      '</span><span class="text">' + escapeHtml(entry.text) + '</span></div>'
     ).join('');
   } catch (error) {
     container.innerHTML = '<div class="error">[live]</div>';
