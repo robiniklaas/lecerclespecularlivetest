@@ -1,0 +1,40 @@
+name: Experimental Cercle Specular V4.11 — twice daily
+
+on:
+  schedule:
+    - cron: '5 7,19 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cercle-v411-experimental
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout experimental branch
+        uses: actions/checkout@v4
+        with:
+          ref: experiment/v4.11-silences
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Generate one V4.11 sequence for this time slot
+        run: python generate_circle_v4_11_twice.py
+
+      - name: Commit experimental archive only
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add observations_v4_11/
+          git diff --cached --quiet && echo "No changes to commit" || git commit -m "Archive experimental V4.11 sequence"
+          git pull --rebase origin experiment/v4.11-silences
+          git push origin HEAD:experiment/v4.11-silences
