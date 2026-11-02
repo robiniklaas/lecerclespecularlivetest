@@ -31,7 +31,7 @@ def main():
         raise RuntimeError("Impossible de remplacer la graine dans V4.11.")
 
     source, count = re.subn(
-        r'if __name__ == "__main__":\s*corpus_check = load_corpus\(\).*\\Z',
+        r'if __name__ == "__main__":\s*corpus_check = load_corpus\(\).*\Z',
         'if __name__ == "__main__":\n    main("forte", Path(sys.argv[1]))\n',
         source, count=1, flags=re.S,
     )
