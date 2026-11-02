@@ -28,20 +28,20 @@ def main():
     archive = ARCHIVE_ROOT / day
     source = PROTOTYPE.read_text(encoding="utf-8")
     source, count = re.subn(
-        r"^SEED = \\d+\\s*$", "SEED = {seed}", source,
+        r"^SEED = \d+\s*$", "SEED = {seed}", source,
         count=1, flags=re.M
     )
     if count != 1:
         raise RuntimeError("Impossible de remplacer la graine dans V4.11.")
 
     source, count = re.subn(
-        r'if __name__ == "__main__":\\s*corpus_check = load_corpus\\(\\).*\\Z',
-        'if __name__ == "__main__":\\n    main("forte", Path(sys.argv[1]))\\n',
+        r'if __name__ == "__main__":\s*corpus_check = load_corpus\(\).*\Z',
+        'if __name__ == "__main__":\n    main("forte", Path(sys.argv[1]))\n',
         source, count=1, flags=re.S,
     )
     if count != 1:
         raise RuntimeError("Impossible de préparer l'exécution V4.11 forte.")
-    source = "import sys\\n" + source
+    source = "import sys\n" + source
 
     last_error = ""
     for attempt in range(1, 101):
@@ -134,18 +134,18 @@ def main():
                 },
             }
             PUBLIC_JSON.write_text(
-                json.dumps(payload, ensure_ascii=False, indent=2) + "\\n",
+                json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
                 encoding="utf-8",
             )
             (archive / "observation.txt").write_text(
-                "Cercle Specular — V4.11 expérimentale\\n"
-                f"Date UTC : {day}\\nGraine : {seed} (essai {attempt})\\n"
-                f"Voix absentes : {', '.join(absent) if absent else 'aucune'}\\n"
-                f"Prises de parole : {len(active)}\\n"
-                f"Répartition : {dict(counts)}\\n"
-                f"Silences : {[n for n, g in grouped.items() if g[0]['type'] == 'silence']}\\n"
-                "Corpus source generate_rss.py : lecture seule\\n"
-                "Prototype V4.10 et corpus source : inchangés\\n",
+                "Cercle Specular — V4.11 expérimentale\n"
+                f"Date UTC : {day}\nGraine : {seed} (essai {attempt})\n"
+                f"Voix absentes : {', '.join(absent) if absent else 'aucune'}\n"
+                f"Prises de parole : {len(active)}\n"
+                f"Répartition : {dict(counts)}\n"
+                f"Silences : {[n for n, g in grouped.items() if g[0]['type'] == 'silence']}\n"
+                "Corpus source generate_rss.py : lecture seule\n"
+                "Prototype V4.10 et corpus source : inchangés\n",
                 encoding="utf-8",
             )
             print(
