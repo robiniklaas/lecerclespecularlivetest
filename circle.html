@@ -31,7 +31,8 @@ async function loadCircle() {
     const data = await response.json();
     if (!Array.isArray(data.turns) || data.turns.length !== 80) throw new Error('Séquence incomplète');
 
-    // Preserve the existing public format: display only four utterances.
+    // V4.11 may keep one or two voices silent for the entire sequence.
+    // Display the first appearance of each available voice; 2, 3 or 4 entries are valid.
     const entries = [];
     const seenVoices = new Set();
     for (const turn of data.turns) {
@@ -39,11 +40,12 @@ async function loadCircle() {
         if (seenVoices.has(entry.voice)) continue;
         entries.push(entry);
         seenVoices.add(entry.voice);
-        if (entries.length === 4) break;
       }
       if (entries.length === 4) break;
     }
-    if (entries.length !== 4) throw new Error('Quatre voix distinctes indisponibles');
+    if (entries.length < 2 || entries.length > 4) {
+      throw new Error('Nombre de voix distinctes invalide');
+    }
     container.innerHTML = entries.map(entry =>
       '<div class="entry"><span class="author">' + escapeHtml(entry.voice || '') +
       '</span><span class="text">' + escapeHtml(entry.text || '') + '</span></div>'
