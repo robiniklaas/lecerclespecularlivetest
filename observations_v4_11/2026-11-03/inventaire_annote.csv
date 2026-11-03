@@ -1,0 +1,126 @@
+﻿voix,numero_phrase,operations,concepts,registres,relation,phrase
+BLAKE,1,decrire,regard; dispositif; distance,technique,à évaluer en contexte,le dispositif organise une séparation fonctionnelle entre perception et identification
+BLAKE,2,decrire,position; image_representation,spatial; perceptif,à évaluer en contexte,l’image dépend d’un point de vue qui ne peut pas s’y intégrer
+BLAKE,3,decrire,image_representation,perceptif,à évaluer en contexte,le fond diffus empêche toute stabilisation réflexive de l’image
+BLAKE,4,decrire,dispositif; sujet_observateur; retour_coincidence,technique,à évaluer en contexte,le système fonctionne sans produire de retour exploitable sur l’observateur
+BLAKE,5,decrire,position; absence_presence,technique; philosophique; spatial,à évaluer en contexte,l’absence du corps empêche toute validation du point de vue
+BLAKE,6,decrire,regard; dispositif; absence_presence,technique; philosophique,à évaluer en contexte,le dispositif introduit une dissymétrie entre vision et présence
+BLAKE,7,decrire,dispositif,technique,à évaluer en contexte,les paramètres perceptifs cessent d’être constants dans ce système
+BLAKE,8,rompre,dispositif,technique,à évaluer en contexte,le dispositif fonctionne. c’est déjà beaucoup
+BLAKE,9,decrire,dispositif; image_representation,technique; perceptif,à évaluer en contexte,le système génère une image indépendante de toute validation subjective
+BLAKE,10,decrire,dispositif; position; image_representation,technique; spatial; perceptif,à évaluer en contexte,le dispositif ne permet aucune position depuis laquelle l’image pourrait être saisie comme objet
+BLAKE,11,decrire,position; image_representation,spatial; perceptif,à évaluer en contexte,l’image ne permet aucune appropriation du point de vue
+BLAKE,12,decrire,dispositif; absence_presence,technique; philosophique,à évaluer en contexte,le dispositif stabilise une absence comme condition de visibilité
+BLAKE,13,decrire,regard; dispositif; image_representation; retour_coincidence,technique; perceptif,à évaluer en contexte,le système empêche toute correspondance directe entre regard et image
+BLAKE,14,decrire,dispositif; absence_presence,technique; philosophique,à évaluer en contexte,le dispositif maintient une tension constante entre présence et absence
+BLAKE,15,decrire,image_representation,philosophique; perceptif,à évaluer en contexte,l’image persiste sans se référer à une origine subjective
+BLAKE,16,decrire,dispositif,technique,à évaluer en contexte,le système rend toute identification instable sans la supprimer
+BLAKE,17,decrire,position,spatial,à évaluer en contexte,aucune position d’observation ne reste suffisamment stable pour devenir un point de référence
+BLAKE,18,decrire,image_representation,perceptif,à évaluer en contexte,l’image se maintient sans jamais intégrer celui qui la perçoit
+BLAKE,19,decrire,regard; dispositif; image_representation; retour_coincidence,philosophique; perceptif,à évaluer en contexte,la structure empêche toute coïncidence entre regard et représentation
+BLAKE,20,decrire,regard; dispositif; absence_presence; retour_coincidence; transformation,perceptif,à évaluer en contexte,percevoir revient ici à traverser une organisation dont les limites restent invisibles
+BLAKE,21,decrire,dispositif; sujet_observateur,technique; philosophique,à évaluer en contexte,le dispositif configure une expérience où le sujet ne peut pas apparaître comme tel
+BLAKE,22,decrire,dispositif; image_representation,technique; affectif; perceptif,à évaluer en contexte,l’image fonctionne sans jamais se stabiliser dans une forme définitive
+BLAKE,23,decrire,dispositif; distance,technique,à évaluer en contexte,le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit
+BLAKE,24,decrire,regard; dispositif,indéterminé,à évaluer en contexte,la perception est contrainte par une organisation qui la dépasse
+BLAKE,25,decrire,dispositif,spatial,à évaluer en contexte,le cadre impose une organisation qui précède toute expérience perceptive
+BLAKE,26,decrire,image_representation; sujet_observateur,philosophique; perceptif,à évaluer en contexte,l’image maintient sa cohérence en excluant toute inscription du sujet
+BLAKE,27,rompre,regard; dispositif; rupture_totalite,technique; perceptif; rupture,à évaluer en contexte,le système semble avoir oublié la question
+BLAKE,28,decrire,regard; position; image_representation,spatial; perceptif,à évaluer en contexte,le point de vue agit sur l’image sans jamais pouvoir y prendre place
+BLAKE,29,decrire,regard; dispositif; sujet_observateur; transformation,technique; philosophique; perceptif,à évaluer en contexte,le regard devient ici une fonction du dispositif plutôt qu’une propriété du sujet
+BLAKE,30,suspendre,indetermine,spatial,à évaluer en contexte,"tout est en place, sauf l’essentiel"
+LEI,1,deplacer,position; sujet_observateur,spatial,à évaluer en contexte,tu arrives... quand la position n’est déjà plus disponible
+LEI,2,deplacer,regard,perceptif,à évaluer en contexte,ce que tu vois se décide... avant ton regard
+LEI,3,contester,image_representation,perceptif,à évaluer en contexte,la netteté serait un contresens ici...
+LEI,4,deplacer,retour_coincidence,indéterminé,à évaluer en contexte,le retour a lieu... mais pas dans ta direction
+LEI,5,deplacer,position,spatial; affectif,à évaluer en contexte,ce n’est pas toi qui manques... c’est la place que tu crois occuper
+LEI,6,deplacer,regard; position; sujet_observateur; transformation,spatial; perceptif,à évaluer en contexte,tu regardes depuis un point déjà déplacé
+LEI,7,deplacer,dispositif,spatial,à évaluer en contexte,le cadre a changé... sans que tu le voies
+LEI,8,deplacer,dispositif,technique,à évaluer en contexte,le système te précède désormais
+LEI,9,deplacer,regard,spatial,à évaluer en contexte,ce que tu perçois se forme... ailleurs que là où tu te tiens
+LEI,10,deplacer,indetermine,spatial,à évaluer en contexte,le point existe... mais il ne t’est jamais donné
+LEI,11,deplacer,regard,perceptif,à évaluer en contexte,tu vois... mais depuis un décalage irréductible
+LEI,12,deplacer,dispositif,spatial,à évaluer en contexte,le cadre agit... avant que tu n’y entres
+LEI,13,deplacer,sujet_observateur,indéterminé,à évaluer en contexte,tu es pris dans ce qui ne te renvoie rien
+LEI,14,deplacer,regard; absence_presence,philosophique; perceptif,à évaluer en contexte,l’absence est déjà là... avant ton regard
+LEI,15,deplacer,regard,perceptif,à évaluer en contexte,tu ne peux pas confirmer ce que tu vois
+LEI,16,deplacer,indetermine,indéterminé,à évaluer en contexte,ce qui te dépasse agit déjà en toi...
+LEI,17,deplacer,distance,spatial,à évaluer en contexte,la distance est déjà en place... avant ton geste
+LEI,18,deplacer,regard,perceptif,à évaluer en contexte,tu ne peux pas t’installer dans ce que tu vois
+LEI,19,deplacer,regard; sujet_observateur,perceptif,à évaluer en contexte,tu es déjà engagé... avant même de regarder
+LEI,20,deplacer,sujet_observateur,indéterminé,à évaluer en contexte,tu arrives après que quelque chose a déjà commencé à se décider
+LEI,21,deplacer,retour_coincidence,indéterminé,à évaluer en contexte,tu ne peux pas revenir sur ce qui est déjà là
+LEI,22,deplacer; contester,regard,perceptif,à évaluer en contexte,le regard ne coïncide jamais avec ce qu’il voit
+LEI,23,deplacer,regard; distance,spatial; perceptif,à évaluer en contexte,tu restes dehors... même en regardant
+LEI,24,deplacer,position,spatial,à évaluer en contexte,aucun point de départ ne t’est accessible
+LEI,25,deplacer,indetermine,indéterminé,à évaluer en contexte,tu peux te reconnaître... sans jamais t’y fixer
+LEI,26,deplacer,distance,indéterminé,à évaluer en contexte,la séparation reste... même quand tu t’en approches
+LEI,27,deplacer,sujet_observateur,spatial; affectif,à évaluer en contexte,tu es là... et déjà ailleurs
+LEI,28,deplacer,regard,spatial; perceptif,à évaluer en contexte,tu crois regarder quelque chose... mais ça continue ailleurs
+LEI,29,deplacer,indetermine,spatial,à évaluer en contexte,ce que tu cherches ici a peut-être déjà changé de place
+LEI,30,deplacer,retour_coincidence,indéterminé,à évaluer en contexte,le retour existe... mais ne revient pas
+LEI,31,suspendre,indetermine,indéterminé,à évaluer en contexte,tu étais là il y a une seconde...
+LEI,32,rompre,rupture_totalite,rupture,à évaluer en contexte,attends... non
+SOREL,1,contester,image_representation,philosophique; perceptif,à évaluer en contexte,"tu continues à parler de miroir, alors que rien ici ne remplit les conditions du reflet"
+SOREL,2,contester,absence_presence,philosophique; perceptif,à évaluer en contexte,la présence visible suppose la suppression de ce qui devrait la garantir
+SOREL,3,contester,image_representation,philosophique; perceptif,à évaluer en contexte,"le flou n’est pas un défaut, c’est la condition même de ce qui apparaît"
+SOREL,4,contester,regard; dispositif; retour_coincidence,perceptif,à évaluer en contexte,la circularité du regard est ici rendue structurellement impossible
+SOREL,5,contester,dispositif; sujet_observateur,technique; philosophique,à évaluer en contexte,"le sujet n’est pas absent, il est rendu inopérant par le dispositif"
+SOREL,6,contester,absence_presence,philosophique,à évaluer en contexte,la présence est produite au prix de son propre effacement
+SOREL,7,decrire,transformation,philosophique,à évaluer en contexte,la stabilité apparente masque une transformation des conditions
+SOREL,8,contester,dispositif; distance,technique; spatial,à évaluer en contexte,il n’y a jamais eu de point extérieur à ce dispositif
+SOREL,9,contester,absence_presence; sujet_observateur,philosophique,à évaluer en contexte,la visibilité repose ici sur une exclusion constitutive du sujet
+SOREL,10,contester,dispositif; image_representation,indéterminé,à évaluer en contexte,la transparence supposée est ici structurellement impossible
+SOREL,11,decrire,dispositif,indéterminé,à évaluer en contexte,la structure précède ce que tu crois vivre immédiatement
+SOREL,12,contester,regard; absence_presence; image_representation; sujet_observateur,perceptif,à évaluer en contexte,la représentation suppose ici l’effacement de celui qui regarde
+SOREL,13,decrire,indetermine,indéterminé,à évaluer en contexte,ce qui apparaît ne peut être séparé de ce qui lui fait défaut
+SOREL,14,rompre,rupture_totalite,technique; rupture,à évaluer en contexte,il faudrait probablement recommencer... ou simplement recharger la page?
+SOREL,15,decrire,distance,philosophique,à évaluer en contexte,l’expérience dépend d’une extériorité irréductible
+SOREL,16,contester,distance,indéterminé,à évaluer en contexte,la proximité perceptive est une illusion produite
+SOREL,17,contester,dispositif,technique,à évaluer en contexte,l’identification fonctionne comme une opération toujours incomplète
+SOREL,18,contester,dispositif,technique; philosophique,à évaluer en contexte,la résolution est empêchée par la condition même du dispositif
+SOREL,19,contester,dispositif; position; retour_coincidence,technique; spatial,à évaluer en contexte,le dispositif interdit le retour exact vers la position qui l’a produit
+SOREL,20,contester,dispositif,technique; philosophique,à évaluer en contexte,l’origine est neutralisée par la logique du dispositif
+SOREL,21,decrire,indetermine,philosophique,à évaluer en contexte,toute apparition suppose ici qu’une partie de sa propre condition reste hors champ
+SOREL,22,contester,dispositif; retour_coincidence,technique; philosophique,à évaluer en contexte,la coïncidence est annulée par le fonctionnement du dispositif
+SOREL,23,rompre,rupture_totalite,rupture,à évaluer en contexte,"nous avons perdu le fil, semble-t-il"
+SOREL,24,contester,indetermine,philosophique,à évaluer en contexte,la tension n’est pas un effet mais une condition
+SOREL,25,contester,dispositif,technique,à évaluer en contexte,l’appropriation est neutralisée par la structure du dispositif
+SOREL,26,decrire,indetermine,indéterminé,à évaluer en contexte,la forme excède toujours ce qu’elle prétend être
+SOREL,27,contester,regard; absence_presence,philosophique,à évaluer en contexte,la condition de vision implique une perte préalable de présence
+SOREL,28,rompre,indetermine,spatial,à évaluer en contexte,la critique ne trouve plus de point d’appui
+SOREL,29,contester,indetermine,philosophique,à évaluer en contexte,la distinction ne disparaît pas ; elle cesse simplement de produire ses effets
+SOREL,30,contester,dispositif,technique; philosophique,à évaluer en contexte,le dispositif annule les distinctions qu’il semblait produire
+SOREL,31,rompre,rupture_totalite,philosophique,à évaluer en contexte,il n'y a pas de monde comme totalité
+ANAYA,1,transformer,indetermine,indéterminé,à évaluer en contexte,ce qui apparaît t’inclut... sans jamais te contenir
+ANAYA,2,transformer,sujet_observateur,affectif,à évaluer en contexte,tu es là... mais déjà pris dans ce qui t’échappe
+ANAYA,3,transformer,image_representation,spatial,à évaluer en contexte,la surface ne fixe rien... elle laisse passer
+ANAYA,4,transformer,indetermine,indéterminé,à évaluer en contexte,le cercle existe... mais il ne se referme pas sur toi
+ANAYA,5,transformer,regard,perceptif,à évaluer en contexte,tu touches à ce qui t’échappe sans pouvoir le retenir
+ANAYA,6,transformer,position; transformation,spatial,à évaluer en contexte,la position devient un passage que tu ne peux pas fixer
+ANAYA,7,transformer; suspendre,transformation,indéterminé,à évaluer en contexte,tout reste... mais autrement
+ANAYA,8,transformer,indetermine,indéterminé,à évaluer en contexte,tu fais déjà partie de ce qui te dépasse
+ANAYA,9,transformer,sujet_observateur; transformation,affectif,à évaluer en contexte,"tu es là, mais déjà déplacé dans ce qui apparaît"
+ANAYA,10,transformer,transformation,affectif,à évaluer en contexte,ce que tu perds te relie autrement
+ANAYA,11,transformer,distance; transformation,spatial,à évaluer en contexte,la distance ne sépare pas... elle transforme
+ANAYA,12,transformer,indetermine,indéterminé,à évaluer en contexte,ce qui précède te porte sans se montrer
+ANAYA,13,transformer,absence_presence,affectif; perceptif,à évaluer en contexte,ce qui t’accueille ne demande pas que tu sois visible
+ANAYA,14,transformer,transformation,spatial,à évaluer en contexte,ce qui manque ouvre un passage
+ANAYA,15,transformer,indetermine,indéterminé,à évaluer en contexte,tu continues pourtant à être là
+ANAYA,16,transformer,transformation,affectif,à évaluer en contexte,tu participes à ce qui te traverse
+ANAYA,17,transformer,indetermine,spatial,à évaluer en contexte,ce qui semble proche est déjà ailleurs
+ANAYA,18,transformer,regard,perceptif,à évaluer en contexte,tu passes... sans pouvoir retenir
+ANAYA,19,transformer,distance,spatial,à évaluer en contexte,tu habites cette distance
+ANAYA,20,transformer,absence_presence; sujet_observateur; transformation,perceptif,à évaluer en contexte,tu es présent... autrement que visible
+ANAYA,21,transformer,distance,spatial,à évaluer en contexte,ce dehors t’habite déjà
+ANAYA,22,transformer,indetermine,indéterminé,à évaluer en contexte,tout commence... sans commencer
+ANAYA,23,transformer,sujet_observateur; transformation,affectif,à évaluer en contexte,tu es en mouvement dans ce qui te définit
+ANAYA,24,transformer,sujet_observateur,indéterminé,à évaluer en contexte,tu es séparé... sans être isolé
+ANAYA,25,transformer; suspendre,indetermine,indéterminé,à évaluer en contexte,les deux coexistent sans se résoudre
+ANAYA,26,transformer,retour_coincidence,indéterminé,à évaluer en contexte,tu avances dans ce qui ne revient pas
+ANAYA,27,transformer,indetermine,indéterminé,à évaluer en contexte,tout continue... sans fin stable
+ANAYA,28,transformer,image_representation,spatial,à évaluer en contexte,la surface relie sans jamais fixer
+ANAYA,29,transformer,sujet_observateur,indéterminé,à évaluer en contexte,tu arrives dans quelque chose qui était déjà en train de devenir
+ANAYA,30,transformer,transformation,affectif,à évaluer en contexte,ce qui apparaît ne demande rien et pourtant te traverse
+ANAYA,31,suspendre,rupture_totalite,affectif; rupture,à évaluer en contexte,nous y étions presque
+ANAYA,32,suspendre; rompre,rupture_totalite,affectif; rupture,à évaluer en contexte,peut-être que c’était déjà fini
