@@ -1,0 +1,438 @@
+CERCLE SPECULAR — PROTOTYPE V4.11 EXPÉRIMENTALE
+Mode : forte
+Principe : sélection locale de collisions entre phrases d’un même tour, selon le recouvrement conceptuel et les registres lexicaux détectés.
+Les étiquettes de registre sont heuristiques ; une collision lexicale ne garantit pas un événement de sens.
+Graine aléatoire : 20261106000
+Voix présentes : BLAKE, LEI
+Voix silencieuses pour toute la séquence : ANAYA, SOREL
+Source : generate_rss.py (lecture seule)
+Corpus source et feed.xml non modifiés.
+
+RÉPARTITION DES 80 TOURS
+  silence: 8
+  solo: 24
+  duo: 48
+  trio: 0
+  quatre_voix: 0
+
+Positions des silences : [1, 21, 29, 35, 43, 49, 61, 70]
+Prises de parole actives : 120
+Répétitions exactes dans les 24 dernières phrases actives : 1
+Apparitions par voix : {'BLAKE': 60, 'LEI': 60}
+Voix répétées dans un même tour : aucune
+Étiquettes relationnelles heuristiques : {'ouverture': 1, 'prolongement': 18, 'bifurcation': 85, 'interruption': 13, 'déplacement': 1, 'contrepoint': 1, 'contestation': 1}
+Collisions locales détectées : 41
+Paires détectées (faible recouvrement conceptuel + registres distincts) :
+  tour 03 — LEI : tu es déjà engagé... avant même de regarder
+                 → BLAKE : le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit
+    recouvrement=0.0 ; registres=perceptif / technique
+  tour 04 — LEI : ce que tu cherches ici a peut-être déjà changé de place
+                 → BLAKE : percevoir revient ici à traverser une organisation dont les limites restent invisibles
+    recouvrement=0.0 ; registres=spatial / perceptif
+  tour 05 — BLAKE : l’image persiste sans se référer à une origine subjective
+                 → LEI : aucun point de départ ne t’est accessible
+    recouvrement=0.0 ; registres=perceptif, philosophique / spatial
+  tour 08 — LEI : tu restes dehors... même en regardant
+                 → BLAKE : le dispositif configure une expérience où le sujet ne peut pas apparaître comme tel
+    recouvrement=0.0 ; registres=perceptif, spatial / philosophique, technique
+  tour 11 — LEI : attends... non
+                 → BLAKE : le dispositif stabilise une absence comme condition de visibilité
+    recouvrement=0.0 ; registres=rupture / philosophique, technique
+  tour 13 — LEI : tu arrives après que quelque chose a déjà commencé à se décider
+                 → BLAKE : l’image se maintient sans jamais intégrer celui qui la perçoit
+    recouvrement=0.0 ; registres=indéterminé / perceptif
+  tour 14 — LEI : tu es pris dans ce qui ne te renvoie rien
+                 → BLAKE : la structure empêche toute coïncidence entre regard et représentation
+    recouvrement=0.0 ; registres=indéterminé / perceptif, philosophique
+  tour 17 — LEI : le retour existe... mais ne revient pas
+                 → BLAKE : aucune position d’observation ne reste suffisamment stable pour devenir un point de référence
+    recouvrement=0.0 ; registres=indéterminé / spatial
+  tour 18 — BLAKE : le dispositif fonctionne. c’est déjà beaucoup
+                 → LEI : tu es là... et déjà ailleurs
+    recouvrement=0.0 ; registres=technique / affectif, spatial
+  tour 20 — BLAKE : le fond diffus empêche toute stabilisation réflexive de l’image
+                 → LEI : tu arrives... quand la position n’est déjà plus disponible
+    recouvrement=0.0 ; registres=perceptif / spatial
+  tour 22 — BLAKE : l’image ne permet aucune appropriation du point de vue
+                 → LEI : la séparation reste... même quand tu t’en approches
+    recouvrement=0.0 ; registres=perceptif, spatial / indéterminé
+  tour 23 — LEI : la netteté serait un contresens ici...
+                 → BLAKE : le système rend toute identification instable sans la supprimer
+    recouvrement=0.0 ; registres=perceptif / technique
+  tour 26 — LEI : ce qui te dépasse agit déjà en toi...
+                 → BLAKE : le cadre impose une organisation qui précède toute expérience perceptive
+    recouvrement=0.0 ; registres=indéterminé / spatial
+  tour 30 — LEI : le retour a lieu... mais pas dans ta direction
+                 → BLAKE : l’image dépend d’un point de vue qui ne peut pas s’y intégrer
+    recouvrement=0.0 ; registres=indéterminé / perceptif, spatial
+  tour 31 — BLAKE : le dispositif organise une séparation fonctionnelle entre perception et identification
+                 → LEI : aucun point de départ ne t’est accessible
+    recouvrement=0.0 ; registres=technique / spatial
+  tour 33 — LEI : attends... non
+                 → BLAKE : les paramètres perceptifs cessent d’être constants dans ce système
+    recouvrement=0.0 ; registres=rupture / technique
+  tour 37 — LEI : l’absence est déjà là... avant ton regard
+                 → BLAKE : le système fonctionne sans produire de retour exploitable sur l’observateur
+    recouvrement=0.0 ; registres=perceptif, philosophique / technique
+  tour 40 — BLAKE : le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit
+                 → LEI : le retour existe... mais ne revient pas
+    recouvrement=0.0 ; registres=technique / indéterminé
+  tour 42 — BLAKE : le dispositif stabilise une absence comme condition de visibilité
+                 → LEI : tu arrives après que quelque chose a déjà commencé à se décider
+    recouvrement=0.0 ; registres=philosophique, technique / indéterminé
+  tour 44 — BLAKE : le dispositif maintient une tension constante entre présence et absence
+                 → LEI : tu ne peux pas confirmer ce que tu vois
+    recouvrement=0.0 ; registres=philosophique, technique / perceptif
+  tour 46 — LEI : tu es là... et déjà ailleurs
+                 → BLAKE : le système génère une image indépendante de toute validation subjective
+    recouvrement=0.0 ; registres=affectif, spatial / perceptif, technique
+  tour 50 — LEI : le regard ne coïncide jamais avec ce qu’il voit
+                 → BLAKE : le dispositif fonctionne. c’est déjà beaucoup
+    recouvrement=0.0 ; registres=perceptif / technique
+  tour 51 — BLAKE : l’image ne permet aucune appropriation du point de vue
+                 → LEI : la séparation reste... même quand tu t’en approches
+    recouvrement=0.0 ; registres=perceptif, spatial / indéterminé
+  tour 53 — BLAKE : percevoir revient ici à traverser une organisation dont les limites restent invisibles
+                 → LEI : ce n’est pas toi qui manques... c’est la place que tu crois occuper
+    recouvrement=0.0 ; registres=perceptif / affectif, spatial
+  tour 54 — LEI : le système te précède désormais
+                 → BLAKE : l’image maintient sa cohérence en excluant toute inscription du sujet
+    recouvrement=0.0 ; registres=technique / perceptif, philosophique
+  tour 56 — LEI : tu ne peux pas t’installer dans ce que tu vois
+                 → BLAKE : le système rend toute identification instable sans la supprimer
+    recouvrement=0.0 ; registres=perceptif / technique
+  tour 58 — BLAKE : l’image dépend d’un point de vue qui ne peut pas s’y intégrer
+                 → LEI : ce qui te dépasse agit déjà en toi...
+    recouvrement=0.0 ; registres=perceptif, spatial / indéterminé
+  tour 59 — LEI : tu peux te reconnaître... sans jamais t’y fixer
+                 → BLAKE : le dispositif introduit une dissymétrie entre vision et présence
+    recouvrement=0.0 ; registres=indéterminé / philosophique, technique
+  tour 60 — LEI : la netteté serait un contresens ici...
+                 → BLAKE : l’absence du corps empêche toute validation du point de vue
+    recouvrement=0.0 ; registres=perceptif / philosophique, spatial, technique
+  tour 63 — BLAKE : les paramètres perceptifs cessent d’être constants dans ce système
+                 → LEI : tu es pris dans ce qui ne te renvoie rien
+    recouvrement=0.0 ; registres=technique / indéterminé
+  tour 64 — LEI : le point existe... mais il ne t’est jamais donné
+                 → BLAKE : le système fonctionne sans produire de retour exploitable sur l’observateur
+    recouvrement=0.0 ; registres=spatial / technique
+  tour 65 — LEI : le retour a lieu... mais pas dans ta direction
+                 → BLAKE : le dispositif ne permet aucune position depuis laquelle l’image pourrait être saisie comme objet
+    recouvrement=0.0 ; registres=indéterminé / perceptif, spatial, technique
+  tour 66 — BLAKE : l’image persiste sans se référer à une origine subjective
+                 → LEI : aucun point de départ ne t’est accessible
+    recouvrement=0.0 ; registres=perceptif, philosophique / spatial
+  tour 68 — LEI : tu arrives après que quelque chose a déjà commencé à se décider
+                 → BLAKE : le dispositif maintient une tension constante entre présence et absence
+    recouvrement=0.0 ; registres=indéterminé / philosophique, technique
+  tour 69 — LEI : tu étais là il y a une seconde...
+                 → BLAKE : le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit
+    recouvrement=0.0 ; registres=indéterminé / technique
+  tour 71 — BLAKE : l’image se maintient sans jamais intégrer celui qui la perçoit
+                 → LEI : tu arrives... quand la position n’est déjà plus disponible
+    recouvrement=0.0 ; registres=perceptif / spatial
+  tour 73 — LEI : le regard ne coïncide jamais avec ce qu’il voit
+                 → BLAKE : le dispositif fonctionne. c’est déjà beaucoup
+    recouvrement=0.0 ; registres=perceptif / technique
+  tour 74 — LEI : tu es là... et déjà ailleurs
+                 → BLAKE : percevoir revient ici à traverser une organisation dont les limites restent invisibles
+    recouvrement=0.0 ; registres=affectif, spatial / perceptif
+  tour 76 — LEI : tu ne peux pas revenir sur ce qui est déjà là
+                 → BLAKE : tout est en place, sauf l’essentiel
+    recouvrement=0.0 ; registres=indéterminé / spatial
+  tour 77 — LEI : la distance est déjà en place... avant ton geste
+                 → BLAKE : le fond diffus empêche toute stabilisation réflexive de l’image
+    recouvrement=0.0 ; registres=spatial / perceptif
+  tour 78 — BLAKE : le système semble avoir oublié la question
+                 → LEI : ce n’est pas toi qui manques... c’est la place que tu crois occuper
+    recouvrement=0.0 ; registres=perceptif, rupture, technique / affectif, spatial
+
+SÉQUENCE
+
+TOUR 01 [silence]
+  —: [silence]
+
+TOUR 02 [solo]
+  BLAKE <ouverture>: la perception est contrainte par une organisation qui la dépasse
+
+TOUR 03 [duo]
+  LEI <prolongement>: tu es déjà engagé... avant même de regarder
+  BLAKE <bifurcation>: le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit
+
+TOUR 04 [duo]
+  LEI <bifurcation>: ce que tu cherches ici a peut-être déjà changé de place
+  BLAKE <bifurcation>: percevoir revient ici à traverser une organisation dont les limites restent invisibles
+
+TOUR 05 [duo]
+  BLAKE <bifurcation>: l’image persiste sans se référer à une origine subjective
+  LEI <bifurcation>: aucun point de départ ne t’est accessible
+
+TOUR 06 [solo]
+  BLAKE <prolongement>: le point de vue agit sur l’image sans jamais pouvoir y prendre place
+
+TOUR 07 [solo]
+  BLAKE <interruption>: le système semble avoir oublié la question
+
+TOUR 08 [duo]
+  LEI <prolongement>: tu restes dehors... même en regardant
+  BLAKE <bifurcation>: le dispositif configure une expérience où le sujet ne peut pas apparaître comme tel
+
+TOUR 09 [solo]
+  LEI <bifurcation>: tu ne peux pas revenir sur ce qui est déjà là
+
+TOUR 10 [solo]
+  LEI <bifurcation>: ce que tu vois se décide... avant ton regard
+
+TOUR 11 [duo]
+  LEI <interruption>: attends... non
+  BLAKE <bifurcation>: le dispositif stabilise une absence comme condition de visibilité
+
+TOUR 12 [solo]
+  LEI <bifurcation>: le point existe... mais il ne t’est jamais donné
+
+TOUR 13 [duo]
+  LEI <bifurcation>: tu arrives après que quelque chose a déjà commencé à se décider
+  BLAKE <bifurcation>: l’image se maintient sans jamais intégrer celui qui la perçoit
+
+TOUR 14 [duo]
+  LEI <bifurcation>: tu es pris dans ce qui ne te renvoie rien
+  BLAKE <bifurcation>: la structure empêche toute coïncidence entre regard et représentation
+
+TOUR 15 [duo]
+  LEI <prolongement>: le cadre a changé... sans que tu le voies
+  BLAKE <prolongement>: le regard devient ici une fonction du dispositif plutôt qu’une propriété du sujet
+
+TOUR 16 [duo]
+  LEI <bifurcation>: la distance est déjà en place... avant ton geste
+  BLAKE <interruption>: tout est en place, sauf l’essentiel
+
+TOUR 17 [duo]
+  LEI <bifurcation>: le retour existe... mais ne revient pas
+  BLAKE <bifurcation>: aucune position d’observation ne reste suffisamment stable pour devenir un point de référence
+
+TOUR 18 [duo]
+  BLAKE <interruption>: le dispositif fonctionne. c’est déjà beaucoup
+  LEI <bifurcation>: tu es là... et déjà ailleurs
+
+TOUR 19 [duo]
+  BLAKE <bifurcation>: le système empêche toute correspondance directe entre regard et image
+  LEI <prolongement>: ce que tu perçois se forme... ailleurs que là où tu te tiens
+
+TOUR 20 [duo]
+  BLAKE <bifurcation>: le fond diffus empêche toute stabilisation réflexive de l’image
+  LEI <bifurcation>: tu arrives... quand la position n’est déjà plus disponible
+
+TOUR 21 [silence]
+  —: [silence]
+
+TOUR 22 [duo]
+  BLAKE <prolongement>: l’image ne permet aucune appropriation du point de vue
+  LEI <bifurcation>: la séparation reste... même quand tu t’en approches
+
+TOUR 23 [duo]
+  LEI <bifurcation>: la netteté serait un contresens ici...
+  BLAKE <bifurcation>: le système rend toute identification instable sans la supprimer
+
+TOUR 24 [solo]
+  LEI <bifurcation>: tu vois... mais depuis un décalage irréductible
+
+TOUR 25 [solo]
+  BLAKE <bifurcation>: l’absence du corps empêche toute validation du point de vue
+
+TOUR 26 [duo]
+  LEI <bifurcation>: ce qui te dépasse agit déjà en toi...
+  BLAKE <bifurcation>: le cadre impose une organisation qui précède toute expérience perceptive
+
+TOUR 27 [solo]
+  BLAKE <bifurcation>: l’image maintient sa cohérence en excluant toute inscription du sujet
+
+TOUR 28 [solo]
+  LEI <bifurcation>: le cadre agit... avant que tu n’y entres
+
+TOUR 29 [silence]
+  —: [silence]
+
+TOUR 30 [duo]
+  LEI <bifurcation>: le retour a lieu... mais pas dans ta direction
+  BLAKE <bifurcation>: l’image dépend d’un point de vue qui ne peut pas s’y intégrer
+
+TOUR 31 [duo]
+  BLAKE <bifurcation>: le dispositif organise une séparation fonctionnelle entre perception et identification
+  LEI <bifurcation>: aucun point de départ ne t’est accessible
+
+TOUR 32 [solo]
+  BLAKE <prolongement>: le dispositif ne permet aucune position depuis laquelle l’image pourrait être saisie comme objet
+
+TOUR 33 [duo]
+  LEI <interruption>: attends... non
+  BLAKE <bifurcation>: les paramètres perceptifs cessent d’être constants dans ce système
+
+TOUR 34 [solo]
+  LEI <bifurcation>: ce que tu vois se décide... avant ton regard
+
+TOUR 35 [silence]
+  —: [silence]
+
+TOUR 36 [solo]
+  BLAKE <bifurcation>: l’image fonctionne sans jamais se stabiliser dans une forme définitive
+
+TOUR 37 [duo]
+  LEI <bifurcation>: l’absence est déjà là... avant ton regard
+  BLAKE <bifurcation>: le système fonctionne sans produire de retour exploitable sur l’observateur
+
+TOUR 38 [duo]
+  BLAKE <prolongement>: le dispositif introduit une dissymétrie entre vision et présence
+  LEI <prolongement>: tu crois regarder quelque chose... mais ça continue ailleurs
+
+TOUR 39 [solo]
+  LEI <interruption>: tu étais là il y a une seconde...
+
+TOUR 40 [duo]
+  BLAKE <bifurcation>: le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit
+  LEI <bifurcation>: le retour existe... mais ne revient pas
+
+TOUR 41 [duo]
+  LEI <bifurcation>: tu regardes depuis un point déjà déplacé
+  BLAKE <bifurcation>: la structure empêche toute coïncidence entre regard et représentation
+
+TOUR 42 [duo]
+  BLAKE <prolongement>: le dispositif stabilise une absence comme condition de visibilité
+  LEI <bifurcation>: tu arrives après que quelque chose a déjà commencé à se décider
+
+TOUR 43 [silence]
+  —: [silence]
+
+TOUR 44 [duo]
+  BLAKE <bifurcation>: le dispositif maintient une tension constante entre présence et absence
+  LEI <bifurcation>: tu ne peux pas confirmer ce que tu vois
+
+TOUR 45 [solo]
+  BLAKE <interruption>: tout est en place, sauf l’essentiel
+
+TOUR 46 [duo]
+  LEI <bifurcation>: tu es là... et déjà ailleurs
+  BLAKE <bifurcation>: le système génère une image indépendante de toute validation subjective
+
+TOUR 47 [duo]
+  BLAKE <bifurcation>: aucune position d’observation ne reste suffisamment stable pour devenir un point de référence
+  LEI <bifurcation>: ce que tu cherches ici a peut-être déjà changé de place
+
+TOUR 48 [solo]
+  BLAKE <interruption>: le système semble avoir oublié la question
+
+TOUR 49 [silence]
+  —: [silence]
+
+TOUR 50 [duo]
+  LEI <prolongement>: le regard ne coïncide jamais avec ce qu’il voit
+  BLAKE <interruption>: le dispositif fonctionne. c’est déjà beaucoup
+
+TOUR 51 [duo]
+  BLAKE <bifurcation>: l’image ne permet aucune appropriation du point de vue
+  LEI <bifurcation>: la séparation reste... même quand tu t’en approches
+
+TOUR 52 [solo]
+  LEI <bifurcation>: tu ne peux pas revenir sur ce qui est déjà là
+
+TOUR 53 [duo]
+  BLAKE <prolongement>: percevoir revient ici à traverser une organisation dont les limites restent invisibles
+  LEI <bifurcation>: ce n’est pas toi qui manques... c’est la place que tu crois occuper
+
+TOUR 54 [duo]
+  LEI <bifurcation>: le système te précède désormais
+  BLAKE <bifurcation>: l’image maintient sa cohérence en excluant toute inscription du sujet
+
+TOUR 55 [solo]
+  BLAKE <prolongement>: le système génère une image indépendante de toute validation subjective
+
+TOUR 56 [duo]
+  LEI <bifurcation>: tu ne peux pas t’installer dans ce que tu vois
+  BLAKE <bifurcation>: le système rend toute identification instable sans la supprimer
+
+TOUR 57 [duo]
+  LEI <bifurcation>: tu vois... mais depuis un décalage irréductible
+  BLAKE <prolongement>: le dispositif organise une séparation fonctionnelle entre perception et identification
+
+TOUR 58 [duo]
+  BLAKE <bifurcation>: l’image dépend d’un point de vue qui ne peut pas s’y intégrer
+  LEI <bifurcation>: ce qui te dépasse agit déjà en toi...
+
+TOUR 59 [duo]
+  LEI <déplacement>: tu peux te reconnaître... sans jamais t’y fixer
+  BLAKE <bifurcation>: le dispositif introduit une dissymétrie entre vision et présence
+
+TOUR 60 [duo]
+  LEI <contrepoint>: la netteté serait un contresens ici...
+  BLAKE <bifurcation>: l’absence du corps empêche toute validation du point de vue
+
+TOUR 61 [silence]
+  —: [silence]
+
+TOUR 62 [solo]
+  LEI <bifurcation>: tu crois regarder quelque chose... mais ça continue ailleurs
+
+TOUR 63 [duo]
+  BLAKE <bifurcation>: les paramètres perceptifs cessent d’être constants dans ce système
+  LEI <bifurcation>: tu es pris dans ce qui ne te renvoie rien
+
+TOUR 64 [duo]
+  LEI <bifurcation>: le point existe... mais il ne t’est jamais donné
+  BLAKE <bifurcation>: le système fonctionne sans produire de retour exploitable sur l’observateur
+
+TOUR 65 [duo]
+  LEI <prolongement>: le retour a lieu... mais pas dans ta direction
+  BLAKE <bifurcation>: le dispositif ne permet aucune position depuis laquelle l’image pourrait être saisie comme objet
+
+TOUR 66 [duo]
+  BLAKE <prolongement>: l’image persiste sans se référer à une origine subjective
+  LEI <bifurcation>: aucun point de départ ne t’est accessible
+
+TOUR 67 [solo]
+  BLAKE <bifurcation>: le système empêche toute correspondance directe entre regard et image
+
+TOUR 68 [duo]
+  LEI <bifurcation>: tu arrives après que quelque chose a déjà commencé à se décider
+  BLAKE <bifurcation>: le dispositif maintient une tension constante entre présence et absence
+
+TOUR 69 [duo]
+  LEI <interruption>: tu étais là il y a une seconde...
+  BLAKE <bifurcation>: le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit
+
+TOUR 70 [silence]
+  —: [silence]
+
+TOUR 71 [duo]
+  BLAKE <bifurcation>: l’image se maintient sans jamais intégrer celui qui la perçoit
+  LEI <bifurcation>: tu arrives... quand la position n’est déjà plus disponible
+
+TOUR 72 [solo]
+  LEI <bifurcation>: tu ne peux pas confirmer ce que tu vois
+
+TOUR 73 [duo]
+  LEI <contestation>: le regard ne coïncide jamais avec ce qu’il voit
+  BLAKE <interruption>: le dispositif fonctionne. c’est déjà beaucoup
+
+TOUR 74 [duo]
+  LEI <bifurcation>: tu es là... et déjà ailleurs
+  BLAKE <bifurcation>: percevoir revient ici à traverser une organisation dont les limites restent invisibles
+
+TOUR 75 [solo]
+  LEI <prolongement>: tu regardes depuis un point déjà déplacé
+
+TOUR 76 [duo]
+  LEI <bifurcation>: tu ne peux pas revenir sur ce qui est déjà là
+  BLAKE <interruption>: tout est en place, sauf l’essentiel
+
+TOUR 77 [duo]
+  LEI <bifurcation>: la distance est déjà en place... avant ton geste
+  BLAKE <bifurcation>: le fond diffus empêche toute stabilisation réflexive de l’image
+
+TOUR 78 [duo]
+  BLAKE <interruption>: le système semble avoir oublié la question
+  LEI <bifurcation>: ce n’est pas toi qui manques... c’est la place que tu crois occuper
+
+TOUR 79 [solo]
+  LEI <bifurcation>: ce que tu perçois se forme... ailleurs que là où tu te tiens
+
+TOUR 80 [solo]
+  BLAKE <bifurcation>: le cadre impose une organisation qui précède toute expérience perceptive

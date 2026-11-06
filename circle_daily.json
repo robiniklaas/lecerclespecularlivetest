@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "version": "V4.11 expérimentale",
-  "seed": 20261105000,
+  "seed": 20261106000,
   "absent_voices": [
     "SOREL",
     "ANAYA"
@@ -9,580 +9,11 @@
   "turns": [
     {
       "turn": 1,
-      "type": "solo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "tu es là... et déjà ailleurs"
-        }
-      ]
+      "type": "silence",
+      "entries": []
     },
     {
       "turn": 2,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "tout est en place, sauf l’essentiel"
-        },
-        {
-          "voice": "LEI",
-          "text": "le retour a lieu... mais pas dans ta direction"
-        }
-      ]
-    },
-    {
-      "turn": 3,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "la séparation reste... même quand tu t’en approches"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "le dispositif maintient une tension constante entre présence et absence"
-        }
-      ]
-    },
-    {
-      "turn": 4,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "tu es pris dans ce qui ne te renvoie rien"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "le fond diffus empêche toute stabilisation réflexive de l’image"
-        }
-      ]
-    },
-    {
-      "turn": 5,
-      "type": "solo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "le cadre agit... avant que tu n’y entres"
-        }
-      ]
-    },
-    {
-      "turn": 6,
-      "type": "silence",
-      "entries": []
-    },
-    {
-      "turn": 7,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "tu regardes depuis un point déjà déplacé"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "le système rend toute identification instable sans la supprimer"
-        }
-      ]
-    },
-    {
-      "turn": 8,
-      "type": "solo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "le dispositif ne permet aucune position depuis laquelle l’image pourrait être saisie comme objet"
-        }
-      ]
-    },
-    {
-      "turn": 9,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "tu peux te reconnaître... sans jamais t’y fixer"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "aucune position d’observation ne reste suffisamment stable pour devenir un point de référence"
-        }
-      ]
-    },
-    {
-      "turn": 10,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "le cadre a changé... sans que tu le voies"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "le dispositif introduit une dissymétrie entre vision et présence"
-        }
-      ]
-    },
-    {
-      "turn": 11,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "l’image maintient sa cohérence en excluant toute inscription du sujet"
-        },
-        {
-          "voice": "LEI",
-          "text": "le retour existe... mais ne revient pas"
-        }
-      ]
-    },
-    {
-      "turn": 12,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "le système fonctionne sans produire de retour exploitable sur l’observateur"
-        },
-        {
-          "voice": "LEI",
-          "text": "la distance est déjà en place... avant ton geste"
-        }
-      ]
-    },
-    {
-      "turn": 13,
-      "type": "silence",
-      "entries": []
-    },
-    {
-      "turn": 14,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "les paramètres perceptifs cessent d’être constants dans ce système"
-        },
-        {
-          "voice": "LEI",
-          "text": "le regard ne coïncide jamais avec ce qu’il voit"
-        }
-      ]
-    },
-    {
-      "turn": 15,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "le système empêche toute correspondance directe entre regard et image"
-        },
-        {
-          "voice": "LEI",
-          "text": "ce qui te dépasse agit déjà en toi..."
-        }
-      ]
-    },
-    {
-      "turn": 16,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "le regard devient ici une fonction du dispositif plutôt qu’une propriété du sujet"
-        },
-        {
-          "voice": "LEI",
-          "text": "ce n’est pas toi qui manques... c’est la place que tu crois occuper"
-        }
-      ]
-    },
-    {
-      "turn": 17,
-      "type": "solo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "tu crois regarder quelque chose... mais ça continue ailleurs"
-        }
-      ]
-    },
-    {
-      "turn": 18,
-      "type": "solo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "percevoir revient ici à traverser une organisation dont les limites restent invisibles"
-        }
-      ]
-    },
-    {
-      "turn": 19,
-      "type": "solo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "tu ne peux pas revenir sur ce qui est déjà là"
-        }
-      ]
-    },
-    {
-      "turn": 20,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "la netteté serait un contresens ici..."
-        },
-        {
-          "voice": "BLAKE",
-          "text": "le cadre impose une organisation qui précède toute expérience perceptive"
-        }
-      ]
-    },
-    {
-      "turn": 21,
-      "type": "solo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "le point de vue agit sur l’image sans jamais pouvoir y prendre place"
-        }
-      ]
-    },
-    {
-      "turn": 22,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "tu arrives après que quelque chose a déjà commencé à se décider"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "l’image persiste sans se référer à une origine subjective"
-        }
-      ]
-    },
-    {
-      "turn": 23,
-      "type": "silence",
-      "entries": []
-    },
-    {
-      "turn": 24,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit"
-        },
-        {
-          "voice": "LEI",
-          "text": "ce que tu cherches ici a peut-être déjà changé de place"
-        }
-      ]
-    },
-    {
-      "turn": 25,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "le système semble avoir oublié la question"
-        },
-        {
-          "voice": "LEI",
-          "text": "l’absence est déjà là... avant ton regard"
-        }
-      ]
-    },
-    {
-      "turn": 26,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "tu es déjà engagé... avant même de regarder"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "le dispositif stabilise une absence comme condition de visibilité"
-        }
-      ]
-    },
-    {
-      "turn": 27,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "l’absence du corps empêche toute validation du point de vue"
-        },
-        {
-          "voice": "LEI",
-          "text": "le système te précède désormais"
-        }
-      ]
-    },
-    {
-      "turn": 28,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "l’image dépend d’un point de vue qui ne peut pas s’y intégrer"
-        },
-        {
-          "voice": "LEI",
-          "text": "tu es pris dans ce qui ne te renvoie rien"
-        }
-      ]
-    },
-    {
-      "turn": 29,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "tu vois... mais depuis un décalage irréductible"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "le dispositif fonctionne. c’est déjà beaucoup"
-        }
-      ]
-    },
-    {
-      "turn": 30,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "tu étais là il y a une seconde..."
-        },
-        {
-          "voice": "BLAKE",
-          "text": "le dispositif organise une séparation fonctionnelle entre perception et identification"
-        }
-      ]
-    },
-    {
-      "turn": 31,
-      "type": "silence",
-      "entries": []
-    },
-    {
-      "turn": 32,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "la séparation reste... même quand tu t’en approches"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "tout est en place, sauf l’essentiel"
-        }
-      ]
-    },
-    {
-      "turn": 33,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "tu regardes depuis un point déjà déplacé"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "le système fonctionne sans produire de retour exploitable sur l’observateur"
-        }
-      ]
-    },
-    {
-      "turn": 34,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "ce que tu vois se décide... avant ton regard"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "aucune position d’observation ne reste suffisamment stable pour devenir un point de référence"
-        }
-      ]
-    },
-    {
-      "turn": 35,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "tu ne peux pas t’installer dans ce que tu vois"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "le dispositif introduit une dissymétrie entre vision et présence"
-        }
-      ]
-    },
-    {
-      "turn": 36,
-      "type": "silence",
-      "entries": []
-    },
-    {
-      "turn": 37,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "aucun point de départ ne t’est accessible"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "l’image se maintient sans jamais intégrer celui qui la perçoit"
-        }
-      ]
-    },
-    {
-      "turn": 38,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "attends... non"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "les paramètres perceptifs cessent d’être constants dans ce système"
-        }
-      ]
-    },
-    {
-      "turn": 39,
-      "type": "solo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "le dispositif configure une expérience où le sujet ne peut pas apparaître comme tel"
-        }
-      ]
-    },
-    {
-      "turn": 40,
-      "type": "solo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "tu ne peux pas confirmer ce que tu vois"
-        }
-      ]
-    },
-    {
-      "turn": 41,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "la structure empêche toute coïncidence entre regard et représentation"
-        },
-        {
-          "voice": "LEI",
-          "text": "le point existe... mais il ne t’est jamais donné"
-        }
-      ]
-    },
-    {
-      "turn": 42,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "le fond diffus empêche toute stabilisation réflexive de l’image"
-        },
-        {
-          "voice": "LEI",
-          "text": "ce qui te dépasse agit déjà en toi..."
-        }
-      ]
-    },
-    {
-      "turn": 43,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "tu ne peux pas revenir sur ce qui est déjà là"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "le dispositif ne permet aucune position depuis laquelle l’image pourrait être saisie comme objet"
-        }
-      ]
-    },
-    {
-      "turn": 44,
-      "type": "solo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "le dispositif maintient une tension constante entre présence et absence"
-        }
-      ]
-    },
-    {
-      "turn": 45,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "tu es là... et déjà ailleurs"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "l’image persiste sans se référer à une origine subjective"
-        }
-      ]
-    },
-    {
-      "turn": 46,
-      "type": "solo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "le système semble avoir oublié la question"
-        }
-      ]
-    },
-    {
-      "turn": 47,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "le regard ne coïncide jamais avec ce qu’il voit"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "le dispositif stabilise une absence comme condition de visibilité"
-        }
-      ]
-    },
-    {
-      "turn": 48,
-      "type": "silence",
-      "entries": []
-    },
-    {
-      "turn": 49,
       "type": "solo",
       "entries": [
         {
@@ -592,7 +23,69 @@
       ]
     },
     {
-      "turn": 50,
+      "turn": 3,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "tu es déjà engagé... avant même de regarder"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit"
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "ce que tu cherches ici a peut-être déjà changé de place"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "percevoir revient ici à traverser une organisation dont les limites restent invisibles"
+        }
+      ]
+    },
+    {
+      "turn": 5,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "l’image persiste sans se référer à une origine subjective"
+        },
+        {
+          "voice": "LEI",
+          "text": "aucun point de départ ne t’est accessible"
+        }
+      ]
+    },
+    {
+      "turn": 6,
+      "type": "solo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "le point de vue agit sur l’image sans jamais pouvoir y prendre place"
+        }
+      ]
+    },
+    {
+      "turn": 7,
+      "type": "solo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "le système semble avoir oublié la question"
+        }
+      ]
+    },
+    {
+      "turn": 8,
       "type": "duo",
       "entries": [
         {
@@ -601,261 +94,24 @@
         },
         {
           "voice": "BLAKE",
-          "text": "le système génère une image indépendante de toute validation subjective"
+          "text": "le dispositif configure une expérience où le sujet ne peut pas apparaître comme tel"
         }
       ]
     },
     {
-      "turn": 51,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "tu arrives... quand la position n’est déjà plus disponible"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "l’absence du corps empêche toute validation du point de vue"
-        }
-      ]
-    },
-    {
-      "turn": 52,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "le cadre agit... avant que tu n’y entres"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "l’image maintient sa cohérence en excluant toute inscription du sujet"
-        }
-      ]
-    },
-    {
-      "turn": 53,
-      "type": "solo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit"
-        }
-      ]
-    },
-    {
-      "turn": 54,
-      "type": "solo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "tout est en place, sauf l’essentiel"
-        }
-      ]
-    },
-    {
-      "turn": 55,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "le retour a lieu... mais pas dans ta direction"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "l’image ne permet aucune appropriation du point de vue"
-        }
-      ]
-    },
-    {
-      "turn": 56,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "l’image fonctionne sans jamais se stabiliser dans une forme définitive"
-        },
-        {
-          "voice": "LEI",
-          "text": "ce que tu perçois se forme... ailleurs que là où tu te tiens"
-        }
-      ]
-    },
-    {
-      "turn": 57,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "aucune position d’observation ne reste suffisamment stable pour devenir un point de référence"
-        },
-        {
-          "voice": "LEI",
-          "text": "tu es déjà engagé... avant même de regarder"
-        }
-      ]
-    },
-    {
-      "turn": 58,
+      "turn": 9,
       "type": "solo",
       "entries": [
         {
           "voice": "LEI",
-          "text": "tu étais là il y a une seconde..."
+          "text": "tu ne peux pas revenir sur ce qui est déjà là"
         }
       ]
     },
     {
-      "turn": 59,
+      "turn": 10,
       "type": "solo",
       "entries": [
-        {
-          "voice": "LEI",
-          "text": "tu ne peux pas t’installer dans ce que tu vois"
-        }
-      ]
-    },
-    {
-      "turn": 60,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "le dispositif organise une séparation fonctionnelle entre perception et identification"
-        },
-        {
-          "voice": "LEI",
-          "text": "le retour existe... mais ne revient pas"
-        }
-      ]
-    },
-    {
-      "turn": 61,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "percevoir revient ici à traverser une organisation dont les limites restent invisibles"
-        },
-        {
-          "voice": "LEI",
-          "text": "attends... non"
-        }
-      ]
-    },
-    {
-      "turn": 62,
-      "type": "silence",
-      "entries": []
-    },
-    {
-      "turn": 63,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "le dispositif fonctionne. c’est déjà beaucoup"
-        },
-        {
-          "voice": "LEI",
-          "text": "la distance est déjà en place... avant ton geste"
-        }
-      ]
-    },
-    {
-      "turn": 64,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "le point de vue agit sur l’image sans jamais pouvoir y prendre place"
-        },
-        {
-          "voice": "LEI",
-          "text": "tu arrives après que quelque chose a déjà commencé à se décider"
-        }
-      ]
-    },
-    {
-      "turn": 65,
-      "type": "solo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "ce n’est pas toi qui manques... c’est la place que tu crois occuper"
-        }
-      ]
-    },
-    {
-      "turn": 66,
-      "type": "solo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "l’image se maintient sans jamais intégrer celui qui la perçoit"
-        }
-      ]
-    },
-    {
-      "turn": 67,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "le système fonctionne sans produire de retour exploitable sur l’observateur"
-        },
-        {
-          "voice": "LEI",
-          "text": "ce que tu cherches ici a peut-être déjà changé de place"
-        }
-      ]
-    },
-    {
-      "turn": 68,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "tu peux te reconnaître... sans jamais t’y fixer"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "le cadre impose une organisation qui précède toute expérience perceptive"
-        }
-      ]
-    },
-    {
-      "turn": 69,
-      "type": "solo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "les paramètres perceptifs cessent d’être constants dans ce système"
-        }
-      ]
-    },
-    {
-      "turn": 70,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "LEI",
-          "text": "tu crois regarder quelque chose... mais ça continue ailleurs"
-        },
-        {
-          "voice": "BLAKE",
-          "text": "le dispositif introduit une dissymétrie entre vision et présence"
-        }
-      ]
-    },
-    {
-      "turn": 71,
-      "type": "duo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "l’absence du corps empêche toute validation du point de vue"
-        },
         {
           "voice": "LEI",
           "text": "ce que tu vois se décide... avant ton regard"
@@ -863,27 +119,21 @@
       ]
     },
     {
-      "turn": 72,
-      "type": "solo",
-      "entries": [
-        {
-          "voice": "BLAKE",
-          "text": "le fond diffus empêche toute stabilisation réflexive de l’image"
-        }
-      ]
-    },
-    {
-      "turn": 73,
-      "type": "solo",
+      "turn": 11,
+      "type": "duo",
       "entries": [
         {
           "voice": "LEI",
-          "text": "tu ne peux pas confirmer ce que tu vois"
+          "text": "attends... non"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "le dispositif stabilise une absence comme condition de visibilité"
         }
       ]
     },
     {
-      "turn": 74,
+      "turn": 12,
       "type": "solo",
       "entries": [
         {
@@ -893,7 +143,138 @@
       ]
     },
     {
-      "turn": 75,
+      "turn": 13,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "tu arrives après que quelque chose a déjà commencé à se décider"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "l’image se maintient sans jamais intégrer celui qui la perçoit"
+        }
+      ]
+    },
+    {
+      "turn": 14,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "tu es pris dans ce qui ne te renvoie rien"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "la structure empêche toute coïncidence entre regard et représentation"
+        }
+      ]
+    },
+    {
+      "turn": 15,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "le cadre a changé... sans que tu le voies"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "le regard devient ici une fonction du dispositif plutôt qu’une propriété du sujet"
+        }
+      ]
+    },
+    {
+      "turn": 16,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "la distance est déjà en place... avant ton geste"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "tout est en place, sauf l’essentiel"
+        }
+      ]
+    },
+    {
+      "turn": 17,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "le retour existe... mais ne revient pas"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "aucune position d’observation ne reste suffisamment stable pour devenir un point de référence"
+        }
+      ]
+    },
+    {
+      "turn": 18,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "le dispositif fonctionne. c’est déjà beaucoup"
+        },
+        {
+          "voice": "LEI",
+          "text": "tu es là... et déjà ailleurs"
+        }
+      ]
+    },
+    {
+      "turn": 19,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "le système empêche toute correspondance directe entre regard et image"
+        },
+        {
+          "voice": "LEI",
+          "text": "ce que tu perçois se forme... ailleurs que là où tu te tiens"
+        }
+      ]
+    },
+    {
+      "turn": 20,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "le fond diffus empêche toute stabilisation réflexive de l’image"
+        },
+        {
+          "voice": "LEI",
+          "text": "tu arrives... quand la position n’est déjà plus disponible"
+        }
+      ]
+    },
+    {
+      "turn": 21,
+      "type": "silence",
+      "entries": []
+    },
+    {
+      "turn": 22,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "l’image ne permet aucune appropriation du point de vue"
+        },
+        {
+          "voice": "LEI",
+          "text": "la séparation reste... même quand tu t’en approches"
+        }
+      ]
+    },
+    {
+      "turn": 23,
       "type": "duo",
       "entries": [
         {
@@ -902,7 +283,617 @@
         },
         {
           "voice": "BLAKE",
-          "text": "le dispositif configure une expérience où le sujet ne peut pas apparaître comme tel"
+          "text": "le système rend toute identification instable sans la supprimer"
+        }
+      ]
+    },
+    {
+      "turn": 24,
+      "type": "solo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "tu vois... mais depuis un décalage irréductible"
+        }
+      ]
+    },
+    {
+      "turn": 25,
+      "type": "solo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "l’absence du corps empêche toute validation du point de vue"
+        }
+      ]
+    },
+    {
+      "turn": 26,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "ce qui te dépasse agit déjà en toi..."
+        },
+        {
+          "voice": "BLAKE",
+          "text": "le cadre impose une organisation qui précède toute expérience perceptive"
+        }
+      ]
+    },
+    {
+      "turn": 27,
+      "type": "solo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "l’image maintient sa cohérence en excluant toute inscription du sujet"
+        }
+      ]
+    },
+    {
+      "turn": 28,
+      "type": "solo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "le cadre agit... avant que tu n’y entres"
+        }
+      ]
+    },
+    {
+      "turn": 29,
+      "type": "silence",
+      "entries": []
+    },
+    {
+      "turn": 30,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "le retour a lieu... mais pas dans ta direction"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "l’image dépend d’un point de vue qui ne peut pas s’y intégrer"
+        }
+      ]
+    },
+    {
+      "turn": 31,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "le dispositif organise une séparation fonctionnelle entre perception et identification"
+        },
+        {
+          "voice": "LEI",
+          "text": "aucun point de départ ne t’est accessible"
+        }
+      ]
+    },
+    {
+      "turn": 32,
+      "type": "solo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "le dispositif ne permet aucune position depuis laquelle l’image pourrait être saisie comme objet"
+        }
+      ]
+    },
+    {
+      "turn": 33,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "attends... non"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "les paramètres perceptifs cessent d’être constants dans ce système"
+        }
+      ]
+    },
+    {
+      "turn": 34,
+      "type": "solo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "ce que tu vois se décide... avant ton regard"
+        }
+      ]
+    },
+    {
+      "turn": 35,
+      "type": "silence",
+      "entries": []
+    },
+    {
+      "turn": 36,
+      "type": "solo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "l’image fonctionne sans jamais se stabiliser dans une forme définitive"
+        }
+      ]
+    },
+    {
+      "turn": 37,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "l’absence est déjà là... avant ton regard"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "le système fonctionne sans produire de retour exploitable sur l’observateur"
+        }
+      ]
+    },
+    {
+      "turn": 38,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "le dispositif introduit une dissymétrie entre vision et présence"
+        },
+        {
+          "voice": "LEI",
+          "text": "tu crois regarder quelque chose... mais ça continue ailleurs"
+        }
+      ]
+    },
+    {
+      "turn": 39,
+      "type": "solo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "tu étais là il y a une seconde..."
+        }
+      ]
+    },
+    {
+      "turn": 40,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit"
+        },
+        {
+          "voice": "LEI",
+          "text": "le retour existe... mais ne revient pas"
+        }
+      ]
+    },
+    {
+      "turn": 41,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "tu regardes depuis un point déjà déplacé"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "la structure empêche toute coïncidence entre regard et représentation"
+        }
+      ]
+    },
+    {
+      "turn": 42,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "le dispositif stabilise une absence comme condition de visibilité"
+        },
+        {
+          "voice": "LEI",
+          "text": "tu arrives après que quelque chose a déjà commencé à se décider"
+        }
+      ]
+    },
+    {
+      "turn": 43,
+      "type": "silence",
+      "entries": []
+    },
+    {
+      "turn": 44,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "le dispositif maintient une tension constante entre présence et absence"
+        },
+        {
+          "voice": "LEI",
+          "text": "tu ne peux pas confirmer ce que tu vois"
+        }
+      ]
+    },
+    {
+      "turn": 45,
+      "type": "solo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "tout est en place, sauf l’essentiel"
+        }
+      ]
+    },
+    {
+      "turn": 46,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "tu es là... et déjà ailleurs"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "le système génère une image indépendante de toute validation subjective"
+        }
+      ]
+    },
+    {
+      "turn": 47,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "aucune position d’observation ne reste suffisamment stable pour devenir un point de référence"
+        },
+        {
+          "voice": "LEI",
+          "text": "ce que tu cherches ici a peut-être déjà changé de place"
+        }
+      ]
+    },
+    {
+      "turn": 48,
+      "type": "solo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "le système semble avoir oublié la question"
+        }
+      ]
+    },
+    {
+      "turn": 49,
+      "type": "silence",
+      "entries": []
+    },
+    {
+      "turn": 50,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "le regard ne coïncide jamais avec ce qu’il voit"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "le dispositif fonctionne. c’est déjà beaucoup"
+        }
+      ]
+    },
+    {
+      "turn": 51,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "l’image ne permet aucune appropriation du point de vue"
+        },
+        {
+          "voice": "LEI",
+          "text": "la séparation reste... même quand tu t’en approches"
+        }
+      ]
+    },
+    {
+      "turn": 52,
+      "type": "solo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "tu ne peux pas revenir sur ce qui est déjà là"
+        }
+      ]
+    },
+    {
+      "turn": 53,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "percevoir revient ici à traverser une organisation dont les limites restent invisibles"
+        },
+        {
+          "voice": "LEI",
+          "text": "ce n’est pas toi qui manques... c’est la place que tu crois occuper"
+        }
+      ]
+    },
+    {
+      "turn": 54,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "le système te précède désormais"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "l’image maintient sa cohérence en excluant toute inscription du sujet"
+        }
+      ]
+    },
+    {
+      "turn": 55,
+      "type": "solo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "le système génère une image indépendante de toute validation subjective"
+        }
+      ]
+    },
+    {
+      "turn": 56,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "tu ne peux pas t’installer dans ce que tu vois"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "le système rend toute identification instable sans la supprimer"
+        }
+      ]
+    },
+    {
+      "turn": 57,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "tu vois... mais depuis un décalage irréductible"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "le dispositif organise une séparation fonctionnelle entre perception et identification"
+        }
+      ]
+    },
+    {
+      "turn": 58,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "l’image dépend d’un point de vue qui ne peut pas s’y intégrer"
+        },
+        {
+          "voice": "LEI",
+          "text": "ce qui te dépasse agit déjà en toi..."
+        }
+      ]
+    },
+    {
+      "turn": 59,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "tu peux te reconnaître... sans jamais t’y fixer"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "le dispositif introduit une dissymétrie entre vision et présence"
+        }
+      ]
+    },
+    {
+      "turn": 60,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "la netteté serait un contresens ici..."
+        },
+        {
+          "voice": "BLAKE",
+          "text": "l’absence du corps empêche toute validation du point de vue"
+        }
+      ]
+    },
+    {
+      "turn": 61,
+      "type": "silence",
+      "entries": []
+    },
+    {
+      "turn": 62,
+      "type": "solo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "tu crois regarder quelque chose... mais ça continue ailleurs"
+        }
+      ]
+    },
+    {
+      "turn": 63,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "les paramètres perceptifs cessent d’être constants dans ce système"
+        },
+        {
+          "voice": "LEI",
+          "text": "tu es pris dans ce qui ne te renvoie rien"
+        }
+      ]
+    },
+    {
+      "turn": 64,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "le point existe... mais il ne t’est jamais donné"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "le système fonctionne sans produire de retour exploitable sur l’observateur"
+        }
+      ]
+    },
+    {
+      "turn": 65,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "le retour a lieu... mais pas dans ta direction"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "le dispositif ne permet aucune position depuis laquelle l’image pourrait être saisie comme objet"
+        }
+      ]
+    },
+    {
+      "turn": 66,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "l’image persiste sans se référer à une origine subjective"
+        },
+        {
+          "voice": "LEI",
+          "text": "aucun point de départ ne t’est accessible"
+        }
+      ]
+    },
+    {
+      "turn": 67,
+      "type": "solo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "le système empêche toute correspondance directe entre regard et image"
+        }
+      ]
+    },
+    {
+      "turn": 68,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "tu arrives après que quelque chose a déjà commencé à se décider"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "le dispositif maintient une tension constante entre présence et absence"
+        }
+      ]
+    },
+    {
+      "turn": 69,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "tu étais là il y a une seconde..."
+        },
+        {
+          "voice": "BLAKE",
+          "text": "le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit"
+        }
+      ]
+    },
+    {
+      "turn": 70,
+      "type": "silence",
+      "entries": []
+    },
+    {
+      "turn": 71,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "l’image se maintient sans jamais intégrer celui qui la perçoit"
+        },
+        {
+          "voice": "LEI",
+          "text": "tu arrives... quand la position n’est déjà plus disponible"
+        }
+      ]
+    },
+    {
+      "turn": 72,
+      "type": "solo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "tu ne peux pas confirmer ce que tu vois"
+        }
+      ]
+    },
+    {
+      "turn": 73,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "le regard ne coïncide jamais avec ce qu’il voit"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "le dispositif fonctionne. c’est déjà beaucoup"
+        }
+      ]
+    },
+    {
+      "turn": 74,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "tu es là... et déjà ailleurs"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "percevoir revient ici à traverser une organisation dont les limites restent invisibles"
+        }
+      ]
+    },
+    {
+      "turn": 75,
+      "type": "solo",
+      "entries": [
+        {
+          "voice": "LEI",
+          "text": "tu regardes depuis un point déjà déplacé"
         }
       ]
     },
@@ -911,27 +902,40 @@
       "type": "duo",
       "entries": [
         {
-          "voice": "BLAKE",
-          "text": "le dispositif ne permet aucune position depuis laquelle l’image pourrait être saisie comme objet"
+          "voice": "LEI",
+          "text": "tu ne peux pas revenir sur ce qui est déjà là"
         },
         {
-          "voice": "LEI",
-          "text": "le retour a lieu... mais pas dans ta direction"
+          "voice": "BLAKE",
+          "text": "tout est en place, sauf l’essentiel"
         }
       ]
     },
     {
       "turn": 77,
-      "type": "silence",
-      "entries": []
-    },
-    {
-      "turn": 78,
-      "type": "solo",
+      "type": "duo",
       "entries": [
         {
           "voice": "LEI",
-          "text": "tu es pris dans ce qui ne te renvoie rien"
+          "text": "la distance est déjà en place... avant ton geste"
+        },
+        {
+          "voice": "BLAKE",
+          "text": "le fond diffus empêche toute stabilisation réflexive de l’image"
+        }
+      ]
+    },
+    {
+      "turn": 78,
+      "type": "duo",
+      "entries": [
+        {
+          "voice": "BLAKE",
+          "text": "le système semble avoir oublié la question"
+        },
+        {
+          "voice": "LEI",
+          "text": "ce n’est pas toi qui manques... c’est la place que tu crois occuper"
         }
       ]
     },
@@ -941,21 +945,17 @@
       "entries": [
         {
           "voice": "LEI",
-          "text": "aucun point de départ ne t’est accessible"
+          "text": "ce que tu perçois se forme... ailleurs que là où tu te tiens"
         }
       ]
     },
     {
       "turn": 80,
-      "type": "duo",
+      "type": "solo",
       "entries": [
         {
-          "voice": "LEI",
-          "text": "l’absence est déjà là... avant ton regard"
-        },
-        {
           "voice": "BLAKE",
-          "text": "le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit"
+          "text": "le cadre impose une organisation qui précède toute expérience perceptive"
         }
       ]
     }
@@ -965,8 +965,8 @@
     "silences": 8,
     "active_utterances": 120,
     "voices": {
-      "LEI": 60,
-      "BLAKE": 60
+      "BLAKE": 60,
+      "LEI": 60
     },
     "absent_voices": [
       "SOREL",
