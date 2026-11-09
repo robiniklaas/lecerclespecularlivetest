@@ -46,12 +46,17 @@ async function loadCircle() {
     }));
     container.innerHTML = entries.map(entry =>
       '<div class="entry"><span class="author">' + escapeHtml(entry.voice.toLowerCase()) +
-      '</span><span class="text">' + escapeHtml(entry.text) + '</span></div>'
+      '</span><span class="text">' + escapeHtml(formatText(entry.text)) + '</span></div>'
     ).join('');
   } catch (error) {
     container.innerHTML = '<div class="error">[live]</div>';
     console.error('Cercle Specular:', error);
   }
+}
+function formatText(value) {
+  return String(value)
+    .replace(/(?<!\\.)\\.(?!\\.)(?=\\s+\\S)/g, ',')
+    .replace(/(?<!\\.)\\.(?!\\.)\\s*$/, '');
 }
 function escapeHtml(value) {
   return String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;')
