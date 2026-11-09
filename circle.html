@@ -45,7 +45,7 @@ async function loadCircle() {
       text: firstByVoice.has(voice) ? firstByVoice.get(voice) : '_'
     }));
     container.innerHTML = entries.map(entry =>
-      '<div class="entry"><span class="author">' + escapeHtml(entry.voice) +
+      '<div class="entry"><span class="author">' + escapeHtml(entry.voice.toLowerCase()) +
       '</span><span class="text">' + escapeHtml(entry.text) + '</span></div>'
     ).join('');
   } catch (error) {
