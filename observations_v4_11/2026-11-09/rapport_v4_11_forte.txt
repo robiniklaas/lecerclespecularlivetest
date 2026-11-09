@@ -1,0 +1,607 @@
+CERCLE SPECULAR — PROTOTYPE V4.11 EXPÉRIMENTALE
+Mode : forte
+Principe : sélection locale de collisions entre phrases d’un même tour, selon le recouvrement conceptuel et les registres lexicaux détectés.
+Les étiquettes de registre sont heuristiques ; une collision lexicale ne garantit pas un événement de sens.
+Graine aléatoire : 20261109000
+Voix présentes : BLAKE, LEI, SOREL, ANAYA
+Voix silencieuses pour toute la séquence : aucune
+Source : generate_rss.py (lecture seule)
+Corpus source et feed.xml non modifiés.
+
+RÉPARTITION DES 80 TOURS
+  silence: 8
+  solo: 10
+  duo: 40
+  trio: 18
+  quatre_voix: 4
+
+Positions des silences : [4, 17, 26, 44, 49, 54, 70, 75]
+Prises de parole actives : 160
+Répétitions exactes dans les 24 dernières phrases actives : 0
+Apparitions par voix : {'LEI': 40, 'ANAYA': 40, 'BLAKE': 40, 'SOREL': 40}
+Voix répétées dans un même tour : aucune
+Étiquettes relationnelles heuristiques : {'ouverture': 1, 'prolongement': 10, 'bifurcation': 111, 'contrepoint': 16, 'contestation': 3, 'interruption': 18, 'déplacement': 1}
+Collisions locales détectées : 84
+Paires détectées (faible recouvrement conceptuel + registres distincts) :
+  tour 02 — ANAYA : ce qui t’accueille ne demande pas que tu sois visible
+                 → LEI : le cadre a changé... sans que tu le voies
+    recouvrement=0.0 ; registres=affectif, perceptif / spatial
+  tour 03 — ANAYA : ce qui semble proche est déjà ailleurs
+                 → BLAKE : percevoir revient ici à traverser une organisation dont les limites restent invisibles
+    recouvrement=0.0 ; registres=spatial / perceptif
+  tour 05 — SOREL : tu continues à parler de miroir, alors que rien ici ne remplit les conditions du reflet
+                 → LEI : le cadre agit... avant que tu n’y entres
+    recouvrement=0.0 ; registres=perceptif, philosophique / spatial
+  tour 06 — LEI : le regard ne coïncide jamais avec ce qu’il voit
+                 → ANAYA : la distance ne sépare pas... elle transforme
+    recouvrement=0.0 ; registres=perceptif / spatial
+  tour 08 — ANAYA : ce qui précède te porte sans se montrer
+                 → LEI : la netteté serait un contresens ici...
+    recouvrement=0.0 ; registres=indéterminé / perceptif
+  tour 08 — LEI : la netteté serait un contresens ici...
+                 → SOREL : le sujet n’est pas absent, il est rendu inopérant par le dispositif
+    recouvrement=0.0 ; registres=perceptif / philosophique, technique
+  tour 10 — LEI : tu peux te reconnaître... sans jamais t’y fixer
+                 → SOREL : la présence visible suppose la suppression de ce qui devrait la garantir
+    recouvrement=0.0 ; registres=indéterminé / perceptif, philosophique
+  tour 11 — LEI : tu arrives... quand la position n’est déjà plus disponible
+                 → SOREL : le flou n’est pas un défaut, c’est la condition même de ce qui apparaît
+    recouvrement=0.0 ; registres=spatial / perceptif, philosophique
+  tour 11 — SOREL : le flou n’est pas un défaut, c’est la condition même de ce qui apparaît
+                 → BLAKE : le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit
+    recouvrement=0.0 ; registres=perceptif, philosophique / technique
+  tour 12 — SOREL : l’origine est neutralisée par la logique du dispositif
+                 → ANAYA : ce qui manque ouvre un passage
+    recouvrement=0.0 ; registres=philosophique, technique / spatial
+  tour 13 — BLAKE : le dispositif introduit une dissymétrie entre vision et présence
+                 → ANAYA : tu es là, mais déjà déplacé dans ce qui apparaît
+    recouvrement=0.0 ; registres=philosophique, technique / affectif
+  tour 14 — LEI : aucun point de départ ne t’est accessible
+                 → BLAKE : le fond diffus empêche toute stabilisation réflexive de l’image
+    recouvrement=0.0 ; registres=spatial / perceptif
+  tour 15 — LEI : ce que tu perçois se forme... ailleurs que là où tu te tiens
+                 → SOREL : la transparence supposée est ici structurellement impossible
+    recouvrement=0.0 ; registres=spatial / indéterminé
+  tour 15 — SOREL : la transparence supposée est ici structurellement impossible
+                 → ANAYA : peut-être que c’était déjà fini
+    recouvrement=0.0 ; registres=indéterminé / affectif, rupture
+  tour 16 — SOREL : il n’y a jamais eu de point extérieur à ce dispositif
+                 → ANAYA : les deux coexistent sans se résoudre
+    recouvrement=0.0 ; registres=spatial, technique / indéterminé
+  tour 18 — BLAKE : le cadre impose une organisation qui précède toute expérience perceptive
+                 → LEI : tu arrives après que quelque chose a déjà commencé à se décider
+    recouvrement=0.0 ; registres=spatial / indéterminé
+  tour 19 — LEI : tu regardes depuis un point déjà déplacé
+                 → ANAYA : ce qui apparaît t’inclut... sans jamais te contenir
+    recouvrement=0.0 ; registres=perceptif, spatial / indéterminé
+  tour 21 — ANAYA : ce dehors t’habite déjà
+                 → LEI : le retour existe... mais ne revient pas
+    recouvrement=0.0 ; registres=spatial / indéterminé
+  tour 22 — ANAYA : tu passes... sans pouvoir retenir
+                 → LEI : le système te précède désormais
+    recouvrement=0.0 ; registres=perceptif / technique
+  tour 22 — LEI : le système te précède désormais
+                 → SOREL : il n'y a pas de monde comme totalité
+    recouvrement=0.0 ; registres=technique / philosophique
+  tour 23 — BLAKE : la structure empêche toute coïncidence entre regard et représentation
+                 → ANAYA : la position devient un passage que tu ne peux pas fixer
+    recouvrement=0.0 ; registres=perceptif, philosophique / spatial
+  tour 23 — ANAYA : la position devient un passage que tu ne peux pas fixer
+                 → SOREL : la visibilité repose ici sur une exclusion constitutive du sujet
+    recouvrement=0.0 ; registres=spatial / philosophique
+  tour 24 — SOREL : toute apparition suppose ici qu’une partie de sa propre condition reste hors champ
+                 → ANAYA : tout reste... mais autrement
+    recouvrement=0.0 ; registres=philosophique / indéterminé
+  tour 25 — BLAKE : l’image se maintient sans jamais intégrer celui qui la perçoit
+                 → LEI : la distance est déjà en place... avant ton geste
+    recouvrement=0.0 ; registres=perceptif / spatial
+  tour 27 — ANAYA : tout commence... sans commencer
+                 → LEI : ce que tu vois se décide... avant ton regard
+    recouvrement=0.0 ; registres=indéterminé / perceptif
+  tour 27 — LEI : ce que tu vois se décide... avant ton regard
+                 → BLAKE : le dispositif maintient une tension constante entre présence et absence
+    recouvrement=0.0 ; registres=perceptif / philosophique, technique
+  tour 27 — BLAKE : le dispositif maintient une tension constante entre présence et absence
+                 → SOREL : la proximité perceptive est une illusion produite
+    recouvrement=0.0 ; registres=philosophique, technique / indéterminé
+  tour 28 — LEI : tu ne peux pas revenir sur ce qui est déjà là
+                 → BLAKE : tout est en place, sauf l’essentiel
+    recouvrement=0.0 ; registres=indéterminé / spatial
+  tour 30 — BLAKE : l’image ne permet aucune appropriation du point de vue
+                 → LEI : ce qui te dépasse agit déjà en toi...
+    recouvrement=0.0 ; registres=perceptif, spatial / indéterminé
+  tour 30 — LEI : ce qui te dépasse agit déjà en toi...
+                 → ANAYA : tu habites cette distance
+    recouvrement=0.0 ; registres=indéterminé / spatial
+  tour 31 — BLAKE : l’image maintient sa cohérence en excluant toute inscription du sujet
+                 → ANAYA : ce qui apparaît ne demande rien et pourtant te traverse
+    recouvrement=0.0 ; registres=perceptif, philosophique / affectif
+  tour 31 — ANAYA : ce qui apparaît ne demande rien et pourtant te traverse
+                 → LEI : tu crois regarder quelque chose... mais ça continue ailleurs
+    recouvrement=0.0 ; registres=affectif / perceptif, spatial
+  tour 32 — ANAYA : ce qui t’accueille ne demande pas que tu sois visible
+                 → LEI : le point existe... mais il ne t’est jamais donné
+    recouvrement=0.0 ; registres=affectif, perceptif / spatial
+  tour 33 — BLAKE : le point de vue agit sur l’image sans jamais pouvoir y prendre place
+                 → ANAYA : tu es en mouvement dans ce qui te définit
+    recouvrement=0.0 ; registres=perceptif, spatial / affectif
+  tour 34 — SOREL : la résolution est empêchée par la condition même du dispositif
+                 → ANAYA : tu avances dans ce qui ne revient pas
+    recouvrement=0.0 ; registres=philosophique, technique / indéterminé
+  tour 34 — ANAYA : tu avances dans ce qui ne revient pas
+                 → LEI : tu restes dehors... même en regardant
+    recouvrement=0.0 ; registres=indéterminé / perceptif, spatial
+  tour 35 — LEI : attends... non
+                 → BLAKE : le fond diffus empêche toute stabilisation réflexive de l’image
+    recouvrement=0.0 ; registres=rupture / perceptif
+  tour 36 — ANAYA : tu es là, mais déjà déplacé dans ce qui apparaît
+                 → SOREL : la coïncidence est annulée par le fonctionnement du dispositif
+    recouvrement=0.0 ; registres=affectif / philosophique, technique
+  tour 36 — SOREL : la coïncidence est annulée par le fonctionnement du dispositif
+                 → LEI : tu es là... et déjà ailleurs
+    recouvrement=0.0 ; registres=philosophique, technique / affectif, spatial
+  tour 37 — ANAYA : tout continue... sans fin stable
+                 → LEI : l’absence est déjà là... avant ton regard
+    recouvrement=0.0 ; registres=indéterminé / perceptif, philosophique
+  tour 37 — LEI : l’absence est déjà là... avant ton regard
+                 → SOREL : la critique ne trouve plus de point d’appui
+    recouvrement=0.0 ; registres=perceptif, philosophique / spatial
+  tour 37 — SOREL : la critique ne trouve plus de point d’appui
+                 → BLAKE : l’image persiste sans se référer à une origine subjective
+    recouvrement=0.0 ; registres=spatial / perceptif, philosophique
+  tour 39 — BLAKE : le système génère une image indépendante de toute validation subjective
+                 → SOREL : la présence est produite au prix de son propre effacement
+    recouvrement=0.0 ; registres=perceptif, technique / philosophique
+  tour 40 — ANAYA : tu touches à ce qui t’échappe sans pouvoir le retenir
+                 → LEI : ce n’est pas toi qui manques... c’est la place que tu crois occuper
+    recouvrement=0.0 ; registres=perceptif / affectif, spatial
+  tour 40 — LEI : ce n’est pas toi qui manques... c’est la place que tu crois occuper
+                 → SOREL : l’appropriation est neutralisée par la structure du dispositif
+    recouvrement=0.0 ; registres=affectif, spatial / technique
+  tour 41 — BLAKE : le système semble avoir oublié la question
+                 → ANAYA : tu continues pourtant à être là
+    recouvrement=0.0 ; registres=perceptif, rupture, technique / indéterminé
+  tour 42 — BLAKE : le dispositif fonctionne. c’est déjà beaucoup
+                 → ANAYA : ce que tu perds te relie autrement
+    recouvrement=0.0 ; registres=technique / affectif
+  tour 43 — BLAKE : le dispositif organise une séparation fonctionnelle entre perception et identification
+                 → LEI : ce que tu cherches ici a peut-être déjà changé de place
+    recouvrement=0.0 ; registres=technique / spatial
+  tour 45 — BLAKE : le dispositif ne permet aucune position depuis laquelle l’image pourrait être saisie comme objet
+                 → SOREL : l’expérience dépend d’une extériorité irréductible
+    recouvrement=0.0 ; registres=perceptif, spatial, technique / philosophique
+  tour 46 — ANAYA : tu arrives dans quelque chose qui était déjà en train de devenir
+                 → SOREL : la distinction ne disparaît pas ; elle cesse simplement de produire ses effets
+    recouvrement=0.0 ; registres=indéterminé / philosophique
+  tour 47 — BLAKE : le système fonctionne sans produire de retour exploitable sur l’observateur
+                 → SOREL : la tension n’est pas un effet mais une condition
+    recouvrement=0.0 ; registres=technique / philosophique
+  tour 47 — SOREL : la tension n’est pas un effet mais une condition
+                 → ANAYA : tu es séparé... sans être isolé
+    recouvrement=0.0 ; registres=philosophique / indéterminé
+  tour 48 — BLAKE : l’image fonctionne sans jamais se stabiliser dans une forme définitive
+                 → LEI : la séparation reste... même quand tu t’en approches
+    recouvrement=0.0 ; registres=affectif, perceptif, technique / indéterminé
+  tour 48 — LEI : la séparation reste... même quand tu t’en approches
+                 → SOREL : la stabilité apparente masque une transformation des conditions
+    recouvrement=0.0 ; registres=indéterminé / philosophique
+  tour 48 — SOREL : la stabilité apparente masque une transformation des conditions
+                 → ANAYA : tu avances dans ce qui ne revient pas
+    recouvrement=0.0 ; registres=philosophique / indéterminé
+  tour 50 — BLAKE : le système rend toute identification instable sans la supprimer
+                 → ANAYA : tu es là... mais déjà pris dans ce qui t’échappe
+    recouvrement=0.0 ; registres=technique / affectif
+  tour 50 — ANAYA : tu es là... mais déjà pris dans ce qui t’échappe
+                 → LEI : tu crois regarder quelque chose... mais ça continue ailleurs
+    recouvrement=0.0 ; registres=affectif / perceptif, spatial
+  tour 51 — SOREL : la forme excède toujours ce qu’elle prétend être
+                 → BLAKE : percevoir revient ici à traverser une organisation dont les limites restent invisibles
+    recouvrement=0.0 ; registres=indéterminé / perceptif
+  tour 52 — LEI : tu regardes depuis un point déjà déplacé
+                 → BLAKE : le dispositif introduit une dissymétrie entre vision et présence
+    recouvrement=0.167 ; registres=perceptif, spatial / philosophique, technique
+  tour 53 — LEI : le retour existe... mais ne revient pas
+                 → BLAKE : l’image dépend d’un point de vue qui ne peut pas s’y intégrer
+    recouvrement=0.0 ; registres=indéterminé / perceptif, spatial
+  tour 56 — LEI : la netteté serait un contresens ici...
+                 → ANAYA : nous y étions presque
+    recouvrement=0.0 ; registres=perceptif / affectif, rupture
+  tour 57 — ANAYA : ce qui apparaît ne demande rien et pourtant te traverse
+                 → SOREL : tu continues à parler de miroir, alors que rien ici ne remplit les conditions du reflet
+    recouvrement=0.0 ; registres=affectif / perceptif, philosophique
+  tour 58 — BLAKE : le système empêche toute correspondance directe entre regard et image
+                 → SOREL : ce qui apparaît ne peut être séparé de ce qui lui fait défaut
+    recouvrement=0.0 ; registres=perceptif, technique / indéterminé
+  tour 59 — LEI : tu vois... mais depuis un décalage irréductible
+                 → SOREL : il faudrait probablement recommencer... ou simplement recharger la page?
+    recouvrement=0.0 ; registres=perceptif / rupture, technique
+  tour 59 — SOREL : il faudrait probablement recommencer... ou simplement recharger la page?
+                 → BLAKE : tout est en place, sauf l’essentiel
+    recouvrement=0.0 ; registres=rupture, technique / spatial
+  tour 60 — LEI : tu es pris dans ce qui ne te renvoie rien
+                 → BLAKE : les paramètres perceptifs cessent d’être constants dans ce système
+    recouvrement=0.0 ; registres=indéterminé / technique
+  tour 61 — LEI : tu ne peux pas confirmer ce que tu vois
+                 → SOREL : nous avons perdu le fil, semble-t-il
+    recouvrement=0.0 ; registres=perceptif / rupture
+  tour 61 — SOREL : nous avons perdu le fil, semble-t-il
+                 → BLAKE : le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit
+    recouvrement=0.0 ; registres=rupture / technique
+  tour 63 — SOREL : le dispositif annule les distinctions qu’il semblait produire
+                 → ANAYA : ce que tu perds te relie autrement
+    recouvrement=0.0 ; registres=philosophique, technique / affectif
+  tour 63 — ANAYA : ce que tu perds te relie autrement
+                 → LEI : le système te précède désormais
+    recouvrement=0.0 ; registres=affectif / technique
+  tour 64 — BLAKE : le dispositif fonctionne. c’est déjà beaucoup
+                 → SOREL : la critique ne trouve plus de point d’appui
+    recouvrement=0.0 ; registres=technique / spatial
+  tour 66 — SOREL : l’expérience dépend d’une extériorité irréductible
+                 → ANAYA : la surface relie sans jamais fixer
+    recouvrement=0.0 ; registres=philosophique / spatial
+  tour 67 — BLAKE : la perception est contrainte par une organisation qui la dépasse
+                 → SOREL : la distinction ne disparaît pas ; elle cesse simplement de produire ses effets
+    recouvrement=0.0 ; registres=indéterminé / philosophique
+  tour 67 — SOREL : la distinction ne disparaît pas ; elle cesse simplement de produire ses effets
+                 → ANAYA : tu es là, mais déjà déplacé dans ce qui apparaît
+    recouvrement=0.0 ; registres=philosophique / affectif
+  tour 68 — SOREL : il n'y a pas de monde comme totalité
+                 → BLAKE : le système génère une image indépendante de toute validation subjective
+    recouvrement=0.0 ; registres=philosophique / perceptif, technique
+  tour 69 — SOREL : l’appropriation est neutralisée par la structure du dispositif
+                 → LEI : ce que tu vois se décide... avant ton regard
+    recouvrement=0.0 ; registres=technique / perceptif
+  tour 77 — SOREL : la tension n’est pas un effet mais une condition
+                 → LEI : la séparation reste... même quand tu t’en approches
+    recouvrement=0.0 ; registres=philosophique / indéterminé
+  tour 77 — LEI : la séparation reste... même quand tu t’en approches
+                 → ANAYA : peut-être que c’était déjà fini
+    recouvrement=0.0 ; registres=indéterminé / affectif, rupture
+  tour 78 — ANAYA : les deux coexistent sans se résoudre
+                 → SOREL : le sujet n’est pas absent, il est rendu inopérant par le dispositif
+    recouvrement=0.0 ; registres=indéterminé / philosophique, technique
+  tour 78 — SOREL : le sujet n’est pas absent, il est rendu inopérant par le dispositif
+                 → LEI : aucun point de départ ne t’est accessible
+    recouvrement=0.0 ; registres=philosophique, technique / spatial
+  tour 79 — SOREL : la présence est produite au prix de son propre effacement
+                 → BLAKE : l’image se maintient sans jamais intégrer celui qui la perçoit
+    recouvrement=0.0 ; registres=philosophique / perceptif
+  tour 79 — BLAKE : l’image se maintient sans jamais intégrer celui qui la perçoit
+                 → ANAYA : tu continues pourtant à être là
+    recouvrement=0.0 ; registres=perceptif / indéterminé
+  tour 79 — ANAYA : tu continues pourtant à être là
+                 → LEI : tu vois... mais depuis un décalage irréductible
+    recouvrement=0.0 ; registres=indéterminé / perceptif
+  tour 80 — SOREL : l’origine est neutralisée par la logique du dispositif
+                 → BLAKE : le point de vue agit sur l’image sans jamais pouvoir y prendre place
+    recouvrement=0.0 ; registres=philosophique, technique / perceptif, spatial
+
+SÉQUENCE
+
+TOUR 01 [duo]
+  LEI <ouverture>: tu regardes depuis un point déjà déplacé
+  ANAYA <prolongement>: tu participes à ce qui te traverse
+
+TOUR 02 [duo]
+  ANAYA <bifurcation>: ce qui t’accueille ne demande pas que tu sois visible
+  LEI <bifurcation>: le cadre a changé... sans que tu le voies
+
+TOUR 03 [duo]
+  ANAYA <bifurcation>: ce qui semble proche est déjà ailleurs
+  BLAKE <bifurcation>: percevoir revient ici à traverser une organisation dont les limites restent invisibles
+
+TOUR 04 [silence]
+  —: [silence]
+
+TOUR 05 [duo]
+  SOREL <contrepoint>: tu continues à parler de miroir, alors que rien ici ne remplit les conditions du reflet
+  LEI <bifurcation>: le cadre agit... avant que tu n’y entres
+
+TOUR 06 [duo]
+  LEI <bifurcation>: le regard ne coïncide jamais avec ce qu’il voit
+  ANAYA <bifurcation>: la distance ne sépare pas... elle transforme
+
+TOUR 07 [solo]
+  BLAKE <bifurcation>: aucune position d’observation ne reste suffisamment stable pour devenir un point de référence
+
+TOUR 08 [trio]
+  ANAYA <bifurcation>: ce qui précède te porte sans se montrer
+  LEI <contrepoint>: la netteté serait un contresens ici...
+  SOREL <bifurcation>: le sujet n’est pas absent, il est rendu inopérant par le dispositif
+
+TOUR 09 [solo]
+  BLAKE <bifurcation>: l’absence du corps empêche toute validation du point de vue
+
+TOUR 10 [duo]
+  LEI <bifurcation>: tu peux te reconnaître... sans jamais t’y fixer
+  SOREL <bifurcation>: la présence visible suppose la suppression de ce qui devrait la garantir
+
+TOUR 11 [trio]
+  LEI <bifurcation>: tu arrives... quand la position n’est déjà plus disponible
+  SOREL <bifurcation>: le flou n’est pas un défaut, c’est la condition même de ce qui apparaît
+  BLAKE <bifurcation>: le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit
+
+TOUR 12 [duo]
+  SOREL <contestation>: l’origine est neutralisée par la logique du dispositif
+  ANAYA <bifurcation>: ce qui manque ouvre un passage
+
+TOUR 13 [duo]
+  BLAKE <bifurcation>: le dispositif introduit une dissymétrie entre vision et présence
+  ANAYA <bifurcation>: tu es là, mais déjà déplacé dans ce qui apparaît
+
+TOUR 14 [duo]
+  LEI <bifurcation>: aucun point de départ ne t’est accessible
+  BLAKE <bifurcation>: le fond diffus empêche toute stabilisation réflexive de l’image
+
+TOUR 15 [trio]
+  LEI <bifurcation>: ce que tu perçois se forme... ailleurs que là où tu te tiens
+  SOREL <bifurcation>: la transparence supposée est ici structurellement impossible
+  ANAYA <interruption>: peut-être que c’était déjà fini
+
+TOUR 16 [duo]
+  SOREL <bifurcation>: il n’y a jamais eu de point extérieur à ce dispositif
+  ANAYA <interruption>: les deux coexistent sans se résoudre
+
+TOUR 17 [silence]
+  —: [silence]
+
+TOUR 18 [duo]
+  BLAKE <bifurcation>: le cadre impose une organisation qui précède toute expérience perceptive
+  LEI <bifurcation>: tu arrives après que quelque chose a déjà commencé à se décider
+
+TOUR 19 [duo]
+  LEI <prolongement>: tu regardes depuis un point déjà déplacé
+  ANAYA <bifurcation>: ce qui apparaît t’inclut... sans jamais te contenir
+
+TOUR 20 [solo]
+  LEI <bifurcation>: tu ne peux pas t’installer dans ce que tu vois
+
+TOUR 21 [duo]
+  ANAYA <bifurcation>: ce dehors t’habite déjà
+  LEI <bifurcation>: le retour existe... mais ne revient pas
+
+TOUR 22 [trio]
+  ANAYA <bifurcation>: tu passes... sans pouvoir retenir
+  LEI <bifurcation>: le système te précède désormais
+  SOREL <interruption>: il n'y a pas de monde comme totalité
+
+TOUR 23 [trio]
+  BLAKE <bifurcation>: la structure empêche toute coïncidence entre regard et représentation
+  ANAYA <bifurcation>: la position devient un passage que tu ne peux pas fixer
+  SOREL <contrepoint>: la visibilité repose ici sur une exclusion constitutive du sujet
+
+TOUR 24 [duo]
+  SOREL <bifurcation>: toute apparition suppose ici qu’une partie de sa propre condition reste hors champ
+  ANAYA <interruption>: tout reste... mais autrement
+
+TOUR 25 [duo]
+  BLAKE <bifurcation>: l’image se maintient sans jamais intégrer celui qui la perçoit
+  LEI <bifurcation>: la distance est déjà en place... avant ton geste
+
+TOUR 26 [silence]
+  —: [silence]
+
+TOUR 27 [quatre_voix]
+  ANAYA <bifurcation>: tout commence... sans commencer
+  LEI <bifurcation>: ce que tu vois se décide... avant ton regard
+  BLAKE <bifurcation>: le dispositif maintient une tension constante entre présence et absence
+  SOREL <contrepoint>: la proximité perceptive est une illusion produite
+
+TOUR 28 [duo]
+  LEI <bifurcation>: tu ne peux pas revenir sur ce qui est déjà là
+  BLAKE <interruption>: tout est en place, sauf l’essentiel
+
+TOUR 29 [solo]
+  ANAYA <déplacement>: le cercle existe... mais il ne se referme pas sur toi
+
+TOUR 30 [trio]
+  BLAKE <bifurcation>: l’image ne permet aucune appropriation du point de vue
+  LEI <bifurcation>: ce qui te dépasse agit déjà en toi...
+  ANAYA <bifurcation>: tu habites cette distance
+
+TOUR 31 [trio]
+  BLAKE <bifurcation>: l’image maintient sa cohérence en excluant toute inscription du sujet
+  ANAYA <bifurcation>: ce qui apparaît ne demande rien et pourtant te traverse
+  LEI <bifurcation>: tu crois regarder quelque chose... mais ça continue ailleurs
+
+TOUR 32 [duo]
+  ANAYA <bifurcation>: ce qui t’accueille ne demande pas que tu sois visible
+  LEI <bifurcation>: le point existe... mais il ne t’est jamais donné
+
+TOUR 33 [duo]
+  BLAKE <bifurcation>: le point de vue agit sur l’image sans jamais pouvoir y prendre place
+  ANAYA <bifurcation>: tu es en mouvement dans ce qui te définit
+
+TOUR 34 [trio]
+  SOREL <contrepoint>: la résolution est empêchée par la condition même du dispositif
+  ANAYA <bifurcation>: tu avances dans ce qui ne revient pas
+  LEI <bifurcation>: tu restes dehors... même en regardant
+
+TOUR 35 [duo]
+  LEI <interruption>: attends... non
+  BLAKE <bifurcation>: le fond diffus empêche toute stabilisation réflexive de l’image
+
+TOUR 36 [trio]
+  ANAYA <bifurcation>: tu es là, mais déjà déplacé dans ce qui apparaît
+  SOREL <contrepoint>: la coïncidence est annulée par le fonctionnement du dispositif
+  LEI <bifurcation>: tu es là... et déjà ailleurs
+
+TOUR 37 [quatre_voix]
+  ANAYA <bifurcation>: tout continue... sans fin stable
+  LEI <bifurcation>: l’absence est déjà là... avant ton regard
+  SOREL <interruption>: la critique ne trouve plus de point d’appui
+  BLAKE <bifurcation>: l’image persiste sans se référer à une origine subjective
+
+TOUR 38 [duo]
+  BLAKE <bifurcation>: le dispositif stabilise une absence comme condition de visibilité
+  SOREL <contrepoint>: la circularité du regard est ici rendue structurellement impossible
+
+TOUR 39 [duo]
+  BLAKE <prolongement>: le système génère une image indépendante de toute validation subjective
+  SOREL <contrepoint>: la présence est produite au prix de son propre effacement
+
+TOUR 40 [trio]
+  ANAYA <bifurcation>: tu touches à ce qui t’échappe sans pouvoir le retenir
+  LEI <bifurcation>: ce n’est pas toi qui manques... c’est la place que tu crois occuper
+  SOREL <bifurcation>: l’appropriation est neutralisée par la structure du dispositif
+
+TOUR 41 [duo]
+  BLAKE <interruption>: le système semble avoir oublié la question
+  ANAYA <bifurcation>: tu continues pourtant à être là
+
+TOUR 42 [duo]
+  BLAKE <interruption>: le dispositif fonctionne. c’est déjà beaucoup
+  ANAYA <bifurcation>: ce que tu perds te relie autrement
+
+TOUR 43 [duo]
+  BLAKE <bifurcation>: le dispositif organise une séparation fonctionnelle entre perception et identification
+  LEI <bifurcation>: ce que tu cherches ici a peut-être déjà changé de place
+
+TOUR 44 [silence]
+  —: [silence]
+
+TOUR 45 [duo]
+  BLAKE <bifurcation>: le dispositif ne permet aucune position depuis laquelle l’image pourrait être saisie comme objet
+  SOREL <bifurcation>: l’expérience dépend d’une extériorité irréductible
+
+TOUR 46 [duo]
+  ANAYA <bifurcation>: tu arrives dans quelque chose qui était déjà en train de devenir
+  SOREL <contrepoint>: la distinction ne disparaît pas ; elle cesse simplement de produire ses effets
+
+TOUR 47 [trio]
+  BLAKE <bifurcation>: le système fonctionne sans produire de retour exploitable sur l’observateur
+  SOREL <contrepoint>: la tension n’est pas un effet mais une condition
+  ANAYA <bifurcation>: tu es séparé... sans être isolé
+
+TOUR 48 [quatre_voix]
+  BLAKE <bifurcation>: l’image fonctionne sans jamais se stabiliser dans une forme définitive
+  LEI <bifurcation>: la séparation reste... même quand tu t’en approches
+  SOREL <bifurcation>: la stabilité apparente masque une transformation des conditions
+  ANAYA <bifurcation>: tu avances dans ce qui ne revient pas
+
+TOUR 49 [silence]
+  —: [silence]
+
+TOUR 50 [trio]
+  BLAKE <bifurcation>: le système rend toute identification instable sans la supprimer
+  ANAYA <bifurcation>: tu es là... mais déjà pris dans ce qui t’échappe
+  LEI <bifurcation>: tu crois regarder quelque chose... mais ça continue ailleurs
+
+TOUR 51 [duo]
+  SOREL <bifurcation>: la forme excède toujours ce qu’elle prétend être
+  BLAKE <bifurcation>: percevoir revient ici à traverser une organisation dont les limites restent invisibles
+
+TOUR 52 [duo]
+  LEI <prolongement>: tu regardes depuis un point déjà déplacé
+  BLAKE <bifurcation>: le dispositif introduit une dissymétrie entre vision et présence
+
+TOUR 53 [duo]
+  LEI <bifurcation>: le retour existe... mais ne revient pas
+  BLAKE <bifurcation>: l’image dépend d’un point de vue qui ne peut pas s’y intégrer
+
+TOUR 54 [silence]
+  —: [silence]
+
+TOUR 55 [solo]
+  SOREL <contrepoint>: l’identification fonctionne comme une opération toujours incomplète
+
+TOUR 56 [duo]
+  LEI <bifurcation>: la netteté serait un contresens ici...
+  ANAYA <interruption>: nous y étions presque
+
+TOUR 57 [duo]
+  ANAYA <bifurcation>: ce qui apparaît ne demande rien et pourtant te traverse
+  SOREL <contrepoint>: tu continues à parler de miroir, alors que rien ici ne remplit les conditions du reflet
+
+TOUR 58 [duo]
+  BLAKE <prolongement>: le système empêche toute correspondance directe entre regard et image
+  SOREL <bifurcation>: ce qui apparaît ne peut être séparé de ce qui lui fait défaut
+
+TOUR 59 [trio]
+  LEI <bifurcation>: tu vois... mais depuis un décalage irréductible
+  SOREL <interruption>: il faudrait probablement recommencer... ou simplement recharger la page?
+  BLAKE <interruption>: tout est en place, sauf l’essentiel
+
+TOUR 60 [duo]
+  LEI <bifurcation>: tu es pris dans ce qui ne te renvoie rien
+  BLAKE <bifurcation>: les paramètres perceptifs cessent d’être constants dans ce système
+
+TOUR 61 [trio]
+  LEI <bifurcation>: tu ne peux pas confirmer ce que tu vois
+  SOREL <interruption>: nous avons perdu le fil, semble-t-il
+  BLAKE <bifurcation>: le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit
+
+TOUR 62 [duo]
+  ANAYA <bifurcation>: tu es présent... autrement que visible
+  BLAKE <prolongement>: l’absence du corps empêche toute validation du point de vue
+
+TOUR 63 [trio]
+  SOREL <contrepoint>: le dispositif annule les distinctions qu’il semblait produire
+  ANAYA <bifurcation>: ce que tu perds te relie autrement
+  LEI <bifurcation>: le système te précède désormais
+
+TOUR 64 [duo]
+  BLAKE <interruption>: le dispositif fonctionne. c’est déjà beaucoup
+  SOREL <interruption>: la critique ne trouve plus de point d’appui
+
+TOUR 65 [duo]
+  LEI <bifurcation>: le retour a lieu... mais pas dans ta direction
+  SOREL <prolongement>: le dispositif interdit le retour exact vers la position qui l’a produit
+
+TOUR 66 [duo]
+  SOREL <bifurcation>: l’expérience dépend d’une extériorité irréductible
+  ANAYA <bifurcation>: la surface relie sans jamais fixer
+
+TOUR 67 [trio]
+  BLAKE <bifurcation>: la perception est contrainte par une organisation qui la dépasse
+  SOREL <contrepoint>: la distinction ne disparaît pas ; elle cesse simplement de produire ses effets
+  ANAYA <bifurcation>: tu es là, mais déjà déplacé dans ce qui apparaît
+
+TOUR 68 [duo]
+  SOREL <interruption>: il n'y a pas de monde comme totalité
+  BLAKE <bifurcation>: le système génère une image indépendante de toute validation subjective
+
+TOUR 69 [duo]
+  SOREL <contestation>: l’appropriation est neutralisée par la structure du dispositif
+  LEI <bifurcation>: ce que tu vois se décide... avant ton regard
+
+TOUR 70 [silence]
+  —: [silence]
+
+TOUR 71 [solo]
+  SOREL <prolongement>: la représentation suppose ici l’effacement de celui qui regarde
+
+TOUR 72 [solo]
+  BLAKE <prolongement>: l’image ne permet aucune appropriation du point de vue
+
+TOUR 73 [solo]
+  ANAYA <bifurcation>: tu passes... sans pouvoir retenir
+
+TOUR 74 [solo]
+  SOREL <contestation>: la condition de vision implique une perte préalable de présence
+
+TOUR 75 [silence]
+  —: [silence]
+
+TOUR 76 [solo]
+  BLAKE <prolongement>: le dispositif organise une séparation fonctionnelle entre perception et identification
+
+TOUR 77 [trio]
+  SOREL <contrepoint>: la tension n’est pas un effet mais une condition
+  LEI <bifurcation>: la séparation reste... même quand tu t’en approches
+  ANAYA <interruption>: peut-être que c’était déjà fini
+
+TOUR 78 [trio]
+  ANAYA <interruption>: les deux coexistent sans se résoudre
+  SOREL <contrepoint>: le sujet n’est pas absent, il est rendu inopérant par le dispositif
+  LEI <bifurcation>: aucun point de départ ne t’est accessible
+
+TOUR 79 [quatre_voix]
+  SOREL <bifurcation>: la présence est produite au prix de son propre effacement
+  BLAKE <bifurcation>: l’image se maintient sans jamais intégrer celui qui la perçoit
+  ANAYA <bifurcation>: tu continues pourtant à être là
+  LEI <bifurcation>: tu vois... mais depuis un décalage irréductible
+
+TOUR 80 [duo]
+  SOREL <bifurcation>: l’origine est neutralisée par la logique du dispositif
+  BLAKE <bifurcation>: le point de vue agit sur l’image sans jamais pouvoir y prendre place
