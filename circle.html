@@ -33,7 +33,7 @@ async function loadCircle() {
     if (!Array.isArray(data.turns) || data.turns.length !== 80) throw new Error('Séquence incomplète');
 
     // Keep all four voices visible. A voice absent from the whole sequence
-    // remains present in the display as a simple ellipsis.
+    // remains present in the display as an underscore.
     const firstByVoice = new Map();
     for (const turn of data.turns) {
       for (const entry of (turn.entries || [])) {
@@ -42,7 +42,7 @@ async function loadCircle() {
     }
     const entries = VOICES.map(voice => ({
       voice,
-      text: firstByVoice.has(voice) ? firstByVoice.get(voice) : '...'
+      text: firstByVoice.has(voice) ? firstByVoice.get(voice) : '_'
     }));
     container.innerHTML = entries.map(entry =>
       '<div class="entry"><span class="author">' + escapeHtml(entry.voice) +
