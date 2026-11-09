@@ -55,7 +55,7 @@ async function loadCircle() {
 }
 function formatText(value) {
   return String(value)
-    .replace(/(?<!\.)\.(?!\.)(?=\s+\\S)/g, ',')
+    .replace(/(?<!\.)\.(?!\.)(?=\s+\S)/g, ',')
     .replace(/(?<!\.)\.(?!\.)\s*$/, '');
 }
 function escapeHtml(value) {
