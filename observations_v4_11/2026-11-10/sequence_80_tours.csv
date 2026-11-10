@@ -1,0 +1,169 @@
+﻿tour,type,voix,numero_phrase,operation,concepts,registres,perturbation,relation,phrase
+1,solo,LEI,19,deplacer,regard; sujet_observateur,perceptif,,ouverture,tu es déjà engagé... avant même de regarder
+2,duo,LEI,14,deplacer,regard; absence_presence,philosophique; perceptif,,prolongement,l’absence est déjà là... avant ton regard
+2,duo,BLAKE,7,decrire,dispositif,technique,,bifurcation,les paramètres perceptifs cessent d’être constants dans ce système
+3,solo,LEI,25,deplacer,indetermine,indéterminé,,bifurcation,tu peux te reconnaître... sans jamais t’y fixer
+4,trio,LEI,22,deplacer+contester,regard,perceptif,,bifurcation,le regard ne coïncide jamais avec ce qu’il voit
+4,trio,SOREL,1,contester,image_representation,philosophique; perceptif,,bifurcation,"tu continues à parler de miroir, alors que rien ici ne remplit les conditions du reflet"
+4,trio,BLAKE,8,rompre,dispositif,technique,,interruption,le dispositif fonctionne. c’est déjà beaucoup
+5,silence,,,silence,,,,silence,[silence]
+6,duo,SOREL,21,decrire,indetermine,philosophique,,bifurcation,toute apparition suppose ici qu’une partie de sa propre condition reste hors champ
+6,duo,BLAKE,10,decrire,dispositif; position; image_representation,technique; spatial; perceptif,,bifurcation,le dispositif ne permet aucune position depuis laquelle l’image pourrait être saisie comme objet
+7,trio,LEI,7,deplacer,dispositif,spatial,,prolongement,le cadre a changé... sans que tu le voies
+7,trio,SOREL,27,contester,regard; absence_presence,philosophique,,bifurcation,la condition de vision implique une perte préalable de présence
+7,trio,BLAKE,4,decrire,dispositif; sujet_observateur; retour_coincidence,technique,,bifurcation,le système fonctionne sans produire de retour exploitable sur l’observateur
+8,trio,SOREL,25,contester,dispositif,technique,,contrepoint,l’appropriation est neutralisée par la structure du dispositif
+8,trio,BLAKE,3,decrire,image_representation,perceptif,,bifurcation,le fond diffus empêche toute stabilisation réflexive de l’image
+8,trio,LEI,29,deplacer,indetermine,spatial,,bifurcation,ce que tu cherches ici a peut-être déjà changé de place
+9,duo,BLAKE,15,decrire,image_representation,philosophique; perceptif,,bifurcation,l’image persiste sans se référer à une origine subjective
+9,duo,LEI,13,deplacer,sujet_observateur,indéterminé,,bifurcation,tu es pris dans ce qui ne te renvoie rien
+10,duo,LEI,26,deplacer,distance,indéterminé,,bifurcation,la séparation reste... même quand tu t’en approches
+10,duo,BLAKE,30,suspendre,indetermine,spatial,,interruption,"tout est en place, sauf l’essentiel"
+11,trio,LEI,4,deplacer,retour_coincidence,indéterminé,,bifurcation,le retour a lieu... mais pas dans ta direction
+11,trio,SOREL,15,decrire,distance,philosophique,,bifurcation,l’expérience dépend d’une extériorité irréductible
+11,trio,BLAKE,27,rompre,regard; dispositif; rupture_totalite,technique; perceptif; rupture,,interruption,le système semble avoir oublié la question
+12,trio,BLAKE,20,decrire,regard; dispositif; absence_presence; retour_coincidence; transformation,perceptif,,prolongement,percevoir revient ici à traverser une organisation dont les limites restent invisibles
+12,trio,SOREL,9,contester,absence_presence; sujet_observateur,philosophique,,contrepoint,la visibilité repose ici sur une exclusion constitutive du sujet
+12,trio,LEI,15,deplacer,regard,perceptif,,bifurcation,tu ne peux pas confirmer ce que tu vois
+13,duo,LEI,9,deplacer,regard,spatial,,déplacement,ce que tu perçois se forme... ailleurs que là où tu te tiens
+13,duo,SOREL,10,contester,dispositif; image_representation,indéterminé,,bifurcation,la transparence supposée est ici structurellement impossible
+14,duo,BLAKE,14,decrire,dispositif; absence_presence,technique; philosophique,,prolongement,le dispositif maintient une tension constante entre présence et absence
+14,duo,SOREL,29,contester,indetermine,philosophique,,contrepoint,la distinction ne disparaît pas ; elle cesse simplement de produire ses effets
+15,duo,SOREL,14,rompre,rupture_totalite,technique; rupture,,interruption,il faudrait probablement recommencer... ou simplement recharger la page?
+15,duo,BLAKE,2,decrire,position; image_representation,spatial; perceptif,,bifurcation,l’image dépend d’un point de vue qui ne peut pas s’y intégrer
+16,duo,LEI,8,deplacer,dispositif,technique,,bifurcation,le système te précède désormais
+16,duo,SOREL,12,contester,regard; absence_presence; image_representation; sujet_observateur,perceptif,,bifurcation,la représentation suppose ici l’effacement de celui qui regarde
+17,trio,LEI,21,deplacer,retour_coincidence,indéterminé,,bifurcation,tu ne peux pas revenir sur ce qui est déjà là
+17,trio,BLAKE,5,decrire,position; absence_presence,technique; philosophique; spatial,,bifurcation,l’absence du corps empêche toute validation du point de vue
+17,trio,SOREL,16,contester,distance,indéterminé,,contrepoint,la proximité perceptive est une illusion produite
+18,trio,LEI,28,deplacer,regard,spatial; perceptif,,bifurcation,tu crois regarder quelque chose... mais ça continue ailleurs
+18,trio,SOREL,26,decrire,indetermine,indéterminé,,bifurcation,la forme excède toujours ce qu’elle prétend être
+18,trio,BLAKE,1,decrire,regard; dispositif; distance,technique,,bifurcation,le dispositif organise une séparation fonctionnelle entre perception et identification
+19,silence,,,silence,,,,silence,[silence]
+20,duo,BLAKE,11,decrire,position; image_representation,spatial; perceptif,,bifurcation,l’image ne permet aucune appropriation du point de vue
+20,duo,LEI,17,deplacer,distance,spatial,,bifurcation,la distance est déjà en place... avant ton geste
+21,duo,BLAKE,16,decrire,dispositif,technique,,bifurcation,le système rend toute identification instable sans la supprimer
+21,duo,SOREL,3,contester,image_representation,philosophique; perceptif,,contrepoint,"le flou n’est pas un défaut, c’est la condition même de ce qui apparaît"
+22,duo,LEI,32,rompre,rupture_totalite,rupture,,interruption,attends... non
+22,duo,BLAKE,26,decrire,image_representation; sujet_observateur,philosophique; perceptif,,bifurcation,l’image maintient sa cohérence en excluant toute inscription du sujet
+23,duo,SOREL,30,contester,dispositif,technique; philosophique,,contrepoint,le dispositif annule les distinctions qu’il semblait produire
+23,duo,BLAKE,17,decrire,position,spatial,,bifurcation,aucune position d’observation ne reste suffisamment stable pour devenir un point de référence
+24,trio,LEI,5,deplacer,position,spatial; affectif,,déplacement,ce n’est pas toi qui manques... c’est la place que tu crois occuper
+24,trio,BLAKE,4,decrire,dispositif; sujet_observateur; retour_coincidence,technique,,bifurcation,le système fonctionne sans produire de retour exploitable sur l’observateur
+24,trio,SOREL,6,contester,absence_presence,philosophique,,contrepoint,la présence est produite au prix de son propre effacement
+25,duo,BLAKE,8,rompre,dispositif,technique,,interruption,le dispositif fonctionne. c’est déjà beaucoup
+25,duo,SOREL,7,decrire,transformation,philosophique,,bifurcation,la stabilité apparente masque une transformation des conditions
+26,duo,BLAKE,29,decrire,regard; dispositif; sujet_observateur; transformation,technique; philosophique; perceptif,,prolongement,le regard devient ici une fonction du dispositif plutôt qu’une propriété du sujet
+26,duo,SOREL,25,contester,dispositif,technique,,contrepoint,l’appropriation est neutralisée par la structure du dispositif
+27,duo,SOREL,31,rompre,rupture_totalite,philosophique,,interruption,il n'y a pas de monde comme totalité
+27,duo,LEI,16,deplacer,indetermine,indéterminé,,bifurcation,ce qui te dépasse agit déjà en toi...
+28,trio,LEI,20,deplacer,sujet_observateur,indéterminé,,bifurcation,tu arrives après que quelque chose a déjà commencé à se décider
+28,trio,BLAKE,13,decrire,regard; dispositif; image_representation; retour_coincidence,technique; perceptif,,bifurcation,le système empêche toute correspondance directe entre regard et image
+28,trio,SOREL,28,rompre,indetermine,spatial,,interruption,la critique ne trouve plus de point d’appui
+29,solo,BLAKE,23,decrire,dispositif; distance,technique,,bifurcation,le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit
+30,duo,SOREL,9,contester,absence_presence; sujet_observateur,philosophique,,contrepoint,la visibilité repose ici sur une exclusion constitutive du sujet
+30,duo,LEI,24,deplacer,position,spatial,,bifurcation,aucun point de départ ne t’est accessible
+31,trio,LEI,3,contester,image_representation,perceptif,,bifurcation,la netteté serait un contresens ici...
+31,trio,SOREL,23,rompre,rupture_totalite,rupture,,interruption,"nous avons perdu le fil, semble-t-il"
+31,trio,BLAKE,6,decrire,regard; dispositif; absence_presence,technique; philosophique,,bifurcation,le dispositif introduit une dissymétrie entre vision et présence
+32,duo,SOREL,4,contester,regard; dispositif; retour_coincidence,perceptif,,contestation,la circularité du regard est ici rendue structurellement impossible
+32,duo,LEI,23,deplacer,regard; distance,spatial; perceptif,,prolongement,tu restes dehors... même en regardant
+33,trio,BLAKE,18,decrire,image_representation,perceptif,,bifurcation,l’image se maintient sans jamais intégrer celui qui la perçoit
+33,trio,LEI,25,deplacer,indetermine,indéterminé,,bifurcation,tu peux te reconnaître... sans jamais t’y fixer
+33,trio,SOREL,22,contester,dispositif; retour_coincidence,technique; philosophique,,bifurcation,la coïncidence est annulée par le fonctionnement du dispositif
+34,duo,BLAKE,28,decrire,regard; position; image_representation,spatial; perceptif,,bifurcation,le point de vue agit sur l’image sans jamais pouvoir y prendre place
+34,duo,SOREL,11,decrire,dispositif,indéterminé,,bifurcation,la structure précède ce que tu crois vivre immédiatement
+35,trio,LEI,1,deplacer,position; sujet_observateur,spatial,,bifurcation,tu arrives... quand la position n’est déjà plus disponible
+35,trio,BLAKE,22,decrire,dispositif; image_representation,technique; affectif; perceptif,,bifurcation,l’image fonctionne sans jamais se stabiliser dans une forme définitive
+35,trio,SOREL,8,contester,dispositif; distance,technique; spatial,,contrepoint,il n’y a jamais eu de point extérieur à ce dispositif
+36,duo,LEI,10,deplacer,indetermine,spatial,,bifurcation,le point existe... mais il ne t’est jamais donné
+36,duo,SOREL,27,contester,regard; absence_presence,philosophique,,bifurcation,la condition de vision implique une perte préalable de présence
+37,trio,LEI,6,deplacer,regard; position; sujet_observateur; transformation,spatial; perceptif,,prolongement,tu regardes depuis un point déjà déplacé
+37,trio,SOREL,13,decrire,indetermine,indéterminé,,bifurcation,ce qui apparaît ne peut être séparé de ce qui lui fait défaut
+37,trio,BLAKE,17,decrire,position,spatial,,bifurcation,aucune position d’observation ne reste suffisamment stable pour devenir un point de référence
+38,solo,SOREL,24,contester,indetermine,philosophique,,contrepoint,la tension n’est pas un effet mais une condition
+39,solo,SOREL,16,contester,distance,indéterminé,,bifurcation,la proximité perceptive est une illusion produite
+40,silence,,,silence,,,,silence,[silence]
+41,duo,BLAKE,9,decrire,dispositif; image_representation,technique; perceptif,,bifurcation,le système génère une image indépendante de toute validation subjective
+41,duo,LEI,13,deplacer,sujet_observateur,indéterminé,,bifurcation,tu es pris dans ce qui ne te renvoie rien
+42,solo,LEI,14,deplacer,regard; absence_presence,philosophique; perceptif,,bifurcation,l’absence est déjà là... avant ton regard
+43,duo,LEI,21,deplacer,retour_coincidence,indéterminé,,bifurcation,tu ne peux pas revenir sur ce qui est déjà là
+43,duo,SOREL,18,contester,dispositif,technique; philosophique,,bifurcation,la résolution est empêchée par la condition même du dispositif
+44,duo,LEI,17,deplacer,distance,spatial,,bifurcation,la distance est déjà en place... avant ton geste
+44,duo,SOREL,2,contester,absence_presence,philosophique; perceptif,,bifurcation,la présence visible suppose la suppression de ce qui devrait la garantir
+45,silence,,,silence,,,,silence,[silence]
+46,trio,BLAKE,8,rompre,dispositif,technique,,interruption,le dispositif fonctionne. c’est déjà beaucoup
+46,trio,LEI,16,deplacer,indetermine,indéterminé,,bifurcation,ce qui te dépasse agit déjà en toi...
+46,trio,SOREL,20,contester,dispositif,technique; philosophique,,bifurcation,l’origine est neutralisée par la logique du dispositif
+47,duo,SOREL,14,rompre,rupture_totalite,technique; rupture,,interruption,il faudrait probablement recommencer... ou simplement recharger la page?
+47,duo,BLAKE,15,decrire,image_representation,philosophique; perceptif,,bifurcation,l’image persiste sans se référer à une origine subjective
+48,duo,LEI,2,deplacer,regard,perceptif,,bifurcation,ce que tu vois se décide... avant ton regard
+48,duo,BLAKE,1,decrire,regard; dispositif; distance,technique,,prolongement,le dispositif organise une séparation fonctionnelle entre perception et identification
+49,duo,BLAKE,25,decrire,dispositif,spatial,,prolongement,le cadre impose une organisation qui précède toute expérience perceptive
+49,duo,SOREL,29,contester,indetermine,philosophique,,contrepoint,la distinction ne disparaît pas ; elle cesse simplement de produire ses effets
+50,trio,LEI,27,deplacer,sujet_observateur,spatial; affectif,,bifurcation,tu es là... et déjà ailleurs
+50,trio,BLAKE,20,decrire,regard; dispositif; absence_presence; retour_coincidence; transformation,perceptif,,bifurcation,percevoir revient ici à traverser une organisation dont les limites restent invisibles
+50,trio,SOREL,5,contester,dispositif; sujet_observateur,technique; philosophique,,contrepoint,"le sujet n’est pas absent, il est rendu inopérant par le dispositif"
+51,duo,BLAKE,18,decrire,image_representation,perceptif,,bifurcation,l’image se maintient sans jamais intégrer celui qui la perçoit
+51,duo,SOREL,17,contester,dispositif,technique,,contrepoint,l’identification fonctionne comme une opération toujours incomplète
+52,trio,LEI,15,deplacer,regard,perceptif,,bifurcation,tu ne peux pas confirmer ce que tu vois
+52,trio,BLAKE,4,decrire,dispositif; sujet_observateur; retour_coincidence,technique,,bifurcation,le système fonctionne sans produire de retour exploitable sur l’observateur
+52,trio,SOREL,28,rompre,indetermine,spatial,,interruption,la critique ne trouve plus de point d’appui
+53,solo,SOREL,6,contester,absence_presence,philosophique,,bifurcation,la présence est produite au prix de son propre effacement
+54,duo,LEI,11,deplacer,regard,perceptif,,bifurcation,tu vois... mais depuis un décalage irréductible
+54,duo,BLAKE,12,decrire,dispositif; absence_presence,technique; philosophique,,bifurcation,le dispositif stabilise une absence comme condition de visibilité
+55,silence,,,silence,,,,silence,[silence]
+56,trio,LEI,32,rompre,rupture_totalite,rupture,,interruption,attends... non
+56,trio,BLAKE,30,suspendre,indetermine,spatial,,interruption,"tout est en place, sauf l’essentiel"
+56,trio,SOREL,23,rompre,rupture_totalite,rupture,,interruption,"nous avons perdu le fil, semble-t-il"
+57,duo,BLAKE,24,decrire,regard; dispositif,indéterminé,,bifurcation,la perception est contrainte par une organisation qui la dépasse
+57,duo,LEI,3,contester,image_representation,perceptif,,contrepoint,la netteté serait un contresens ici...
+58,solo,LEI,29,deplacer,indetermine,spatial,,bifurcation,ce que tu cherches ici a peut-être déjà changé de place
+59,duo,BLAKE,3,decrire,image_representation,perceptif,,bifurcation,le fond diffus empêche toute stabilisation réflexive de l’image
+59,duo,LEI,30,deplacer,retour_coincidence,indéterminé,,bifurcation,le retour existe... mais ne revient pas
+60,duo,SOREL,7,decrire,transformation,philosophique,,bifurcation,la stabilité apparente masque une transformation des conditions
+60,duo,LEI,1,deplacer,position; sujet_observateur,spatial,,bifurcation,tu arrives... quand la position n’est déjà plus disponible
+61,trio,SOREL,19,contester,dispositif; position; retour_coincidence,technique; spatial,,prolongement,le dispositif interdit le retour exact vers la position qui l’a produit
+61,trio,BLAKE,21,decrire,dispositif; sujet_observateur,technique; philosophique,,prolongement,le dispositif configure une expérience où le sujet ne peut pas apparaître comme tel
+61,trio,LEI,18,deplacer,regard,perceptif,,bifurcation,tu ne peux pas t’installer dans ce que tu vois
+62,duo,SOREL,8,contester,dispositif; distance,technique; spatial,,bifurcation,il n’y a jamais eu de point extérieur à ce dispositif
+62,duo,BLAKE,19,decrire,regard; dispositif; image_representation; retour_coincidence,philosophique; perceptif,,prolongement,la structure empêche toute coïncidence entre regard et représentation
+63,solo,LEI,31,suspendre,indetermine,indéterminé,,interruption,tu étais là il y a une seconde...
+64,trio,SOREL,31,rompre,rupture_totalite,philosophique,,interruption,il n'y a pas de monde comme totalité
+64,trio,BLAKE,2,decrire,position; image_representation,spatial; perceptif,,bifurcation,l’image dépend d’un point de vue qui ne peut pas s’y intégrer
+64,trio,LEI,22,deplacer+contester,regard,perceptif,,contrepoint,le regard ne coïncide jamais avec ce qu’il voit
+65,silence,,,silence,,,,silence,[silence]
+66,duo,SOREL,3,contester,image_representation,philosophique; perceptif,,bifurcation,"le flou n’est pas un défaut, c’est la condition même de ce qui apparaît"
+66,duo,LEI,12,deplacer,dispositif,spatial,,bifurcation,le cadre agit... avant que tu n’y entres
+67,duo,BLAKE,29,decrire,regard; dispositif; sujet_observateur; transformation,technique; philosophique; perceptif,,prolongement,le regard devient ici une fonction du dispositif plutôt qu’une propriété du sujet
+67,duo,SOREL,10,contester,dispositif; image_representation,indéterminé,,contrepoint,la transparence supposée est ici structurellement impossible
+68,trio,SOREL,29,contester,indetermine,philosophique,,bifurcation,la distinction ne disparaît pas ; elle cesse simplement de produire ses effets
+68,trio,LEI,5,deplacer,position,spatial; affectif,,bifurcation,ce n’est pas toi qui manques... c’est la place que tu crois occuper
+68,trio,BLAKE,27,rompre,regard; dispositif; rupture_totalite,technique; perceptif; rupture,,interruption,le système semble avoir oublié la question
+69,duo,BLAKE,13,decrire,regard; dispositif; image_representation; retour_coincidence,technique; perceptif,,prolongement,le système empêche toute correspondance directe entre regard et image
+69,duo,SOREL,9,contester,absence_presence; sujet_observateur,philosophique,,contrepoint,la visibilité repose ici sur une exclusion constitutive du sujet
+70,trio,BLAKE,15,decrire,image_representation,philosophique; perceptif,,bifurcation,l’image persiste sans se référer à une origine subjective
+70,trio,LEI,4,deplacer,retour_coincidence,indéterminé,,bifurcation,le retour a lieu... mais pas dans ta direction
+70,trio,SOREL,5,contester,dispositif; sujet_observateur,technique; philosophique,,bifurcation,"le sujet n’est pas absent, il est rendu inopérant par le dispositif"
+71,duo,BLAKE,22,decrire,dispositif; image_representation,technique; affectif; perceptif,,prolongement,l’image fonctionne sans jamais se stabiliser dans une forme définitive
+71,duo,LEI,24,deplacer,position,spatial,,bifurcation,aucun point de départ ne t’est accessible
+72,solo,LEI,11,deplacer,regard,perceptif,,bifurcation,tu vois... mais depuis un décalage irréductible
+73,silence,,,silence,,,,silence,[silence]
+74,trio,BLAKE,11,decrire,position; image_representation,spatial; perceptif,,bifurcation,l’image ne permet aucune appropriation du point de vue
+74,trio,LEI,26,deplacer,distance,indéterminé,,bifurcation,la séparation reste... même quand tu t’en approches
+74,trio,SOREL,22,contester,dispositif; retour_coincidence,technique; philosophique,,bifurcation,la coïncidence est annulée par le fonctionnement du dispositif
+75,duo,LEI,10,deplacer,indetermine,spatial,,bifurcation,le point existe... mais il ne t’est jamais donné
+75,duo,BLAKE,23,decrire,dispositif; distance,technique,,bifurcation,le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit
+76,trio,BLAKE,6,decrire,regard; dispositif; absence_presence,technique; philosophique,,prolongement,le dispositif introduit une dissymétrie entre vision et présence
+76,trio,LEI,30,deplacer,retour_coincidence,indéterminé,,bifurcation,le retour existe... mais ne revient pas
+76,trio,SOREL,24,contester,indetermine,philosophique,,bifurcation,la tension n’est pas un effet mais une condition
+77,trio,SOREL,1,contester,image_representation,philosophique; perceptif,,bifurcation,"tu continues à parler de miroir, alors que rien ici ne remplit les conditions du reflet"
+77,trio,BLAKE,10,decrire,dispositif; position; image_representation,technique; spatial; perceptif,,prolongement,le dispositif ne permet aucune position depuis laquelle l’image pourrait être saisie comme objet
+77,trio,LEI,16,deplacer,indetermine,indéterminé,,bifurcation,ce qui te dépasse agit déjà en toi...
+78,silence,,,silence,,,,silence,[silence]
+79,trio,BLAKE,8,rompre,dispositif,technique,,interruption,le dispositif fonctionne. c’est déjà beaucoup
+79,trio,LEI,6,deplacer,regard; position; sujet_observateur; transformation,spatial; perceptif,,bifurcation,tu regardes depuis un point déjà déplacé
+79,trio,SOREL,30,contester,dispositif,technique; philosophique,,bifurcation,le dispositif annule les distinctions qu’il semblait produire
+80,trio,BLAKE,5,decrire,position; absence_presence,technique; philosophique; spatial,,bifurcation,l’absence du corps empêche toute validation du point de vue
+80,trio,LEI,20,deplacer,sujet_observateur,indéterminé,,bifurcation,tu arrives après que quelque chose a déjà commencé à se décider
+80,trio,SOREL,23,rompre,rupture_totalite,rupture,,interruption,"nous avons perdu le fil, semble-t-il"
