@@ -12,6 +12,16 @@
   .author { font-weight: 700; }
   .text { display: block; margin-left: 0; }
   .error { opacity: 0.55; color: #c00; }
+  .circle-translate {
+    display: block; margin: 2px 0 7px; padding: 0; border: 0;
+    background: transparent; color: #777; font: inherit; font-size: .72em;
+    cursor: pointer;
+  }
+  .circle-translate:hover { color: #111; text-decoration: underline; }
+  .circle-translation {
+    margin: 3px 0 9px 10px; padding-left: 10px; border-left: 1px solid #aaa;
+    opacity: .78; white-space: pre-line; font-size: .92em;
+  }
   @media (max-width: 600px) {
     body { font-size: 14px; line-height: 1.35; }
     #circle { max-width: 94vw; }
@@ -44,10 +54,33 @@ async function loadCircle() {
       voice,
       text: firstByVoice.has(voice) ? firstByVoice.get(voice) : '_'
     }));
-    container.innerHTML = entries.map(entry =>
-      '<div class="entry"><span class="author">' + escapeHtml(entry.voice.toLowerCase()) +
-      '</span><span class="text">' + escapeHtml(formatText(entry.text)) + '</span></div>'
-    ).join('');
+    container.replaceChildren();
+    entries.forEach((entry, index) => {
+      const row = document.createElement('div');
+      row.className = 'entry';
+
+      const author = document.createElement('span');
+      author.className = 'author';
+      author.textContent = entry.voice.toLowerCase();
+
+      const text = document.createElement('span');
+      text.className = 'text';
+      text.textContent = formatText(entry.text);
+
+      row.append(author, text);
+
+      if (entry.text !== '_') {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'circle-translate';
+        button.textContent = '[ translate ↗ ]';
+        button.dataset.text = formatText(entry.text);
+        button.dataset.requestId = 'circle-' + index;
+        button.addEventListener('click', () => requestTranslation(button));
+        row.appendChild(button);
+      }
+      container.appendChild(row);
+    });
   } catch (error) {
     container.innerHTML = '<div class="error">[live]</div>';
     console.error('Cercle Specular:', error);
@@ -58,10 +91,47 @@ function formatText(value) {
     .replace(/(?<!\.)\.(?!\.)(?=\s+\S)/g, ',')
     .replace(/(?<!\.)\.(?!\.)\s*$/, '');
 }
-function escapeHtml(value) {
-  return String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;')
-    .replaceAll('"', '&quot;').replaceAll("'", '&#039;');
+function requestTranslation(button) {
+  const existing = button.nextElementSibling;
+  if (existing && existing.classList.contains('circle-translation')) {
+    existing.hidden = !existing.hidden;
+    button.textContent = existing.hidden ? '[ translate ↗ ]' : '[ hide translation ↗ ]';
+    return;
+  }
+  if (button.dataset.pending === '1') return;
+  button.dataset.pending = '1';
+  button.textContent = '[ translating… ]';
+  const requestId = 'circle-' + Date.now() + '-' + Math.random().toString(36).slice(2);
+  button.dataset.activeRequest = requestId;
+  window.parent.postMessage({
+    type: 'tbwtb:translate-request',
+    requestId,
+    text: button.dataset.text
+  }, 'https://tbwtb.online');
 }
+
+window.addEventListener('message', event => {
+  if (event.origin !== 'https://tbwtb.online' || !event.data ||
+      event.data.type !== 'tbwtb:translate-result') return;
+
+  const button = Array.from(document.querySelectorAll('.circle-translate'))
+    .find(item => item.dataset.activeRequest === event.data.requestId);
+  if (!button) return;
+
+  button.dataset.pending = '0';
+  if (event.data.error) {
+    button.textContent = '[ translate ↗ ]';
+    button.title = event.data.error;
+    return;
+  }
+
+  const translated = document.createElement('div');
+  translated.className = 'circle-translation';
+  translated.textContent = event.data.translation;
+  button.after(translated);
+  button.textContent = '[ hide translation ↗ ]';
+  delete button.dataset.activeRequest;
+});
 loadCircle();
 setInterval(loadCircle, 15 * 60 * 1000);
 </script>
