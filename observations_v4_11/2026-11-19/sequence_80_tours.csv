@@ -1,0 +1,169 @@
+﻿tour,type,voix,numero_phrase,operation,concepts,registres,perturbation,relation,phrase
+1,trio,BLAKE,6,decrire,regard; dispositif; absence_presence,technique; philosophique,,ouverture,le dispositif introduit une dissymétrie entre vision et présence
+1,trio,LEI,5,deplacer,position,spatial; affectif,,bifurcation,ce n’est pas toi qui manques... c’est la place que tu crois occuper
+1,trio,ANAYA,22,transformer,indetermine,indéterminé,,bifurcation,tout commence... sans commencer
+2,duo,BLAKE,23,decrire,dispositif; distance,technique,,bifurcation,le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit
+2,duo,LEI,3,contester,image_representation,perceptif,,contrepoint,la netteté serait un contresens ici...
+3,trio,ANAYA,29,transformer,sujet_observateur,indéterminé,,bifurcation,tu arrives dans quelque chose qui était déjà en train de devenir
+3,trio,LEI,9,deplacer,regard,spatial,,bifurcation,ce que tu perçois se forme... ailleurs que là où tu te tiens
+3,trio,BLAKE,8,rompre,dispositif,technique,,interruption,le dispositif fonctionne. c’est déjà beaucoup
+4,duo,ANAYA,32,suspendre+rompre,rupture_totalite,affectif; rupture,,interruption,peut-être que c’était déjà fini
+4,duo,LEI,30,deplacer,retour_coincidence,indéterminé,,bifurcation,le retour existe... mais ne revient pas
+5,trio,ANAYA,27,transformer,indetermine,indéterminé,,bifurcation,tout continue... sans fin stable
+5,trio,BLAKE,19,decrire,regard; dispositif; image_representation; retour_coincidence,philosophique; perceptif,,bifurcation,la structure empêche toute coïncidence entre regard et représentation
+5,trio,LEI,8,deplacer,dispositif,technique,,prolongement,le système te précède désormais
+6,silence,,,silence,,,,silence,[silence]
+7,duo,BLAKE,1,decrire,regard; dispositif; distance,technique,,prolongement,le dispositif organise une séparation fonctionnelle entre perception et identification
+7,duo,ANAYA,28,transformer,image_representation,spatial,,bifurcation,la surface relie sans jamais fixer
+8,duo,BLAKE,5,decrire,position; absence_presence,technique; philosophique; spatial,,bifurcation,l’absence du corps empêche toute validation du point de vue
+8,duo,ANAYA,5,transformer,regard,perceptif,,bifurcation,tu touches à ce qui t’échappe sans pouvoir le retenir
+9,duo,LEI,17,deplacer,distance,spatial,,bifurcation,la distance est déjà en place... avant ton geste
+9,duo,ANAYA,1,transformer,indetermine,indéterminé,,bifurcation,ce qui apparaît t’inclut... sans jamais te contenir
+10,duo,ANAYA,7,transformer+suspendre,transformation,indéterminé,,interruption,tout reste... mais autrement
+10,duo,LEI,18,deplacer,regard,perceptif,,bifurcation,tu ne peux pas t’installer dans ce que tu vois
+11,duo,ANAYA,9,transformer,sujet_observateur; transformation,affectif,,bifurcation,"tu es là, mais déjà déplacé dans ce qui apparaît"
+11,duo,BLAKE,17,decrire,position,spatial,,bifurcation,aucune position d’observation ne reste suffisamment stable pour devenir un point de référence
+12,trio,BLAKE,21,decrire,dispositif; sujet_observateur,technique; philosophique,,bifurcation,le dispositif configure une expérience où le sujet ne peut pas apparaître comme tel
+12,trio,LEI,24,deplacer,position,spatial,,bifurcation,aucun point de départ ne t’est accessible
+12,trio,ANAYA,24,transformer,sujet_observateur,indéterminé,,bifurcation,tu es séparé... sans être isolé
+13,duo,LEI,21,deplacer,retour_coincidence,indéterminé,,bifurcation,tu ne peux pas revenir sur ce qui est déjà là
+13,duo,ANAYA,19,transformer,distance,spatial,,bifurcation,tu habites cette distance
+14,duo,BLAKE,27,rompre,regard; dispositif; rupture_totalite,technique; perceptif; rupture,,interruption,le système semble avoir oublié la question
+14,duo,LEI,19,deplacer,regard; sujet_observateur,perceptif,,prolongement,tu es déjà engagé... avant même de regarder
+15,duo,BLAKE,20,decrire,regard; dispositif; absence_presence; retour_coincidence; transformation,perceptif,,bifurcation,percevoir revient ici à traverser une organisation dont les limites restent invisibles
+15,duo,LEI,4,deplacer,retour_coincidence,indéterminé,,prolongement,le retour a lieu... mais pas dans ta direction
+16,trio,ANAYA,14,transformer,transformation,spatial,,bifurcation,ce qui manque ouvre un passage
+16,trio,BLAKE,9,decrire,dispositif; image_representation,technique; perceptif,,bifurcation,le système génère une image indépendante de toute validation subjective
+16,trio,LEI,25,deplacer,indetermine,indéterminé,,bifurcation,tu peux te reconnaître... sans jamais t’y fixer
+17,trio,ANAYA,26,transformer,retour_coincidence,indéterminé,,bifurcation,tu avances dans ce qui ne revient pas
+17,trio,LEI,22,deplacer+contester,regard,perceptif,,contrepoint,le regard ne coïncide jamais avec ce qu’il voit
+17,trio,BLAKE,26,decrire,image_representation; sujet_observateur,philosophique; perceptif,,bifurcation,l’image maintient sa cohérence en excluant toute inscription du sujet
+18,duo,LEI,13,deplacer,sujet_observateur,indéterminé,,déplacement,tu es pris dans ce qui ne te renvoie rien
+18,duo,BLAKE,25,decrire,dispositif,spatial,,bifurcation,le cadre impose une organisation qui précède toute expérience perceptive
+19,trio,LEI,32,rompre,rupture_totalite,rupture,,interruption,attends... non
+19,trio,BLAKE,14,decrire,dispositif; absence_presence,technique; philosophique,,bifurcation,le dispositif maintient une tension constante entre présence et absence
+19,trio,ANAYA,6,transformer,position; transformation,spatial,,bifurcation,la position devient un passage que tu ne peux pas fixer
+20,solo,BLAKE,10,decrire,dispositif; position; image_representation,technique; spatial; perceptif,,prolongement,le dispositif ne permet aucune position depuis laquelle l’image pourrait être saisie comme objet
+21,duo,ANAYA,20,transformer,absence_presence; sujet_observateur; transformation,perceptif,,bifurcation,tu es présent... autrement que visible
+21,duo,LEI,26,deplacer,distance,indéterminé,,bifurcation,la séparation reste... même quand tu t’en approches
+22,duo,ANAYA,12,transformer,indetermine,indéterminé,,bifurcation,ce qui précède te porte sans se montrer
+22,duo,BLAKE,4,decrire,dispositif; sujet_observateur; retour_coincidence,technique,,bifurcation,le système fonctionne sans produire de retour exploitable sur l’observateur
+23,solo,LEI,7,deplacer,dispositif,spatial,,prolongement,le cadre a changé... sans que tu le voies
+24,trio,ANAYA,10,transformer,transformation,affectif,,bifurcation,ce que tu perds te relie autrement
+24,trio,BLAKE,12,decrire,dispositif; absence_presence,technique; philosophique,,bifurcation,le dispositif stabilise une absence comme condition de visibilité
+24,trio,LEI,2,deplacer,regard,perceptif,,bifurcation,ce que tu vois se décide... avant ton regard
+25,duo,ANAYA,23,transformer,sujet_observateur; transformation,affectif,,bifurcation,tu es en mouvement dans ce qui te définit
+25,duo,BLAKE,3,decrire,image_representation,perceptif,,bifurcation,le fond diffus empêche toute stabilisation réflexive de l’image
+26,trio,BLAKE,30,suspendre,indetermine,spatial,,interruption,"tout est en place, sauf l’essentiel"
+26,trio,LEI,20,deplacer,sujet_observateur,indéterminé,,bifurcation,tu arrives après que quelque chose a déjà commencé à se décider
+26,trio,ANAYA,21,transformer,distance,spatial,,bifurcation,ce dehors t’habite déjà
+27,trio,ANAYA,8,transformer,indetermine,indéterminé,,bifurcation,tu fais déjà partie de ce qui te dépasse
+27,trio,BLAKE,5,decrire,position; absence_presence,technique; philosophique; spatial,,bifurcation,l’absence du corps empêche toute validation du point de vue
+27,trio,LEI,3,contester,image_representation,perceptif,,contrepoint,la netteté serait un contresens ici...
+28,duo,ANAYA,28,transformer,image_representation,spatial,,déplacement,la surface relie sans jamais fixer
+28,duo,LEI,11,deplacer,regard,perceptif,,bifurcation,tu vois... mais depuis un décalage irréductible
+29,duo,ANAYA,17,transformer,indetermine,spatial,,bifurcation,ce qui semble proche est déjà ailleurs
+29,duo,LEI,14,deplacer,regard; absence_presence,philosophique; perceptif,,bifurcation,l’absence est déjà là... avant ton regard
+30,duo,LEI,16,deplacer,indetermine,indéterminé,,bifurcation,ce qui te dépasse agit déjà en toi...
+30,duo,BLAKE,17,decrire,position,spatial,,bifurcation,aucune position d’observation ne reste suffisamment stable pour devenir un point de référence
+31,silence,,,silence,,,,silence,[silence]
+32,solo,LEI,27,deplacer,sujet_observateur,spatial; affectif,,bifurcation,tu es là... et déjà ailleurs
+33,trio,BLAKE,16,decrire,dispositif,technique,,bifurcation,le système rend toute identification instable sans la supprimer
+33,trio,ANAYA,30,transformer,transformation,affectif,,bifurcation,ce qui apparaît ne demande rien et pourtant te traverse
+33,trio,LEI,29,deplacer,indetermine,spatial,,bifurcation,ce que tu cherches ici a peut-être déjà changé de place
+34,duo,ANAYA,2,transformer,sujet_observateur,affectif,,bifurcation,tu es là... mais déjà pris dans ce qui t’échappe
+34,duo,LEI,22,deplacer+contester,regard,perceptif,,contrepoint,le regard ne coïncide jamais avec ce qu’il voit
+35,duo,ANAYA,15,transformer,indetermine,indéterminé,,bifurcation,tu continues pourtant à être là
+35,duo,LEI,8,deplacer,dispositif,technique,,bifurcation,le système te précède désormais
+36,solo,ANAYA,3,transformer,image_representation,spatial,,bifurcation,la surface ne fixe rien... elle laisse passer
+37,trio,LEI,6,deplacer,regard; position; sujet_observateur; transformation,spatial; perceptif,,bifurcation,tu regardes depuis un point déjà déplacé
+37,trio,ANAYA,11,transformer,distance; transformation,spatial,,prolongement,la distance ne sépare pas... elle transforme
+37,trio,BLAKE,6,decrire,regard; dispositif; absence_presence,technique; philosophique,,bifurcation,le dispositif introduit une dissymétrie entre vision et présence
+38,silence,,,silence,,,,silence,[silence]
+39,solo,ANAYA,25,transformer+suspendre,indetermine,indéterminé,,interruption,les deux coexistent sans se résoudre
+40,duo,ANAYA,32,suspendre+rompre,rupture_totalite,affectif; rupture,,interruption,peut-être que c’était déjà fini
+40,duo,BLAKE,7,decrire,dispositif,technique,,bifurcation,les paramètres perceptifs cessent d’être constants dans ce système
+41,duo,LEI,5,deplacer,position,spatial; affectif,,bifurcation,ce n’est pas toi qui manques... c’est la place que tu crois occuper
+41,duo,BLAKE,18,decrire,image_representation,perceptif,,bifurcation,l’image se maintient sans jamais intégrer celui qui la perçoit
+42,trio,LEI,32,rompre,rupture_totalite,rupture,,interruption,attends... non
+42,trio,ANAYA,18,transformer,regard,perceptif,,bifurcation,tu passes... sans pouvoir retenir
+42,trio,BLAKE,8,rompre,dispositif,technique,,interruption,le dispositif fonctionne. c’est déjà beaucoup
+43,duo,BLAKE,15,decrire,image_representation,philosophique; perceptif,,bifurcation,l’image persiste sans se référer à une origine subjective
+43,duo,ANAYA,26,transformer,retour_coincidence,indéterminé,,bifurcation,tu avances dans ce qui ne revient pas
+44,silence,,,silence,,,,silence,[silence]
+45,duo,LEI,2,deplacer,regard,perceptif,,bifurcation,ce que tu vois se décide... avant ton regard
+45,duo,BLAKE,10,decrire,dispositif; position; image_representation,technique; spatial; perceptif,,bifurcation,le dispositif ne permet aucune position depuis laquelle l’image pourrait être saisie comme objet
+46,duo,ANAYA,4,transformer,indetermine,indéterminé,,bifurcation,le cercle existe... mais il ne se referme pas sur toi
+46,duo,BLAKE,14,decrire,dispositif; absence_presence,technique; philosophique,,bifurcation,le dispositif maintient une tension constante entre présence et absence
+47,duo,BLAKE,29,decrire,regard; dispositif; sujet_observateur; transformation,technique; philosophique; perceptif,,prolongement,le regard devient ici une fonction du dispositif plutôt qu’une propriété du sujet
+47,duo,LEI,10,deplacer,indetermine,spatial,,bifurcation,le point existe... mais il ne t’est jamais donné
+48,trio,ANAYA,13,transformer,absence_presence,affectif; perceptif,,bifurcation,ce qui t’accueille ne demande pas que tu sois visible
+48,trio,LEI,1,deplacer,position; sujet_observateur,spatial,,bifurcation,tu arrives... quand la position n’est déjà plus disponible
+48,trio,BLAKE,22,decrire,dispositif; image_representation,technique; affectif; perceptif,,bifurcation,l’image fonctionne sans jamais se stabiliser dans une forme définitive
+49,trio,LEI,23,deplacer,regard; distance,spatial; perceptif,,bifurcation,tu restes dehors... même en regardant
+49,trio,BLAKE,23,decrire,dispositif; distance,technique,,prolongement,le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit
+49,trio,ANAYA,29,transformer,sujet_observateur,indéterminé,,bifurcation,tu arrives dans quelque chose qui était déjà en train de devenir
+50,silence,,,silence,,,,silence,[silence]
+51,duo,BLAKE,28,decrire,regard; position; image_representation,spatial; perceptif,,bifurcation,le point de vue agit sur l’image sans jamais pouvoir y prendre place
+51,duo,ANAYA,16,transformer,transformation,affectif,,bifurcation,tu participes à ce qui te traverse
+52,duo,ANAYA,14,transformer,transformation,spatial,,déplacement,ce qui manque ouvre un passage
+52,duo,BLAKE,3,decrire,image_representation,perceptif,,bifurcation,le fond diffus empêche toute stabilisation réflexive de l’image
+53,trio,LEI,13,deplacer,sujet_observateur,indéterminé,,bifurcation,tu es pris dans ce qui ne te renvoie rien
+53,trio,BLAKE,24,decrire,regard; dispositif,indéterminé,,bifurcation,la perception est contrainte par une organisation qui la dépasse
+53,trio,ANAYA,1,transformer,indetermine,indéterminé,,bifurcation,ce qui apparaît t’inclut... sans jamais te contenir
+54,solo,BLAKE,11,decrire,position; image_representation,spatial; perceptif,,bifurcation,l’image ne permet aucune appropriation du point de vue
+55,silence,,,silence,,,,silence,[silence]
+56,trio,LEI,31,suspendre,indetermine,indéterminé,,interruption,tu étais là il y a une seconde...
+56,trio,BLAKE,20,decrire,regard; dispositif; absence_presence; retour_coincidence; transformation,perceptif,,bifurcation,percevoir revient ici à traverser une organisation dont les limites restent invisibles
+56,trio,ANAYA,15,transformer,indetermine,indéterminé,,bifurcation,tu continues pourtant à être là
+57,trio,BLAKE,27,rompre,regard; dispositif; rupture_totalite,technique; perceptif; rupture,,interruption,le système semble avoir oublié la question
+57,trio,LEI,27,deplacer,sujet_observateur,spatial; affectif,,bifurcation,tu es là... et déjà ailleurs
+57,trio,ANAYA,12,transformer,indetermine,indéterminé,,bifurcation,ce qui précède te porte sans se montrer
+58,duo,LEI,7,deplacer,dispositif,spatial,,bifurcation,le cadre a changé... sans que tu le voies
+58,duo,BLAKE,4,decrire,dispositif; sujet_observateur; retour_coincidence,technique,,prolongement,le système fonctionne sans produire de retour exploitable sur l’observateur
+59,duo,ANAYA,21,transformer,distance,spatial,,bifurcation,ce dehors t’habite déjà
+59,duo,BLAKE,26,decrire,image_representation; sujet_observateur,philosophique; perceptif,,bifurcation,l’image maintient sa cohérence en excluant toute inscription du sujet
+60,trio,ANAYA,7,transformer+suspendre,transformation,indéterminé,,interruption,tout reste... mais autrement
+60,trio,LEI,11,deplacer,regard,perceptif,,bifurcation,tu vois... mais depuis un décalage irréductible
+60,trio,BLAKE,7,decrire,dispositif,technique,,bifurcation,les paramètres perceptifs cessent d’être constants dans ce système
+61,trio,ANAYA,31,suspendre,rupture_totalite,affectif; rupture,,interruption,nous y étions presque
+61,trio,LEI,24,deplacer,position,spatial,,bifurcation,aucun point de départ ne t’est accessible
+61,trio,BLAKE,16,decrire,dispositif,technique,,bifurcation,le système rend toute identification instable sans la supprimer
+62,duo,LEI,29,deplacer,indetermine,spatial,,bifurcation,ce que tu cherches ici a peut-être déjà changé de place
+62,duo,BLAKE,1,decrire,regard; dispositif; distance,technique,,bifurcation,le dispositif organise une séparation fonctionnelle entre perception et identification
+63,trio,BLAKE,18,decrire,image_representation,perceptif,,bifurcation,l’image se maintient sans jamais intégrer celui qui la perçoit
+63,trio,LEI,20,deplacer,sujet_observateur,indéterminé,,bifurcation,tu arrives après que quelque chose a déjà commencé à se décider
+63,trio,ANAYA,11,transformer,distance; transformation,spatial,,bifurcation,la distance ne sépare pas... elle transforme
+64,silence,,,silence,,,,silence,[silence]
+65,duo,LEI,8,deplacer,dispositif,technique,,bifurcation,le système te précède désormais
+65,duo,ANAYA,4,transformer,indetermine,indéterminé,,bifurcation,le cercle existe... mais il ne se referme pas sur toi
+66,trio,ANAYA,19,transformer,distance,spatial,,bifurcation,tu habites cette distance
+66,trio,LEI,15,deplacer,regard,perceptif,,bifurcation,tu ne peux pas confirmer ce que tu vois
+66,trio,BLAKE,8,rompre,dispositif,technique,,interruption,le dispositif fonctionne. c’est déjà beaucoup
+67,duo,BLAKE,28,decrire,regard; position; image_representation,spatial; perceptif,,bifurcation,le point de vue agit sur l’image sans jamais pouvoir y prendre place
+67,duo,ANAYA,5,transformer,regard,perceptif,,prolongement,tu touches à ce qui t’échappe sans pouvoir le retenir
+68,trio,ANAYA,29,transformer,sujet_observateur,indéterminé,,bifurcation,tu arrives dans quelque chose qui était déjà en train de devenir
+68,trio,LEI,10,deplacer,indetermine,spatial,,bifurcation,le point existe... mais il ne t’est jamais donné
+68,trio,BLAKE,23,decrire,dispositif; distance,technique,,bifurcation,le dispositif maintient une séparation opératoire entre ce qui est perçu et ce qui perçoit
+69,duo,ANAYA,24,transformer,sujet_observateur,indéterminé,,bifurcation,tu es séparé... sans être isolé
+69,duo,LEI,12,deplacer,dispositif,spatial,,bifurcation,le cadre agit... avant que tu n’y entres
+70,trio,LEI,30,deplacer,retour_coincidence,indéterminé,,bifurcation,le retour existe... mais ne revient pas
+70,trio,BLAKE,22,decrire,dispositif; image_representation,technique; affectif; perceptif,,bifurcation,l’image fonctionne sans jamais se stabiliser dans une forme définitive
+70,trio,ANAYA,6,transformer,position; transformation,spatial,,bifurcation,la position devient un passage que tu ne peux pas fixer
+71,duo,LEI,28,deplacer,regard,spatial; perceptif,,bifurcation,tu crois regarder quelque chose... mais ça continue ailleurs
+71,duo,BLAKE,2,decrire,position; image_representation,spatial; perceptif,,bifurcation,l’image dépend d’un point de vue qui ne peut pas s’y intégrer
+72,trio,BLAKE,13,decrire,regard; dispositif; image_representation; retour_coincidence,technique; perceptif,,prolongement,le système empêche toute correspondance directe entre regard et image
+72,trio,LEI,7,deplacer,dispositif,spatial,,prolongement,le cadre a changé... sans que tu le voies
+72,trio,ANAYA,12,transformer,indetermine,indéterminé,,bifurcation,ce qui précède te porte sans se montrer
+73,solo,ANAYA,27,transformer,indetermine,indéterminé,,déplacement,tout continue... sans fin stable
+74,duo,LEI,26,deplacer,distance,indéterminé,,bifurcation,la séparation reste... même quand tu t’en approches
+74,duo,BLAKE,12,decrire,dispositif; absence_presence,technique; philosophique,,bifurcation,le dispositif stabilise une absence comme condition de visibilité
+75,silence,,,silence,,,,silence,[silence]
+76,duo,ANAYA,23,transformer,sujet_observateur; transformation,affectif,,bifurcation,tu es en mouvement dans ce qui te définit
+76,duo,LEI,9,deplacer,regard,spatial,,bifurcation,ce que tu perçois se forme... ailleurs que là où tu te tiens
+77,solo,BLAKE,3,decrire,image_representation,perceptif,,bifurcation,le fond diffus empêche toute stabilisation réflexive de l’image
+78,trio,ANAYA,31,suspendre,rupture_totalite,affectif; rupture,,interruption,nous y étions presque
+78,trio,LEI,17,deplacer,distance,spatial,,bifurcation,la distance est déjà en place... avant ton geste
+78,trio,BLAKE,19,decrire,regard; dispositif; image_representation; retour_coincidence,philosophique; perceptif,,bifurcation,la structure empêche toute coïncidence entre regard et représentation
+79,solo,LEI,1,deplacer,position; sujet_observateur,spatial,,bifurcation,tu arrives... quand la position n’est déjà plus disponible
+80,solo,ANAYA,10,transformer,transformation,affectif,,bifurcation,ce que tu perds te relie autrement
