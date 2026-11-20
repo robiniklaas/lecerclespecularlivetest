@@ -1,0 +1,9 @@
+Cercle Specular — V4.11 expérimentale
+Date UTC : 2026-11-20
+Graine : 20261120000 (essai 1)
+Voix absentes : ANAYA
+Prises de parole : 160
+Répartition : {'LEI': 53, 'SOREL': 54, 'BLAKE': 53}
+Silences : [2, 9, 23, 28, 51, 59, 72, 77]
+Corpus source generate_rss.py : lecture seule
+Prototype V4.10 et corpus source : inchangés
