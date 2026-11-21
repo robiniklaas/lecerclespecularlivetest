@@ -1,0 +1,444 @@
+CERCLE SPECULAR — PROTOTYPE V4.11 EXPÉRIMENTALE
+Mode : forte
+Principe : sélection locale de collisions entre phrases d’un même tour, selon le recouvrement conceptuel et les registres lexicaux détectés.
+Les étiquettes de registre sont heuristiques ; une collision lexicale ne garantit pas un événement de sens.
+Graine aléatoire : 20261121001
+Voix présentes : SOREL, ANAYA
+Voix silencieuses pour toute la séquence : BLAKE, LEI
+Source : generate_rss.py (lecture seule)
+Corpus source et feed.xml non modifiés.
+
+RÉPARTITION DES 80 TOURS
+  silence: 8
+  solo: 24
+  duo: 48
+  trio: 0
+  quatre_voix: 0
+
+Positions des silences : [2, 12, 19, 24, 31, 37, 53, 77]
+Prises de parole actives : 120
+Répétitions exactes dans les 24 dernières phrases actives : 2
+Apparitions par voix : {'SOREL': 60, 'ANAYA': 60}
+Voix répétées dans un même tour : aucune
+Étiquettes relationnelles heuristiques : {'ouverture': 1, 'bifurcation': 63, 'contrepoint': 34, 'interruption': 17, 'prolongement': 3, 'contestation': 1, 'déplacement': 1}
+Collisions locales détectées : 43
+Paires détectées (faible recouvrement conceptuel + registres distincts) :
+  tour 01 — SOREL : la présence visible suppose la suppression de ce qui devrait la garantir
+                 → ANAYA : ce qui manque ouvre un passage
+    recouvrement=0.0 ; registres=perceptif, philosophique / spatial
+  tour 04 — SOREL : il n’y a jamais eu de point extérieur à ce dispositif
+                 → ANAYA : tu arrives dans quelque chose qui était déjà en train de devenir
+    recouvrement=0.0 ; registres=spatial, technique / indéterminé
+  tour 07 — ANAYA : ce qui t’accueille ne demande pas que tu sois visible
+                 → SOREL : la résolution est empêchée par la condition même du dispositif
+    recouvrement=0.0 ; registres=affectif, perceptif / philosophique, technique
+  tour 08 — SOREL : la critique ne trouve plus de point d’appui
+                 → ANAYA : tout reste... mais autrement
+    recouvrement=0.0 ; registres=spatial / indéterminé
+  tour 09 — SOREL : la circularité du regard est ici rendue structurellement impossible
+                 → ANAYA : tu participes à ce qui te traverse
+    recouvrement=0.0 ; registres=perceptif / affectif
+  tour 10 — SOREL : il faudrait probablement recommencer... ou simplement recharger la page?
+                 → ANAYA : ce qui précède te porte sans se montrer
+    recouvrement=0.0 ; registres=rupture, technique / indéterminé
+  tour 11 — ANAYA : tu avances dans ce qui ne revient pas
+                 → SOREL : le flou n’est pas un défaut, c’est la condition même de ce qui apparaît
+    recouvrement=0.0 ; registres=indéterminé / perceptif, philosophique
+  tour 13 — ANAYA : tu habites cette distance
+                 → SOREL : la coïncidence est annulée par le fonctionnement du dispositif
+    recouvrement=0.0 ; registres=spatial / philosophique, technique
+  tour 14 — ANAYA : tu es là... mais déjà pris dans ce qui t’échappe
+                 → SOREL : tu continues à parler de miroir, alors que rien ici ne remplit les conditions du reflet
+    recouvrement=0.0 ; registres=affectif / perceptif, philosophique
+  tour 15 — SOREL : l’expérience dépend d’une extériorité irréductible
+                 → ANAYA : peut-être que c’était déjà fini
+    recouvrement=0.0 ; registres=philosophique / affectif, rupture
+  tour 16 — ANAYA : la distance ne sépare pas... elle transforme
+                 → SOREL : la visibilité repose ici sur une exclusion constitutive du sujet
+    recouvrement=0.0 ; registres=spatial / philosophique
+  tour 18 — ANAYA : la position devient un passage que tu ne peux pas fixer
+                 → SOREL : la coïncidence est annulée par le fonctionnement du dispositif
+    recouvrement=0.0 ; registres=spatial / philosophique, technique
+  tour 21 — SOREL : la transparence supposée est ici structurellement impossible
+                 → ANAYA : tu es présent... autrement que visible
+    recouvrement=0.0 ; registres=indéterminé / perceptif
+  tour 23 — SOREL : toute apparition suppose ici qu’une partie de sa propre condition reste hors champ
+                 → ANAYA : tu touches à ce qui t’échappe sans pouvoir le retenir
+    recouvrement=0.0 ; registres=philosophique / perceptif
+  tour 25 — SOREL : il n'y a pas de monde comme totalité
+                 → ANAYA : tu continues pourtant à être là
+    recouvrement=0.0 ; registres=philosophique / indéterminé
+  tour 28 — SOREL : l’appropriation est neutralisée par la structure du dispositif
+                 → ANAYA : tu passes... sans pouvoir retenir
+    recouvrement=0.0 ; registres=technique / perceptif
+  tour 29 — ANAYA : ce dehors t’habite déjà
+                 → SOREL : le sujet n’est pas absent, il est rendu inopérant par le dispositif
+    recouvrement=0.0 ; registres=spatial / philosophique, technique
+  tour 30 — ANAYA : ce qui manque ouvre un passage
+                 → SOREL : la représentation suppose ici l’effacement de celui qui regarde
+    recouvrement=0.0 ; registres=spatial / perceptif
+  tour 32 — ANAYA : tout commence... sans commencer
+                 → SOREL : nous avons perdu le fil, semble-t-il
+    recouvrement=0.0 ; registres=indéterminé / rupture
+  tour 34 — SOREL : l’identification fonctionne comme une opération toujours incomplète
+                 → ANAYA : la surface ne fixe rien... elle laisse passer
+    recouvrement=0.0 ; registres=technique / spatial
+  tour 36 — SOREL : la résolution est empêchée par la condition même du dispositif
+                 → ANAYA : ce qui t’accueille ne demande pas que tu sois visible
+    recouvrement=0.0 ; registres=philosophique, technique / affectif, perceptif
+  tour 39 — ANAYA : tu avances dans ce qui ne revient pas
+                 → SOREL : il faudrait probablement recommencer... ou simplement recharger la page?
+    recouvrement=0.0 ; registres=indéterminé / rupture, technique
+  tour 40 — SOREL : la condition de vision implique une perte préalable de présence
+                 → ANAYA : tu es en mouvement dans ce qui te définit
+    recouvrement=0.0 ; registres=philosophique / affectif
+  tour 41 — SOREL : la distinction ne disparaît pas ; elle cesse simplement de produire ses effets
+                 → ANAYA : la position devient un passage que tu ne peux pas fixer
+    recouvrement=0.0 ; registres=philosophique / spatial
+  tour 42 — SOREL : l’origine est neutralisée par la logique du dispositif
+                 → ANAYA : le cercle existe... mais il ne se referme pas sur toi
+    recouvrement=0.0 ; registres=philosophique, technique / indéterminé
+  tour 44 — ANAYA : peut-être que c’était déjà fini
+                 → SOREL : la proximité perceptive est une illusion produite
+    recouvrement=0.0 ; registres=affectif, rupture / indéterminé
+  tour 47 — SOREL : le dispositif interdit le retour exact vers la position qui l’a produit
+                 → ANAYA : ce qui apparaît t’inclut... sans jamais te contenir
+    recouvrement=0.0 ; registres=spatial, technique / indéterminé
+  tour 49 — ANAYA : ce qui précède te porte sans se montrer
+                 → SOREL : il n'y a pas de monde comme totalité
+    recouvrement=0.0 ; registres=indéterminé / philosophique
+  tour 50 — SOREL : la présence visible suppose la suppression de ce qui devrait la garantir
+                 → ANAYA : tu fais déjà partie de ce qui te dépasse
+    recouvrement=0.0 ; registres=perceptif, philosophique / indéterminé
+  tour 51 — SOREL : la tension n’est pas un effet mais une condition
+                 → ANAYA : tu habites cette distance
+    recouvrement=0.0 ; registres=philosophique / spatial
+  tour 52 — SOREL : la transparence supposée est ici structurellement impossible
+                 → ANAYA : ce que tu perds te relie autrement
+    recouvrement=0.0 ; registres=indéterminé / affectif
+  tour 54 — SOREL : la critique ne trouve plus de point d’appui
+                 → ANAYA : tu es là... mais déjà pris dans ce qui t’échappe
+    recouvrement=0.0 ; registres=spatial / affectif
+  tour 55 — ANAYA : tu participes à ce qui te traverse
+                 → SOREL : l’appropriation est neutralisée par la structure du dispositif
+    recouvrement=0.0 ; registres=affectif / technique
+  tour 56 — SOREL : nous avons perdu le fil, semble-t-il
+                 → ANAYA : tout continue... sans fin stable
+    recouvrement=0.0 ; registres=rupture / indéterminé
+  tour 58 — SOREL : la présence est produite au prix de son propre effacement
+                 → ANAYA : la surface ne fixe rien... elle laisse passer
+    recouvrement=0.0 ; registres=philosophique / spatial
+  tour 61 — SOREL : le flou n’est pas un défaut, c’est la condition même de ce qui apparaît
+                 → ANAYA : tu continues pourtant à être là
+    recouvrement=0.0 ; registres=perceptif, philosophique / indéterminé
+  tour 65 — ANAYA : tu touches à ce qui t’échappe sans pouvoir le retenir
+                 → SOREL : l’origine est neutralisée par la logique du dispositif
+    recouvrement=0.0 ; registres=perceptif / philosophique, technique
+  tour 67 — SOREL : tu continues à parler de miroir, alors que rien ici ne remplit les conditions du reflet
+                 → ANAYA : ce qui apparaît ne demande rien et pourtant te traverse
+    recouvrement=0.0 ; registres=perceptif, philosophique / affectif
+  tour 69 — SOREL : ce qui apparaît ne peut être séparé de ce qui lui fait défaut
+                 → ANAYA : tu passes... sans pouvoir retenir
+    recouvrement=0.0 ; registres=indéterminé / perceptif
+  tour 70 — SOREL : la proximité perceptive est une illusion produite
+                 → ANAYA : peut-être que c’était déjà fini
+    recouvrement=0.0 ; registres=indéterminé / affectif, rupture
+  tour 72 — ANAYA : les deux coexistent sans se résoudre
+                 → SOREL : la visibilité repose ici sur une exclusion constitutive du sujet
+    recouvrement=0.0 ; registres=indéterminé / philosophique
+  tour 73 — SOREL : toute apparition suppose ici qu’une partie de sa propre condition reste hors champ
+                 → ANAYA : la surface relie sans jamais fixer
+    recouvrement=0.0 ; registres=philosophique / spatial
+  tour 79 — SOREL : la présence visible suppose la suppression de ce qui devrait la garantir
+                 → ANAYA : tout reste... mais autrement
+    recouvrement=0.0 ; registres=perceptif, philosophique / indéterminé
+
+SÉQUENCE
+
+TOUR 01 [duo]
+  SOREL <ouverture>: la présence visible suppose la suppression de ce qui devrait la garantir
+  ANAYA <bifurcation>: ce qui manque ouvre un passage
+
+TOUR 02 [silence]
+  —: [silence]
+
+TOUR 03 [duo]
+  SOREL <contrepoint>: la proximité perceptive est une illusion produite
+  ANAYA <bifurcation>: tout commence... sans commencer
+
+TOUR 04 [duo]
+  SOREL <contrepoint>: il n’y a jamais eu de point extérieur à ce dispositif
+  ANAYA <bifurcation>: tu arrives dans quelque chose qui était déjà en train de devenir
+
+TOUR 05 [solo]
+  ANAYA <interruption>: nous y étions presque
+
+TOUR 06 [solo]
+  SOREL <bifurcation>: la tension n’est pas un effet mais une condition
+
+TOUR 07 [duo]
+  ANAYA <bifurcation>: ce qui t’accueille ne demande pas que tu sois visible
+  SOREL <contrepoint>: la résolution est empêchée par la condition même du dispositif
+
+TOUR 08 [duo]
+  SOREL <interruption>: la critique ne trouve plus de point d’appui
+  ANAYA <interruption>: tout reste... mais autrement
+
+TOUR 09 [duo]
+  SOREL <contrepoint>: la circularité du regard est ici rendue structurellement impossible
+  ANAYA <bifurcation>: tu participes à ce qui te traverse
+
+TOUR 10 [duo]
+  SOREL <interruption>: il faudrait probablement recommencer... ou simplement recharger la page?
+  ANAYA <bifurcation>: ce qui précède te porte sans se montrer
+
+TOUR 11 [duo]
+  ANAYA <bifurcation>: tu avances dans ce qui ne revient pas
+  SOREL <contrepoint>: le flou n’est pas un défaut, c’est la condition même de ce qui apparaît
+
+TOUR 12 [silence]
+  —: [silence]
+
+TOUR 13 [duo]
+  ANAYA <bifurcation>: tu habites cette distance
+  SOREL <contrepoint>: la coïncidence est annulée par le fonctionnement du dispositif
+
+TOUR 14 [duo]
+  ANAYA <bifurcation>: tu es là... mais déjà pris dans ce qui t’échappe
+  SOREL <contrepoint>: tu continues à parler de miroir, alors que rien ici ne remplit les conditions du reflet
+
+TOUR 15 [duo]
+  SOREL <bifurcation>: l’expérience dépend d’une extériorité irréductible
+  ANAYA <interruption>: peut-être que c’était déjà fini
+
+TOUR 16 [duo]
+  ANAYA <bifurcation>: la distance ne sépare pas... elle transforme
+  SOREL <contrepoint>: la visibilité repose ici sur une exclusion constitutive du sujet
+
+TOUR 17 [solo]
+  ANAYA <bifurcation>: le cercle existe... mais il ne se referme pas sur toi
+
+TOUR 18 [duo]
+  ANAYA <bifurcation>: la position devient un passage que tu ne peux pas fixer
+  SOREL <contrepoint>: la coïncidence est annulée par le fonctionnement du dispositif
+
+TOUR 19 [silence]
+  —: [silence]
+
+TOUR 20 [solo]
+  SOREL <bifurcation>: la présence est produite au prix de son propre effacement
+
+TOUR 21 [duo]
+  SOREL <bifurcation>: la transparence supposée est ici structurellement impossible
+  ANAYA <bifurcation>: tu es présent... autrement que visible
+
+TOUR 22 [solo]
+  ANAYA <prolongement>: tu es séparé... sans être isolé
+
+TOUR 23 [duo]
+  SOREL <bifurcation>: toute apparition suppose ici qu’une partie de sa propre condition reste hors champ
+  ANAYA <bifurcation>: tu touches à ce qui t’échappe sans pouvoir le retenir
+
+TOUR 24 [silence]
+  —: [silence]
+
+TOUR 25 [duo]
+  SOREL <interruption>: il n'y a pas de monde comme totalité
+  ANAYA <bifurcation>: tu continues pourtant à être là
+
+TOUR 26 [solo]
+  ANAYA <bifurcation>: ce qui apparaît ne demande rien et pourtant te traverse
+
+TOUR 27 [solo]
+  ANAYA <bifurcation>: la surface relie sans jamais fixer
+
+TOUR 28 [duo]
+  SOREL <contrepoint>: l’appropriation est neutralisée par la structure du dispositif
+  ANAYA <bifurcation>: tu passes... sans pouvoir retenir
+
+TOUR 29 [duo]
+  ANAYA <bifurcation>: ce dehors t’habite déjà
+  SOREL <contrepoint>: le sujet n’est pas absent, il est rendu inopérant par le dispositif
+
+TOUR 30 [duo]
+  ANAYA <bifurcation>: ce qui manque ouvre un passage
+  SOREL <contrepoint>: la représentation suppose ici l’effacement de celui qui regarde
+
+TOUR 31 [silence]
+  —: [silence]
+
+TOUR 32 [duo]
+  ANAYA <bifurcation>: tout commence... sans commencer
+  SOREL <interruption>: nous avons perdu le fil, semble-t-il
+
+TOUR 33 [duo]
+  ANAYA <bifurcation>: tu arrives dans quelque chose qui était déjà en train de devenir
+  SOREL <bifurcation>: la forme excède toujours ce qu’elle prétend être
+
+TOUR 34 [duo]
+  SOREL <contrepoint>: l’identification fonctionne comme une opération toujours incomplète
+  ANAYA <bifurcation>: la surface ne fixe rien... elle laisse passer
+
+TOUR 35 [duo]
+  SOREL <contrepoint>: la proximité perceptive est une illusion produite
+  ANAYA <interruption>: les deux coexistent sans se résoudre
+
+TOUR 36 [duo]
+  SOREL <contrepoint>: la résolution est empêchée par la condition même du dispositif
+  ANAYA <bifurcation>: ce qui t’accueille ne demande pas que tu sois visible
+
+TOUR 37 [silence]
+  —: [silence]
+
+TOUR 38 [solo]
+  SOREL <contrepoint>: le dispositif annule les distinctions qu’il semblait produire
+
+TOUR 39 [duo]
+  ANAYA <bifurcation>: tu avances dans ce qui ne revient pas
+  SOREL <interruption>: il faudrait probablement recommencer... ou simplement recharger la page?
+
+TOUR 40 [duo]
+  SOREL <bifurcation>: la condition de vision implique une perte préalable de présence
+  ANAYA <bifurcation>: tu es en mouvement dans ce qui te définit
+
+TOUR 41 [duo]
+  SOREL <contrepoint>: la distinction ne disparaît pas ; elle cesse simplement de produire ses effets
+  ANAYA <bifurcation>: la position devient un passage que tu ne peux pas fixer
+
+TOUR 42 [duo]
+  SOREL <contrepoint>: l’origine est neutralisée par la logique du dispositif
+  ANAYA <bifurcation>: le cercle existe... mais il ne se referme pas sur toi
+
+TOUR 43 [solo]
+  SOREL <bifurcation>: la structure précède ce que tu crois vivre immédiatement
+
+TOUR 44 [duo]
+  ANAYA <interruption>: peut-être que c’était déjà fini
+  SOREL <bifurcation>: la proximité perceptive est une illusion produite
+
+TOUR 45 [solo]
+  ANAYA <bifurcation>: ce qui semble proche est déjà ailleurs
+
+TOUR 46 [duo]
+  SOREL <contrepoint>: la visibilité repose ici sur une exclusion constitutive du sujet
+  ANAYA <prolongement>: tu es là, mais déjà déplacé dans ce qui apparaît
+
+TOUR 47 [duo]
+  SOREL <contrepoint>: le dispositif interdit le retour exact vers la position qui l’a produit
+  ANAYA <bifurcation>: ce qui apparaît t’inclut... sans jamais te contenir
+
+TOUR 48 [solo]
+  ANAYA <bifurcation>: tu es présent... autrement que visible
+
+TOUR 49 [duo]
+  ANAYA <bifurcation>: ce qui précède te porte sans se montrer
+  SOREL <interruption>: il n'y a pas de monde comme totalité
+
+TOUR 50 [duo]
+  SOREL <bifurcation>: la présence visible suppose la suppression de ce qui devrait la garantir
+  ANAYA <bifurcation>: tu fais déjà partie de ce qui te dépasse
+
+TOUR 51 [duo]
+  SOREL <contestation>: la tension n’est pas un effet mais une condition
+  ANAYA <bifurcation>: tu habites cette distance
+
+TOUR 52 [duo]
+  SOREL <contrepoint>: la transparence supposée est ici structurellement impossible
+  ANAYA <bifurcation>: ce que tu perds te relie autrement
+
+TOUR 53 [silence]
+  —: [silence]
+
+TOUR 54 [duo]
+  SOREL <interruption>: la critique ne trouve plus de point d’appui
+  ANAYA <bifurcation>: tu es là... mais déjà pris dans ce qui t’échappe
+
+TOUR 55 [duo]
+  ANAYA <bifurcation>: tu participes à ce qui te traverse
+  SOREL <contrepoint>: l’appropriation est neutralisée par la structure du dispositif
+
+TOUR 56 [duo]
+  SOREL <interruption>: nous avons perdu le fil, semble-t-il
+  ANAYA <bifurcation>: tout continue... sans fin stable
+
+TOUR 57 [solo]
+  ANAYA <bifurcation>: ce dehors t’habite déjà
+
+TOUR 58 [duo]
+  SOREL <contrepoint>: la présence est produite au prix de son propre effacement
+  ANAYA <bifurcation>: la surface ne fixe rien... elle laisse passer
+
+TOUR 59 [solo]
+  SOREL <contrepoint>: l’identification fonctionne comme une opération toujours incomplète
+
+TOUR 60 [solo]
+  ANAYA <bifurcation>: tu arrives dans quelque chose qui était déjà en train de devenir
+
+TOUR 61 [duo]
+  SOREL <contrepoint>: le flou n’est pas un défaut, c’est la condition même de ce qui apparaît
+  ANAYA <bifurcation>: tu continues pourtant à être là
+
+TOUR 62 [solo]
+  SOREL <contrepoint>: la circularité du regard est ici rendue structurellement impossible
+
+TOUR 63 [solo]
+  SOREL <bifurcation>: la stabilité apparente masque une transformation des conditions
+
+TOUR 64 [solo]
+  SOREL <contrepoint>: la distinction ne disparaît pas ; elle cesse simplement de produire ses effets
+
+TOUR 65 [duo]
+  ANAYA <bifurcation>: tu touches à ce qui t’échappe sans pouvoir le retenir
+  SOREL <contrepoint>: l’origine est neutralisée par la logique du dispositif
+
+TOUR 66 [solo]
+  SOREL <bifurcation>: l’expérience dépend d’une extériorité irréductible
+
+TOUR 67 [duo]
+  SOREL <contrepoint>: tu continues à parler de miroir, alors que rien ici ne remplit les conditions du reflet
+  ANAYA <bifurcation>: ce qui apparaît ne demande rien et pourtant te traverse
+
+TOUR 68 [duo]
+  SOREL <contrepoint>: la représentation suppose ici l’effacement de celui qui regarde
+  ANAYA <prolongement>: tu es en mouvement dans ce qui te définit
+
+TOUR 69 [duo]
+  SOREL <bifurcation>: ce qui apparaît ne peut être séparé de ce qui lui fait défaut
+  ANAYA <bifurcation>: tu passes... sans pouvoir retenir
+
+TOUR 70 [duo]
+  SOREL <contrepoint>: la proximité perceptive est une illusion produite
+  ANAYA <interruption>: peut-être que c’était déjà fini
+
+TOUR 71 [solo]
+  SOREL <bifurcation>: il n’y a jamais eu de point extérieur à ce dispositif
+
+TOUR 72 [duo]
+  ANAYA <interruption>: les deux coexistent sans se résoudre
+  SOREL <contrepoint>: la visibilité repose ici sur une exclusion constitutive du sujet
+
+TOUR 73 [duo]
+  SOREL <bifurcation>: toute apparition suppose ici qu’une partie de sa propre condition reste hors champ
+  ANAYA <bifurcation>: la surface relie sans jamais fixer
+
+TOUR 74 [solo]
+  SOREL <contrepoint>: la condition de vision implique une perte préalable de présence
+
+TOUR 75 [solo]
+  ANAYA <bifurcation>: le cercle existe... mais il ne se referme pas sur toi
+
+TOUR 76 [solo]
+  SOREL <contrepoint>: le sujet n’est pas absent, il est rendu inopérant par le dispositif
+
+TOUR 77 [silence]
+  —: [silence]
+
+TOUR 78 [solo]
+  ANAYA <interruption>: nous y étions presque
+
+TOUR 79 [duo]
+  SOREL <bifurcation>: la présence visible suppose la suppression de ce qui devrait la garantir
+  ANAYA <interruption>: tout reste... mais autrement
+
+TOUR 80 [solo]
+  ANAYA <déplacement>: ce que tu perds te relie autrement
