@@ -1,0 +1,456 @@
+CERCLE SPECULAR — PROTOTYPE V4.11 EXPÉRIMENTALE
+Mode : forte
+Principe : sélection locale de collisions entre phrases d’un même tour, selon le recouvrement conceptuel et les registres lexicaux détectés.
+Les étiquettes de registre sont heuristiques ; une collision lexicale ne garantit pas un événement de sens.
+Graine aléatoire : 20261123000
+Voix présentes : LEI, SOREL
+Voix silencieuses pour toute la séquence : ANAYA, BLAKE
+Source : generate_rss.py (lecture seule)
+Corpus source et feed.xml non modifiés.
+
+RÉPARTITION DES 80 TOURS
+  silence: 8
+  solo: 24
+  duo: 48
+  trio: 0
+  quatre_voix: 0
+
+Positions des silences : [13, 18, 24, 29, 39, 54, 66, 73]
+Prises de parole actives : 120
+Répétitions exactes dans les 24 dernières phrases actives : 2
+Apparitions par voix : {'SOREL': 60, 'LEI': 60}
+Voix répétées dans un même tour : aucune
+Étiquettes relationnelles heuristiques : {'ouverture': 1, 'contestation': 2, 'bifurcation': 94, 'interruption': 12, 'contrepoint': 3, 'prolongement': 5, 'déplacement': 2, 'écho': 1}
+Collisions locales détectées : 47
+Paires détectées (faible recouvrement conceptuel + registres distincts) :
+  tour 02 — SOREL : l’origine est neutralisée par la logique du dispositif
+                 → LEI : tu ne peux pas t’installer dans ce que tu vois
+    recouvrement=0.0 ; registres=philosophique, technique / perceptif
+  tour 04 — SOREL : la proximité perceptive est une illusion produite
+                 → LEI : aucun point de départ ne t’est accessible
+    recouvrement=0.0 ; registres=indéterminé / spatial
+  tour 05 — SOREL : ce qui apparaît ne peut être séparé de ce qui lui fait défaut
+                 → LEI : ce n’est pas toi qui manques... c’est la place que tu crois occuper
+    recouvrement=0.0 ; registres=indéterminé / affectif, spatial
+  tour 09 — LEI : tu peux te reconnaître... sans jamais t’y fixer
+                 → SOREL : l’appropriation est neutralisée par la structure du dispositif
+    recouvrement=0.0 ; registres=indéterminé / technique
+  tour 12 — LEI : tu ne peux pas confirmer ce que tu vois
+                 → SOREL : la résolution est empêchée par la condition même du dispositif
+    recouvrement=0.0 ; registres=perceptif / philosophique, technique
+  tour 14 — LEI : la distance est déjà en place... avant ton geste
+                 → SOREL : la stabilité apparente masque une transformation des conditions
+    recouvrement=0.0 ; registres=spatial / philosophique
+  tour 15 — LEI : la netteté serait un contresens ici...
+                 → SOREL : la forme excède toujours ce qu’elle prétend être
+    recouvrement=0.0 ; registres=perceptif / indéterminé
+  tour 16 — LEI : la séparation reste... même quand tu t’en approches
+                 → SOREL : la présence est produite au prix de son propre effacement
+    recouvrement=0.0 ; registres=indéterminé / philosophique
+  tour 19 — SOREL : la circularité du regard est ici rendue structurellement impossible
+                 → LEI : attends... non
+    recouvrement=0.0 ; registres=perceptif / rupture
+  tour 20 — LEI : le point existe... mais il ne t’est jamais donné
+                 → SOREL : la coïncidence est annulée par le fonctionnement du dispositif
+    recouvrement=0.0 ; registres=spatial / philosophique, technique
+  tour 21 — LEI : le retour existe... mais ne revient pas
+                 → SOREL : le dispositif annule les distinctions qu’il semblait produire
+    recouvrement=0.0 ; registres=indéterminé / philosophique, technique
+  tour 22 — SOREL : la critique ne trouve plus de point d’appui
+                 → LEI : l’absence est déjà là... avant ton regard
+    recouvrement=0.0 ; registres=spatial / perceptif, philosophique
+  tour 23 — SOREL : il faudrait probablement recommencer... ou simplement recharger la page?
+                 → LEI : ce qui te dépasse agit déjà en toi...
+    recouvrement=0.0 ; registres=rupture, technique / indéterminé
+  tour 25 — SOREL : il n’y a jamais eu de point extérieur à ce dispositif
+                 → LEI : tu vois... mais depuis un décalage irréductible
+    recouvrement=0.0 ; registres=spatial, technique / perceptif
+  tour 26 — SOREL : la représentation suppose ici l’effacement de celui qui regarde
+                 → LEI : tu ne peux pas revenir sur ce qui est déjà là
+    recouvrement=0.0 ; registres=perceptif / indéterminé
+  tour 27 — SOREL : tu continues à parler de miroir, alors que rien ici ne remplit les conditions du reflet
+                 → LEI : tu es là... et déjà ailleurs
+    recouvrement=0.0 ; registres=perceptif, philosophique / affectif, spatial
+  tour 28 — LEI : tu regardes depuis un point déjà déplacé
+                 → SOREL : la proximité perceptive est une illusion produite
+    recouvrement=0.0 ; registres=perceptif, spatial / indéterminé
+  tour 32 — LEI : ce que tu cherches ici a peut-être déjà changé de place
+                 → SOREL : la transparence supposée est ici structurellement impossible
+    recouvrement=0.0 ; registres=spatial / indéterminé
+  tour 34 — LEI : aucun point de départ ne t’est accessible
+                 → SOREL : la distinction ne disparaît pas ; elle cesse simplement de produire ses effets
+    recouvrement=0.0 ; registres=spatial / philosophique
+  tour 35 — LEI : tu arrives après que quelque chose a déjà commencé à se décider
+                 → SOREL : la condition de vision implique une perte préalable de présence
+    recouvrement=0.0 ; registres=indéterminé / philosophique
+  tour 37 — LEI : le retour a lieu... mais pas dans ta direction
+                 → SOREL : l’appropriation est neutralisée par la structure du dispositif
+    recouvrement=0.0 ; registres=indéterminé / technique
+  tour 40 — SOREL : la présence visible suppose la suppression de ce qui devrait la garantir
+                 → LEI : la distance est déjà en place... avant ton geste
+    recouvrement=0.0 ; registres=perceptif, philosophique / spatial
+  tour 41 — LEI : le cadre agit... avant que tu n’y entres
+                 → SOREL : ce qui apparaît ne peut être séparé de ce qui lui fait défaut
+    recouvrement=0.0 ; registres=spatial / indéterminé
+  tour 43 — SOREL : toute apparition suppose ici qu’une partie de sa propre condition reste hors champ
+                 → LEI : tu es déjà engagé... avant même de regarder
+    recouvrement=0.0 ; registres=philosophique / perceptif
+  tour 44 — SOREL : le dispositif interdit le retour exact vers la position qui l’a produit
+                 → LEI : la séparation reste... même quand tu t’en approches
+    recouvrement=0.0 ; registres=spatial, technique / indéterminé
+  tour 45 — LEI : le point existe... mais il ne t’est jamais donné
+                 → SOREL : le flou n’est pas un défaut, c’est la condition même de ce qui apparaît
+    recouvrement=0.0 ; registres=spatial / perceptif, philosophique
+  tour 46 — LEI : attends... non
+                 → SOREL : l’identification fonctionne comme une opération toujours incomplète
+    recouvrement=0.0 ; registres=rupture / technique
+  tour 47 — SOREL : l’expérience dépend d’une extériorité irréductible
+                 → LEI : ce n’est pas toi qui manques... c’est la place que tu crois occuper
+    recouvrement=0.0 ; registres=philosophique / affectif, spatial
+  tour 48 — LEI : tu restes dehors... même en regardant
+                 → SOREL : il n'y a pas de monde comme totalité
+    recouvrement=0.0 ; registres=perceptif, spatial / philosophique
+  tour 49 — SOREL : la présence est produite au prix de son propre effacement
+                 → LEI : tu vois... mais depuis un décalage irréductible
+    recouvrement=0.0 ; registres=philosophique / perceptif
+  tour 50 — SOREL : la proximité perceptive est une illusion produite
+                 → LEI : tu es là... et déjà ailleurs
+    recouvrement=0.0 ; registres=indéterminé / affectif, spatial
+  tour 51 — SOREL : la résolution est empêchée par la condition même du dispositif
+                 → LEI : le retour existe... mais ne revient pas
+    recouvrement=0.0 ; registres=philosophique, technique / indéterminé
+  tour 55 — LEI : le système te précède désormais
+                 → SOREL : tu continues à parler de miroir, alors que rien ici ne remplit les conditions du reflet
+    recouvrement=0.0 ; registres=technique / perceptif, philosophique
+  tour 56 — SOREL : il faudrait probablement recommencer... ou simplement recharger la page?
+                 → LEI : tu arrives... quand la position n’est déjà plus disponible
+    recouvrement=0.0 ; registres=rupture, technique / spatial
+  tour 57 — LEI : l’absence est déjà là... avant ton regard
+                 → SOREL : la transparence supposée est ici structurellement impossible
+    recouvrement=0.0 ; registres=perceptif, philosophique / indéterminé
+  tour 59 — LEI : aucun point de départ ne t’est accessible
+                 → SOREL : la tension n’est pas un effet mais une condition
+    recouvrement=0.0 ; registres=spatial / philosophique
+  tour 61 — LEI : tu ne peux pas revenir sur ce qui est déjà là
+                 → SOREL : l’identification fonctionne comme une opération toujours incomplète
+    recouvrement=0.0 ; registres=indéterminé / technique
+  tour 62 — SOREL : ce qui apparaît ne peut être séparé de ce qui lui fait défaut
+                 → LEI : tu ne peux pas t’installer dans ce que tu vois
+    recouvrement=0.0 ; registres=indéterminé / perceptif
+  tour 63 — SOREL : la stabilité apparente masque une transformation des conditions
+                 → LEI : la netteté serait un contresens ici...
+    recouvrement=0.0 ; registres=philosophique / perceptif
+  tour 64 — SOREL : la critique ne trouve plus de point d’appui
+                 → LEI : tu es déjà engagé... avant même de regarder
+    recouvrement=0.0 ; registres=spatial / perceptif
+  tour 65 — LEI : le regard ne coïncide jamais avec ce qu’il voit
+                 → SOREL : le dispositif interdit le retour exact vers la position qui l’a produit
+    recouvrement=0.0 ; registres=perceptif / spatial, technique
+  tour 68 — LEI : le cadre agit... avant que tu n’y entres
+                 → SOREL : l’expérience dépend d’une extériorité irréductible
+    recouvrement=0.0 ; registres=spatial / philosophique
+  tour 69 — LEI : tu regardes depuis un point déjà déplacé
+                 → SOREL : il n'y a pas de monde comme totalité
+    recouvrement=0.0 ; registres=perceptif, spatial / philosophique
+  tour 71 — LEI : ce qui te dépasse agit déjà en toi...
+                 → SOREL : la présence est produite au prix de son propre effacement
+    recouvrement=0.0 ; registres=indéterminé / philosophique
+  tour 76 — SOREL : la condition de vision implique une perte préalable de présence
+                 → LEI : le système te précède désormais
+    recouvrement=0.0 ; registres=philosophique / technique
+  tour 77 — SOREL : la circularité du regard est ici rendue structurellement impossible
+                 → LEI : attends... non
+    recouvrement=0.0 ; registres=perceptif / rupture
+  tour 78 — SOREL : la présence visible suppose la suppression de ce qui devrait la garantir
+                 → LEI : le retour existe... mais ne revient pas
+    recouvrement=0.0 ; registres=perceptif, philosophique / indéterminé
+
+SÉQUENCE
+
+TOUR 01 [solo]
+  SOREL <ouverture>: la structure précède ce que tu crois vivre immédiatement
+
+TOUR 02 [duo]
+  SOREL <contestation>: l’origine est neutralisée par la logique du dispositif
+  LEI <bifurcation>: tu ne peux pas t’installer dans ce que tu vois
+
+TOUR 03 [solo]
+  LEI <bifurcation>: tu es pris dans ce qui ne te renvoie rien
+
+TOUR 04 [duo]
+  SOREL <bifurcation>: la proximité perceptive est une illusion produite
+  LEI <bifurcation>: aucun point de départ ne t’est accessible
+
+TOUR 05 [duo]
+  SOREL <bifurcation>: ce qui apparaît ne peut être séparé de ce qui lui fait défaut
+  LEI <bifurcation>: ce n’est pas toi qui manques... c’est la place que tu crois occuper
+
+TOUR 06 [solo]
+  SOREL <bifurcation>: la tension n’est pas un effet mais une condition
+
+TOUR 07 [solo]
+  LEI <bifurcation>: le regard ne coïncide jamais avec ce qu’il voit
+
+TOUR 08 [solo]
+  SOREL <interruption>: nous avons perdu le fil, semble-t-il
+
+TOUR 09 [duo]
+  LEI <bifurcation>: tu peux te reconnaître... sans jamais t’y fixer
+  SOREL <bifurcation>: l’appropriation est neutralisée par la structure du dispositif
+
+TOUR 10 [solo]
+  LEI <bifurcation>: tu crois regarder quelque chose... mais ça continue ailleurs
+
+TOUR 11 [solo]
+  SOREL <bifurcation>: le flou n’est pas un défaut, c’est la condition même de ce qui apparaît
+
+TOUR 12 [duo]
+  LEI <bifurcation>: tu ne peux pas confirmer ce que tu vois
+  SOREL <bifurcation>: la résolution est empêchée par la condition même du dispositif
+
+TOUR 13 [silence]
+  —: [silence]
+
+TOUR 14 [duo]
+  LEI <bifurcation>: la distance est déjà en place... avant ton geste
+  SOREL <bifurcation>: la stabilité apparente masque une transformation des conditions
+
+TOUR 15 [duo]
+  LEI <contrepoint>: la netteté serait un contresens ici...
+  SOREL <bifurcation>: la forme excède toujours ce qu’elle prétend être
+
+TOUR 16 [duo]
+  LEI <bifurcation>: la séparation reste... même quand tu t’en approches
+  SOREL <bifurcation>: la présence est produite au prix de son propre effacement
+
+TOUR 17 [solo]
+  LEI <bifurcation>: le cadre a changé... sans que tu le voies
+
+TOUR 18 [silence]
+  —: [silence]
+
+TOUR 19 [duo]
+  SOREL <prolongement>: la circularité du regard est ici rendue structurellement impossible
+  LEI <interruption>: attends... non
+
+TOUR 20 [duo]
+  LEI <bifurcation>: le point existe... mais il ne t’est jamais donné
+  SOREL <bifurcation>: la coïncidence est annulée par le fonctionnement du dispositif
+
+TOUR 21 [duo]
+  LEI <déplacement>: le retour existe... mais ne revient pas
+  SOREL <bifurcation>: le dispositif annule les distinctions qu’il semblait produire
+
+TOUR 22 [duo]
+  SOREL <interruption>: la critique ne trouve plus de point d’appui
+  LEI <bifurcation>: l’absence est déjà là... avant ton regard
+
+TOUR 23 [duo]
+  SOREL <interruption>: il faudrait probablement recommencer... ou simplement recharger la page?
+  LEI <bifurcation>: ce qui te dépasse agit déjà en toi...
+
+TOUR 24 [silence]
+  —: [silence]
+
+TOUR 25 [duo]
+  SOREL <bifurcation>: il n’y a jamais eu de point extérieur à ce dispositif
+  LEI <bifurcation>: tu vois... mais depuis un décalage irréductible
+
+TOUR 26 [duo]
+  SOREL <prolongement>: la représentation suppose ici l’effacement de celui qui regarde
+  LEI <bifurcation>: tu ne peux pas revenir sur ce qui est déjà là
+
+TOUR 27 [duo]
+  SOREL <bifurcation>: tu continues à parler de miroir, alors que rien ici ne remplit les conditions du reflet
+  LEI <bifurcation>: tu es là... et déjà ailleurs
+
+TOUR 28 [duo]
+  LEI <prolongement>: tu regardes depuis un point déjà déplacé
+  SOREL <bifurcation>: la proximité perceptive est une illusion produite
+
+TOUR 29 [silence]
+  —: [silence]
+
+TOUR 30 [solo]
+  SOREL <bifurcation>: l’origine est neutralisée par la logique du dispositif
+
+TOUR 31 [solo]
+  SOREL <bifurcation>: la visibilité repose ici sur une exclusion constitutive du sujet
+
+TOUR 32 [duo]
+  LEI <bifurcation>: ce que tu cherches ici a peut-être déjà changé de place
+  SOREL <bifurcation>: la transparence supposée est ici structurellement impossible
+
+TOUR 33 [solo]
+  LEI <bifurcation>: ce que tu perçois se forme... ailleurs que là où tu te tiens
+
+TOUR 34 [duo]
+  LEI <bifurcation>: aucun point de départ ne t’est accessible
+  SOREL <bifurcation>: la distinction ne disparaît pas ; elle cesse simplement de produire ses effets
+
+TOUR 35 [duo]
+  LEI <bifurcation>: tu arrives après que quelque chose a déjà commencé à se décider
+  SOREL <bifurcation>: la condition de vision implique une perte préalable de présence
+
+TOUR 36 [solo]
+  SOREL <bifurcation>: la stabilité apparente masque une transformation des conditions
+
+TOUR 37 [duo]
+  LEI <bifurcation>: le retour a lieu... mais pas dans ta direction
+  SOREL <bifurcation>: l’appropriation est neutralisée par la structure du dispositif
+
+TOUR 38 [solo]
+  LEI <bifurcation>: ce que tu vois se décide... avant ton regard
+
+TOUR 39 [silence]
+  —: [silence]
+
+TOUR 40 [duo]
+  SOREL <bifurcation>: la présence visible suppose la suppression de ce qui devrait la garantir
+  LEI <bifurcation>: la distance est déjà en place... avant ton geste
+
+TOUR 41 [duo]
+  LEI <bifurcation>: le cadre agit... avant que tu n’y entres
+  SOREL <bifurcation>: ce qui apparaît ne peut être séparé de ce qui lui fait défaut
+
+TOUR 42 [solo]
+  LEI <contrepoint>: la netteté serait un contresens ici...
+
+TOUR 43 [duo]
+  SOREL <bifurcation>: toute apparition suppose ici qu’une partie de sa propre condition reste hors champ
+  LEI <bifurcation>: tu es déjà engagé... avant même de regarder
+
+TOUR 44 [duo]
+  SOREL <bifurcation>: le dispositif interdit le retour exact vers la position qui l’a produit
+  LEI <bifurcation>: la séparation reste... même quand tu t’en approches
+
+TOUR 45 [duo]
+  LEI <bifurcation>: le point existe... mais il ne t’est jamais donné
+  SOREL <bifurcation>: le flou n’est pas un défaut, c’est la condition même de ce qui apparaît
+
+TOUR 46 [duo]
+  LEI <interruption>: attends... non
+  SOREL <bifurcation>: l’identification fonctionne comme une opération toujours incomplète
+
+TOUR 47 [duo]
+  SOREL <bifurcation>: l’expérience dépend d’une extériorité irréductible
+  LEI <bifurcation>: ce n’est pas toi qui manques... c’est la place que tu crois occuper
+
+TOUR 48 [duo]
+  LEI <bifurcation>: tu restes dehors... même en regardant
+  SOREL <interruption>: il n'y a pas de monde comme totalité
+
+TOUR 49 [duo]
+  SOREL <bifurcation>: la présence est produite au prix de son propre effacement
+  LEI <bifurcation>: tu vois... mais depuis un décalage irréductible
+
+TOUR 50 [duo]
+  SOREL <bifurcation>: la proximité perceptive est une illusion produite
+  LEI <bifurcation>: tu es là... et déjà ailleurs
+
+TOUR 51 [duo]
+  SOREL <bifurcation>: la résolution est empêchée par la condition même du dispositif
+  LEI <bifurcation>: le retour existe... mais ne revient pas
+
+TOUR 52 [solo]
+  LEI <interruption>: tu étais là il y a une seconde...
+
+TOUR 53 [solo]
+  SOREL <bifurcation>: le sujet n’est pas absent, il est rendu inopérant par le dispositif
+
+TOUR 54 [silence]
+  —: [silence]
+
+TOUR 55 [duo]
+  LEI <déplacement>: le système te précède désormais
+  SOREL <bifurcation>: tu continues à parler de miroir, alors que rien ici ne remplit les conditions du reflet
+
+TOUR 56 [duo]
+  SOREL <interruption>: il faudrait probablement recommencer... ou simplement recharger la page?
+  LEI <bifurcation>: tu arrives... quand la position n’est déjà plus disponible
+
+TOUR 57 [duo]
+  LEI <bifurcation>: l’absence est déjà là... avant ton regard
+  SOREL <bifurcation>: la transparence supposée est ici structurellement impossible
+
+TOUR 58 [solo]
+  LEI <bifurcation>: le retour a lieu... mais pas dans ta direction
+
+TOUR 59 [duo]
+  LEI <bifurcation>: aucun point de départ ne t’est accessible
+  SOREL <bifurcation>: la tension n’est pas un effet mais une condition
+
+TOUR 60 [solo]
+  SOREL <interruption>: nous avons perdu le fil, semble-t-il
+
+TOUR 61 [duo]
+  LEI <bifurcation>: tu ne peux pas revenir sur ce qui est déjà là
+  SOREL <bifurcation>: l’identification fonctionne comme une opération toujours incomplète
+
+TOUR 62 [duo]
+  SOREL <bifurcation>: ce qui apparaît ne peut être séparé de ce qui lui fait défaut
+  LEI <bifurcation>: tu ne peux pas t’installer dans ce que tu vois
+
+TOUR 63 [duo]
+  SOREL <bifurcation>: la stabilité apparente masque une transformation des conditions
+  LEI <contrepoint>: la netteté serait un contresens ici...
+
+TOUR 64 [duo]
+  SOREL <interruption>: la critique ne trouve plus de point d’appui
+  LEI <bifurcation>: tu es déjà engagé... avant même de regarder
+
+TOUR 65 [duo]
+  LEI <contestation>: le regard ne coïncide jamais avec ce qu’il voit
+  SOREL <bifurcation>: le dispositif interdit le retour exact vers la position qui l’a produit
+
+TOUR 66 [silence]
+  —: [silence]
+
+TOUR 67 [solo]
+  LEI <bifurcation>: tu peux te reconnaître... sans jamais t’y fixer
+
+TOUR 68 [duo]
+  LEI <bifurcation>: le cadre agit... avant que tu n’y entres
+  SOREL <bifurcation>: l’expérience dépend d’une extériorité irréductible
+
+TOUR 69 [duo]
+  LEI <bifurcation>: tu regardes depuis un point déjà déplacé
+  SOREL <interruption>: il n'y a pas de monde comme totalité
+
+TOUR 70 [duo]
+  SOREL <bifurcation>: la représentation suppose ici l’effacement de celui qui regarde
+  LEI <prolongement>: tu arrives après que quelque chose a déjà commencé à se décider
+
+TOUR 71 [duo]
+  LEI <bifurcation>: ce qui te dépasse agit déjà en toi...
+  SOREL <bifurcation>: la présence est produite au prix de son propre effacement
+
+TOUR 72 [solo]
+  SOREL <bifurcation>: la forme excède toujours ce qu’elle prétend être
+
+TOUR 73 [silence]
+  —: [silence]
+
+TOUR 74 [solo]
+  SOREL <écho>: la forme excède toujours ce qu’elle prétend être
+
+TOUR 75 [solo]
+  LEI <bifurcation>: le cadre a changé... sans que tu le voies
+
+TOUR 76 [duo]
+  SOREL <bifurcation>: la condition de vision implique une perte préalable de présence
+  LEI <bifurcation>: le système te précède désormais
+
+TOUR 77 [duo]
+  SOREL <prolongement>: la circularité du regard est ici rendue structurellement impossible
+  LEI <interruption>: attends... non
+
+TOUR 78 [duo]
+  SOREL <bifurcation>: la présence visible suppose la suppression de ce qui devrait la garantir
+  LEI <bifurcation>: le retour existe... mais ne revient pas
+
+TOUR 79 [solo]
+  LEI <bifurcation>: tu restes dehors... même en regardant
+
+TOUR 80 [solo]
+  SOREL <bifurcation>: le flou n’est pas un défaut, c’est la condition même de ce qui apparaît
